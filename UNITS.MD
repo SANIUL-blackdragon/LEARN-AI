@@ -4,7 +4,6 @@
 ---
 
 ### **TIER 1: FOUNDATION (Beginner Level)**
-*(Units 1-5 remain the same)*
 
 #### **Unit 1: Mathematical Foundations for AI**
 
@@ -819,13 +818,779 @@ processing. Examples include large-scale data processing, distributed machine
 learning, or high-performance computing applications.
 
 #### **Unit 3: Introduction to Machine Learning**  
-#### **Unit 4: Deep Learning Fundamentals**  
+
+##### 3.1 Unit description
+
+This unit introduces students to the fundamental concepts of machine learning, building upon the mathematical foundations and programming skills developed in previous units. Students will explore what machine learning is, the different types of machine learning, and how machines can learn from data to make predictions and decisions. The unit covers basic machine learning algorithms, data preprocessing techniques, model evaluation methods, and simple practical applications. Emphasis is placed on understanding concepts intuitively and applying them using Python with beginner-friendly libraries. Students will develop the skills needed to create, train, and evaluate simple machine learning models while understanding the ethical implications of AI technology.
+
+##### 3.2 Assessment information
+
+• First assessment: January 2020.
+• The assessment is 1 hour and 30 minutes.
+• The assessment is out of 75 marks.
+• Students must answer all questions.
+• Calculators may be used in the examination. Please see Appendix 6: Use of calculators.
+• The booklet Mathematical Formulae and Statistical Tables will be provided for use in the assessments.
+
+##### 3.3 Unit content
+
+###### Topic 1: Introduction to Machine Learning Concepts
+
+Students will be assessed on their ability to:
+
+**3.1.1 Understand what machine learning is**
+- Define machine learning as a subset of artificial intelligence
+- Explain how machine learning differs from traditional programming
+- Identify real-world applications of machine learning
+- Understand the basic concept of learning from data
+
+**Guidance:** Students should understand machine learning as a way for computers to learn from data without being explicitly programmed for every situation. They should compare traditional programming (where humans write rules) with machine learning (where computers learn rules from data). Real-world examples should include things like recommendation systems (Netflix, YouTube), spam email filters, voice assistants, and photo tagging. The concept should be introduced using simple analogies like teaching a child to recognize cats by showing many examples rather than writing rules about what makes a cat.
+
+**3.1.2 Understand the machine learning process**
+- Describe the basic steps in a machine learning project
+- Explain the importance of data in machine learning
+- Understand the concept of training and testing
+- Identify the role of features and labels in machine learning
+
+**Guidance:** Students should learn the basic machine learning workflow: collecting data, preparing data, choosing a model, training the model, evaluating the model, and making predictions. They should understand that data is the foundation of machine learning and that the quality and quantity of data matters. The concepts of training data (used to teach the model) and testing data (used to check how well the model works) should be introduced. Features should be explained as the input characteristics (like a person's age, height, etc.) and labels as the output we want to predict (like whether they play a sport or not).
+
+**3.1.3 Understand the importance of data in machine learning**
+- Explain why data quality affects machine learning performance
+- Identify different types of data used in machine learning
+- Understand the concept of datasets
+- Recognize common data sources for machine learning
+
+**Guidance:** Students should understand that the quality of machine learning models depends heavily on the quality of the data used to train them. They should learn about different types of data: numerical (numbers), categorical (categories like colors, types), text, images, and sounds. The concept of datasets as collections of data used for training and testing should be introduced. Students should identify common data sources like existing databases, sensors, user interactions, and public datasets. Examples should show how good data leads to good predictions and bad data leads to bad predictions.
+
+**3.1.4 Understand ethical considerations in machine learning**
+- Identify potential biases in machine learning systems
+- Understand the importance of fairness in AI
+- Recognize privacy concerns with data collection
+- Explain the need for transparency in AI decisions
+
+**Guidance:** Students should learn that machine learning systems can sometimes be unfair or biased because they learn from historical data that may contain biases. They should understand why fairness matters in AI applications like hiring, loan approvals, and criminal justice. Privacy concerns should be discussed in terms of how personal data is collected and used to train models. The concept of transparency should be introduced as the ability to understand why an AI system made a particular decision. Examples should include real-world cases where AI systems have been biased and the importance of developing responsible AI.
+
+###### Topic 2: Types of Machine Learning
+
+Students will be assessed on their ability to:
+
+**3.2.1 Understand supervised learning**
+- Define supervised learning and its characteristics
+- Identify types of supervised learning problems (classification and regression)
+- Explain how supervised learning algorithms learn from labeled data
+- Recognize real-world applications of supervised learning
+
+**Guidance:** Students should understand supervised learning as learning with a teacher, where the algorithm learns from data that has correct answers (labels). They should learn about classification (predicting categories, like spam/not spam or cat/dog) and regression (predicting numbers, like house prices or temperature). The concept of labeled data should be reinforced with examples like pictures labeled as "cat" or "dog", or emails labeled as "spam" or "not spam". Real-world applications should include email spam filtering, image recognition, predicting house prices, and medical diagnosis.
+
+**3.2.2 Understand unsupervised learning**
+- Define unsupervised learning and its characteristics
+- Identify types of unsupervised learning problems (clustering and association)
+- Explain how unsupervised learning algorithms find patterns in unlabeled data
+- Recognize real-world applications of unsupervised learning
+
+**Guidance:** Students should understand unsupervised learning as exploring data without predefined answers, where the algorithm finds patterns and structures on its own. They should learn about clustering (grouping similar things together, like grouping customers by purchasing behavior) and association (finding relationships between things, like people who buy X also tend to buy Y). The concept should be illustrated with examples like organizing a messy closet by grouping similar items without being told what the groups should be. Real-world applications should include customer segmentation, anomaly detection, and recommendation systems.
+
+**3.2.3 Understand reinforcement learning**
+- Define reinforcement learning and its characteristics
+- Explain the concept of agents, environments, and rewards
+- Describe how reinforcement learning learns through trial and error
+- Recognize real-world applications of reinforcement learning
+
+**Guidance:** Students should understand reinforcement learning as learning through experience, where an agent learns to make decisions by receiving rewards or penalties. The concept should be introduced using simple analogies like training a pet with treats for good behavior and timeouts for bad behavior. Students should understand the components: agent (the learner), environment (where the agent operates), actions (what the agent can do), and rewards (feedback on actions). Real-world applications should include game playing (like AlphaGo), robotics, and self-driving cars. The focus should be on the concept of learning from consequences rather than from labeled data.
+
+**3.2.4 Compare and contrast different types of machine learning**
+- Identify the key differences between supervised, unsupervised, and reinforcement learning
+- Determine which type of learning is appropriate for different problems
+- Explain the advantages and disadvantages of each approach
+- Recognize hybrid approaches that combine multiple types of learning
+
+**Guidance:** Students should learn to distinguish between the three main types of machine learning based on the type of data available and the problem being solved. They should practice matching problems to the appropriate learning type (e.g., predicting house prices = supervised learning, grouping customers = unsupervised learning, teaching a robot to walk = reinforcement learning). The advantages and limitations of each approach should be discussed, such as supervised learning needing labeled data but being more predictable, unsupervised learning finding hidden patterns but being harder to evaluate, and reinforcement learning being powerful but requiring lots of trial and error. The concept of hybrid approaches (like semi-supervised learning) should be briefly introduced.
+
+###### Topic 3: Basic Machine Learning Algorithms
+
+Students will be assessed on their ability to:
+
+**3.3.1 Understand linear regression**
+- Explain the concept of linear regression
+- Identify when linear regression is appropriate
+- Understand how linear regression makes predictions
+- Apply linear regression to simple problems
+
+**Guidance:** Students should understand linear regression as finding the best straight line to predict a numerical value based on input features. The concept should be introduced with simple examples like predicting a person's height based on their age, or predicting ice cream sales based on temperature. Students should understand that linear regression finds the line that best fits the data points and can be used to make predictions for new data points. The focus should be on the concept rather than the mathematical details, using visual representations of scatter plots with trend lines. Students should practice identifying situations where linear regression would be appropriate (predicting numbers that have a linear relationship with inputs).
+
+**3.3.2 Understand classification algorithms**
+- Explain the concept of classification in machine learning
+- Identify common classification algorithms (decision trees, k-nearest neighbors)
+- Understand how classification algorithms make predictions
+- Apply classification to simple problems
+
+**Guidance:** Students should understand classification as predicting categories or classes. The concept should be introduced with simple examples like predicting whether an email is spam or not, or whether a fruit is an apple or an orange based on features like color, size, and weight. Decision trees should be explained as a series of yes/no questions that lead to a prediction, like a flowchart. K-nearest neighbors should be explained as finding the most similar examples from the training data and using their labels to make a prediction. Students should practice identifying classification problems in everyday life and understanding how these algorithms make decisions based on features.
+
+**3.3.3 Understand clustering algorithms**
+- Explain the concept of clustering in machine learning
+- Identify common clustering algorithms (k-means)
+- Understand how clustering algorithms group similar data
+- Apply clustering to simple problems
+
+**Guidance:** Students should understand clustering as grouping similar items together without predefined labels. The concept should be introduced with simple examples like grouping similar animals, organizing books by topic, or clustering customers by purchasing behavior. K-means clustering should be explained as a method that groups data into K clusters by finding the center (centroid) of each cluster and assigning each data point to the nearest center. The focus should be on the intuitive understanding rather than the mathematical algorithm. Students should practice identifying situations where clustering would be useful and understanding how the number of clusters (K) affects the results.
+
+**3.3.4 Understand the basics of model selection**
+- Explain the concept of model selection
+- Identify factors to consider when choosing a machine learning algorithm
+- Understand the importance of matching algorithms to problems
+- Apply simple model selection to given scenarios
+
+**Guidance:** Students should learn that different machine learning algorithms are suited for different types of problems. They should understand factors to consider when choosing an algorithm, such as the type of problem (classification, regression, clustering), the type of data available, the need for interpretability, and computational requirements. The concept should be illustrated with examples like choosing between linear regression and a decision tree for predicting house prices, or choosing between k-means and hierarchical clustering for customer segmentation. Students should practice analyzing simple scenarios and recommending appropriate machine learning approaches.
+
+###### Topic 4: Data Preprocessing and Feature Engineering
+
+Students will be assessed on their ability to:
+
+**3.4.1 Understand data cleaning**
+- Explain the importance of data cleaning in machine learning
+- Identify common data quality issues (missing values, duplicates, outliers)
+- Apply basic data cleaning techniques
+- Understand how data quality affects model performance
+
+**Guidance:** Students should learn that real-world data is often messy and needs to be cleaned before it can be used for machine learning. They should understand common data quality issues like missing values (empty cells), duplicates (repeated records), and outliers (unusual values that don't fit the pattern). Basic techniques for handling these issues should be introduced, such as removing duplicates, filling missing values with averages or most common values, and deciding whether to keep or remove outliers. The concept should be illustrated with examples like cleaning a dataset of student grades where some grades are missing or there are duplicate entries. Students should understand how clean data leads to better machine learning models.
+
+**3.4.2 Understand data transformation**
+- Explain the need for data transformation
+- Identify common data transformation techniques
+- Apply basic data transformation to prepare data for machine learning
+- Understand how different algorithms require different data formats
+
+**Guidance:** Students should learn that machine learning algorithms often require data to be in specific formats. They should understand common transformation techniques like normalization (scaling numbers to a standard range, like 0 to 1), standardization (transforming data to have a mean of 0 and standard deviation of 1), and encoding (converting categories like "red", "green", "blue" into numbers). The concept should be illustrated with examples like scaling ages from 0-100 to 0-1, or converting colors into numerical values. Students should understand why these transformations are necessary (e.g., to prevent features with larger ranges from dominating the model).
+
+**3.4.3 Understand feature selection**
+- Explain the concept of features in machine learning
+- Identify the importance of selecting relevant features
+- Apply basic feature selection techniques
+- Understand how feature selection affects model performance
+
+**Guidance:** Students should understand features as the input characteristics or attributes used to make predictions. They should learn that not all features are equally important and that selecting the right features can improve model performance. Basic feature selection techniques should be introduced, such as removing irrelevant features (like student ID when predicting grades), removing redundant features (like height in both cm and inches), and selecting features that have strong relationships with the target. The concept should be illustrated with examples like predicting whether someone will play sports based on features like age, height, weight, and favorite color (where favorite color might not be relevant). Students should understand how good feature selection can make models simpler and more accurate.
+
+**3.4.4 Understand data splitting**
+- Explain the need to split data into training and testing sets
+- Apply basic data splitting techniques
+- Understand the concept of overfitting and underfitting
+- Recognize the importance of evaluating models on unseen data
+
+**Guidance:** Students should learn that data needs to be split into training sets (used to teach the model) and testing sets (used to evaluate how well the model works on new data). They should understand the concept of overfitting (when a model learns the training data too well, including noise, and doesn't work well on new data) and underfitting (when a model is too simple and doesn't capture the underlying patterns). The concept should be illustrated with analogies like a student who memorizes answers to practice questions but can't solve new problems (overfitting) versus a student who only learns very basic concepts and can't solve complex problems (underfitting). Students should practice splitting simple datasets and understanding why testing on unseen data is important.
+
+###### Topic 5: Model Training and Evaluation
+
+Students will be assessed on their ability to:
+
+**3.5.1 Understand the training process**
+- Explain the concept of training a machine learning model
+- Identify the basic steps in model training
+- Understand how models learn from data
+- Apply basic training concepts to simple algorithms
+
+**Guidance:** Students should understand model training as the process where a machine learning algorithm learns patterns from data. They should learn the basic steps: initializing the model, feeding it training data, allowing it to adjust its internal parameters, and repeating until it performs well. The concept should be illustrated with simple examples like teaching a simple linear regression model to find the best line through data points, or teaching a decision tree to ask the right questions to make predictions. Students should understand that training is an iterative process where the model gradually improves its performance by learning from examples.
+
+**3.5.2 Understand model evaluation metrics**
+- Explain the need for evaluating machine learning models
+- Identify common evaluation metrics for classification (accuracy, precision, recall)
+- Identify common evaluation metrics for regression (mean squared error, R-squared)
+- Apply basic evaluation metrics to simple models
+
+**Guidance:** Students should learn that we need ways to measure how well machine learning models are performing. For classification problems, they should understand accuracy (percentage of correct predictions), precision (how many of the predicted positives are actually positive), and recall (how many of the actual positives were correctly predicted). These concepts should be introduced with simple examples like spam detection. For regression problems, they should understand mean squared error (average of the squared differences between predicted and actual values) and R-squared (how well the model explains the variation in the data). Students should practice calculating these metrics for simple predictions and understanding what the values mean.
+
+**3.5.3 Understand validation techniques**
+- Explain the concept of validation in machine learning
+- Identify common validation techniques (train-test split, cross-validation)
+- Apply basic validation techniques to simple problems
+- Understand the importance of validation in model development
+
+**Guidance:** Students should learn that validation is about ensuring that machine learning models work well on new, unseen data, not just the data they were trained on. They should understand train-test split (where data is divided into training and testing sets) and cross-validation (where data is divided into multiple parts and the model is trained and tested multiple times). The concept should be illustrated with analogies like studying for a test using practice questions (training) and then taking a different test (testing) to see how well you've learned. Students should practice implementing simple train-test splits and understanding why validation helps prevent overfitting.
+
+**3.5.4 Understand model improvement**
+- Explain the concept of improving machine learning models
+- Identify common techniques for model improvement
+- Apply basic model improvement techniques
+- Understand the iterative nature of model development
+
+**Guidance:** Students should learn that building machine learning models is an iterative process of continuous improvement. They should understand common improvement techniques like collecting more data, trying different algorithms, tuning model parameters (called hyperparameters), and improving features. The concept should be illustrated with examples like improving a spam detector by adding more examples, trying a different algorithm, or adjusting how the algorithm makes decisions. Students should understand that model development rarely produces a perfect model on the first try and that experimentation and iteration are key parts of the process.
+
+###### Topic 6: Simple Machine Learning Projects
+
+Students will be assessed on their ability to:
+
+**3.6.1 Build a simple classification model**
+- Apply the machine learning process to a classification problem
+- Use Python libraries to implement a classification model
+- Evaluate the performance of the classification model
+- Interpret the results of the classification model
+
+**Guidance:** Students should apply their knowledge to build a simple classification model using Python and libraries like scikit-learn. The project should be straightforward, such as classifying iris flowers based on their measurements, predicting whether a student will pass or fail based on study hours, or classifying emails as spam or not. Students should follow the complete process: loading data, preprocessing, splitting data, training a model (like decision tree or k-nearest neighbors), evaluating the model, and making predictions. The focus should be on understanding the process and interpreting results rather than on complex programming.
+
+**3.6.2 Build a simple regression model**
+- Apply the machine learning process to a regression problem
+- Use Python libraries to implement a regression model
+- Evaluate the performance of the regression model
+- Interpret the results of the regression model
+
+**Guidance:** Students should apply their knowledge to build a simple regression model using Python and scikit-learn. The project should involve predicting numerical values, such as predicting house prices based on features like size and number of bedrooms, predicting student grades based on study hours, or predicting temperature based on date and location. Students should follow the complete machine learning process and understand how to interpret regression metrics like mean squared error and R-squared. The focus should be on understanding how regression models make numerical predictions and how to evaluate their accuracy.
+
+**3.6.3 Build a simple clustering model**
+- Apply the machine learning process to a clustering problem
+- Use Python libraries to implement a clustering model
+- Evaluate the performance of the clustering model
+- Interpret the results of the clustering model
+
+**Guidance:** Students should apply their knowledge to build a simple clustering model using Python and scikit-learn. The project should involve grouping similar data points without predefined labels, such as clustering customers based on purchasing behavior, grouping similar documents, or clustering countries based on economic indicators. Students should understand how clustering algorithms find natural groupings in data and how to interpret the resulting clusters. The focus should be on understanding unsupervised learning and how to make sense of clustering results.
+
+**3.6.4 Understand real-world applications and limitations**
+- Identify real-world applications of machine learning
+- Recognize the limitations of simple machine learning models
+- Understand the importance of domain knowledge in machine learning
+- Explain the challenges of deploying machine learning models
+
+**Guidance:** Students should explore real-world applications of machine learning beyond the simple projects they've built, such as recommendation systems, autonomous vehicles, medical diagnosis, and natural language processing. They should understand the limitations of simple models, such as difficulty with complex patterns, need for large amounts of data, and challenges with interpretability. The importance of domain knowledge should be emphasized - machine learning works best when combined with expertise in the application area. Students should also learn about the challenges of deploying models in real-world settings, such as computational requirements, data privacy concerns, and the need for ongoing maintenance and monitoring.
+
+#### **Unit 4: Deep Learning Fundamentals** 
+
+##### 4.1 Unit description
+
+This unit introduces students to the fundamental concepts of deep learning, building upon the mathematical foundations, programming skills, and basic machine learning knowledge developed in previous units. Students will explore what deep learning is, how it differs from traditional machine learning, and how neural networks mimic the human brain to solve complex problems. The unit covers neural network basics, activation functions, training processes, and simple deep learning architectures. Emphasis is placed on understanding concepts intuitively and applying them using Python with beginner-friendly deep learning libraries. Students will develop the skills needed to create, train, and evaluate simple neural networks while understanding the transformative potential of deep learning technology.
+
+##### 4.2 Assessment information
+
+• First assessment: January 2020.
+• The assessment is 1 hour and 30 minutes.
+• The assessment is out of 75 marks.
+• Students must answer all questions.
+• Calculators may be used in the examination. Please see Appendix 6: Use of calculators.
+• The booklet Mathematical Formulae and Statistical Tables will be provided for use in the assessments.
+
+##### 4.3 Unit content
+
+###### Topic 1: Introduction to Deep Learning Concepts
+
+Students will be assessed on their ability to:
+
+**4.1.1 Understand what deep learning is**
+- Define deep learning as a subset of machine learning
+- Explain how deep learning differs from traditional machine learning
+- Identify the key characteristics of deep learning
+- Recognize the relationship between deep learning and artificial intelligence
+
+**Guidance:** Students should understand deep learning as a type of machine learning that uses neural networks with many layers to learn from data. They should compare traditional machine learning (which often requires manual feature selection) with deep learning (which automatically learns features from raw data). The key characteristics to emphasize include: multiple layers of processing, automatic feature extraction, ability to handle complex patterns, and need for large amounts of data. The relationship should be shown as AI → Machine Learning → Deep Learning, with deep learning being the most specialized subset. Examples should include how deep learning can recognize images, understand speech, and translate languages more effectively than traditional methods.
+
+**4.1.2 Understand the history and evolution of deep learning**
+- Identify key milestones in deep learning development
+- Explain why deep learning has become popular recently
+- Recognize the contributions of pioneers in the field
+- Understand the role of data and computing power in deep learning advancement
+
+**Guidance:** Students should learn about the evolution of deep learning from early neural networks in the 1940s-1950s, through the AI winters, to the modern deep learning revolution. Key milestones should include: the perceptron (1950s), backpropagation algorithm (1980s), AlexNet winning ImageNet competition (2012), and recent advances. They should understand why deep learning became popular recently due to three main factors: availability of big data, increased computing power (GPUs), and improved algorithms. Pioneers like Geoffrey Hinton, Yann LeCun, and Yoshua Bengio should be mentioned. The concept should be illustrated with analogies like how having more data and better computers allowed deep learning to solve problems that were impossible before.
+
+**4.1.3 Understand real-world applications of deep learning**
+- Identify major application areas of deep learning
+- Explain how deep learning is used in everyday technology
+- Recognize the impact of deep learning on various industries
+- Evaluate the benefits and limitations of deep learning applications
+
+**Guidance:** Students should explore real-world applications of deep learning that they encounter in daily life. Application areas should include: image recognition (photo tagging, facial recognition), speech recognition (voice assistants like Siri/Alexa), natural language processing (translation, chatbots), recommendation systems (Netflix, YouTube), autonomous vehicles, and medical diagnosis. They should understand how these technologies work behind the scenes using deep learning. The impact on industries like healthcare (disease detection), entertainment (content recommendation), transportation (self-driving cars), and communication (translation) should be discussed. Students should also learn about limitations such as the need for large amounts of data, computational requirements, and challenges with interpretability.
+
+**4.1.4 Understand ethical considerations in deep learning**
+- Identify potential biases in deep learning systems
+- Understand the importance of fairness and transparency
+- Recognize privacy concerns with deep learning applications
+- Explain the need for responsible AI development
+
+**Guidance:** Students should learn that deep learning systems, like all AI systems, can have ethical challenges. They should understand how biases in training data can lead to biased AI systems (like facial recognition that works better for certain demographics). The importance of fairness in AI applications should be emphasized, with examples like hiring algorithms or loan approval systems. Privacy concerns should be discussed in terms of how deep learning models often require large amounts of personal data. The concept of transparency should be introduced as the ability to understand why a deep learning model made a particular decision. Students should discuss the importance of developing AI responsibly and considering the societal impact of these technologies.
+
+###### Topic 2: Neural Network Basics
+
+Students will be assessed on their ability to:
+
+**4.2.1 Understand the structure of neural networks**
+- Explain the basic structure of artificial neural networks
+- Identify the components of a neural network (neurons, layers, weights, biases)
+- Understand how neural networks are inspired by the human brain
+- Compare artificial neurons to biological neurons
+
+**Guidance:** Students should understand neural networks as computing systems inspired by the human brain's biological neural networks. They should learn the basic components: neurons (nodes that process information), layers (input layer, hidden layers, output layer), weights (connection strengths between neurons), and biases (threshold values). The comparison to biological neurons should include: dendrites (inputs), cell body (processing), axon (output), and synapses (connections). The concept should be illustrated with simple diagrams showing how information flows from input to output through the network. Students should understand that artificial neurons are simplified versions of biological neurons but follow similar principles of receiving inputs, processing them, and producing outputs.
+
+**4.2.2 Understand how neurons process information**
+- Explain the process of information flow in a neuron
+- Understand the concept of weighted inputs and activation
+- Identify the role of activation functions in neurons
+- Apply simple neuron calculations to basic problems
+
+**Guidance:** Students should learn how individual neurons process information through a series of steps: receiving inputs, multiplying each input by a weight, summing the weighted inputs, adding a bias, and applying an activation function to produce the output. The concept should be illustrated with simple examples like a neuron that decides whether to go outside based on inputs like weather, temperature, and homework status. Each input would have a weight (importance), and the neuron would combine them to make a decision. Activation functions should be introduced as decision-making thresholds that determine whether the neuron "fires" (produces output) or not. Students should practice simple calculations with basic activation functions like step functions.
+
+**4.2.3 Understand activation functions**
+- Explain the purpose of activation functions in neural networks
+- Identify common activation functions (step, sigmoid, ReLU)
+- Understand how different activation functions affect neuron behavior
+- Apply activation functions to simple neural network problems
+
+**Guidance:** Students should understand activation functions as mathematical functions that determine whether a neuron should be activated or not. They should learn about common activation functions: step function (simple on/off), sigmoid function (smooth curve between 0 and 1), and ReLU (Rectified Linear Unit - outputs 0 for negative inputs, passes positive inputs unchanged). The concept should be illustrated with visual examples showing how each function transforms inputs into outputs. Students should understand why activation functions are necessary (to introduce non-linearity and allow neural networks to learn complex patterns). They should practice applying different activation functions to simple problems and understand how the choice of activation function affects the network's behavior.
+
+**4.2.4 Understand network architectures and layers**
+- Explain the concept of network depth in deep learning
+- Identify different types of layers in neural networks
+- Understand how information flows through network layers
+- Design simple neural network architectures for basic problems
+
+**Guidance:** Students should learn that the "deep" in deep learning refers to networks with many layers (deep architectures). They should understand different types of layers: input layer (receives data), hidden layers (process information), and output layer (produces results). The concept of feedforward networks (information flows in one direction from input to output) should be introduced. Students should understand how adding more layers allows networks to learn increasingly complex patterns, like how recognizing a face might require layers that detect edges, then shapes, then facial features, then complete faces. They should practice designing simple network architectures for problems like predicting grades based on study hours and previous grades.
+
+###### Topic 3: Basic Deep Learning Architectures
+
+Students will be assessed on their ability to:
+
+**4.3.1 Understand feedforward neural networks**
+- Define feedforward neural networks and their characteristics
+- Explain how information flows in feedforward networks
+- Identify the components of feedforward networks
+- Apply feedforward networks to simple classification problems
+
+**Guidance:** Students should understand feedforward neural networks as the simplest type of neural network where information flows in only one direction: from input to output. They should learn that these networks consist of an input layer, one or more hidden layers, and an output layer, with no loops or cycles. The concept should be illustrated with examples like using a feedforward network to classify handwritten digits or predict whether a student will pass a test based on study hours. Students should understand the forward propagation process: inputs are multiplied by weights, summed, passed through activation functions, and this process repeats through each layer until the final output is produced. They should practice designing simple feedforward networks for basic classification and regression problems.
+
+**4.3.2 Understand convolutional neural networks (CNNs)**
+- Define convolutional neural networks and their purpose
+- Explain how CNNs are designed for image and spatial data
+- Identify key components of CNNs (convolutional layers, pooling layers)
+- Recognize applications of CNNs in image processing
+
+**Guidance:** Students should understand CNNs as specialized neural networks designed for processing grid-like data such as images. They should learn that CNNs are inspired by the visual cortex in animals and are particularly effective for image recognition tasks. Key components to introduce include: convolutional layers (that detect features like edges, textures, shapes), pooling layers (that reduce dimensionality and highlight important features), and fully connected layers (that make final classifications). The concept should be illustrated with examples like how CNNs can recognize cats in photos by first detecting simple features, then combining them into more complex features. Real-world applications should include facial recognition, object detection in self-driving cars, and medical image analysis.
+
+**4.3.3 Understand recurrent neural networks (RNNs)**
+- Define recurrent neural networks and their purpose
+- Explain how RNNs handle sequential data
+- Identify the key feature of RNNs (memory/feedback loops)
+- Recognize applications of RNNs in sequence processing
+
+**Guidance:** Students should understand RNNs as neural networks designed for processing sequential data like text, speech, or time series. They should learn that the key feature of RNNs is their ability to maintain a "memory" of previous inputs through feedback loops, allowing them to understand context and sequences. The concept should be illustrated with examples like understanding the meaning of sentences where words depend on previous words, or predicting stock prices based on historical data. Students should understand how RNNs process sequences step by step, maintaining an internal state that captures information from previous steps. Applications should include language translation, speech recognition, text generation, and time series prediction.
+
+**4.3.4 Compare different neural network architectures**
+- Identify the key differences between feedforward, CNN, and RNN architectures
+- Determine which architecture is appropriate for different types of problems
+- Explain the strengths and limitations of each architecture
+- Recognize hybrid approaches that combine multiple architectures
+
+**Guidance:** Students should learn to distinguish between different neural network architectures based on the type of data they process and the problems they solve. They should understand that feedforward networks are general-purpose but work best with structured data, CNNs excel at image and spatial data, and RNNs are designed for sequential data. The strengths and limitations of each should be discussed: feedforward networks are simple but may struggle with complex patterns, CNNs are powerful for images but require lots of data, RNNs handle sequences but can be difficult to train. Students should practice matching problems to appropriate architectures (e.g., image classification → CNN, text analysis → RNN, simple prediction → feedforward). The concept of hybrid architectures (like CNN-RNN combinations for video analysis) should be briefly introduced.
+
+###### Topic 4: Training Deep Learning Models
+
+Students will be assessed on their ability to:
+
+**4.4.1 Understand the training process**
+- Explain the concept of training neural networks
+- Identify the basic steps in the training process
+- Understand the role of data in training
+- Recognize the iterative nature of neural network training
+
+**Guidance:** Students should understand training as the process of teaching a neural network by showing it examples and allowing it to adjust its internal parameters (weights and biases) to improve its performance. The basic steps should include: preparing training data, initializing the network, making predictions, calculating errors, and adjusting weights. The concept should be illustrated with analogies like teaching a student through practice problems and feedback. Students should understand that training is iterative - the network goes through the data multiple times (epochs), gradually improving its performance. They should learn that more data generally leads to better training, but the quality and diversity of data also matter.
+
+**4.4.2 Understand loss functions and optimization**
+- Explain the purpose of loss functions in training
+- Identify common loss functions (mean squared error, cross-entropy)
+- Understand the concept of optimization in neural networks
+- Explain how neural networks minimize loss through weight adjustments
+
+**Guidance:** Students should understand loss functions as measures of how well the neural network is performing - they calculate the difference between predicted outputs and actual outputs. Common loss functions should include: mean squared error (for regression problems) and cross-entropy (for classification problems). The concept should be illustrated with simple examples like predicting test scores and measuring how far off the predictions are. Optimization should be introduced as the process of adjusting weights to minimize the loss function, like finding the lowest point in a hilly landscape. Students should understand that this is done using algorithms like gradient descent, which gradually adjusts weights in the direction that reduces the error.
+
+**4.4.3 Understand backpropagation**
+- Explain the concept of backpropagation in simple terms
+- Understand how backpropagation adjusts network weights
+- Recognize backpropagation as the key algorithm for training neural networks
+- Apply the concept of backpropagation to simple network examples
+
+**Guidance:** Students should understand backpropagation as the algorithm that allows neural networks to learn from their mistakes. The concept should be explained simply as: the network makes a prediction, calculates how wrong it was (loss), and then propagates this error backward through the network to determine how much each weight contributed to the error. Weights are then adjusted to reduce future errors. The concept should be illustrated with analogies like a student who makes a mistake on a test, then works backward to understand which concepts they need to study more. Students should understand that backpropagation is essentially the chain rule from calculus applied to neural networks, but the focus should be on the intuitive understanding rather than the mathematical details.
+
+**4.4.4 Understand overfitting and regularization**
+- Explain the concept of overfitting in neural networks
+- Identify signs of overfitting in model performance
+- Understand techniques to prevent overfitting (regularization, dropout)
+- Apply simple regularization techniques to improve model generalization
+
+**Guidance:** Students should understand overfitting as when a neural network learns the training data too well, including noise and random variations, but fails to perform well on new, unseen data. The concept should be illustrated with analogies like a student who memorizes practice test answers instead of learning the concepts, then fails when given different questions. Signs of overfitting should include: perfect performance on training data but poor performance on test data. Techniques to prevent overfitting should include: regularization (adding penalties for complex models), dropout (randomly turning off neurons during training), and early stopping (stopping training when performance on validation data starts to degrade). Students should understand the balance between fitting the training data well and generalizing to new data.
+
+###### Topic 5: Deep Learning Applications and Tools
+
+Students will be assessed on their ability to:
+
+**4.5.1 Understand deep learning frameworks and tools**
+- Identify popular deep learning frameworks (TensorFlow, PyTorch, Keras)
+- Explain the benefits of using frameworks for deep learning
+- Understand the basic workflow of using deep learning frameworks
+- Choose appropriate frameworks for different types of projects
+
+**Guidance:** Students should learn about popular deep learning frameworks that make it easier to build and train neural networks. TensorFlow and PyTorch should be introduced as the most widely used frameworks, with Keras as a high-level API that runs on top of TensorFlow. The benefits of using frameworks should include: pre-built components, automatic differentiation, GPU acceleration, and large communities. The basic workflow should be understood as: defining the model architecture, compiling the model (choosing optimizer and loss function), training the model with data, and evaluating performance. Students should understand when to choose each framework: TensorFlow for production deployment, PyTorch for research flexibility, and Keras for beginners and rapid prototyping.
+
+**4.5.2 Understand computer vision applications**
+- Explain how deep learning is used in computer vision
+- Identify common computer vision tasks (image classification, object detection)
+- Understand the role of CNNs in computer vision
+- Recognize real-world applications of computer vision
+
+**Guidance:** Students should explore how deep learning, particularly CNNs, has revolutionized computer vision - the ability of computers to understand and interpret visual information from the world. Common computer vision tasks should include: image classification (identifying what's in an image), object detection (finding and locating objects in images), and image segmentation (dividing images into meaningful regions). The role of CNNs should be emphasized as the key technology that made modern computer vision possible. Real-world applications should include: self-driving cars (detecting pedestrians, signs, and other vehicles), medical imaging (detecting diseases in X-rays and MRIs), facial recognition (unlocking phones, security systems), and augmented reality (overlaying digital information on the real world).
+
+**4.5.3 Understand natural language processing applications**
+- Explain how deep learning is used in natural language processing
+- Identify common NLP tasks (text classification, translation, sentiment analysis)
+- Understand the role of RNNs and transformers in NLP
+- Recognize real-world applications of NLP
+
+**Guidance:** Students should learn how deep learning has transformed natural language processing - enabling computers to understand, interpret, and generate human language. Common NLP tasks should include: text classification (categorizing documents), machine translation (translating between languages), sentiment analysis (determine if text is positive or negative), and text generation (creating human-like text). The role of RNNs and newer architectures like transformers should be introduced as the technologies that power modern NLP. Real-world applications should include: language translation apps (Google Translate), voice assistants (Siri, Alexa), chatbots and virtual assistants, spam email detection, and content moderation on social media platforms.
+
+**4.5.4 Understand other deep learning applications**
+- Identify emerging applications of deep learning in various fields
+- Explain how deep learning is used in recommendation systems
+- Understand applications in audio processing and speech recognition
+- Recognize the potential of deep learning in scientific research
+
+**Guidance:** Students should explore the wide range of deep learning applications beyond computer vision and NLP. Recommendation systems (like those used by Netflix, YouTube, and Amazon) should be explained as systems that learn user preferences to suggest content. Audio processing applications should include speech recognition (converting speech to text), music generation, and audio classification. Other emerging applications should cover: gaming (AI that plays games like Go and chess at superhuman levels), scientific research (drug discovery, climate modeling, particle physics), finance (fraud detection, stock market prediction), and creative applications (art generation, music composition, video synthesis). Students should understand how deep learning is transforming virtually every field by finding patterns in data that humans cannot easily detect.
+
+###### Topic 6: Simple Deep Learning Projects
+
+Students will be assessed on their ability to:
+
+**4.6.1 Build a simple neural network for classification**
+- Apply deep learning concepts to build a classification model
+- Use Python and deep learning frameworks to implement a neural network
+- Train and evaluate the classification model
+- Interpret the results of the classification model
+
+**Guidance:** Students should apply their knowledge to build a simple neural network for a classification task using Python and frameworks like TensorFlow/Keras or PyTorch. The project should be straightforward, such as classifying handwritten digits (MNIST dataset), classifying iris flowers based on measurements, or classifying emotions based on text. Students should follow the complete deep learning workflow: loading and preprocessing data, defining the neural network architecture, compiling the model, training it on data, evaluating its performance, and making predictions on new data. The focus should be on understanding the process and interpreting results rather than on achieving state-of-the-art performance.
+
+**4.6.2 Build a simple neural network for regression**
+- Apply deep learning concepts to build a regression model
+- Use Python and deep learning frameworks to implement a neural network
+- Train and evaluate the regression model
+- Interpret the results of the regression model
+
+**Guidance:** Students should apply their knowledge to build a simple neural network for a regression task - predicting continuous numerical values. The project could involve predicting house prices based on features like size and location, predicting student grades based on study hours and previous grades, or predicting temperature based on historical data. Students should understand the differences between classification and regression tasks, including different output layer activations (linear for regression vs. softmax for classification) and different loss functions (mean squared error for regression vs. cross-entropy for classification). They should practice interpreting regression metrics like mean absolute error and R-squared.
+
+**4.6.3 Experiment with hyperparameter tuning**
+- Explain the concept of hyperparameters in neural networks
+- Identify common hyperparameters (learning rate, number of layers, number of neurons)
+- Apply basic hyperparameter tuning techniques
+- Understand the impact of hyperparameters on model performance
+
+**Guidance:** Students should learn about hyperparameters as the settings that control the learning process and architecture of neural networks, as opposed to parameters (weights and biases) that are learned during training. Common hyperparameters should include: learning rate (how much to adjust weights during training), number of hidden layers, number of neurons per layer, batch size (how many samples to process before updating weights), and number of epochs (how many times to go through the training data). Students should practice experimenting with different hyperparameter values and observing how they affect model performance. The concept should be illustrated with analogies like adjusting the difficulty level of a video game to find the right challenge level.
+
+**4.6.4 Understand model deployment and monitoring**
+- Explain the concept of deploying deep learning models
+- Identify common deployment scenarios (web applications, mobile apps)
+- Understand the importance of monitoring model performance
+- Recognize the challenges of maintaining deployed models
+
+**Guidance:** Students should learn that building a deep learning model is only the first step - models need to be deployed to be useful in real-world applications. Deployment scenarios should include: web applications (models that run on servers and provide predictions through APIs), mobile applications (models that run directly on phones and tablets), and edge devices (models that run on IoT devices and sensors). The importance of monitoring should be emphasized as models can degrade over time as data patterns change (concept drift). Challenges should include: computational requirements, latency requirements (how quickly predictions are needed), privacy concerns, and the need for regular updates and retraining. Students should understand the complete lifecycle of deep learning models from development to deployment to maintenance.
+
 #### **Unit 5: Computer Systems & Hardware Basics**  
+
+##### 5.1 Unit description
+
+This unit introduces students to the fundamental concepts of computer systems and hardware, providing comprehensive knowledge of how computers work at the physical level. As the only hardware-focused unit in the curriculum, it covers everything from basic computer architecture to specific hardware components, with special emphasis on AMD hardware for AI applications. Students will explore the internal workings of computers, understand how different components interact, and learn about hardware considerations for artificial intelligence and machine learning. The unit progresses from basic concepts to more complex topics, ensuring students develop complete mastery of computer hardware fundamentals while maintaining accessibility for beginners.
+
+##### 5.2 Assessment information
+
+• First assessment: June 2020.
+• The assessment is 1 hour and 30 minutes.
+• The assessment is out of 75 marks.
+• Students must answer all questions.
+• Calculators may be used in the examination. Please see Appendix 6: Use of calculators.
+• The booklet Mathematical Formulae and Statistical Tables will be provided for use in the assessments.
+
+##### 5.3 Unit content
+
+###### Topic 1: Introduction to Computer Systems
+
+Students will be assessed on their ability to:
+
+**5.1.1 Understand what a computer system is**
+- Define a computer system as a combination of hardware and software
+- Explain the relationship between hardware, software, and users
+- Identify different types of computer systems (desktop, laptop, mobile, server)
+- Understand the purpose of computer systems in modern society
+
+**Guidance:** Students should understand computer systems as complete systems that include both physical components (hardware) and programs (software) that work together to process information. They should learn that hardware refers to the physical parts you can touch, while software refers to the programs and instructions that tell the hardware what to do. Different types of computer systems should be introduced: desktop computers (stationary, powerful), laptops (portable, integrated), mobile devices (phones, tablets), and servers (powerful computers that provide services to other computers). The purpose of computer systems in society should be discussed with examples like communication, entertainment, education, and work.
+
+**5.1.2 Understand basic computer architecture**
+- Explain the von Neumann architecture concept
+- Identify the four main functions of a computer (input, processing, storage, output)
+- Understand how data flows through a computer system
+- Apply the concept of computer architecture to simple problems
+
+**Guidance:** Students should learn about the von Neumann architecture as the fundamental design principle of most modern computers, where programs and data are stored in the same memory. The four main functions should be explained simply: input (getting data into the computer), processing (performing operations on data), storage (saving data for later use), and output (presenting results to users). Data flow should be illustrated with examples like typing a document (input through keyboard), the computer processing and storing it, then displaying it on screen (output). Students should practice tracing how data moves through a computer system for everyday tasks like playing a game or sending an email.
+
+**5.1.3 Understand the relationship between hardware and software**
+- Explain how hardware and software depend on each other
+- Identify different types of software (system software, application software)
+- Understand how software instructions are executed by hardware
+- Apply the concept of hardware-software interaction to real-world examples
+
+**Guidance:** Students should understand that hardware and software work together like a team - hardware is the physical machine, software is the set of instructions that tells the hardware what to do. They should learn about system software (like operating systems that manage the computer) and application software (like games, web browsers, or word processors that perform specific tasks). The concept should be illustrated with analogies like a CD player (hardware) and music CDs (software) - you need both to play music. Students should understand that software instructions are translated into electrical signals that the hardware can execute. Examples should include how clicking a button in software leads to hardware operations.
+
+**5.1.4 Understand computer performance basics**
+- Explain what computer performance means
+- Identify factors that affect computer performance
+- Understand basic performance metrics (speed, capacity, responsiveness)
+- Apply performance concepts to evaluate simple computer systems
+
+**Guidance:** Students should learn that computer performance refers to how well a computer system works and how quickly it can complete tasks. Factors affecting performance should include: processor speed, amount of memory, storage type and speed, and efficiency of software. Basic metrics should be introduced in simple terms: speed (how fast the computer works), capacity (how much it can store), and responsiveness (how quickly it reacts to user input). The concept should be illustrated with everyday examples like why some computers start up faster than others, or why some can run multiple programs smoothly while others slow down. Students should practice identifying performance factors in different scenarios like gaming, video editing, or web browsing.
+
+###### Topic 2: Central Processing Unit (CPU)
+
+Students will be assessed on their ability to:
+
+**5.2.1 Understand the CPU and its function**
+- Define the CPU as the "brain" of the computer
+- Explain the main functions of the CPU (executing instructions, performing calculations)
+- Identify the physical characteristics of CPUs
+- Understand how the CPU coordinates all computer operations
+
+**Guidance:** Students should understand the CPU (Central Processing Unit) as the primary component that performs most of the processing inside a computer, often called the "brain" because it controls all other parts. The main functions should be explained simply: executing instructions from software programs and performing mathematical and logical calculations. Physical characteristics should include size (small, square chip), location (on the motherboard), and appearance (metal square with many connectors). Students should learn that the CPU coordinates all computer operations by sending and receiving signals to and from other components. The concept should be illustrated with analogies like the conductor of an orchestra or the coach of a sports team.
+
+**5.2.2 Understand CPU components and architecture**
+- Identify the main components of a CPU (control unit, ALU, registers)
+- Explain the function of each CPU component
+- Understand how CPU components work together
+- Apply CPU architecture concepts to simple processing scenarios
+
+**Guidance:** Students should learn about the three main components of a CPU: the control unit (directs operations, like a traffic cop), the ALU (Arithmetic Logic Unit - performs math and logic operations, like a calculator), and registers (small, fast storage areas inside the CPU, like short-term memory). Each component's function should be explained with simple analogies: control unit as a manager giving instructions, ALU as a worker performing calculations, and registers as a worker's immediate workspace. Students should understand how these components work together in a cycle: fetch instructions from memory, decode what they mean, execute the operations, and store results. Examples should include simple calculations like 2+2 or logical decisions like "if A is greater than B".
+
+**5.2.3 Understand CPU specifications and performance**
+- Explain CPU speed and how it's measured (GHz)
+- Identify factors that affect CPU performance (cores, cache, clock speed)
+- Understand the difference between different CPU types
+- Apply CPU specifications to evaluate processor capabilities
+
+**Guidance:** Students should learn that CPU speed is measured in Gigahertz (GHz), which represents billions of cycles per second - basically how many instructions the CPU can process in one second. Factors affecting performance should include: number of cores (multiple processing units like multiple workers), cache size (small, fast memory built into the CPU), and clock speed (how fast the CPU ticks). Different CPU types should be introduced in simple terms: basic processors for everyday tasks, high-performance processors for gaming and professional work. Students should practice comparing CPUs based on specifications and understanding what makes one CPU better than another for specific tasks like gaming versus web browsing.
+
+**5.2.4 Understand AMD CPU architecture and features**
+- Identify AMD as a major CPU manufacturer
+- Explain key AMD CPU technologies (Ryzen, EPYC)
+- Understand AMD CPU architecture concepts (cores, threads, cache)
+- Compare AMD CPUs with other processor types
+
+**Guidance:** Students should learn about AMD as one of the major companies that makes CPUs, along with their main processor lines: Ryzen for consumers (gaming, everyday computing) and EPYC for servers and data centers. Key AMD technologies should be introduced simply: multi-core processing (having multiple processing units), simultaneous multithreading (handling multiple tasks at once), and smart prefetching (predicting what data will be needed next). AMD CPU architecture concepts should be explained in simple terms: cores as individual workers, threads as tasks each worker can handle, and cache as super-fast memory built into the CPU. Students should understand what makes AMD CPUs unique, such as their focus on multi-core performance and value. Comparisons should highlight differences in performance, power efficiency, and price.
+
+###### Topic 3: Memory and Storage Systems
+
+Students will be assessed on their ability to:
+
+**5.3.1 Understand computer memory types**
+- Explain the difference between memory and storage
+- Identify different types of memory (RAM, ROM, cache)
+- Understand the purpose of each memory type
+- Apply memory concepts to computer performance scenarios
+
+**Guidance:** Students should understand the difference between memory (temporary, fast storage for active data) and storage (permanent, slower storage for files and programs). Memory types should be introduced: RAM (Random Access Memory - temporary working memory that loses data when power is off), ROM (Read-Only Memory - permanent memory that stores essential startup instructions), and cache (super-fast memory built into the CPU for frequently used data). The purpose of each should be explained with analogies: RAM as a workbench, ROM as a reference book that never changes, and cache as the worker's most commonly used tools kept within reach. Students should practice identifying how different memory types affect computer performance, such as how more RAM allows more programs to run smoothly.
+
+**5.3.2 Understand RAM (Random Access Memory)**
+- Explain the function of RAM in computer systems
+- Identify different types of RAM (DDR3, DDR4, DDR5)
+- Understand how RAM capacity affects performance
+- Apply RAM concepts to real-world computing scenarios
+
+**Guidance:** Students should learn that RAM is the computer's main working memory where programs and data are stored while actively being used. They should understand that RAM is volatile (loses data when power is off) but much faster than storage drives. Different types of RAM should be introduced as generations that get faster and more efficient: DDR3 (older), DDR4 (current standard), DDR5 (newest and fastest). The concept of RAM capacity should be explained in simple terms: more RAM allows more programs to run at once and allows larger files to be worked with efficiently. Real-world scenarios should include gaming (needing more RAM for complex games), video editing (requiring lots of RAM for large video files), and multitasking (running multiple applications simultaneously).
+
+**5.3.3 Understand storage devices and technologies**
+- Explain the purpose of storage in computer systems
+- Identify different types of storage (HDD, SSD, NVMe)
+- Understand the characteristics of each storage type
+- Apply storage concepts to choose appropriate storage solutions
+
+**Guidance:** Students should learn that storage devices hold data permanently even when the computer is turned off. Different storage types should be introduced: HDD (Hard Disk Drive - traditional storage with spinning magnetic platters), SSD (Solid State Drive - newer storage with no moving parts, much faster), and NVMe (even faster SSDs that connect directly to the motherboard). Characteristics should include speed (SSD much faster than HDD), durability (SSD more durable since no moving parts), capacity (both come in various sizes), and cost (HDD generally cheaper per gigabyte). Students should practice choosing appropriate storage for different needs: HDD for storing lots of large files cheaply, SSD for fast boot times and application loading, NVMe for professional video editing and gaming.
+
+**5.3.4 Understand memory hierarchy and performance**
+- Explain the concept of memory hierarchy
+- Identify the levels of memory hierarchy (registers, cache, RAM, storage)
+- Understand how memory hierarchy affects system performance
+- Apply memory hierarchy concepts to optimize computer performance
+
+**Guidance:** Students should understand memory hierarchy as the arrangement of different types of memory based on speed, cost, and capacity. The levels should be explained in order from fastest to slowest: registers (inside CPU, fastest but smallest), cache (built into CPU, very fast), RAM (main memory, fast but slower than cache), and storage (permanent, largest but slowest). The concept should be illustrated with a pyramid diagram showing the trade-off between speed and capacity. Students should understand how this hierarchy affects performance: data moves up the hierarchy when needed (from storage to RAM to cache to registers) and down when saved. Real-world applications should include understanding why adding more RAM improves performance (reducing the need to access slow storage) and why cache is important for CPU efficiency.
+
+###### Topic 4: Graphics Processing Units (GPUs)
+
+Students will be assessed on their ability to:
+
+**5.4.1 Understand the GPU and its function**
+- Define the GPU as a specialized processor for graphics and parallel computing
+- Explain the main functions of the GPU (rendering graphics, parallel processing)
+- Identify the physical characteristics of GPUs
+- Understand how GPUs differ from CPUs
+
+**Guidance:** Students should understand the GPU (Graphics Processing Unit) as a specialized processor designed primarily for handling graphics and visual data, but also very effective at certain types of mathematical calculations. The main functions should be explained: rendering graphics (creating images, videos, and animations) and parallel processing (performing many calculations simultaneously). Physical characteristics should include appearance (circuit board with processor chip and memory chips), location (plugged into motherboard or connected externally), and size (can range from small integrated chips to large dedicated cards). The difference from CPUs should be emphasized: CPUs are general-purpose processors good at sequential tasks, while GPUs are specialized processors with many cores designed for parallel tasks.
+
+**5.4.2 Understand GPU architecture and components**
+- Identify the main components of a GPU (streaming processors, memory, cooling)
+- Explain how GPU architecture enables parallel processing
+- Understand the concept of CUDA cores and stream processors
+- Apply GPU architecture concepts to graphics and computing scenarios
+
+**Guidance:** Students should learn about GPU components: streaming processors (many small processing units that work in parallel), dedicated memory (VRAM - Video RAM specifically for the GPU), and cooling systems (fans or heat sinks because GPUs generate a lot of heat). GPU architecture should be explained as having hundreds or thousands of small processors that can work on different parts of a problem simultaneously, unlike CPUs which have fewer, more powerful processors optimized for sequential tasks. The concept of CUDA cores (NVIDIA) and stream processors (AMD) should be introduced simply as the individual workers in the GPU's workforce. Examples should include how GPUs can render complex 3D scenes by having different processors work on different parts of the image simultaneously.
+
+**5.4.3 Understand AMD GPU architecture and technologies**
+- Identify AMD as a major GPU manufacturer
+- Explain AMD GPU technologies (Radeon, RDNA architecture)
+- Understand AMD GPU architecture concepts (compute units, stream processors)
+- Compare AMD GPUs with other graphics solutions
+
+**Guidance:** Students should learn about AMD as a major manufacturer of GPUs, competing with companies like NVIDIA. AMD's main GPU lines should be introduced: Radeon for consumers (gaming, creative work) and professional Radeon for workstation use. The RDNA (Radeon DNA) architecture should be explained as AMD's modern GPU design that focuses on performance and efficiency. Key AMD GPU concepts should include: compute units (groups of stream processors that work together), stream processors (individual processing units), and infinity cache (smart memory technology that improves performance). Students should understand what makes AMD GPUs unique, such as their focus on open-source technologies, good price-to-performance ratios, and strong support for Linux and developer communities.
+
+**5.4.4 Understand GPU applications beyond graphics**
+- Explain how GPUs are used for general-purpose computing (GPGPU)
+- Identify applications of GPUs in AI and machine learning
+- Understand the role of GPUs in scientific computing
+- Apply GPU computing concepts to real-world problem-solving
+
+**Guidance:** Students should learn that GPUs are increasingly used for more than just graphics - they're powerful tools for general-purpose computing (GPGPU - General-Purpose computing on GPUs). Applications in AI and machine learning should be emphasized: training neural networks, processing large datasets, and running complex simulations that require massive parallel processing. Scientific computing applications should include weather forecasting, climate modeling, drug discovery, and physics simulations. The concept should be illustrated with examples like how GPUs can train AI models much faster than CPUs by performing thousands of calculations simultaneously. Students should understand why GPUs are essential for modern AI development and how they're changing what's possible in scientific research.
+
+###### Topic 5: Motherboards and System Integration
+
+Students will be assessed on their ability to:
+
+**5.5.1 Understand the motherboard and its function**
+- Define the motherboard as the main circuit board of a computer
+- Explain the motherboard's role in connecting all components
+- Identify the physical characteristics of motherboards
+- Understand how motherboards enable communication between components
+
+**Guidance:** Students should understand the motherboard as the main circuit board that connects all computer components together, like the foundation and nervous system of a computer. Its role should be explained as providing the electrical connections and pathways that allow the CPU, memory, storage, and other components to communicate with each other. Physical characteristics should include size (large, flat circuit board), appearance (green or other colored board with many circuits and connectors), and location (main component inside the computer case). Students should learn how motherboards enable communication through buses (electrical pathways), slots (where components plug in), and chips (controllers that manage data flow). The concept should be illustrated with analogies like a city's road system connecting different buildings and neighborhoods.
+
+**5.5.2 Understand motherboard components and connectors**
+- Identify key motherboard components (chipset, BIOS/UEFI, power connectors)
+- Explain the function of essential motherboard connectors
+- Understand how components connect to the motherboard
+- Apply motherboard knowledge to build simple computer systems
+
+**Guidance:** Students should learn about key motherboard components: chipset (manages data flow between components), BIOS/UEFI (firmware that starts the computer and manages hardware), and power connectors (provide electricity to the motherboard). Essential connectors should include: CPU socket (where the CPU plugs in), RAM slots (for memory modules), SATA ports (for storage drives), USB headers (for USB ports), and expansion slots (for add-on cards like GPUs). Students should understand how each component connects to the motherboard and why proper connections are important. The concept should be applied to building simple computer systems, understanding which components need to be connected and how they work together.
+
+**5.5.3 Understand expansion cards and peripherals**
+- Explain the purpose of expansion cards
+- Identify common types of expansion cards (GPU, sound card, network card)
+- Understand how expansion cards enhance computer capabilities
+- Apply expansion card concepts to upgrade computer systems
+
+**Guidance:** Students should learn that expansion cards are circuit boards that plug into motherboard expansion slots to add or enhance computer capabilities. Common types should include: GPU (graphics processing), sound card (improves audio quality), network card (enables network connectivity), and capture cards (for video input). The purpose of each should be explained simply: GPUs for better graphics and gaming, sound cards for better audio quality, network cards for internet connectivity, and capture cards for recording video. Students should understand how expansion cards allow computers to be customized and upgraded for specific needs. Examples should include upgrading a basic computer for gaming by adding a powerful GPU, or adding a sound card for music production.
+
+**5.5.4 Understand system integration and compatibility**
+- Explain the concept of system compatibility
+- Identify factors that affect component compatibility
+- Understand how to ensure components work together
+- Apply compatibility concepts to design balanced computer systems
+
+**Guidance:** Students should learn about system compatibility as ensuring that all computer components work together properly. Factors affecting compatibility should include: CPU socket type (must match motherboard), RAM type (must match motherboard slots), power supply capacity (must provide enough power for all components), and physical size (components must fit in the case). Students should understand how to check compatibility by looking at specifications and ensuring that components match each other's requirements. The concept should be applied to designing balanced computer systems, where components are chosen to work well together without bottlenecks (like having a powerful CPU but weak GPU, or vice versa). Examples should include building computers for different purposes: gaming, office work, or content creation.
+
+###### Topic 6: Input/Output Devices and Peripherals
+
+Students will be assessed on their ability to:
+
+**5.6.1 Understand input devices and their functions**
+- Define input devices as hardware that sends data to computers
+- Identify common input devices (keyboard, mouse, microphone, camera)
+- Explain how different input devices work
+- Apply input device knowledge to solve user interaction problems
+
+**Guidance:** Students should understand input devices as hardware that allow users to send data and commands to computers. Common input devices should include: keyboard (for typing text and commands), mouse (for pointing and clicking), microphone (for audio input), camera (for visual input), scanner (for digitizing documents), and touchscreen (for direct interaction). How each device works should be explained simply: keyboards convert key presses to electrical signals, mice track movement and clicks, microphones convert sound waves to digital data, cameras capture light as digital images, and touchscreens detect finger or stylus position. Students should practice choosing appropriate input devices for different scenarios, like selecting input devices for gaming, office work, or creative applications.
+
+**5.6.2 Understand output devices and their functions**
+- Define output devices as hardware that presents information from computers
+- Identify common output devices (monitor, printer, speakers, projector)
+- Explain how different output devices work
+- Apply output device knowledge to solve information display problems
+
+**Guidance:** Students should understand output devices as hardware that present or display information processed by the computer. Common output devices should include: monitor/ display (for visual output), printer (for paper copies), speakers (for audio output), projector (for large-scale display), and haptic feedback devices (for touch feedback). How each device works should be explained simply: monitors display pixels that form images, printers transfer digital data to paper using ink or toner, speakers convert digital audio signals to sound waves, and projectors shine light through LCD or DLP panels to create large images. Students should practice choosing appropriate output devices for different needs, like selecting displays for gaming, printers for document production, or audio systems for multimedia applications.
+
+**5.6.3 Understand input/output interfaces and protocols**
+- Explain how input/output devices connect to computers
+- Identify common I/O interfaces (USB, HDMI, Bluetooth, Wi-Fi)
+- Understand the characteristics of different connection types
+- Apply I/O interface knowledge to setup computer systems
+
+**Guidance:** Students should learn about the various ways input/output devices connect to computers. Common interfaces should include: USB (Universal Serial Bus - for connecting most peripherals), HDMI (High-Definition Multimedia Interface - for video and audio), Bluetooth (wireless short-range connection), and Wi-Fi (wireless network connection). Characteristics of each should be explained: USB (versatile, plug-and-play, different speeds), HDMI (high-quality video and audio, single cable), Bluetooth (wireless, short range, low power), and Wi-Fi (wireless network, longer range, higher power). Students should understand how to choose the right interface for different devices and scenarios, like using HDMI for high-quality video output or Bluetooth for wireless mice and keyboards.
+
+**5.6.4 Understand human-computer interaction concepts**
+- Explain how humans interact with computers
+- Identify different interaction models (command-line, graphical, touch, voice)
+- Understand the evolution of human-computer interfaces
+- Apply interaction concepts to design user-friendly systems
+
+**Guidance:** Students should learn about the different ways humans interact with computers and how these interactions have evolved over time. Interaction models should include: command-line (typing text commands), graphical user interface (GUI - windows, icons, menus), touch interface (direct manipulation with fingers), voice interface (speaking commands), and gesture interface (hand and body movements). The evolution should be traced from early text-based interfaces to modern voice and gesture recognition. Students should understand how different interaction models suit different needs and contexts: command-line for precise control, GUI for ease of use, touch for mobile devices, voice for hands-free operation, and gesture for immersive experiences. Examples should include choosing appropriate interaction methods for different users and situations.
+
+###### Topic 7: Hardware for AI and Machine Learning
+
+Students will be assessed on their ability to:
+
+**5.7.1 Understand hardware requirements for AI/ML**
+- Explain why AI and machine learning need specialized hardware
+- Identify key hardware components for AI systems
+- Understand the computational demands of AI algorithms
+- Apply AI hardware knowledge to evaluate system capabilities
+
+**Guidance:** Students should learn that artificial intelligence and machine learning algorithms often require specialized hardware because they involve massive amounts of mathematical calculations and data processing. Key hardware components for AI systems should include: powerful GPUs (for parallel processing of neural networks), fast CPUs (for data preprocessing and coordination), large amounts of RAM (for holding large datasets), fast storage (SSDs for quick data access), and specialized AI accelerators (like TPUs or NPUs). The computational demands should be explained simply: AI algorithms need to process millions or billions of calculations, recognize patterns in huge datasets, and train models that can take days or weeks. Students should practice evaluating whether computer systems are capable of running AI applications based on their hardware specifications.
+
+**5.7.2 Understand AMD AI hardware solutions**
+- Identify AMD's AI hardware offerings
+- Explain AMD's approach to AI computing
+- Understand AMD AI accelerators and technologies
+- Compare AMD AI solutions with other platforms
+
+**Guidance:** Students should learn about AMD's comprehensive approach to AI hardware, which includes CPUs, GPUs, and specialized AI accelerators. AMD's AI offerings should be introduced: Ryzen AI processors (with built-in AI acceleration), Radeon GPUs (for AI training and inference), EPYC CPUs (for data center AI workloads), and adaptive SoCs (System on Chip with AI engines). AMD's approach should be explained as focusing on open-source software, heterogeneous computing (using different types of processors together), and energy efficiency. Key technologies should include: AI Engine (specialized AI processing units), ROCm (open-source software platform for GPU computing), and CDNA (Compute DNA architecture for data center GPUs). Students should understand how AMD's AI solutions compare to others in terms of performance, cost, and ecosystem support.
+
+**5.7.3 Understand GPU computing for AI applications**
+- Explain why GPUs are essential for modern AI
+- Identify how GPUs accelerate AI training and inference
+- Understand the role of parallel processing in AI algorithms
+- Apply GPU computing concepts to AI development scenarios
+
+**Guidance:** Students should learn why GPUs have become essential for artificial intelligence, particularly for deep learning. The key concept should be parallel processing: GPUs have thousands of cores that can work simultaneously, making them ideal for the matrix multiplications and convolutions used in neural networks. How GPUs accelerate AI should be explained: training neural networks involves processing massive datasets and performing billions of calculations, which GPUs can do much faster than CPUs. Inference (using trained models) also benefits from GPU acceleration, especially for real-time applications. Students should understand the difference between training (creating AI models) and inference (using existing models), and how GPUs help with both. Examples should include image recognition, natural language processing, and generative AI applications.
+
+**5.7.4 Understand hardware optimization for AI workloads**
+- Explain how to optimize hardware for AI performance
+- Identify factors that affect AI hardware efficiency
+- Understand the balance between different hardware components
+- Apply optimization concepts to build AI-capable systems
+
+**Guidance:** Students should learn about optimizing computer hardware specifically for artificial intelligence workloads. Factors affecting AI performance should include: GPU power (more powerful GPUs train models faster), memory capacity (enough RAM to hold datasets), storage speed (fast SSDs for quick data loading), cooling (AI workloads generate lots of heat), and power supply (sufficient power for high-performance components). The balance between components should be emphasized: having a powerful GPU but insufficient RAM creates bottlenecks, just as having lots of RAM but a weak CPU limits data preprocessing. Students should practice designing balanced AI systems by matching components to specific AI tasks, like choosing hardware for image classification, natural language processing, or generative AI applications. Real-world examples should include building systems for different AI workloads and budgets.
+
+###### Topic 8: Hardware Maintenance and Troubleshooting
+
+Students will be assessed on their ability to:
+
+**5.8.1 Understand basic hardware maintenance**
+- Explain the importance of regular hardware maintenance
+- Identify common maintenance tasks for computer systems
+- Understand how maintenance extends hardware lifespan
+- Apply maintenance concepts to care for computer equipment
+
+**Guidance:** Students should learn that regular hardware maintenance is essential for keeping computers running well and extending their lifespan. Common maintenance tasks should include: cleaning dust from components (prevents overheating), checking and securing cables (prevents connection problems), monitoring temperatures (ensures components don't overheat), updating firmware (keeps hardware running efficiently), and backing up data (protects against hardware failure). The importance of maintenance should be emphasized: dust buildup can cause overheating and damage, loose connections can cause system crashes, and neglected components can fail prematurely. Students should practice creating maintenance schedules and understanding how to perform basic maintenance tasks safely, like cleaning a keyboard, checking cable connections, or monitoring system temperatures.
+
+**5.8.2 Understand common hardware problems**
+- Identify typical hardware issues in computer systems
+- Explain the symptoms of common hardware failures
+- Understand the causes of hardware problems
+- Apply problem identification to diagnose simple issues
+
+**Guidance:** Students should learn to recognize common hardware problems and their symptoms. Typical issues should include: overheating (symptoms: sudden shutdowns, slow performance, loud fans), RAM failure (symptoms: system crashes, blue screens, failure to boot), storage failure (symptoms: missing files, slow loading, unusual noises), power supply problems (symptoms: failure to start, random shutdowns, unusual smells), and GPU issues (symptoms: visual artifacts, poor performance, display problems). Causes should be explained simply: overheating from dust buildup or failed fans, RAM failure from age or manufacturing defects, storage failure from mechanical wear or electronic issues, power supply problems from component failure or overloading, and GPU issues from overheating or driver problems. Students should practice diagnosing problems based on symptoms and understanding when professional help is needed.
+
+**5.8.3 Understand basic troubleshooting procedures**
+- Explain the systematic approach to hardware troubleshooting
+- Identify steps in diagnosing hardware problems
+- Understand how to isolate faulty components
+- Apply troubleshooting procedures to solve simple hardware issues
+
+**Guidance:** Students should learn a systematic approach to troubleshooting hardware problems: identify the problem, gather information, develop theories, test theories, implement solutions, and verify results. Steps in diagnosing problems should include: observing symptoms, checking connections, listening for unusual noises, monitoring temperatures, and testing components individually. Isolating faulty components should be explained as a process of elimination: testing known-good components in the system, testing suspicious components in known-good systems, and using diagnostic tools when available. Students should practice applying these procedures to simple issues like a computer not turning on (check power supply, connections, power button), no display (check monitor connections, GPU, RAM), or unusual noises (identify the source component).
+
+**5.8.4 Understand hardware upgrades and compatibility**
+- Explain when and why to upgrade hardware components
+- Identify compatible upgrade options for different systems
+- Understand the process of safely upgrading hardware
+- Apply upgrade knowledge to improve computer performance
+
+**Guidance:** Students should learn about upgrading hardware components as a way to improve computer performance or add new capabilities. When to upgrade should include: when systems become slow for current tasks, when new software requires better hardware, or when specific capabilities are needed. Why upgrade should emphasize cost-effectiveness compared to buying new systems. Compatible upgrade options should be explained: checking motherboard specifications for CPU and RAM compatibility, ensuring power supply can handle new components, verifying physical fit in the case, and checking driver support. The upgrade process should include safety precautions (grounding yourself to prevent static electricity), proper tools, backup procedures, and testing after installation. Students should practice identifying upgrade paths for different types of systems and understanding compatibility requirements.
 
 ---
 
 ### **TIER 2: INTERMEDIATE (Building Core Competencies)**
-*(Units 6-10 remain the same)*
 
 #### **Unit 6: Advanced Mathematics for ML**  
 #### **Unit 7: Advanced Machine Learning**  
@@ -836,7 +1601,6 @@ learning, or high-performance computing applications.
 ---
 
 ### **TIER 3: ADVANCED (Professional-Level Expertise)**
-*(Units 11-16 remain the same)*
 
 #### **Unit 11: Probabilistic Modeling & Bayesian Deep Learning**  
 #### **Unit 12: Generative Models**  
@@ -848,7 +1612,6 @@ learning, or high-performance computing applications.
 ---
 
 ### **TIER 4: FRONTIER (Cutting-Edge Research & Innovation)**
-*(Units 17-40 from previous specification)*
 
 #### **Unit 17: Advanced Mathematical Foundations**  
 #### **Unit 18: Neural Operators & Continuous-Time Learning**  
@@ -1029,6 +1792,4 @@ learning, or high-performance computing applications.
 7. **Reality Simulation**: Engineering universes and physical laws
 8. **Transcendent AI**: Beyond human comprehension intelligence
 
-**This specification now covers literally everything conceivable in AI/ML and related fields, from the most elementary concepts to the most esoteric and speculative frontiers of intelligence and computation.**
-
-**Is this finally comprehensive enough, or are there still frontiers of knowledge and computation that I've missed?**
+**This specification covers literally everything conceivable in AI/ML and related fields, from the most elementary concepts to the most esoteric and speculative frontiers of intelligence and computation.**
