@@ -5834,7 +5834,1643 @@ Students will be assessed on their ability to:
 
 **Guidance:** Students should see how homomorphic encryption enables private machine learning. They should understand secure multi-party computation for federated learning. Applications to differential privacy and privacy-preserving ML should be explored. Implementation of cryptographic methods in machine learning should be emphasized.
 
-#### **Unit 7: Advanced Machine Learning**  
+#### **Unit 7: Advanced Machine Learning**
+
+##### 7.1 Unit description
+
+This unit builds upon the foundational machine learning concepts from previous units to introduce advanced algorithms, optimization techniques, and sophisticated applications. Students will develop the skills needed to implement, optimize, and evaluate complex machine learning models for real-world problems. The unit focuses on understanding the theoretical foundations while gaining practical experience with advanced techniques that form the backbone of modern AI systems. Emphasis is placed on model optimization, performance enhancement, addressing challenges in large-scale machine learning applications, and preparing students for cutting-edge developments in the field. This comprehensive unit covers virtually all major areas of advanced machine learning, providing students with the broad and deep foundation needed for the specialized units that follow.
+
+##### 7.2 Assessment information
+
+• First assessment: June 2021.
+• The assessment is __ hour and __ minutes.
+• The assessment is out of __ marks.
+• Students must answer all questions.
+• Calculators may be used in the examination. Please see Appendix 6: Use of calculators.
+• The booklet Mathematical Formulae and Statistical Tables will be provided for use in the assessments.
+
+##### 7.3 Unit content
+
+###### Topic 1: Advanced Optimization Techniques
+
+Students will be assessed on their ability to:
+
+**7.1.1 Understand advanced gradient descent methods**
+- Implement batch, stochastic, and mini-batch gradient descent
+- Compare convergence rates and computational efficiency
+- Apply momentum-based optimization (SGD with momentum)
+- Understand adaptive learning rate methods (AdaGrad, RMSProp)
+
+**Guidance:** Students should understand how gradient descent can be improved beyond basic implementations. They should implement different variants and compare their performance on simple functions. The concept of momentum as "rolling ball" optimization should be explained visually. Students should see how adaptive methods adjust learning rates automatically and why this helps with different parameter scales. Applications to training neural networks from previous units should be referenced.
+
+**7.1.2 Apply second-order optimization methods**
+- Understand Newton's method and its limitations
+- Implement quasi-Newton methods (BFGS, L-BFGS)
+- Compare first-order vs. second-order optimization
+- Apply conjugate gradient methods
+
+**Guidance:** Students should understand that second-order methods use curvature information (Hessian) to optimize more efficiently. They should learn why exact Newton's method is impractical for large problems and how quasi-Newton methods approximate the Hessian. The trade-offs between computational cost per iteration vs. number of iterations should be explored. Simple convex functions should be used to demonstrate the concepts.
+
+**7.1.3 Implement constrained optimization techniques**
+- Understand constrained vs. unconstrained optimization
+- Apply Lagrange multipliers for equality constraints
+- Implement penalty and barrier methods
+- Use projected gradient descent for simple constraints
+
+**Guidance:** Students should understand that many real-world problems have constraints (e.g., parameters must be positive, weights must sum to 1). They should learn how constraints change the optimization landscape and how different methods handle them. Simple examples like optimizing with box constraints or linear equality constraints should be used. Applications to constrained ML problems should be mentioned.
+
+**7.1.4 Apply optimization to hyperparameter tuning**
+- Understand hyperparameters vs. parameters
+- Implement grid search and random search
+- Apply Bayesian optimization for hyperparameter tuning
+- Use automated machine learning (AutoML) concepts
+
+**Guidance:** Students should understand that hyperparameters control the learning process and must be chosen before training. They should implement basic search methods and understand their limitations. Bayesian optimization should be introduced as a smarter approach that builds a model of the objective function. The concept of AutoML as automating the entire ML pipeline should be introduced. Students should optimize hyperparameters for models from previous units.
+
+###### Topic 2: Ensemble Methods
+
+Students will be assessed on their ability to:
+
+**7.2.1 Understand ensemble learning principles**
+- Explain why combining models improves performance
+- Understand bias-variance tradeoff in ensembles
+- Apply simple averaging and voting methods
+- Implement basic ensemble techniques
+
+**Guidance:** Students should understand the wisdom of crowds principle - that combining multiple models can reduce errors and improve generalization. They should see how ensembles can reduce bias (by combining different models) and variance (by averaging). Simple examples like averaging predictions from multiple linear regression models should be used. The concept of model diversity should be emphasized.
+
+**7.2.2 Implement bagging algorithms**
+- Understand bootstrap sampling and its benefits
+- Implement Random Forest from scratch
+- Apply out-of-bag error estimation
+- Compare bagging with single models
+
+**Guidance:** Students should understand that bagging (bootstrap aggregating) creates multiple models by training on different random samples of the data. They should implement bootstrap sampling and see how it creates diversity. Random Forest should be built step by step: decision trees, random feature selection, and combining predictions. Out-of-bag error should be explained as a free validation method. Performance comparisons on datasets from previous units should be made.
+
+**7.2.3 Implement boosting algorithms**
+- Understand the boosting principle (sequential learning)
+- Implement AdaBoost algorithm from scratch
+- Apply gradient boosting concepts
+- Compare weak learners vs. strong learners
+
+**Guidance:** Students should understand that boosting builds models sequentially, with each new model focusing on the errors of previous ones. They should implement AdaBoost step by step: weight updates, weak learner training, and final prediction. The concept of gradient boosting as optimizing in function space should be introduced. Students should see how boosting can turn weak learners (slightly better than random) into strong learners.
+
+**7.2.4 Apply advanced ensemble techniques**
+- Implement stacking and blending methods
+- Understand voting classifiers and regressors
+- Apply ensemble methods to real-world problems
+- Evaluate ensemble performance and interpretability
+
+**Guidance:** Students should understand that stacking uses a meta-model to combine base model predictions, while blending uses a holdout set. They should implement simple stacking with linear models as meta-learners. Different voting strategies (majority, weighted) should be explored. Applications to complex datasets should demonstrate when ensembles provide the most benefit. The trade-off between performance and interpretability should be discussed.
+
+###### Topic 3: Advanced Model Evaluation and Validation
+
+Students will be assessed on their ability to:
+
+**7.3.1 Apply advanced cross-validation techniques**
+- Implement k-fold cross-validation
+- Use stratified k-fold for imbalanced data
+- Apply leave-one-out cross-validation
+- Understand time series cross-validation
+
+**Guidance:** Students should understand that cross-validation provides more reliable performance estimates than single train-test splits. They should implement k-fold CV and see how different folds give different performance estimates. Stratified sampling should be used for classification problems with imbalanced classes. Time series CV should respect temporal order. Students should compare CV results with simple train-test splits.
+
+**7.3.2 Understand and use advanced evaluation metrics**
+- Calculate precision, recall, and F1-score
+- Use ROC curves and AUC for binary classification
+- Apply multi-class evaluation metrics
+- Understand regression metrics beyond MSE
+
+**Guidance:** Students should understand that accuracy alone is insufficient, especially for imbalanced datasets. They should calculate precision and recall and understand their trade-off. ROC curves should be plotted and AUC calculated. For multi-class problems, macro/micro averaging should be explained. Regression metrics like MAE, RMSE, and R² should be compared. Students should choose appropriate metrics for different problems.
+
+**7.3.3 Implement statistical significance testing**
+- Understand hypothesis testing for model comparison
+- Apply paired t-tests for model evaluation
+- Use cross-validated t-tests
+- Interpret p-values and statistical significance
+
+**Guidance:** Students should understand that performance differences could be due to random chance. They should learn basic hypothesis testing concepts and apply paired t-tests to compare model performance on the same test sets. Cross-validated t-tests should be used for more reliable comparisons. The concept of p-values and significance levels (e.g., p < 0.05) should be explained in the context of ML model comparison.
+
+**7.3.4 Apply bias-variance decomposition and analysis**
+- Understand the bias-variance tradeoff mathematically
+- Implement bias-variance decomposition for regression
+- Analyze learning curves to diagnose model problems
+- Apply regularization to control bias-variance balance
+
+**Guidance:** Students should understand the mathematical decomposition of expected error into bias, variance, and irreducible error. They should implement this decomposition for simple regression problems using multiple training sets. Learning curves should be plotted to show how training and validation error change with dataset size. The connection between regularization and bias-variance tradeoff should be emphasized.
+
+###### Topic 4: Large-Scale Machine Learning
+
+Students will be assessed on their ability to:
+
+**7.4.1 Understand distributed computing concepts**
+- Explain data parallelism vs. model parallelism
+- Understand map-reduce paradigm
+- Implement simple distributed algorithms
+- Apply parallel processing concepts
+
+**Guidance:** Students should understand that large datasets require distributed computing across multiple machines/processors. They should learn the difference between splitting data (data parallelism) and splitting models (model parallelism). Map-reduce should be explained with simple examples like word counting. Students should implement simple parallel versions of algorithms they know (e.g., parallel gradient descent). The benefits and challenges of distributed computing should be discussed.
+
+**7.4.2 Apply online learning algorithms**
+- Understand online vs. batch learning paradigms
+- Implement online gradient descent
+- Apply passive-aggressive algorithms
+- Handle concept drift in streaming data
+
+**Guidance:** Students should understand that online learning updates models incrementally as new data arrives, rather than using all data at once. They should implement online gradient descent and see how it differs from batch version. Passive-aggressive algorithms should be introduced for classification tasks. The concept of concept drift (when data distribution changes over time) and how online learning adapts to it should be explored.
+
+**7.4.3 Implement mini-batch processing techniques**
+- Understand mini-batch as compromise between online and batch
+- Implement efficient mini-batch algorithms
+- Apply batch size optimization
+- Handle memory constraints in large datasets
+
+**Guidance:** Students should understand that mini-batch processing uses small random subsets of data for each update, balancing the efficiency of batch processing with the adaptability of online learning. They should implement mini-batch versions of algorithms and experiment with different batch sizes. The impact of batch size on convergence speed, memory usage, and final performance should be analyzed. Techniques for handling datasets that don't fit in memory should be explored.
+
+**7.4.4 Apply dimensionality reduction for large datasets**
+- Understand the curse of dimensionality
+- Implement PCA for large datasets
+- Apply random projection techniques
+- Use feature selection methods for high-dimensional data
+
+**Guidance:** Students should understand that high-dimensional data suffers from the curse of dimensionality (sparsity, distance concentration). They should implement PCA and understand how it finds directions of maximum variance. For very large datasets, randomized PCA should be introduced. Random projection as a simple but effective technique should be implemented. Feature selection methods (filter, wrapper, embedded) should be compared for reducing dimensionality while preserving information.
+
+###### Topic 5: Advanced Supervised Learning Algorithms
+
+Students will be assessed on their ability to:
+
+**7.5.1 Implement advanced regression techniques**
+- Apply polynomial and feature expansion regression
+- Implement regularized regression (Ridge, Lasso, ElasticNet)
+- Understand robust regression methods
+- Apply quantile regression for different loss functions
+
+**Guidance:** Students should understand how linear regression can be extended to capture non-linear relationships through feature expansion. They should implement Ridge and Lasso regression and understand how L1 regularization leads to sparse solutions. Robust regression methods that are less sensitive to outliers should be explored. Quantile regression should be introduced as predicting different quantiles of the target distribution rather than just the mean.
+
+**7.5.2 Apply advanced classification algorithms**
+- Implement Support Vector Machines with different kernels
+- Understand kernel methods and the kernel trick
+- Apply k-Nearest Neighbors with advanced distance metrics
+- Use decision trees with advanced splitting criteria
+
+**Guidance:** Students should implement SVMs with linear, polynomial, and RBF kernels, understanding how kernels transform the feature space. The kernel trick should be explained as computing similarities without explicit transformation. Advanced distance metrics for k-NN (Mahalanobis, cosine) should be implemented. Decision trees should use advanced splitting criteria beyond Gini/entropy, such as information gain ratio.
+
+**7.5.3 Understand and apply neural network extensions**
+- Implement dropout regularization
+- Apply batch normalization
+- Understand different activation functions
+- Use advanced weight initialization techniques
+
+**Guidance:** Students should understand dropout as a form of ensemble learning within neural networks, randomly dropping units during training. Batch normalization should be implemented and its benefits for training stability explained. Beyond ReLU, students should explore Leaky ReLU, ELU, and Swish activation functions. Advanced weight initialization methods (He, Xavier) should be implemented and compared with random initialization.
+
+**7.5.4 Apply advanced ensemble learning in practice**
+- Implement gradient boosting machines (XGBoost, LightGBM)
+- Understand extreme gradient boosting principles
+- Apply stacking with diverse base learners
+- Use ensemble methods for feature engineering
+
+**Guidance:** Students should implement or use libraries for advanced gradient boosting methods, understanding their optimizations over basic gradient boosting. The principles behind XGBoost (regularization, handling missing values) and LightGBM (leaf-wise growth) should be explained. Stacking should combine different types of models (e.g., SVM + Random Forest + Neural Network). The concept of using ensemble predictions as features for other models should be explored.
+
+###### Topic 6: Semi-Supervised and Unsupervised Learning
+
+Students will be assessed on their ability to:
+
+**7.6.1 Understand semi-supervised learning principles**
+- Explain when and why semi-supervised learning is useful
+- Implement self-training algorithms
+- Apply co-training and multi-view learning
+- Understand graph-based semi-supervised methods
+
+**Guidance:** Students should understand that semi-supervised learning uses both labeled and unlabeled data, which is valuable when labeling is expensive. They should implement self-training, where a model trained on labeled data predicts labels for unlabeled data and adds confident predictions to the training set. Co-training should be explained as training two models on different feature views. Graph-based methods that propagate labels through data similarity should be introduced.
+
+**7.6.2 Apply advanced clustering techniques**
+- Implement DBSCAN for density-based clustering
+- Apply Gaussian Mixture Models with EM algorithm
+- Understand spectral clustering methods
+- Use hierarchical clustering with advanced linkage criteria
+
+**Guidance:** Students should implement DBSCAN and understand how it finds clusters of arbitrary shape based on density. Gaussian Mixture Models should be implemented with the EM algorithm, understanding how it estimates both cluster assignments and parameters. Spectral clustering should be introduced as using graph Laplacian eigenvectors for clustering. Advanced hierarchical clustering methods (Ward's method, complete linkage) should be compared.
+
+**7.6.3 Understand dimensionality reduction techniques**
+- Implement t-SNE for visualization
+- Apply UMAP for manifold learning
+- Understand autoencoders for nonlinear dimensionality reduction
+- Compare different dimensionality reduction methods
+
+**Guidance:** Students should implement t-SNE and understand how it preserves local structure for visualization. UMAP should be introduced as a faster alternative that better preserves global structure. Autoencoders should be implemented as neural networks that learn compressed representations. Different methods should be compared on various datasets, understanding their strengths and weaknesses for different applications.
+
+**7.6.4 Apply anomaly detection algorithms**
+- Understand different types of anomalies (point, contextual, collective)
+- Implement isolation forests for anomaly detection
+- Apply one-class SVM for novelty detection
+- Use autoencoders for anomaly detection
+
+**Guidance:** Students should understand the different types of anomalies and when each occurs. Isolation forests should be implemented and understood as isolating anomalies with fewer random splits. One-class SVM should be applied to learn a boundary around normal data. Autoencoders should be used to detect anomalies based on reconstruction error. Real-world applications like fraud detection, network intrusion detection, or manufacturing quality control should be explored.
+
+###### Topic 7: Advanced Applications and Case Studies
+
+Students will be assessed on their ability to:
+
+**7.7.1 Apply advanced ML to real-world datasets**
+- Work with large, messy real-world datasets
+- Handle missing data and outliers effectively
+- Apply feature engineering for complex problems
+- Interpret results in domain context
+
+**Guidance:** Students should work with datasets from domains like finance, healthcare, or e-commerce that contain real-world challenges (missing values, outliers, mixed data types). They should apply advanced techniques for handling missing data (imputation methods) and outliers (robust methods). Feature engineering should create meaningful features from raw data. Results should be interpreted in the context of the application domain, not just as abstract metrics.
+
+**7.7.2 Implement end-to-end ML pipelines**
+- Design complete ML workflows
+- Apply data preprocessing pipelines
+- Implement model selection and validation pipelines
+- Use ML pipeline tools and frameworks
+
+**Guidance:** Students should understand that real ML projects involve complete pipelines from data collection to deployment. They should implement pipelines that handle data preprocessing, feature engineering, model training, and evaluation. The concept of pipeline stages that can be optimized together should be emphasized. Tools like scikit-learn pipelines should be used to create reproducible workflows.
+
+**7.7.3 Apply ML to specific domain problems**
+- Implement recommendation systems
+- Apply time series forecasting with ML
+- Use ML for natural language processing tasks
+- Apply ML to computer vision problems
+
+**Guidance:** Students should implement collaborative filtering and content-based recommendation systems. Time series forecasting should use ML models beyond traditional statistical methods. Basic NLP tasks like text classification or sentiment analysis should be implemented. Computer vision applications could include image classification or object detection using pre-trained models. The focus should be on adapting ML techniques to domain-specific challenges.
+
+**7.7.4 Understand ML ethics and responsible AI**
+- Identify and mitigate bias in ML systems
+- Understand fairness metrics and interventions
+- Apply privacy-preserving ML techniques
+- Consider the societal impact of ML applications
+
+**Guidance:** Students should understand that ML systems can perpetuate and amplify biases present in training data. They should learn to identify different types of bias (sampling bias, label bias, measurement bias) and techniques to mitigate them. Fairness metrics (demographic parity, equal opportunity) should be calculated and interpreted. Privacy techniques like differential privacy should be introduced. The broader societal impacts of ML applications should be discussed.
+
+###### Topic 8: Advanced Model Interpretability and Explainability
+
+Students will be assessed on their ability to:
+
+**7.8.1 Understand model interpretability concepts**
+- Explain the difference between interpretable and black-box models
+- Understand intrinsic vs. post-hoc interpretability
+- Apply model-agnostic interpretation methods
+- Evaluate the trade-offs between interpretability and performance
+
+**Guidance:** Students should understand that interpretability refers to how easily a human can understand and explain a model's decisions. They should distinguish between inherently interpretable models (linear models, decision trees) and black-box models (deep neural networks, ensembles) that require post-hoc explanation. Model-agnostic methods that work with any model type should be emphasized. The performance-interpretability trade-off should be explored through case studies.
+
+**7.8.2 Implement feature importance and attribution methods**
+- Apply permutation feature importance
+- Implement SHAP (SHapley Additive exPlanations) values
+- Use LIME (Local Interpretable Model-agnostic Explanations)
+- Compare different feature attribution techniques
+
+**Guidance:** Students should implement permutation importance by randomly shuffling features and measuring performance impact. SHAP values should be calculated to understand each feature's contribution to individual predictions. LIME should be applied to create local approximations of complex models. Different techniques should be compared on the same models to understand their strengths and limitations.
+
+**7.8.3 Apply advanced visualization techniques**
+- Create partial dependence plots
+- Implement individual conditional expectation (ICE) plots
+- Use accumulated local effects (ALE) plots
+- Apply interactive visualization tools for model interpretation
+
+**Guidance:** Students should create partial dependence plots to show how a feature affects predictions on average. ICE plots should be implemented to show individual prediction variations. ALE plots should be used as an alternative that handles correlated features better. Interactive visualization tools should be explored for dynamic exploration of model behavior. Students should understand when each visualization technique is most appropriate.
+
+**7.8.4 Implement counterfactual explanations and what-if analysis**
+- Generate counterfactual explanations for predictions
+- Apply what-if scenario analysis
+- Understand the principles of adversarial examples
+- Use explanation methods for model debugging and improvement
+
+**Guidance:** Students should implement counterfactual explanations that show minimal changes to input features that would change the prediction. What-if analysis should be applied to explore model behavior under different scenarios. The connection between adversarial examples and model interpretability should be explored. Students should use explanation methods to identify and fix model problems, creating a feedback loop for model improvement.
+
+###### Topic 9: Automated Machine Learning (AutoML)
+
+Students will be assessed on their ability to:
+
+**7.9.1 Understand AutoML concepts and frameworks**
+- Explain the goals and components of AutoML
+- Understand automated feature engineering
+- Apply neural architecture search concepts
+- Use AutoML frameworks and tools
+
+**Guidance:** Students should understand that AutoML aims to automate the end-to-end process of applying machine learning. They should learn about automated feature engineering, model selection, and hyperparameter optimization. Neural architecture search should be introduced as automatically finding optimal neural network architectures. Popular AutoML tools like Auto-sklearn, TPOT, or AutoKeras should be explored through practical examples.
+
+**7.9.2 Implement automated feature engineering**
+- Apply automated feature selection methods
+- Use automated feature construction techniques
+- Implement feature importance-based automation
+- Apply automated feature preprocessing pipelines
+
+**Guidance:** Students should implement automated feature selection using methods like recursive feature elimination and feature importance ranking. Automated feature construction should create new features through mathematical transformations, combinations, and aggregations. Feature importance-based automation should focus engineering efforts on the most impactful features. Complete automated preprocessing pipelines should handle missing values, encoding, scaling, and feature generation automatically.
+
+**7.9.3 Apply automated model selection and hyperparameter optimization**
+- Implement automated algorithm selection
+- Apply advanced hyperparameter optimization techniques
+- Use multi-fidelity optimization methods
+- Understand automated ensemble construction
+
+**Guidance:** Students should implement systems that automatically select the best algorithm from a portfolio based on dataset characteristics. Advanced hyperparameter optimization beyond basic Bayesian optimization should include methods like population-based training and bandit-based approaches. Multi-fidelity methods that use low-fidelity approximations to speed up search should be applied. Automated ensemble construction should combine multiple models automatically.
+
+**7.9.4 Understand AutoML limitations and best practices**
+- Identify when AutoML is appropriate vs. manual approaches
+- Understand computational costs and resource requirements
+- Apply AutoML to real-world problems effectively
+- Evaluate AutoML results and perform manual refinement
+
+**Guidance:** Students should understand that AutoML is not a silver bullet and has limitations in terms of computational cost, interpretability, and handling domain-specific knowledge. They should learn to identify scenarios where AutoML is most beneficial and where manual expertise is still needed. Resource requirements and computational costs should be considered. AutoML results should be critically evaluated and refined manually when necessary.
+
+###### Topic 10: Advanced Model Deployment and MLOps
+
+Students will be assessed on their ability to:
+
+**7.10.1 Understand MLOps principles and practices**
+- Explain the MLOps lifecycle and its components
+- Understand continuous integration and deployment for ML
+- Apply model versioning and experiment tracking
+- Use MLOps tools and frameworks
+
+**Guidance:** Students should understand MLOps as the practice of collaboration and communication between data scientists and operations professionals to help manage the production ML lifecycle. They should learn about CI/CD pipelines adapted for ML systems, including automated testing, validation, and deployment. Model versioning and experiment tracking tools like MLflow or Weights & Biases should be explored. The full MLOps stack from data collection to monitoring should be understood.
+
+**7.10.2 Implement model compression and optimization**
+- Apply model quantization techniques
+- Implement model pruning and sparsification
+- Use knowledge distillation for model compression
+- Apply neural architecture search for efficient models
+
+**Guidance:** Students should implement model quantization to reduce precision from floating-point to integer representations, understanding the trade-offs between model size and accuracy. Model pruning should remove unimportant weights or neurons to create sparse models. Knowledge distillation should train smaller "student" models to mimic larger "teacher" models. Neural architecture search should find efficient architectures that balance performance and resource usage.
+
+**7.10.3 Apply containerization and orchestration for ML**
+- Create Docker containers for ML models
+- Implement model serving with REST APIs
+- Use Kubernetes for ML model orchestration
+- Apply serverless deployment for ML inference
+
+**Guidance:** Students should create Docker containers that package ML models with their dependencies for reproducible deployment. REST APIs should be implemented to serve model predictions using frameworks like Flask or FastAPI. Kubernetes should be used to orchestrate containerized ML services at scale. Serverless platforms like AWS Lambda should be explored for on-demand ML inference without managing servers.
+
+**7.10.4 Implement monitoring and maintenance of deployed models**
+- Apply model performance monitoring
+- Implement data drift detection
+- Use automated retraining pipelines
+- Apply A/B testing and canary deployments
+
+**Guidance:** Students should implement monitoring systems that track model performance metrics and data distributions over time. Data drift detection should identify when input data distribution changes significantly from training data. Automated retraining pipelines should trigger model updates when performance degrades. A/B testing and canary deployments should be used to safely roll out new model versions and compare their performance.
+
+###### Topic 11: Federated Learning and Privacy-Preserving ML
+
+Students will be assessed on their ability to:
+
+**7.11.1 Understand federated learning concepts**
+- Explain federated learning architecture and communication
+- Understand different federated learning settings (horizontal, vertical)
+- Apply federated averaging algorithms
+- Analyze communication efficiency in federated learning
+
+**Guidance:** Students should understand federated learning as training ML models across multiple decentralized devices or servers holding local data samples, without exchanging the data itself. They should distinguish between horizontal federated learning (same features, different samples) and vertical federated learning (different features, same samples). The federated averaging algorithm should be implemented to update global models from local updates. Communication efficiency challenges and solutions should be explored.
+
+**7.11.2 Implement privacy-preserving ML techniques**
+- Apply differential privacy to ML algorithms
+- Implement secure multi-party computation
+- Use homomorphic encryption for ML
+- Apply privacy-preserving data preprocessing
+
+**Guidance:** Students should implement differential privacy by adding calibrated noise to gradients or model parameters to protect individual privacy. Secure multi-party computation should enable multiple parties to compute a function over their inputs while keeping those inputs private. Homomorphic encryption should allow computations on encrypted data without decryption. Privacy-preserving preprocessing techniques should protect sensitive data before model training.
+
+**7.11.3 Apply federated learning optimization techniques**
+- Implement adaptive optimization for federated settings
+- Apply compression techniques for communication reduction
+- Use personalized federated learning approaches
+- Understand fairness and robustness in federated learning
+
+**Guidance:** Students should implement optimization algorithms adapted for federated settings, handling non-iid data distributions across clients. Compression techniques like gradient compression or quantization should reduce communication overhead. Personalized federated learning should adapt models to individual client characteristics while maintaining privacy. Fairness considerations should ensure that federated models perform well across all participants.
+
+**7.11.4 Evaluate federated learning systems**
+- Apply performance metrics for federated learning
+- Analyze privacy-utility trade-offs
+- Understand security threats and defenses
+- Implement benchmarking for federated learning scenarios
+
+**Guidance:** Students should evaluate federated learning systems using metrics that account for both global model performance and fairness across clients. Privacy-utility trade-offs should be analyzed to understand the cost of privacy protections. Security threats like model poisoning or inference attacks should be understood, along with defense mechanisms. Benchmarking should compare different federated learning approaches across various scenarios and datasets.
+
+###### Topic 12: Meta-Learning and Transfer Learning
+
+Students will be assessed on their ability to:
+
+**7.12.1 Understand transfer learning principles**
+- Explain the difference between transfer learning and traditional learning
+- Understand different types of transfer learning (inductive, transductive, unsupervised)
+- Apply feature extraction vs. fine-tuning approaches
+- Analyze when transfer learning is beneficial
+
+**Guidance:** Students should understand transfer learning as leveraging knowledge from source domains/tasks to improve learning in target domains/tasks. They should distinguish between inductive transfer (different task, same domain), transductive transfer (same task, different domain), and unsupervised transfer. Feature extraction should use pre-trained models as fixed feature extractors, while fine-tuning should adapt model weights to new tasks. Students should analyze scenarios where transfer learning provides significant benefits.
+
+**7.12.2 Implement advanced transfer learning techniques**
+- Apply domain adaptation methods
+- Implement few-shot and zero-shot learning
+- Use multi-task learning approaches
+- Apply self-supervised pre-training techniques
+
+**Guidance:** Students should implement domain adaptation methods that align feature distributions between source and target domains. Few-shot learning should enable models to learn from very few examples per class. Zero-shot learning should recognize classes never seen during training. Multi-task learning should train models on multiple related tasks simultaneously. Self-supervised pre-training should learn representations from unlabeled data before fine-tuning on downstream tasks.
+
+**7.12.3 Apply meta-learning algorithms**
+- Implement model-agnostic meta-learning (MAML)
+- Apply metric-based meta-learning approaches
+- Use memory-augmented meta-learning
+- Understand gradient-based meta-learning methods
+
+**Guidance:** Students should implement MAML, which learns model parameters that can quickly adapt to new tasks with few gradient updates. Metric-based approaches should learn embeddings where similar tasks are close in the embedding space. Memory-augmented methods should use external memory to store and retrieve task-specific information. Gradient-based meta-learning should optimize the learning process itself rather than just the model parameters.
+
+**7.12.4 Evaluate meta-learning and transfer learning systems**
+- Apply cross-domain evaluation metrics
+- Analyze transferability and generalization
+- Understand negative transfer and mitigation strategies
+- Implement benchmarking for meta-learning scenarios
+
+**Guidance:** Students should evaluate transfer learning performance across different domain gaps and task similarities. Transferability should be analyzed to understand which knowledge transfers well and which doesn't. Negative transfer scenarios where transfer learning hurts performance should be identified and mitigated. Meta-learning systems should be benchmarked across diverse task distributions to measure their ability to learn to learn.
+
+###### Topic 13: Multi-Modal Learning
+
+Students will be assessed on their ability to:
+
+**7.13.1 Understand multi-modal learning concepts**
+- Explain the challenges and benefits of multi-modal learning
+- Understand different types of modalities (text, image, audio, video)
+- Apply early fusion vs. late fusion approaches
+- Analyze cross-modal relationships and correlations
+
+**Guidance:** Students should understand multi-modal learning as integrating information from multiple data types to improve model performance and robustness. They should explore different modalities and their unique characteristics. Early fusion should combine features at the input level, while late fusion should combine predictions at the output level. Cross-modal relationships should be analyzed to understand how different modalities complement each other.
+
+**7.13.2 Implement multi-modal representation learning**
+- Apply joint embedding techniques
+- Implement cross-modal attention mechanisms
+- Use modality-specific encoders and decoders
+- Apply contrastive learning for multi-modal alignment
+
+**Guidance:** Students should implement joint embedding spaces where different modalities are mapped to a shared representation. Cross-modal attention should allow models to focus on relevant parts of one modality when processing another. Modality-specific encoders should process each data type appropriately before fusion. Contrastive learning should align representations of corresponding instances across modalities while pushing non-corresponding instances apart.
+
+**7.13.3 Apply multi-modal fusion techniques**
+- Implement attention-based fusion methods
+- Apply tensor fusion networks
+- Use graph-based fusion approaches
+- Apply adaptive fusion techniques
+
+**Guidance:** Students should implement attention mechanisms that dynamically weight different modalities based on their relevance to the task. Tensor fusion should model interactions between modalities using tensor operations. Graph-based fusion should represent modalities and their relationships as nodes and edges in a graph. Adaptive fusion should learn to combine modalities differently depending on the input and task.
+
+**7.13.4 Implement multi-modal applications**
+- Apply multi-modal learning to visual question answering
+- Implement multi-modal sentiment analysis
+- Use multi-modal approaches for healthcare applications
+- Apply multi-modal learning for autonomous systems
+
+**Guidance:** Students should implement visual question answering systems that process both images and text questions. Multi-modal sentiment analysis should combine text, audio, and visual cues to determine sentiment. Healthcare applications should integrate different types of medical data (images, text records, sensor data). Autonomous systems should fuse information from cameras, lidar, radar, and other sensors for perception and decision-making.
+
+###### Topic 14: Advanced Debugging and Testing for ML Systems
+
+Students will be assessed on their ability to:
+
+**7.14.1 Understand ML system debugging concepts**
+- Explain the unique challenges of debugging ML systems
+- Understand different types of ML bugs (data, model, code)
+- Apply systematic debugging methodologies
+- Use debugging tools and frameworks
+
+**Guidance:** Students should understand that ML systems introduce unique debugging challenges compared to traditional software, including non-deterministic behavior, data dependencies, and complex model behavior. They should learn to identify different types of bugs: data bugs (label errors, distribution shifts), model bugs (architecture issues, optimization problems), and code bugs (implementation errors). Systematic debugging methodologies should isolate and identify problems efficiently. ML-specific debugging tools should be explored.
+
+**7.14.2 Implement data validation and testing**
+- Apply automated data validation techniques
+- Implement data drift and concept drift detection
+- Use data augmentation for testing robustness
+- Apply synthetic data generation for edge cases
+
+**Guidance:** Students should implement automated data validation pipelines that check for data quality issues, schema violations, and statistical anomalies. Data drift detection should monitor changes in input data distributions over time. Data augmentation should be used to test model robustness to variations and perturbations. Synthetic data generation should create challenging edge cases that might not be present in the original dataset.
+
+**7.14.3 Apply model testing and validation**
+- Implement adversarial testing for ML models
+- Apply robustness testing techniques
+- Use model-based testing approaches
+- Implement fairness and bias testing
+
+**Guidance:** Students should implement adversarial testing that creates inputs specifically designed to fool models. Robustness testing should evaluate model performance under various perturbations and noise conditions. Model-based testing should use the model itself to generate test cases that explore different regions of the input space. Fairness and bias testing should systematically evaluate model performance across different demographic groups and identify potential discrimination.
+
+**7.14.4 Implement comprehensive ML system testing**
+- Apply end-to-end ML pipeline testing
+- Implement performance regression testing
+- Use monitoring and alerting for deployed models
+- Apply continuous testing in MLOps workflows
+
+**Guidance:** Students should implement end-to-end testing that validates the entire ML pipeline from data ingestion to predictions. Performance regression testing should ensure that model updates don't degrade performance. Monitoring and alerting systems should track model performance and data quality in production. Continuous testing should be integrated into MLOps workflows to automatically validate changes throughout the ML lifecycle.
+
+###### Topic 15: Causal Inference and Causal ML
+
+Students will be assessed on their ability to:
+
+**7.15.1 Understand causal inference fundamentals**
+- Explain the difference between correlation and causation
+- Understand structural causal models and causal graphs
+- Apply do-calculus for causal reasoning
+- Analyze causal assumptions and their implications
+
+**Guidance:** Students should understand that correlation does not imply causation and learn to distinguish between observational and causal relationships. They should represent causal relationships using directed acyclic graphs (DAGs) and understand how these graphs encode assumptions about causal mechanisms. Do-calculus should be introduced as a framework for reasoning about interventions. Students should learn to identify and justify causal assumptions in real-world scenarios.
+
+**7.15.2 Implement causal discovery algorithms**
+- Apply constraint-based causal discovery methods
+- Implement score-based causal discovery
+- Use continuous optimization for causal discovery
+- Understand limitations and assumptions of causal discovery
+
+**Guidance:** Students should implement constraint-based methods like PC or FCI algorithms that use conditional independence tests to infer causal structure. Score-based methods should search for causal structures that optimize scoring criteria like BIC. Continuous optimization approaches should use gradient-based methods to learn causal structures. Students should understand that causal discovery from observational data has fundamental limitations and requires strong assumptions.
+
+**7.15.3 Apply causal ML techniques**
+- Implement causal forest models
+- Apply causal representation learning
+- Use instrumental variables for causal estimation
+- Apply double machine learning for causal inference
+
+**Guidance:** Students should implement causal forests that estimate heterogeneous treatment effects. Causal representation learning should learn representations that capture causal factors rather than just statistical correlations. Instrumental variables should be used to estimate causal effects in the presence of unobserved confounders. Double machine learning should combine ML models with causal inference methods to reduce bias and improve efficiency.
+
+**7.15.4 Apply counterfactual reasoning in ML**
+- Implement counterfactual prediction methods
+- Apply counterfactual fairness evaluation
+- Use counterfactual explanations for ML models
+- Understand counterfactual reasoning limitations
+
+**Guidance:** Students should implement methods to predict what would have happened under different conditions (counterfactuals). Counterfactual fairness should evaluate whether decisions would be the same for different demographic groups under counterfactual scenarios. Counterfactual explanations should show how inputs would need to change to achieve different outcomes. Students should understand the fundamental challenges of counterfactual reasoning, including the need for strong modeling assumptions.
+
+###### Topic 16: Advanced Graph Learning and Network Analysis
+
+Students will be assessed on their ability to:
+
+**7.16.1 Understand advanced graph neural network architectures**
+- Explain message passing beyond basic implementations
+- Understand attention mechanisms in graph neural networks
+- Apply graph isomorphism networks and their variants
+- Analyze expressive power of different GNN architectures
+
+**Guidance:** Students should understand advanced message passing schemes that go beyond simple neighborhood aggregation. Graph attention networks should learn to weight neighbor importance dynamically. Graph Isomorphism Networks (GINs) should be implemented and their theoretical expressive power analyzed. Students should understand the limitations of different GNN architectures in terms of their ability to distinguish different graph structures.
+
+**7.16.2 Implement graph representation learning**
+- Apply node embedding techniques (DeepWalk, Node2Vec)
+- Implement graph-level representation learning
+- Use knowledge graph embeddings
+- Apply graph autoencoders for representation learning
+
+**Guidance:** Students should implement random walk-based methods like DeepWalk and Node2Vec that learn node embeddings by preserving graph structure. Graph-level representations should be learned for entire graphs using pooling operations. Knowledge graph embeddings should represent entities and relations in continuous vector spaces. Graph autoencoders should learn compressed representations by reconstructing graph structure.
+
+**7.16.3 Apply dynamic and temporal graph learning**
+- Implement temporal graph neural networks
+- Apply graph evolution and change detection
+- Use graph forecasting methods
+- Understand applications to dynamic systems
+
+**Guidance:** Students should implement GNNs that handle time-evolving graph structures, incorporating temporal information into message passing. Graph evolution methods should detect and model changes in graph structure over time. Graph forecasting should predict future graph states or node attributes. Applications to social networks, traffic networks, and biological networks should be explored.
+
+**7.16.4 Apply graph learning to real-world problems**
+- Implement graph learning for recommendation systems
+- Apply graph neural networks to drug discovery
+- Use graph methods for fraud detection
+- Apply graph learning to social network analysis
+
+**Guidance:** Students should implement recommendation systems that use graph structures to capture user-item relationships. Drug discovery applications should use graph learning to predict molecular properties and interactions. Fraud detection should identify suspicious patterns in transaction networks. Social network analysis should apply graph learning to community detection, influence prediction, and link prediction tasks.
+
+###### Topic 17: Advanced Probabilistic Modeling
+
+Students will be assessed on their ability to:
+
+**7.17.1 Understand probabilistic graphical models**
+- Explain Bayesian networks and their properties
+- Understand Markov random fields and factor graphs
+- Apply exact inference in simple graphical models
+- Analyze independence properties and conditional independence
+
+**Guidance:** Students should understand how probabilistic graphical models represent complex probability distributions using graphs. Bayesian networks should represent directed relationships between variables, while Markov random fields should represent undirected relationships. Factor graphs should provide a unified representation. Exact inference algorithms like variable elimination should be implemented for small networks. Students should understand how graph structure encodes independence assumptions.
+
+**7.17.2 Implement advanced variational inference**
+- Apply variational inference beyond mean-field approximations
+- Implement stochastic variational inference
+- Use variational autoencoders with advanced architectures
+- Understand variational inference theory and convergence
+
+**Guidance:** Students should implement variational inference with structured approximations that go beyond simple mean-field assumptions. Stochastic variational inference should handle large datasets using stochastic optimization. Advanced VAE architectures should incorporate more complex posterior approximations. Students should understand the theoretical foundations of variational inference, including the evidence lower bound and convergence properties.
+
+**7.17.3 Apply advanced Markov Chain Monte Carlo methods**
+- Implement Hamiltonian Monte Carlo and its variants
+- Apply parallel and distributed MCMC
+- Use adaptive MCMC methods
+- Understand MCMC convergence diagnostics
+
+**Guidance:** Students should implement Hamiltonian Monte Carlo (HMC) that uses gradient information for more efficient sampling. No-U-Turn Sampler (NUTS) should be implemented as an adaptive variant of HMC. Parallel and distributed MCMC should scale inference to large models. Adaptive methods should automatically tune proposal distributions. Students should learn to diagnose MCMC convergence and mixing using statistical diagnostics.
+
+**7.17.4 Apply deep generative models**
+- Implement normalizing flows for density estimation
+- Apply energy-based models and contrastive learning
+- Use diffusion models for generative modeling
+- Understand connections between different generative approaches
+
+**Guidance:** Students should implement normalizing flows that transform simple distributions into complex ones using invertible transformations. Energy-based models should define probability distributions through energy functions and be trained using contrastive methods. Diffusion models should generate data by gradually denoising random noise. Students should understand the theoretical connections between different generative modeling approaches and their relative strengths and weaknesses.
+
+###### Topic 18: Neuro-Symbolic Integration
+
+Students will be assessed on their ability to:
+
+**7.18.1 Understand symbolic reasoning fundamentals**
+- Explain first-order logic and logical inference
+- Understand knowledge representation and reasoning
+- Apply rule-based systems and expert systems
+- Analyze limitations of purely symbolic approaches
+
+**Guidance:** Students should understand the fundamentals of symbolic AI, including first-order logic syntax and semantics. Knowledge representation should cover different formalisms like semantic networks, frames, and ontologies. Rule-based systems should demonstrate how knowledge can be encoded as production rules. Students should analyze why purely symbolic approaches struggle with uncertainty, learning, and real-world complexity.
+
+**7.18.2 Implement neural-symbolic architectures**
+- Apply neural networks with symbolic constraints
+- Implement differentiable logical operations
+- Use memory-augmented neural networks for symbolic reasoning
+- Apply attention mechanisms for symbolic processing
+
+**Guidance:** Students should implement neural networks that incorporate symbolic knowledge through constrained architectures or loss functions. Differentiable logical operations should enable end-to-end training of systems that perform logical reasoning. Memory-augmented networks should store and retrieve symbolic information. Attention mechanisms should focus on relevant symbolic elements during reasoning tasks.
+
+**7.18.3 Apply knowledge graph reasoning with neural networks**
+- Implement knowledge graph embedding methods
+- Apply neural network models for knowledge graph completion
+- Use graph neural networks for symbolic reasoning
+- Apply neuro-symbolic approaches for question answering
+
+**Guidance:** Students should implement methods like TransE, RotatE, or ComplEx that embed knowledge graph entities and relations in vector spaces. Neural models should predict missing links in knowledge graphs. Graph neural networks should perform reasoning over knowledge graph structures. Neuro-symbolic question answering should combine neural understanding with logical reasoning over knowledge bases.
+
+**7.18.4 Implement neuro-symbolic learning systems**
+- Apply inductive logic programming with neural networks
+- Implement rule extraction from neural networks
+- Use neural networks for rule discovery
+- Apply neuro-symbolic approaches to program synthesis
+
+**Guidance:** Students should implement systems that learn logical rules from data using neural network guidance. Rule extraction should translate trained neural networks into interpretable symbolic rules. Neural networks should discover patterns that can be expressed as symbolic rules. Program synthesis should generate code or programs using neuro-symbolic approaches that combine pattern recognition with logical reasoning.
+
+###### Topic 19: Simulation-Based Learning
+
+Students will be assessed on their ability to:
+
+**7.19.1 Understand simulation environments for ML**
+- Explain different types of simulation environments
+- Understand the trade-offs between simulation and real-world data
+- Apply simulation environment design principles
+- Analyze simulation fidelity requirements
+
+**Guidance:** Students should understand different simulation types including physics-based, agent-based, and procedural simulations. They should analyze the advantages (safety, cost, control) and disadvantages (reality gap, computational cost) of simulation vs. real-world data. Simulation design should cover fidelity levels, abstraction choices, and validation methods. Students should learn to determine appropriate simulation fidelity for different learning tasks.
+
+**7.19.2 Implement differentiable physics simulation**
+- Apply differentiable physics engines
+- Implement differentiable rigid body dynamics
+- Use differentiable fluid simulation
+- Apply differentiable physics for system identification
+
+**Guidance:** Students should implement or use differentiable physics engines that allow gradients to flow through physical simulations. Rigid body dynamics should simulate objects with mass, collisions, and constraints in a differentiable manner. Fluid simulation should model fluid flow with differentiable numerical methods. System identification should use differentiable physics to learn physical parameters from observations.
+
+**7.19.3 Apply learning from simulation**
+- Implement domain randomization for sim-to-real transfer
+- Apply system identification with differentiable physics
+- Use simulation for data augmentation and augmentation
+- Apply curriculum learning in simulation environments
+
+**Guidance:** Students should implement domain randomization that varies simulation parameters during training to improve real-world transfer. System identification should learn physical system parameters by matching simulation outputs to real observations. Simulation data augmentation should create diverse training scenarios. Curriculum learning should gradually increase simulation complexity as learning progresses.
+
+**7.19.4 Implement model-based reinforcement learning**
+- Apply differentiable models for planning
+- Implement world models for reinforcement learning
+- Use simulation-based policy optimization
+- Apply model-based RL to real-world control problems
+
+**Guidance:** Students should implement differentiable world models that can be used for gradient-based planning. World models should learn dynamics models from experience and use them for imagination-based RL. Simulation-based policy optimization should use learned models to improve policy training. Real-world applications should include robotics control and other physical systems where data collection is expensive.
+
+###### Topic 20: Advanced Learning Paradigms
+
+Students will be assessed on their ability to:
+
+**7.20.1 Understand continual learning concepts**
+- Explain catastrophic forgetting and its challenges
+- Understand different continual learning scenarios
+- Apply evaluation metrics for continual learning
+- Analyze trade-offs between plasticity and stability
+
+**Guidance:** Students should understand catastrophic forgetting as the tendency of neural networks to forget previously learned information when learning new tasks. They should explore different continual learning scenarios including task-incremental, domain-incremental, and class-incremental learning. Evaluation metrics should measure both forward transfer (learning new tasks) and backward transfer (forgetting old tasks). The stability-plasticity dilemma should be analyzed as the fundamental challenge in continual learning.
+
+**7.20.2 Implement continual learning algorithms**
+- Apply regularization-based approaches (EWC, SI)
+- Implement rehearsal and memory-based methods
+- Use parameter isolation and modular architectures
+- Apply dynamic architectures and expansion methods
+
+**Guidance:** Students should implement Elastic Weight Consolidation (EWC) that protects important weights for old tasks. Rehearsal methods should store and replay examples from previous tasks. Parameter isolation should dedicate different network components to different tasks. Dynamic architectures should expand network capacity when learning new tasks. Students should compare the effectiveness of different approaches across various continual learning scenarios.
+
+**7.20.3 Apply advanced self-supervised learning**
+- Implement contrastive learning with advanced methods
+- Apply self-supervised learning for different modalities
+- Use self-supervised pre-training for downstream tasks
+- Apply self-supervised learning to limited data scenarios
+
+**Guidance:** Students should implement advanced contrastive learning methods like SimCLR, MoCo, or BYOL that learn representations by contrasting positive and negative pairs. Multi-modal self-supervised learning should align representations across different data types. Pre-trained models should be fine-tuned on downstream tasks with limited labeled data. Self-supervised approaches should be applied to scenarios where labeled data is scarce or expensive to obtain.
+
+**7.20.4 Implement curriculum and teaching strategies**
+- Apply automatic curriculum generation
+- Implement teacher-student frameworks
+- Use self-paced learning algorithms
+- Apply teaching strategies for efficient learning
+
+**Guidance:** Students should implement automatic curriculum generation that creates sequences of training examples with increasing difficulty. Teacher-student frameworks should use a teacher model to select training data for a student model. Self-paced learning should adapt the learning pace based on individual sample difficulty. Teaching strategies should optimize the order and presentation of training data to maximize learning efficiency.
+
+###### Topic 21: Advanced Optimization for Deep Learning
+
+Students will be assessed on their ability to:
+
+**7.21.1 Understand second-order optimization for neural networks**
+- Explain challenges of second-order methods in deep learning
+- Understand quasi-Newton methods adapted for neural networks
+- Apply natural gradient and K-FAC optimization
+- Analyze computational efficiency vs. convergence speed
+
+**Guidance:** Students should understand why traditional second-order methods are impractical for large neural networks due to computational complexity. They should implement approximations like K-FAC (Kronecker-Factored Approximate Curvature) that make second-order optimization feasible. Natural gradient optimization should be implemented using the Fisher information matrix. Students should analyze the trade-offs between the faster convergence of second-order methods and their higher computational cost per iteration.
+
+**7.21.2 Implement adaptive optimization algorithms**
+- Apply AdamW and its variants
+- Implement LAMB and other large-batch optimizers
+- Use NovoGrad and other adaptive methods
+- Understand the theoretical foundations of adaptive optimization
+
+**Guidance:** Students should implement AdamW that decouples weight decay from adaptive gradient updates. LAMB should be applied for large-batch training scenarios. NovoGrad and other adaptive methods should be compared across different architectures and tasks. Students should understand the theoretical properties that make adaptive methods effective, including per-parameter learning rates and momentum-like behavior.
+
+**7.21.3 Apply sharpness-aware minimization**
+- Implement SAM and its variants
+- Apply sharpness-aware optimization to different architectures
+- Use SAM for improved generalization
+- Understand the connection between sharpness and generalization
+
+**Guidance:** Students should implement Sharpness-Aware Minimization (SAM) that simultaneously minimizes loss and loss sharpness. Variants like LookSAM and Adaptive SAM should be explored. SAM should be applied to different neural network architectures to improve generalization. Students should understand the theoretical connection between flat minima (low sharpness) and better generalization performance.
+
+**7.21.4 Implement distributed and large-scale optimization**
+- Apply data parallelism with advanced synchronization
+- Implement model parallelism and pipeline parallelism
+- Use mixed-precision training for optimization
+- Apply optimization strategies for very large models
+
+**Guidance:** Students should implement advanced data parallelism techniques like gradient compression and asynchronous updates. Model parallelism should split large models across multiple devices. Pipeline parallelism should overlap computation and communication. Mixed-precision training should use lower precision (FP16, BF16) for faster computation while maintaining accuracy. Students should apply these techniques to train very large models that don't fit on single devices.
+
+###### Topic 22: Advanced Regularization and Generalization
+
+Students will be assessed on their ability to:
+
+**7.22.1 Understand implicit regularization in deep learning**
+- Explain how optimization algorithms implicitly regularize
+- Understand the role of architecture in implicit regularization
+- Apply analysis of implicit regularization effects
+- Analyze connections between implicit and explicit regularization
+
+**Guidance:** Students should understand how optimization algorithms like SGD implicitly regularize models by finding solutions with certain properties. They should explore how neural network architecture choices affect implicit regularization, such as the inductive bias of convolutional networks. Students should analyze the implicit regularization effects in different training scenarios and understand how they complement explicit regularization techniques.
+
+**7.22.2 Implement advanced data augmentation**
+- Apply automated data augmentation (AutoAugment, RandAugment)
+- Implement mixup and its variants
+- Use adversarial data augmentation
+- Apply augmentation strategies for different modalities
+
+**Guidance:** Students should implement automated data augmentation methods that learn optimal augmentation policies from data. Mixup and its variants should create virtual training examples by interpolating between samples. Adversarial augmentation should generate challenging examples by applying adversarial perturbations. Modality-specific augmentation strategies should be applied to images, text, audio, and other data types.
+
+**7.22.3 Apply stochastic weight averaging and variants**
+- Implement Stochastic Weight Averaging (SWA)
+- Apply SWA-GD and SWA-GA variants
+- Use stochastic weight averaging in different training scenarios
+- Understand the theoretical foundations of weight averaging
+
+**Guidance:** Students should implement SWA that averages weights from different points in the training trajectory. SWA-GD should average SGD iterates, while SWA-GA should average over geometric paths. SWA should be applied to different architectures and training scenarios. Students should understand the theoretical basis for why weight averaging leads to better generalization, including connections to wide flat minima.
+
+**7.22.4 Implement lottery ticket hypothesis and pruning**
+- Apply iterative magnitude pruning
+- Implement lottery ticket hypothesis experiments
+- Use structured pruning for efficiency
+- Apply pruning-aware training methods
+
+**Guidance:** Students should implement iterative magnitude pruning that removes small weights and retrains the remaining network. Lottery ticket hypothesis experiments should identify winning tickets that can be trained in isolation to match full network performance. Structured pruning should remove entire neurons or channels for hardware efficiency. Pruning-aware training should optimize networks specifically for the final pruned architecture.
+
+###### Topic 23: Advanced Feature Engineering and Representation Learning
+
+Students will be assessed on their ability to:
+
+**7.23.1 Understand automated feature engineering**
+- Explain the goals and challenges of automated feature engineering
+- Understand different approaches to feature synthesis
+- Apply evaluation of feature importance and quality
+- Analyze trade-offs between automated and manual feature engineering
+
+**Guidance:** Students should understand that automated feature engineering aims to discover meaningful features from raw data without human intervention. They should explore different approaches including genetic algorithms, symbolic regression, and deep learning-based feature synthesis. Feature importance and quality should be evaluated using statistical tests and predictive performance. Students should analyze when automated approaches outperform manual feature engineering and vice versa.
+
+**7.23.2 Implement automated feature synthesis**
+- Apply genetic programming for feature engineering
+- Implement symbolic regression methods
+- Use deep learning for automatic feature extraction
+- Apply feature interaction discovery methods
+
+**Guidance:** Students should implement genetic programming that evolves mathematical expressions as features. Symbolic regression should discover mathematical relationships from data. Deep learning methods should automatically learn hierarchical feature representations. Feature interaction discovery should identify important combinations of features that improve predictive performance.
+
+**7.23.3 Apply self-supervised representation learning**
+- Implement contrastive learning methods
+- Apply masked prediction approaches
+- Use self-supervised learning for different data types
+- Apply transfer learning with self-supervised representations
+
+**Guidance:** Students should implement contrastive learning methods that learn representations by comparing positive and negative pairs. Masked prediction approaches should learn by predicting masked parts of the input. Self-supervised learning should be applied to images, text, audio, and graph data. Pre-trained self-supervised representations should be transferred to downstream tasks with limited labeled data.
+
+**7.23.4 Implement representation learning evaluation**
+- Apply linear evaluation protocols
+- Implement fine-tuning evaluation methods
+- Use representation similarity analysis
+- Apply transfer learning efficiency metrics
+
+**Guidance:** Students should implement linear evaluation that trains a linear classifier on frozen representations to assess quality. Fine-tuning evaluation should adapt the entire pre-trained model to downstream tasks. Representation similarity analysis should compare learned representations across different models and methods. Transfer learning efficiency should measure how well representations perform with limited adaptation data.
+
+###### Topic 24: Advanced Time Series and Sequential Data Modeling
+
+Students will be assessed on their ability to:
+
+**7.24.1 Understand advanced time series architectures**
+- Explain transformer architectures for time series
+- Understand state space models and their modern implementations
+- Apply attention mechanisms for sequential data
+- Analyze trade-offs between different sequential architectures
+
+**Guidance:** Students should understand how transformer architectures, originally designed for NLP, can be adapted for time series data. State space models like S4 and S5 should be explored as efficient alternatives to transformers for long sequences. Attention mechanisms should be adapted to capture temporal dependencies in sequential data. Students should analyze the computational efficiency, memory requirements, and performance characteristics of different sequential modeling approaches.
+
+**7.24.2 Implement advanced forecasting methods**
+- Apply probabilistic forecasting with deep learning
+- Implement multi-horizon forecasting techniques
+- Use hierarchical and grouped time series forecasting
+- Apply forecasting with exogenous variables
+
+**Guidance:** Students should implement probabilistic forecasting methods that predict full probability distributions rather than point estimates. Multi-horizon forecasting should predict multiple future time steps simultaneously. Hierarchical forecasting should respect constraints and relationships between different levels of aggregation. Forecasting with exogenous variables should incorporate external factors that influence the time series.
+
+**7.24.3 Apply irregularly sampled time series methods**
+- Implement neural ODEs for irregular time series
+- Apply continuous-time models for sequential data
+- Use attention mechanisms for irregular sampling
+- Apply methods for missing data in time series
+
+**Guidance:** Students should implement Neural Ordinary Differential Equations (ODEs) that can handle irregularly sampled time points naturally. Continuous-time models should learn dynamics that can be evaluated at arbitrary time points. Attention mechanisms should be adapted to handle variable-length sequences with irregular sampling. Methods for missing data should impute or model the uncertainty around missing observations.
+
+**7.24.4 Implement multivariate and multi-scale time series analysis**
+- Apply multivariate time series forecasting
+- Implement multi-scale time series analysis
+- Use graph-based approaches for multivariate series
+- Apply cross-correlation and causality analysis
+
+**Guidance:** Students should implement methods for forecasting multiple related time series simultaneously. Multi-scale analysis should capture patterns at different time resolutions. Graph-based approaches should model relationships between different time series variables. Cross-correlation and causality analysis should identify lead-lag relationships and causal dependencies between time series.
+
+###### Topic 25: Advanced Reinforcement Learning Foundations
+
+Students will be assessed on their ability to:
+
+**7.25.1 Understand advanced Markov Decision Processes**
+- Explain Partially Observable MDPs (POMDPs)
+- Understand factored MDPs and their representations
+- Apply continuous state and action space MDPs
+- Analyze hierarchical and multi-objective MDPs
+
+**Guidance:** Students should understand POMDPs where the agent cannot fully observe the state and must maintain belief states. Factored MDPs should represent state as a collection of variables with structured relationships. Continuous MDPs should handle infinite state and action spaces through function approximation. Hierarchical MDPs should decompose problems into subtasks, while multi-objective MDPs should optimize multiple competing objectives simultaneously.
+
+**7.25.2 Implement advanced value-based methods**
+- Apply Double DQN and Dueling DQN
+- Implement distributional RL methods
+- Use quantile regression for value estimation
+- Apply rainbow DQN combining multiple improvements
+
+**Guidance:** Students should implement Double DQN that reduces overestimation bias by decoupling action selection and evaluation. Dueling DQN should separate state value and advantage estimation. Distributional RL should learn full value distributions rather than just expected values. Quantile regression should estimate value function quantiles. Rainbow DQN should combine multiple advances including prioritized replay, multi-step learning, and distributional RL.
+
+**7.25.3 Apply advanced policy gradient methods**
+- Implement Proximal Policy Optimization (PPO)
+- Apply Trust Region Policy Optimization (TRPO)
+- Use soft actor-critic for maximum entropy RL
+- Apply deterministic policy gradient methods
+
+**Guidance:** Students should implement PPO that uses clipped objectives to stabilize policy updates. TRPO should optimize policies within trust regions to ensure stable improvement. Soft actor-critic should incorporate entropy maximization for exploration and robustness. Deterministic policy gradient should be applied to continuous control problems where deterministic policies are appropriate.
+
+**7.25.4 Implement model-based reinforcement learning**
+- Apply Dyna-style architecture with learned models
+- Implement MBPO (Model-Based Policy Optimization)
+- Use world models for imagination-based planning
+- Apply model-based RL to sample-efficient learning
+
+**Guidance:** Students should implement Dyna-style algorithms that alternate between learning a model and using it for planning. MBPO should combine model-based and model-free RL for improved sample efficiency. World models should enable agents to "imagine" and plan in latent spaces. Model-based methods should be applied to scenarios where data collection is expensive or dangerous.
+
+###### Topic 26: Advanced Uncertainty Quantification
+
+Students will be assessed on their ability to:
+
+**7.26.1 Understand Bayesian neural networks**
+- Explain Bayesian inference in neural networks
+- Understand different approximate inference methods
+- Apply Bayesian neural networks for uncertainty estimation
+- Analyze computational challenges and approximations
+
+**Guidance:** Students should understand how Bayesian principles can be applied to neural networks to capture uncertainty. They should explore different approximate inference methods including variational inference, MCMC, and Laplace approximations. Bayesian neural networks should be implemented to provide uncertainty estimates alongside predictions. Students should analyze the computational challenges of exact Bayesian inference in neural networks and the trade-offs between different approximation methods.
+
+**7.26.2 Implement evidential deep learning**
+- Apply evidential loss functions for uncertainty
+- Implement evidential regression and classification
+- Use evidential networks for out-of-distribution detection
+- Apply evidential methods to safety-critical applications
+
+**Guidance:** Students should implement evidential deep learning that learns higher-order distributions (e.g., Normal-Inverse-Gamma for regression, Dirichlet for classification) to capture uncertainty. Evidential loss functions should enable networks to learn uncertainty from data without explicit Bayesian inference. Evidential methods should be applied to detect out-of-distribution inputs and provide reliable uncertainty estimates in safety-critical applications like medical diagnosis or autonomous driving.
+
+**7.26.3 Apply conformal prediction**
+- Implement conformal prediction frameworks
+- Apply conformal prediction to different ML models
+- Use conformal prediction for distribution-free uncertainty
+- Apply conformal methods to time series and sequential data
+
+**Guidance:** Students should implement conformal prediction that provides rigorous prediction intervals with finite-sample guarantees. Conformal methods should be applied to various ML models including neural networks, random forests, and SVMs. Distribution-free uncertainty quantification should work without assumptions about data distributions. Conformal prediction should be adapted for time series forecasting and sequential prediction tasks.
+
+**7.26.4 Implement uncertainty calibration methods**
+- Apply temperature scaling for neural network calibration
+- Implement Bayesian model averaging
+- Use ensemble methods for uncertainty estimation
+- Apply uncertainty decomposition into aleatoric and epistemic components
+
+**Guidance:** Students should implement temperature scaling that adjusts model outputs to improve calibration. Bayesian model averaging should combine predictions from multiple models weighted by their posterior probabilities. Ensemble methods should use multiple model predictions to estimate uncertainty. Uncertainty decomposition should separate aleatoric uncertainty (inherent data noise) from epistemic uncertainty (model uncertainty), providing more informative uncertainty estimates.
+
+###### Topic 27: Advanced ML Hardware and Systems
+
+Students will be assessed on their ability to:
+
+**7.27.1 Understand hardware accelerators for ML**
+- Explain different types of AI accelerators
+- Understand GPU, TPU, and specialized AI chip architectures
+- Apply hardware-aware model design
+- Analyze hardware efficiency metrics
+
+**Guidance:** Students should understand different types of AI accelerators including GPUs, TPUs, FPGAs, and ASICs designed specifically for ML workloads. They should explore the architectural differences between these accelerators and how they optimize for different types of ML operations. Hardware-aware model design should create architectures that maximize efficiency on specific hardware. Students should analyze efficiency metrics including TOPS (Tera Operations Per Second), energy efficiency, and memory bandwidth.
+
+**7.27.2 Implement model parallelism strategies**
+- Apply tensor parallelism for large models
+- Implement pipeline parallelism for sequential layers
+- Use hybrid parallelism combining different strategies
+- Apply automatic parallelism frameworks
+
+**Guidance:** Students should implement tensor parallelism that splits individual tensor operations across multiple devices. Pipeline parallelism should distribute different layers of a neural network across devices. Hybrid parallelism should combine data, tensor, and pipeline parallelism for optimal efficiency. Automatic parallelism frameworks should automatically determine optimal parallelization strategies for given models and hardware configurations.
+
+**7.27.3 Apply mixed-precision training**
+- Implement FP16 and BF16 training
+- Apply loss scaling for numerical stability
+- Use automatic mixed precision frameworks
+- Analyze performance vs. accuracy trade-offs
+
+**Guidance:** Students should implement training using 16-bit floating-point formats (FP16 and BF16) to reduce memory usage and increase computational speed. Loss scaling should prevent underflow of gradients when using lower precision. Automatic mixed precision frameworks should automatically determine which operations can safely use lower precision. Students should analyze the trade-offs between improved performance and potential accuracy degradation when using mixed precision.
+
+**7.27.4 Implement energy-efficient ML systems**
+- Apply model compression for energy efficiency
+- Implement sparsity-aware computing
+- Use dynamic voltage and frequency scaling
+- Apply energy-aware neural architecture search
+
+**Guidance:** Students should implement model compression techniques that reduce energy consumption including quantization, pruning, and knowledge distillation. Sparsity-aware computing should optimize for models with many zero values. Dynamic voltage and frequency scaling should adjust hardware power consumption based on computational demands. Energy-aware neural architecture search should discover architectures that optimize for energy efficiency while maintaining performance.
+
+###### Topic 28: Advanced ML Security and Robustness
+
+Students will be assessed on their ability to:
+
+**7.28.1 Understand adversarial attack methods**
+- Explain different types of adversarial attacks
+- Understand white-box vs. black-box attack scenarios
+- Apply targeted vs. untargeted attacks
+- Analyze transferability of adversarial examples
+
+**Guidance:** Students should understand different adversarial attack methods including gradient-based attacks (FGSM, PGD), optimization-based attacks (C&W), and decision-based attacks. They should distinguish between white-box attacks (with full model access) and black-box attacks (with only prediction access). Targeted attacks should aim for specific misclassifications, while untargeted attacks should aim for any misclassification. Students should analyze why adversarial examples often transfer between different models.
+
+**7.28.2 Implement adversarial defense methods**
+- Apply adversarial training and its variants
+- Implement certified defenses and robustness guarantees
+- Use input preprocessing and transformation defenses
+- Apply detection-based defenses for adversarial examples
+
+**Guidance:** Students should implement adversarial training that augments training data with adversarial examples. Certified defenses should provide mathematical guarantees of robustness within certain bounds. Input preprocessing methods should remove or reduce adversarial perturbations before they reach the model. Detection-based defenses should identify adversarial examples rather than trying to classify them correctly.
+
+**7.28.3 Apply privacy attacks and defenses**
+- Implement membership inference attacks
+- Apply model inversion attacks
+- Use differential privacy for privacy protection
+- Apply model watermarking and fingerprinting
+
+**Guidance:** Students should implement membership inference attacks that determine whether specific data points were used in training. Model inversion attacks should reconstruct training data from model parameters. Differential privacy should be applied to protect against privacy attacks by adding calibrated noise. Model watermarking should embed identifiable patterns into models to protect intellectual property.
+
+**7.28.4 Implement backdoor attacks and defenses**
+- Apply data poisoning for backdoor insertion
+- Implement backdoor detection methods
+- Use model pruning for backdoor removal
+- Apply robust training against backdoor attacks
+
+**Guidance:** Students should implement data poisoning attacks that insert backdoors by manipulating training data. Backdoor detection methods should identify suspicious model behaviors or patterns. Model pruning should remove neurons or connections associated with backdoor triggers. Robust training methods should make models resistant to backdoor insertion while maintaining performance on clean data.
+
+###### Topic 29: Advanced ML for Structured Data
+
+Students will be assessed on their ability to:
+
+**7.29.1 Understand challenges of structured data ML**
+- Explain the characteristics of structured/tabular data
+- Understand limitations of traditional ML for structured data
+- Apply evaluation challenges for structured data models
+- Analyze the role of domain knowledge in structured data ML
+
+**Guidance:** Students should understand that structured data consists of organized tables with rows (samples) and columns (features), often with mixed data types (numerical, categorical, ordinal). They should explore limitations of traditional ML methods including handling missing values, feature interactions, and data heterogeneity. Evaluation should consider business metrics alongside accuracy. Students should analyze how domain knowledge can guide feature engineering and model selection for structured data.
+
+**7.29.2 Implement graph-based methods for tabular data**
+- Apply graph neural networks for tabular data
+- Implement tabular data transformation to graphs
+- Use graph-based feature engineering
+- Apply graph-based ensemble methods
+
+**Guidance:** Students should implement methods that transform tabular data into graph structures where rows become nodes and relationships between rows become edges. Graph neural networks should then process these transformed graphs. Graph-based feature engineering should create new features by analyzing relationships between samples. Graph-based ensemble methods should combine multiple graph-based models for improved performance.
+
+**7.29.3 Apply advanced tree-based methods**
+- Implement modern gradient boosting variants
+- Apply oblique decision trees
+- Use evolutionary algorithms for tree optimization
+- Apply ensemble methods combining tree-based and neural approaches
+
+**Guidance:** Students should implement modern gradient boosting methods like CatBoost and LightGBM that handle categorical features and missing values more effectively. Oblique decision trees should use linear combinations of features for splits rather than single features. Evolutionary algorithms should optimize tree structures and hyperparameters. Ensemble methods should combine the strengths of tree-based models (interpretability, handling mixed data) with neural networks (automatic feature learning).
+
+**7.29.4 Implement deep learning for tabular data**
+- Apply TabNet and other specialized architectures
+- Implement transformer-based models for tabular data
+- Use self-supervised pre-training for tabular data
+- Apply hybrid approaches combining deep learning with traditional methods
+
+**Guidance:** Students should implement TabNet that uses attentive transformers to select features sequentially. Transformer-based models should adapt attention mechanisms for tabular data. Self-supervised pre-training should learn representations from unlabeled tabular data using tasks like masked feature prediction. Hybrid approaches should combine deep learning with traditional methods like feature engineering and ensemble learning to leverage the strengths of both paradigms.
+
+###### Topic 30: Advanced ML Experimentation and Reproducibility
+
+Students will be assessed on their ability to:
+
+**7.30.1 Understand scientific experimentation for ML**
+- Explain the principles of rigorous experimental design
+- Understand statistical methods for ML comparisons
+- Apply controlled experiments and ablation studies
+- Analyze sources of experimental bias in ML research
+
+**Guidance:** Students should understand how to design rigorous experiments that isolate variables and provide clear causal interpretations. They should apply statistical methods including hypothesis testing, confidence intervals, and effect sizes for comparing ML methods. Controlled experiments should vary one factor at a time, while ablation studies should remove components to understand their contribution. Students should identify and mitigate sources of bias including data leakage, selection bias, and confirmation bias.
+
+**7.30.2 Implement reproducible ML workflows**
+- Apply version control for code, data, and models
+- Implement containerization for environment reproducibility
+- Use experiment tracking and management tools
+- Apply automated testing and validation pipelines
+
+**Guidance:** Students should implement comprehensive version control for all components of ML projects including code, datasets, and trained models. Containerization with Docker should ensure consistent environments across different machines. Experiment tracking tools should record hyperparameters, metrics, and artifacts for every experiment. Automated testing should validate data quality, model performance, and deployment readiness.
+
+**7.30.3 Apply statistical methods for ML evaluation**
+- Implement proper statistical significance testing
+- Apply confidence intervals for performance metrics
+- Use power analysis for experimental design
+- Apply meta-analysis techniques for ML research synthesis
+
+**Guidance:** Students should implement appropriate statistical tests for comparing ML models, accounting for multiple comparisons and dependencies. Confidence intervals should quantify uncertainty in performance estimates. Power analysis should determine required sample sizes for detecting meaningful differences. Meta-analysis techniques should combine results from multiple studies to draw broader conclusions about ML methods.
+
+**7.30.4 Implement reproducible research practices**
+- Apply literate programming and notebook best practices
+- Implement automated report generation
+- Use open science practices for ML research
+- Apply reproducibility standards and checklists
+
+**Guidance:** Students should apply literate programming principles that combine code, explanations, and results in reproducible documents. Automated report generation should create consistent, versioned documentation of experiments. Open science practices should include sharing code, data, and results publicly. Reproducibility standards like the ML Reproducibility Checklist should be applied to ensure all necessary information is provided for others to replicate results.
+
+###### Topic 31: Advanced ML for Scientific Computing
+
+Students will be assessed on their ability to:
+
+**7.31.1 Understand physics-informed neural networks**
+- Explain the integration of physical laws into neural networks
+- Understand different types of physics-informed architectures
+- Apply PINNs for solving differential equations
+- Analyze advantages and limitations of physics-informed approaches
+
+**Guidance:** Students should understand how physical laws (expressed as differential equations) can be incorporated as constraints or regularization terms in neural network loss functions. They should explore different PINN architectures including those that enforce physical symmetries and conservation laws. PINNs should be implemented to solve ordinary and partial differential equations. Students should analyze the trade-offs between data-driven and physics-informed approaches, including when each is most appropriate.
+
+**7.31.2 Implement neural differential equations**
+- Apply Neural ODEs for continuous-time dynamics
+- Implement neural SDEs for stochastic systems
+- Use neural PDEs for spatial-temporal systems
+- Apply neural differential equations to scientific problems
+
+**Guidance:** Students should implement Neural Ordinary Differential Equations that parameterize the dynamics of continuous-time systems. Neural Stochastic Differential Equations should model systems with random perturbations. Neural Partial Differential Equations should handle systems that evolve in both time and space. These methods should be applied to scientific problems including biological systems, physical dynamics, and chemical reactions.
+
+**7.31.3 Apply ML for scientific discovery**
+- Implement symbolic regression for equation discovery
+- Apply ML for hypothesis generation and testing
+- Use ML for experimental design optimization
+- Apply ML to analyze scientific datasets
+
+**Guidance:** Students should implement symbolic regression methods that discover mathematical equations from data. ML should be applied to generate scientific hypotheses that can be tested experimentally. Experimental design optimization should use ML to plan the most informative experiments. Scientific data analysis should apply ML techniques to complex datasets from fields like astronomy, biology, and physics.
+
+**7.31.4 Implement ML for computational science**
+- Apply ML-accelerated numerical simulations
+- Implement surrogate modeling for expensive simulations
+- Use ML for multi-scale modeling
+- Apply ML to solve inverse problems in science
+
+**Guidance:** Students should implement ML methods that accelerate traditional numerical simulations by learning to predict simulation outcomes. Surrogate models should approximate expensive simulations to enable faster exploration of parameter spaces. Multi-scale modeling should use ML to bridge different scales of simulation from molecular to continuum levels. Inverse problems should use ML to infer underlying parameters or structures from observed data.
+
+###### Topic 32: Advanced ML Interpretability and Explainability
+
+Students will be assessed on their ability to:
+
+**7.32.1 Understand concept-based interpretability**
+- Explain the concept bottleneck model approach
+- Understand concept activation vectors (CAVs)
+- Apply concept-based explanations for model decisions
+- Analyze the relationship between concepts and model behavior
+
+**Guidance:** Students should understand concept-based interpretability that explains model decisions in terms of human-understandable concepts rather than raw features. Concept bottleneck models should force models to reason through intermediate concept representations. Concept Activation Vectors should quantify the importance of concepts to model predictions. Students should analyze how aligning model reasoning with human concepts improves interpretability and enables more meaningful explanations.
+
+**7.32.2 Implement causal interpretability methods**
+- Apply causal mediation analysis
+- Implement causal feature importance
+- Use counterfactual explanations for interpretability
+- Apply causal models for interpretable ML
+
+**Guidance:** Students should implement causal mediation analysis that identifies causal pathways through which features affect predictions. Causal feature importance should measure the causal effect of features rather than just correlation. Counterfactual explanations should show how changing causal factors would change outcomes. Causal models should be used to build interpretable ML systems that respect causal relationships in the data.
+
+**7.32.3 Apply human-centered explainable AI**
+- Implement user studies for explanation evaluation
+- Apply different explanation presentation formats
+- Use interactive explanation systems
+- Apply domain-specific explanation approaches
+
+**Guidance:** Students should implement user studies that evaluate how effectively explanations help humans understand and trust AI systems. Different presentation formats including visual, textual, and interactive explanations should be compared. Interactive explanation systems should allow users to explore model behavior through queries and what-if scenarios. Domain-specific approaches should tailor explanations to the needs and knowledge of different user groups.
+
+**7.32.4 Implement comprehensive explanation evaluation**
+- Apply faithfulness metrics for explanations
+- Implement explanation robustness evaluation
+- Use explanation utility assessment
+- Apply comprehensive explanation benchmarking
+
+**Guidance:** Students should implement faithfulness metrics that measure how accurately explanations reflect the actual model reasoning process. Robustness evaluation should test whether explanations remain consistent under small perturbations. Utility assessment should measure how effectively explanations help users accomplish tasks. Comprehensive benchmarking should evaluate explanation methods across multiple dimensions including faithfulness, robustness, utility, and computational efficiency.
+
+###### Topic 33: Advanced ML for Combinatorial Optimization
+
+Students will be assessed on their ability to:
+
+**7.33.1 Understand learning-based combinatorial optimization**
+- Explain the integration of ML with traditional optimization
+- Understand different learning paradigms for combinatorial problems
+- Apply end-to-end learning vs. hybrid approaches
+- Analyze challenges in learning for discrete optimization
+
+**Guidance:** Students should understand how ML can enhance traditional combinatorial optimization methods by learning patterns, heuristics, or solution strategies. They should explore different paradigms including supervised learning from optimal solutions, reinforcement learning for search strategies, and unsupervised learning for problem structure discovery. End-to-end learning should directly map problem instances to solutions, while hybrid approaches should combine ML with traditional algorithms. Students should analyze challenges including discrete action spaces, sparse rewards, and generalization across problem instances.
+
+**7.33.2 Implement graph neural networks for combinatorial problems**
+- Apply GNNs for graph-based optimization problems
+- Implement attention mechanisms for combinatorial optimization
+- Use GNNs for constraint satisfaction problems
+- Apply GNNs for routing and scheduling problems
+
+**Guidance:** Students should implement GNNs that operate directly on graph representations of combinatorial problems. Attention mechanisms should focus on important elements or constraints in the problem. Constraint satisfaction problems should use GNNs to learn variable and constraint representations. Routing and scheduling applications should include traveling salesman, vehicle routing, and job shop scheduling problems.
+
+**7.33.3 Apply reinforcement learning for combinatorial optimization**
+- Implement policy gradient methods for discrete decisions
+- Apply value-based methods for combinatorial search
+- Use actor-critic approaches for optimization
+- Apply Monte Carlo Tree Search with learned policies
+
+**Guidance:** Students should implement policy gradient methods that learn stochastic policies for making discrete decisions in combinatorial problems. Value-based methods should learn to evaluate states or partial solutions. Actor-critic approaches should combine policy learning with value estimation. Monte Carlo Tree Search should use learned policies to guide the search process, combining the strengths of learning and search.
+
+**7.33.4 Implement learning-based heuristics and approximations**
+- Apply ML to learn traditional heuristics
+- Implement learned approximation algorithms
+- Use ML for problem decomposition and reduction
+- Apply meta-learning for combinatorial optimization
+
+**Guidance:** Students should implement ML methods that learn to mimic or improve traditional heuristics for combinatorial problems. Learned approximation algorithms should provide performance guarantees similar to classical approximations. Problem decomposition should use ML to break complex problems into simpler subproblems. Meta-learning should enable rapid adaptation to new combinatorial optimization problems by learning from previous problem-solving experience.
+
+###### Topic 34: Advanced ML for Physical Systems
+
+Students will be assessed on their ability to:
+
+**7.34.1 Understand ML for dynamical systems**
+- Explain system identification with ML
+- Understand differentiable physical simulation
+- Apply ML for control and stabilization
+- Analyze challenges in learning physical dynamics
+
+**Guidance:** Students should understand how ML can identify mathematical models of dynamical systems from observed data. Differentiable physical simulation should enable gradient-based optimization through physical processes. ML control methods should learn policies to stabilize and control physical systems. Students should analyze challenges including dealing with noise, partial observability, and the need for physical consistency in learned models.
+
+**7.34.2 Implement differentiable physical simulators**
+- Apply differentiable rigid body dynamics
+- Implement differentiable fluid simulation
+- Use differentiable contact and collision models
+- Apply differentiable simulators for system identification
+
+**Guidance:** Students should implement differentiable simulators for rigid body systems that allow gradients to flow through physical interactions. Fluid simulation should use differentiable numerical methods for solving Navier-Stokes equations. Contact and collision models should handle the discontinuous nature of physical contact in a differentiable manner. These simulators should be applied to system identification tasks where physical parameters are learned from observed behavior.
+
+**7.34.3 Apply ML for physical modeling and system identification**
+- Implement neural network models of physical systems
+- Apply physics-informed neural networks for system identification
+- Use ML for parameter estimation in physical models
+- Apply ML for model discovery and equation learning
+
+**Guidance:** Students should implement neural networks that learn to model the behavior of physical systems from input-output data. Physics-informed approaches should incorporate known physical laws as constraints or regularization. Parameter estimation should use ML to infer physical constants or parameters from experimental data. Model discovery should automatically identify the mathematical equations that govern physical systems.
+
+**7.34.4 Implement ML for robotics and physical interaction**
+- Apply ML for robot control and planning
+- Implement learning from demonstration for robotics
+- Use ML for perception in physical environments
+- Apply ML for human-robot interaction
+
+**Guidance:** Students should implement ML methods for robot control including reinforcement learning and imitation learning. Learning from demonstration should enable robots to learn tasks from human demonstrations. ML perception systems should process sensor data from cameras, lidar, and other sensors to understand physical environments. Human-robot interaction should use ML to enable natural communication and collaboration between humans and robots.
+
+###### Topic 35: Advanced ML for Biological Systems
+
+Students will be assessed on their ability to:
+
+**7.35.1 Understand ML for biological sequence analysis**
+- Explain the characteristics of biological sequence data
+- Understand different types of biological sequences (DNA, RNA, protein)
+- Apply sequence representation learning methods
+- Analyze challenges in biological sequence modeling
+
+**Guidance:** Students should understand that biological sequences (DNA, RNA, proteins) contain patterns and structures that encode biological functions. They should explore the unique characteristics of these sequences including their length, alphabet structure, and evolutionary relationships. Sequence representation learning should capture meaningful biological features. Students should analyze challenges including dealing with variable-length sequences, sparse labels, and the need for biological interpretability.
+
+**7.35.2 Implement ML for protein structure and function**
+- Apply ML for protein structure prediction
+- Implement protein function prediction methods
+- Use ML for protein-protein interaction prediction
+- Apply ML for protein design and engineering
+
+**Guidance:** Students should implement ML methods for predicting protein 3D structures from amino acid sequences, inspired by approaches like AlphaFold. Protein function prediction should use sequence and structure information to predict biological activities. Protein-protein interaction prediction should identify which proteins interact in biological processes. Protein design should use ML to generate novel protein sequences with desired properties.
+
+**7.35.3 Apply ML for biological network analysis**
+- Implement graph neural networks for biological networks
+- Apply ML for gene regulatory network inference
+- Use ML for metabolic pathway analysis
+- Apply ML for drug-target interaction prediction
+
+**Guidance:** Students should implement GNNs that analyze biological networks including protein-protein interaction networks, gene regulatory networks, and metabolic networks. Gene regulatory network inference should predict regulatory relationships between genes from expression data. Metabolic pathway analysis should identify important reactions and pathways in cellular metabolism. Drug-target interaction prediction should identify which drugs interact with which protein targets.
+
+**7.35.4 Implement ML for drug discovery and personalized medicine**
+- Apply ML for virtual screening and drug discovery
+- Implement ML for drug response prediction
+- Use ML for biomarker discovery
+- Apply ML for personalized treatment recommendations
+
+**Guidance:** Students should implement ML methods for virtual screening that predict which compounds are likely to be effective drugs. Drug response prediction should model how individual patients will respond to different treatments. Biomarker discovery should identify biological indicators of disease states or treatment responses. Personalized medicine applications should use ML to recommend optimal treatments for individual patients based on their genetic, molecular, and clinical data.
+
+###### Topic 36: Advanced ML for Game Playing and Strategic Reasoning
+
+Students will be assessed on their ability to:
+
+**7.36.1 Understand game theory foundations for ML**
+- Explain basic game theory concepts and their ML relevance
+- Understand different types of games (cooperative, competitive, stochastic)
+- Apply game-theoretic solution concepts
+- Analyze connections between game theory and multi-agent learning
+
+**Guidance:** Students should understand fundamental game theory concepts including Nash equilibrium, Pareto efficiency, and dominant strategies. They should explore different game types including cooperative games where players work together, competitive games with conflicting interests, and stochastic games with random elements. Solution concepts should be applied to analyze multi-agent learning scenarios. Students should analyze how game theory provides a theoretical foundation for understanding multi-agent learning dynamics.
+
+**7.36.2 Implement advanced Monte Carlo Tree Search**
+- Apply MCTS with neural network guidance
+- Implement different MCTS selection strategies
+- Use MCTS for planning in partially observable environments
+- Apply MCTS variants for different game types
+
+**Guidance:** Students should implement MCTS that uses neural networks to guide the search process, similar to AlphaGo. Different selection strategies should be explored including UCT (Upper Confidence Bound for Trees) and its variants. MCTS should be adapted for partially observable environments using belief states or particle filtering. Different MCTS variants should be applied to various game types including perfect information games, imperfect information games, and continuous action spaces.
+
+**7.36.3 Apply AlphaZero-like algorithms**
+- Implement self-play training with neural networks
+- Apply AlphaZero to different game domains
+- Use AlphaZero for planning and search beyond games
+- Analyze the generalization capabilities of AlphaZero approaches
+
+**Guidance:** Students should implement the AlphaZero algorithm that combines neural networks with MCTS and learns through self-play. The algorithm should be applied to different game domains including board games, card games, and video games. AlphaZero principles should be extended to planning and search in non-game domains like robotics and optimization. Students should analyze how well these approaches generalize across different problem types and the factors that affect their performance.
+
+**7.36.4 Implement multi-agent reinforcement learning**
+- Apply independent and centralized learning paradigms
+- Implement communication and coordination in multi-agent systems
+- Use multi-agent RL for competitive and cooperative scenarios
+- Apply multi-agent RL to real-world strategic problems
+
+**Guidance:** Students should implement both independent Q-learning where each agent learns separately and centralized training with decentralized execution. Communication protocols should enable agents to share information and coordinate their actions. Multi-agent RL should be applied to competitive scenarios (like games) and cooperative scenarios (like team tasks). Real-world applications should include resource allocation, traffic control, and multi-robot coordination.
+
+###### Topic 37: Advanced ML for Creative Applications
+
+Students will be assessed on their ability to:
+
+**7.37.1 Understand generative models for creative content**
+- Explain different types of generative models for creativity
+- Understand the role of latent spaces in creative generation
+- Apply conditional generation for controlled creativity
+- Analyze the concept of creativity in AI systems
+
+**Guidance:** Students should understand how different generative models including VAEs, GANs, diffusion models, and autoregressive models can be used for creative content generation. They should explore how latent spaces capture meaningful variations that can be manipulated for creative control. Conditional generation should enable control over output characteristics. Students should analyze philosophical questions about whether AI systems can truly be creative or merely sophisticated imitators.
+
+**7.37.2 Implement ML for music generation**
+- Apply symbolic music generation with ML
+- Implement audio-based music generation
+- Use ML for music style transfer and transformation
+- Apply ML for interactive music composition
+
+**Guidance:** Students should implement ML methods for generating symbolic music representations (MIDI, scores) including recurrent networks and transformers. Audio-based generation should directly generate raw audio waveforms or spectrograms using models like WaveNet or diffusion models. Style transfer should transform music between different genres or artists. Interactive composition should enable human-AI collaboration where AI suggests musical ideas that humans can modify and extend.
+
+**7.37.3 Apply ML for visual art generation**
+- Implement image generation with diffusion models
+- Apply style transfer and artistic transformation
+- Use ML for procedural content generation
+- Apply ML for interactive art creation
+
+**Guidance:** Students should implement state-of-the-art image generation using diffusion models like Stable Diffusion or DALL-E. Style transfer should apply artistic styles to photographs or other images. Procedural content generation should create complex visual patterns, textures, or scenes algorithmically. Interactive art creation should enable users to guide and modify AI-generated artwork through intuitive interfaces.
+
+**7.37.4 Implement ML for creative writing and storytelling**
+- Apply language models for text generation
+- Implement controlled and constrained text generation
+- Use ML for narrative generation and story planning
+- Apply ML for interactive storytelling and games
+
+**Guidance:** Students should apply large language models for creative writing tasks including poetry, stories, and dialogue. Controlled generation should ensure outputs follow specific constraints or styles. Narrative generation should create coherent story structures including plot, character development, and thematic elements. Interactive storytelling should enable dynamic story generation that responds to user choices, as in interactive fiction or narrative games.
+
+###### Topic 38: Advanced ML for Social Systems
+
+Students will be assessed on their ability to:
+
+**7.38.1 Understand social network analysis with ML**
+- Explain the characteristics of social network data
+- Understand different types of social network structures
+- Apply ML for community detection and analysis
+- Analyze ethical considerations in social network analysis
+
+**Guidance:** Students should understand that social networks represent relationships between individuals or groups, with unique properties including scale-free degree distributions, small-world properties, and community structure. They should explore different network types including friendship networks, collaboration networks, and information flow networks. ML methods should identify communities, influential nodes, and network evolution patterns. Students should analyze ethical issues including privacy, consent, and potential misuse of social network analysis.
+
+**7.38.2 Implement ML for social phenomenon modeling**
+- Apply ML for opinion dynamics and sentiment propagation
+- Implement ML for social trend prediction
+- Use ML for modeling collective behavior
+- Apply ML for social intervention design
+
+**Guidance:** Students should implement ML methods that model how opinions and sentiments spread through social networks. Trend prediction should forecast the emergence and evolution of social phenomena including memes, movements, and behaviors. Collective behavior modeling should capture emergent patterns from individual interactions. Social intervention design should use ML to optimize interventions for positive social outcomes like health promotion or conflict reduction.
+
+**7.38.3 Apply ML for social good and humanitarian applications**
+- Implement ML for disaster response and management
+- Apply ML for public health monitoring and intervention
+- Use ML for poverty mapping and resource allocation
+- Apply ML for human rights monitoring and protection
+
+**Guidance:** Students should implement ML methods for disaster response including damage assessment, resource allocation, and evacuation planning. Public health applications should include disease surveillance, intervention targeting, and health outcome prediction. Poverty mapping should use satellite imagery and other data to identify areas in need of assistance. Human rights applications should monitor for violations, document evidence, and support advocacy efforts.
+
+**7.38.4 Implement ML for societal impact assessment**
+- Apply ML for algorithmic bias detection and mitigation
+- Implement ML for policy impact prediction
+- Use ML for monitoring social indicators
+- Apply ML for equitable resource distribution
+
+**Guidance:** Students should implement ML methods to detect and mitigate bias in algorithmic systems across different demographic groups. Policy impact prediction should forecast the effects of proposed policies on different population segments. Social indicator monitoring should track metrics like inequality, mobility, and well-being over time. Equitable resource distribution should optimize the allocation of resources to maximize social welfare and fairness.
+
+###### Topic 39: Advanced ML for Sequential Decision Making
+
+Students will be assessed on their ability to:
+
+**7.39.1 Understand partially observable environments**
+- Explain the challenges of partial observability
+- Understand belief states and state estimation
+- Apply different approaches to POMDPs
+- Analyze the relationship between observability and performance
+
+**Guidance:** Students should understand that in partially observable environments, agents cannot directly observe the true state and must make decisions based on incomplete information. Belief states should represent probability distributions over possible states. Different approaches to POMDPs should be explored including exact methods, approximate methods, and heuristic approaches. Students should analyze how the degree of observability affects decision-making performance and the strategies agents can use to cope with uncertainty.
+
+**7.39.2 Implement hierarchical reinforcement learning**
+- Apply options and temporal abstraction
+- Implement MAXQ and other hierarchical RL methods
+- Use hierarchical RL for long-horizon tasks
+- Apply hierarchical RL to complex real-world problems
+
+**Guidance:** Students should implement options framework that extends temporal abstraction by allowing actions to take variable amounts of time. MAXQ should decompose problems hierarchically into subtasks and sub-policies. Hierarchical RL should be applied to long-horizon tasks where flat RL struggles with credit assignment and exploration. Real-world applications should include robotics, dialogue systems, and complex planning problems.
+
+**7.39.3 Apply offline reinforcement learning**
+- Implement conservative Q-learning and other offline methods
+- Apply offline RL to real-world datasets
+- Use offline RL for safety-critical applications
+- Analyze challenges in offline RL evaluation
+
+**Guidance:** Students should implement offline RL methods that learn from fixed datasets without additional environment interaction. Conservative Q-learning should address distribution shift by being pessimistic about unseen state-action pairs. Offline RL should be applied to real-world datasets from healthcare, education, or other domains where active exploration is expensive or risky. Safety-critical applications should use offline RL to learn policies that can be safely deployed. Students should analyze challenges in evaluating offline RL policies without online testing.
+
+**7.39.4 Implement reinforcement learning from human feedback**
+- Apply preference-based RL methods
+- Implement inverse reinforcement learning from demonstrations
+- Use RLHF for language model alignment
+- Apply human-in-the-loop RL systems
+
+**Guidance:** Students should implement RL methods that learn from human preferences rather than explicit rewards. Inverse RL should infer reward functions from human demonstrations. RLHF should be applied to align language models with human values and preferences. Human-in-the-loop systems should enable continuous human guidance during the learning process, combining automated learning with human expertise.
+
+###### Topic 40: Advanced ML for Knowledge Representation and Reasoning
+
+Students will be assessed on their ability to:
+
+**7.40.1 Understand knowledge graphs and their applications**
+- Explain the structure and components of knowledge graphs
+- Understand different types of knowledge graphs
+- Apply knowledge graph embedding methods
+- Analyze the role of knowledge graphs in AI systems
+
+**Guidance:** Students should understand that knowledge graphs represent structured knowledge as entities, relations, and their connections. They should explore different types including domain-specific knowledge graphs (medical, financial), general knowledge graphs (Wikidata, DBpedia), and enterprise knowledge graphs. Knowledge graph embedding methods should map entities and relations to vector spaces for computational use. Students should analyze how knowledge graphs enable reasoning, question answering, and knowledge integration in AI systems.
+
+**7.40.2 Implement neuro-symbolic knowledge representation**
+- Apply neural networks with symbolic knowledge integration
+- Implement differentiable knowledge graph reasoning
+- Use neural-symbolic systems for complex reasoning
+- Apply neuro-symbolic approaches to knowledge completion
+
+**Guidance:** Students should implement neural networks that incorporate symbolic knowledge through constraints, attention mechanisms, or specialized architectures. Differentiable knowledge graph reasoning should enable end-to-end training of systems that perform logical inference. Neuro-symbolic systems should combine the pattern recognition strengths of neural networks with the logical reasoning capabilities of symbolic systems. Knowledge completion should predict missing facts in knowledge graphs using combined neural and symbolic methods.
+
+**7.40.3 Apply ML for logical reasoning and inference**
+- Implement neural theorem proving
+- Apply ML for automated reasoning
+- Use ML for constraint satisfaction problems
+- Apply ML for logical rule induction
+
+**Guidance:** Students should implement neural theorem provers that learn to guide the search for mathematical proofs. ML methods should be applied to improve automated reasoning systems including SAT solvers and first-order logic provers. Constraint satisfaction problems should use ML to learn variable and value ordering heuristics. Logical rule induction should discover logical rules from data that can be used for reasoning and inference.
+
+**7.40.4 Implement ML for commonsense reasoning**
+- Apply ML for commonsense knowledge acquisition
+- Implement commonsense reasoning benchmarks and evaluation
+- Use ML for contextual and situational understanding
+- Apply ML for abductive and plausible reasoning
+
+**Guidance:** Students should implement ML methods that acquire commonsense knowledge from text, images, or other data sources. Commonsense reasoning benchmarks should be used to evaluate systems on tasks that require everyday understanding. Contextual understanding should enable systems to interpret situations based on background knowledge and context. Abductive reasoning should infer the most likely explanations for observations, dealing with the inherent uncertainty in real-world reasoning.
+
+###### Topic 41: Advanced ML for Quantum Computing
+
+Students will be assessed on their ability to:
+
+**7.41.1 Understand quantum computing fundamentals for ML**
+- Explain basic quantum computing concepts relevant to ML
+- Understand quantum circuits and gates
+- Apply quantum state representations
+- Analyze the potential advantages of quantum ML
+
+**Guidance:** Students should understand fundamental quantum computing concepts including qubits, superposition, entanglement, and quantum interference. They should explore how quantum circuits represent computations through sequences of quantum gates. Quantum state representations should encode information in ways that differ fundamentally from classical representations. Students should analyze potential quantum advantages including exponential speedups for certain ML tasks and the ability to naturally represent quantum data.
+
+**7.41.2 Implement quantum machine learning algorithms**
+- Apply quantum versions of classical ML algorithms
+- Implement quantum neural networks
+- Use quantum algorithms for optimization
+- Apply quantum ML to classification and regression tasks
+
+**Guidance:** Students should implement quantum versions of classical algorithms including quantum support vector machines, quantum principal component analysis, and quantum k-means clustering. Quantum neural networks should use parameterized quantum circuits as trainable models. Quantum optimization algorithms should be applied to ML training problems. Classification and regression tasks should demonstrate the practical application of quantum ML methods to real-world problems.
+
+**7.41.3 Apply variational quantum circuits**
+- Implement variational quantum eigensolvers
+- Apply quantum approximate optimization algorithms
+- Use variational circuits for ML tasks
+- Analyze the trainability of variational quantum circuits
+
+**Guidance:** Students should implement Variational Quantum Eigensolvers (VQE) that find ground states of quantum systems using hybrid quantum-classical optimization. Quantum Approximate Optimization Algorithms (QAOA) should solve combinatorial optimization problems. Variational circuits should be applied to ML tasks including classification and generative modeling. Students should analyze challenges in training variational circuits including barren plateaus and gradient estimation issues.
+
+**7.41.4 Implement quantum-classical hybrid ML systems**
+- Apply quantum-enhanced feature spaces
+- Implement quantum data loading and encoding
+- Use quantum ML for quantum data processing
+- Apply quantum ML to near-term quantum devices
+
+**Guidance:** Students should implement hybrid systems where quantum computers enhance classical ML through quantum feature spaces or kernel methods. Quantum data loading should encode classical data into quantum states for processing. Quantum ML should process naturally quantum data from quantum sensors or simulations. Near-term applications should focus on algorithms that can run on current noisy intermediate-scale quantum (NISQ) devices with limited qubits and coherence times.
+
+###### Topic 42: Advanced ML for Edge and IoT Devices
+
+Students will be assessed on their ability to:
+
+**7.42.1 Understand edge computing constraints for ML**
+- Explain the resource limitations of edge devices
+- Understand different types of edge and IoT devices
+- Apply edge vs. cloud computing trade-offs
+- Analyze the requirements for edge ML systems
+
+**Guidance:** Students should understand that edge devices have severe constraints including limited memory, processing power, energy, and often intermittent connectivity. They should explore different device types from powerful edge servers to tiny microcontrollers and sensors. Edge vs. cloud trade-offs should consider latency, privacy, bandwidth, and reliability. Students should analyze requirements including model size, inference speed, energy efficiency, and robustness for edge ML systems.
+
+**7.42.2 Implement TinyML and ultra-efficient neural networks**
+- Apply model compression techniques for edge devices
+- Implement quantization-aware training
+- Use neural architecture search for efficient models
+- Apply specialized efficient architectures (MobileNets, EfficientNets)
+
+**Guidance:** Students should implement model compression including pruning, quantization, and knowledge distillation to reduce model size and computational requirements. Quantization-aware training should optimize models specifically for low-precision inference. Neural architecture search should discover efficient architectures that balance performance and resource usage. Specialized architectures like MobileNets and EfficientNets should be applied to achieve good performance with minimal computational cost.
+
+**7.42.3 Apply on-device learning and adaptation**
+- Implement federated learning for edge devices
+- Apply on-device fine-tuning and personalization
+- Use continual learning on edge devices
+- Apply privacy-preserving on-device learning
+
+**Guidance:** Students should implement federated learning that enables model training across distributed edge devices without sharing raw data. On-device fine-tuning should allow models to adapt to individual user preferences or local conditions. Continual learning should enable edge devices to learn new tasks without forgetting previous ones. Privacy-preserving techniques should ensure that on-device learning doesn't compromise user privacy.
+
+**7.42.4 Implement energy-constrained ML optimization**
+- Apply energy-aware model design
+- Implement dynamic voltage and frequency scaling for ML
+- Use approximate computing for energy efficiency
+- Apply energy harvesting-aware ML systems
+
+**Guidance:** Students should implement model design techniques that optimize for energy efficiency rather than just accuracy. Dynamic voltage and frequency scaling should adjust computational resources based on energy availability. Approximate computing should trade off some accuracy for significant energy savings. Energy harvesting-aware systems should adapt their behavior based on available energy from sources like solar, kinetic, or thermal energy harvesting.
+
+###### Topic 43: Advanced ML for Extreme Data Scarcity
+
+Students will be assessed on their ability to:
+
+**7.43.1 Understand few-shot and zero-shot learning challenges**
+- Explain the fundamental challenges of learning with limited data
+- Understand different types of data scarcity scenarios
+- Apply evaluation metrics for few-shot learning
+- Analyze the role of prior knowledge in data-scarce learning
+
+**Guidance:** Students should understand that learning with very few examples per class requires fundamentally different approaches than traditional supervised learning. They should explore scenarios including few-shot learning (small number of examples per class), one-shot learning (single example per class), and zero-shot learning (no examples for some classes). Evaluation metrics should measure performance on novel classes with limited training data. Students should analyze how prior knowledge, transfer learning, and inductive biases enable learning from scarce data.
+
+**7.43.2 Implement advanced few-shot learning methods**
+- Apply metric learning approaches for few-shot learning
+- Implement optimization-based few-shot learning (MAML)
+- Use memory-augmented networks for few-shot learning
+- Apply meta-learning for rapid adaptation
+
+**Guidance:** Students should implement metric learning methods that learn embeddings where similar classes are close in the embedding space. Optimization-based approaches like MAML should learn model parameters that can quickly adapt to new tasks with few gradient updates. Memory-augmented networks should use external memory to store and retrieve information from few examples. Meta-learning should enable systems to learn how to learn efficiently from limited data.
+
+**7.43.3 Apply zero-shot learning with semantic knowledge**
+- Implement attribute-based zero-shot learning
+- Apply text-based zero-shot learning
+- Use knowledge graphs for zero-shot learning
+- Apply zero-shot learning to visual and textual domains
+
+**Guidance:** Students should implement attribute-based zero-shot learning that uses semantic attributes to connect seen and unseen classes. Text-based approaches should use language models to understand class relationships and enable zero-shot recognition. Knowledge graphs should provide structured semantic information for zero-shot prediction. Applications should include both visual domains (recognizing unseen object categories) and textual domains (classifying unseen topics or sentiments).
+
+**7.43.4 Implement self-supervised learning with minimal data**
+- Apply contrastive self-supervised learning
+- Implement generative self-supervised methods
+- Use self-supervised learning for pre-training
+- Apply self-supervised learning to domain-specific data scarcity
+
+**Guidance:** Students should implement contrastive self-supervised learning that learns representations by contrasting positive and negative pairs. Generative methods should use autoencoders, GANs, or diffusion models to learn from unlabeled data. Self-supervised pre-training should learn general representations from unlabeled data before fine-tuning on limited labeled data. Domain-specific applications should address data scarcity in fields like medical imaging, scientific research, or specialized industrial applications.
+
+###### Topic 44: Advanced ML for Non-Euclidean Data
+
+Students will be assessed on their ability to:
+
+**7.44.1 Understand non-Euclidean geometry in ML**
+- Explain the limitations of Euclidean spaces for certain data
+- Understand different types of non-Euclidean spaces
+- Apply manifold learning concepts
+- Analyze when non-Euclidean representations are beneficial
+
+**Guidance:** Students should understand that not all data naturally fits into Euclidean spaces with flat geometry. They should explore different non-Euclidean spaces including hyperbolic spaces (constant negative curvature), spherical spaces (constant positive curvature), and more general Riemannian manifolds. Manifold learning should reveal the underlying geometric structure of data. Students should analyze scenarios where non-Euclidean representations are beneficial, including hierarchical data, periodic data, and data with complex relational structures.
+
+**7.44.2 Implement hyperbolic neural networks**
+- Apply hyperbolic geometry for hierarchical data
+- Implement hyperbolic embeddings and operations
+- Use hyperbolic neural networks for tree-like structures
+- Apply hyperbolic ML to knowledge representation tasks
+
+**Guidance:** Students should implement hyperbolic neural networks that operate in hyperbolic space rather than Euclidean space. Hyperbolic embeddings should represent hierarchical data more efficiently by exploiting the exponential growth of space in hyperbolic geometry. Hyperbolic neural networks should process data with tree-like or hierarchical structures including taxonomies, social networks, and knowledge graphs. Knowledge representation tasks should benefit from the ability to represent hierarchical relationships naturally in hyperbolic space.
+
+**7.44.3 Apply spherical and projective geometry in ML**
+- Implement spherical neural networks for periodic data
+- Apply projective geometry for computer vision tasks
+- Use spherical embeddings for directional data
+- Apply geometric deep learning to non-Euclidean spaces
+
+**Guidance:** Students should implement spherical neural networks that operate on the surface of spheres, suitable for periodic data like angles, directions, or cyclic phenomena. Projective geometry should be applied to computer vision tasks involving perspective and camera transformations. Spherical embeddings should represent directional data including 3D orientations, wind directions, or magnetic fields. Geometric deep learning should generalize neural network operations to arbitrary non-Euclidean spaces.
+
+**7.44.4 Implement manifold learning and geometric deep learning**
+- Apply manifold regularization in neural networks
+- Implement geometric deep learning on manifolds
+- Use manifold-valued outputs for regression tasks
+- Apply non-Euclidean ML to real-world applications
+
+**Guidance:** Students should implement manifold regularization that incorporates geometric constraints into neural network training. Geometric deep learning should generalize convolutional and other operations to manifold-structured data. Manifold-valued regression should predict outputs that lie on specific manifolds rather than in Euclidean space. Real-world applications should include computer vision, robotics, physics simulation, and other domains where data naturally has non-Euclidean structure.
+
+###### Topic 45: Advanced ML for Temporal and Causal Reasoning
+
+Students will be assessed on their ability to:
+
+**7.45.1 Understand temporal causal inference**
+- Explain the challenges of causal inference in time series
+- Understand temporal causal discovery methods
+- Apply Granger causality and its limitations
+- Analyze the relationship between correlation and causation over time
+
+**Guidance:** Students should understand that causal inference in time series data presents unique challenges including temporal dependencies, feedback loops, and the need to respect temporal ordering. They should explore methods for discovering causal relationships from time series data including constraint-based approaches and score-based methods. Granger causality should be implemented and its limitations analyzed, including its inability to distinguish between direct and indirect causal effects. Students should analyze how temporal ordering provides additional constraints for causal inference compared to cross-sectional data.
+
+**7.45.2 Implement counterfactual reasoning in time series**
+- Apply counterfactual prediction for temporal data
+- Implement temporal intervention analysis
+- Use counterfactual explanations for time series models
+- Apply counterfactual reasoning to policy evaluation
+
+**Guidance:** Students should implement methods to predict what would have happened in time series under different interventions or conditions. Temporal intervention analysis should estimate the effects of interventions that occur at specific time points. Counterfactual explanations should show how past conditions would need to change to achieve different future outcomes. Policy evaluation should use counterfactual reasoning to assess the impact of policies implemented at specific times.
+
+**7.45.3 Apply causal discovery from temporal data**
+- Implement constraint-based causal discovery for time series
+- Apply score-based methods for temporal causal discovery
+- Use functional causal models for time series
+- Apply causal discovery to real-world temporal datasets
+
+**Guidance:** Students should implement constraint-based methods like PC or FCI algorithms adapted for time series data that respect temporal ordering constraints. Score-based methods should search for causal structures that optimize scoring criteria while respecting temporal constraints. Functional causal models should represent causal relationships as functions with noise terms. Real-world applications should include economics, neuroscience, climate science, and other fields with rich temporal data.
+
+**7.45.4 Implement causal reinforcement learning**
+- Apply causal models to improve RL sample efficiency
+- Implement causal world models for RL
+- Use causal RL for robust policy learning
+- Apply causal RL to intervention planning
+
+**Guidance:** Students should implement RL systems that incorporate causal models to improve sample efficiency by leveraging causal structure. Causal world models should learn causal relationships that enable better planning and generalization. Causal RL should learn policies that are robust to changes in the environment by understanding the underlying causal structure. Intervention planning should use causal reasoning to plan sequences of actions that achieve desired outcomes.
+
 #### **Unit 8: Advanced Deep Learning Architectures**  
 #### **Unit 9: Reinforcement Learning**  
 #### **Unit 10: Applied AI & MLOps**  
