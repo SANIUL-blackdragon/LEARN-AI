@@ -1,4 +1,4 @@
-### **THE ABSOLUTELY COMPLETE AI/ML MASTERY SPECIFICATION**
+## **THE ABSOLUTELY COMPLETE AI/ML MASTERY SPECIFICATION**
 *(From Absolute Beginner to The Absolute Frontier - 50 Core Units + Comprehensive Modules)*
 
 ---
@@ -14,8 +14,8 @@ This unit introduces the fundamental mathematical concepts that form the foundat
 ##### 1.2 Assessment information
 
 • First assessment: January 2019.
-• The assessment is 1 hour and 30 minutes.
-• The assessment is out of 75 marks.
+• The assessment is __ hour and __ minutes.
+• The assessment is out of __ marks.
 • Students must answer all questions.
 • Calculators may be used in the examination. Please see Appendix 6: Use of calculators.
 • The booklet Mathematical Formulae and Statistical Tables will be provided for use in the assessments.
@@ -247,8 +247,8 @@ This unit introduces students to the fundamental concepts of programming and com
 ##### 2.2 Assessment information
 
 • First assessment: June 2019.
-• The assessment is 1 hour and 30 minutes.
-• The assessment is out of 75 marks.
+• The assessment is __ hour and __ minutes.
+• The assessment is out of __ marks.
 • Students must answer all questions.
 • Calculators may be used in the examination. Please see Appendix 6: Use of calculators.
 • The booklet Mathematical Formulae and Statistical Tables will be provided for use in the assessments.
@@ -826,8 +826,8 @@ This unit introduces students to the fundamental concepts of machine learning, b
 ##### 3.2 Assessment information
 
 • First assessment: January 2020.
-• The assessment is 1 hour and 30 minutes.
-• The assessment is out of 75 marks.
+• The assessment is __ hour and __ minutes.
+• The assessment is out of __ marks.
 • Students must answer all questions.
 • Calculators may be used in the examination. Please see Appendix 6: Use of calculators.
 • The booklet Mathematical Formulae and Statistical Tables will be provided for use in the assessments.
@@ -1059,8 +1059,8 @@ This unit introduces students to the fundamental concepts of deep learning, buil
 ##### 4.2 Assessment information
 
 • First assessment: January 2020.
-• The assessment is 1 hour and 30 minutes.
-• The assessment is out of 75 marks.
+• The assessment is __ hour and __ minutes.
+• The assessment is out of __ marks.
 • Students must answer all questions.
 • Calculators may be used in the examination. Please see Appendix 6: Use of calculators.
 • The booklet Mathematical Formulae and Statistical Tables will be provided for use in the assessments.
@@ -1292,7 +1292,7 @@ This unit introduces students to the fundamental concepts of computer systems an
 ##### 5.2 Assessment information
 
 • First assessment: June 2020.
-• The assessment is 1 hour and 30 minutes.
+• The assessment is __ hour and __ minutes.
 • The assessment is out of 75 marks.
 • Students must answer all questions.
 • Calculators may be used in the examination. Please see Appendix 6: Use of calculators.
@@ -1593,6 +1593,4247 @@ Students will be assessed on their ability to:
 ### **TIER 2: INTERMEDIATE (Building Core Competencies)**
 
 #### **Unit 6: Advanced Mathematics for ML**  
+
+##### 6.1 Unit description
+
+This unit builds upon the mathematical foundations established in Unit 1, diving deeper into advanced mathematical concepts essential for understanding and implementing sophisticated machine learning and artificial intelligence algorithms. Students will develop a comprehensive understanding of advanced linear algebra, multivariate calculus, optimization theory, probability theory, and information theory. The unit emphasizes the application of these mathematical concepts to real-world AI/ML problems, with a focus on developing both theoretical understanding and computational skills. Students will learn to analyze complex algorithms, derive mathematical formulations, and apply advanced mathematical techniques to solve challenging problems in machine learning and artificial intelligence.
+
+##### 6.2 Assessment information
+
+• First assessment: June 2021.
+• The assessment is __ hour and __ minutes.
+• The assessment is out of __ marks.
+• Students must answer all questions.
+• Calculators may be used in the examination. Please see Appendix 6: Use of calculators.
+• The booklet Mathematical Formulae and Statistical Tables will be provided for use in the assessments.
+
+##### 6.3 Unit content
+
+###### Topic 1: Advanced Linear Algebra
+
+Students will be assessed on their ability to:
+
+**6.1.1 Understand singular value decomposition (SVD)**
+- Define SVD and its mathematical representation
+- Understand the relationship between SVD and eigenvalue decomposition
+- Identify the properties of singular values and singular vectors
+- Apply SVD to decompose matrices into constituent components
+
+**Guidance:** Students should understand SVD as a fundamental matrix factorization that decomposes any matrix into three matrices (U, Σ, Vᵀ). They should recognize that SVD exists for all matrices, unlike eigenvalue decomposition which requires square matrices. The geometric interpretation of SVD as rotation, scaling, and rotation should be emphasized. Applications to dimensionality reduction and data compression should be referenced.
+
+**6.1.2 Understand eigenvalue decomposition**
+- Define eigenvalue decomposition and its mathematical representation
+- Understand the conditions under which eigenvalue decomposition exists
+- Identify the relationship between eigenvalues and matrix properties
+- Apply eigenvalue decomposition to diagonalizable matrices
+
+**Guidance:** Students should understand eigenvalue decomposition as expressing a matrix in terms of its eigenvalues and eigenvectors. They should recognize that not all matrices are diagonalizable and understand the conditions for diagonalizability. The connection between eigenvalues and matrix properties such as determinant, trace, and invertibility should be emphasized. Applications to systems of linear equations and dynamical systems should be referenced.
+
+**6.1.3 Understand other matrix decompositions**
+- Define LU decomposition and its applications
+- Understand QR decomposition and orthogonal transformations
+- Identify Cholesky decomposition for positive definite matrices
+- Apply appropriate decomposition methods to different matrix types
+
+**Guidance:** Students should understand LU decomposition as factorizing a matrix into lower and upper triangular matrices, useful for solving systems of equations. QR decomposition should be understood as factorizing into orthogonal and upper triangular matrices, important for least squares problems. Cholesky decomposition should be recognized as efficient for symmetric positive definite matrices. Students should understand when to apply each decomposition method.
+
+**6.1.4 Apply matrix decompositions to machine learning**
+- Use SVD for dimensionality reduction and feature extraction
+- Apply eigenvalue decomposition to principal component analysis (PCA)
+- Understand the role of matrix decompositions in recommendation systems
+- Implement matrix factorization techniques for data analysis
+
+**Guidance:** Students should see how SVD enables techniques like truncated SVD for dimensionality reduction. They should understand the mathematical foundation of PCA through eigenvalue decomposition of covariance matrices. Applications to collaborative filtering in recommendation systems should be explored. The connection between matrix decompositions and modern machine learning algorithms should be emphasized.
+
+###### Topic 2: Eigenvalues, Eigenvectors, and Spectral Theory
+
+Students will be assessed on their ability to:
+
+**6.2.1 Understand advanced eigenvalue concepts**
+- Define characteristic polynomials and their properties
+- Understand algebraic and geometric multiplicity of eigenvalues
+- Identify invariant subspaces and their significance
+- Apply eigenvalue analysis to matrix functions
+
+**Guidance:** Students should understand characteristic polynomials as determinants of (λI - A) and their role in finding eigenvalues. They should distinguish between algebraic multiplicity (root multiplicity in characteristic polynomial) and geometric multiplicity (dimension of eigenspace). The concept of invariant subspaces as subspaces mapped to themselves by linear transformations should be explored. Applications to matrix exponentials and functions should be referenced.
+
+**6.2.2 Understand spectral theory fundamentals**
+- Define the spectrum of a matrix and its properties
+- Understand spectral radius and its implications
+- Identify spectral decomposition of normal matrices
+- Apply spectral theory to analyze matrix convergence
+
+**Guidance:** Students should understand the spectrum as the set of eigenvalues of a matrix. They should recognize spectral radius as the maximum absolute eigenvalue and its role in determining convergence of iterative methods. Spectral decomposition of normal matrices (including symmetric matrices) should be understood. Applications to convergence analysis of iterative algorithms and stability analysis should be explored.
+
+**6.2.3 Understand generalized eigenvalue problems**
+- Define generalized eigenvalues and eigenvectors
+- Understand the generalized eigenvalue problem Av = λBv
+- Identify applications of generalized eigenvalue problems
+- Solve generalized eigenvalue problems for specific matrix pairs
+
+**Guidance:** Students should understand generalized eigenvalue problems as extensions of standard eigenvalue problems involving two matrices. They should recognize when such problems arise in applications like vibration analysis and signal processing. The connection to quadratic forms and constrained optimization should be explored. Methods for solving generalized eigenvalue problems should be referenced.
+
+**6.2.4 Apply spectral methods to machine learning**
+- Use spectral clustering for data grouping
+- Apply spectral embedding for dimensionality reduction
+- Understand spectral graph theory applications
+- Implement spectral methods for semi-supervised learning
+
+**Guidance:** Students should see how spectral clustering uses eigenvalues of similarity matrices for data clustering. They should understand spectral embedding as mapping data to lower dimensions using eigenvectors. Applications to graph analysis through spectral graph theory should be explored. The use of spectral methods in semi-supervised learning algorithms should be referenced.
+
+###### Topic 3: Matrix Calculus for Machine Learning
+
+Students will be assessed on their ability to:
+
+**6.3.1 Understand matrix derivatives**
+- Define derivatives of scalar functions with respect to vectors
+- Understand derivatives of vector functions with respect to vectors
+- Identify Jacobian matrices and their properties
+- Apply matrix derivatives to optimization problems
+
+**Guidance:** Students should understand how to compute derivatives when variables are vectors or matrices. They should recognize gradients as derivatives of scalar functions with respect to vectors, and Jacobian matrices as derivatives of vector functions with respect to vectors. The layout conventions (numerator vs. denominator) should be consistent. Applications to gradient-based optimization in machine learning should be emphasized.
+
+**6.3.2 Understand matrix differential calculus**
+- Define matrix differentials and their properties
+- Understand the relationship between differentials and derivatives
+- Identify rules for matrix differential operations
+- Apply differential calculus to matrix functions
+
+**Guidance:** Students should understand matrix differentials as linear approximations to matrix functions. They should see the connection between differentials and derivatives through the identification of gradient matrices. Rules for differentials of products, inverses, and other matrix operations should be mastered. Applications to sensitivity analysis and error propagation should be referenced.
+
+**6.3.3 Understand optimization with matrix variables**
+- Define gradient descent for matrix-valued parameters
+- Understand constrained optimization with matrix constraints
+- Identify matrix Newton methods and their properties
+- Apply matrix optimization to neural network training
+
+**Guidance:** Students should understand how gradient descent extends to matrix-valued parameters in neural networks. They should recognize constrained optimization problems involving matrix variables and understand Lagrange multiplier methods in this context. Matrix versions of Newton's method and their computational aspects should be explored. Direct applications to training neural networks with weight matrices should be emphasized.
+
+**6.3.4 Apply matrix calculus to deep learning**
+- Compute gradients for neural network layers
+- Understand backpropagation through matrix operations
+- Identify matrix derivatives in loss functions
+- Implement automatic differentiation concepts
+
+**Guidance:** Students should see how matrix calculus enables efficient computation of gradients in neural networks. They should understand the mathematical foundation of backpropagation through matrix chain rules. Applications to computing derivatives of common loss functions with respect to weight matrices should be explored. The connection to automatic differentiation in deep learning frameworks should be referenced.
+
+###### Topic 4: Tensor Algebra and Operations
+
+Students will be assessed on their ability to:
+
+**6.4.1 Understand tensor fundamentals**
+- Define tensors as multi-dimensional arrays
+- Understand tensor order and rank concepts
+- Identify tensor notation and indexing conventions
+- Apply basic tensor operations in machine learning contexts
+
+**Guidance:** Students should understand tensors as generalizations of vectors and matrices to higher dimensions. They should distinguish between tensor order (number of dimensions) and tensor rank (minimum number of simple tensors). Einstein summation convention and multi-dimensional indexing should be mastered. Applications to representing data in deep learning (images, sequences, etc.) should be emphasized.
+
+**6.4.2 Understand tensor decompositions**
+- Define CANDECOMP/PARAFAC (CP) decomposition
+- Understand Tucker decomposition and core tensors
+- Identify tensor train decomposition and its applications
+- Apply tensor decompositions to compression and feature extraction
+
+**Guidance:** Students should understand CP decomposition as expressing a tensor as a sum of rank-one tensors. They should recognize Tucker decomposition as a higher-order SVD with a core tensor. Tensor train decomposition should be understood as a chain-like factorization useful for high-dimensional data. Applications to compressing neural networks and extracting features from multi-way data should be explored.
+
+**6.4.3 Understand tensor operations and contractions**
+- Define tensor multiplication and outer products
+- Understand tensor contractions and index operations
+- Identify tensor networks and their representations
+- Apply tensor operations to deep learning computations
+
+**Guidance:** Students should understand various tensor multiplication operations including outer products and contractions. They should recognize tensor contractions as generalizations of matrix multiplication that sum over shared indices. Tensor networks as graphical representations of tensor operations should be explored. Applications to efficient computation in deep learning models should be referenced.
+
+**6.4.4 Apply tensor algebra to deep learning**
+- Use tensors for representing multi-modal data
+- Apply tensor operations in convolutional neural networks
+- Understand tensor methods in attention mechanisms
+- Implement tensor-based neural network architectures
+
+**Guidance:** Students should see how tensors naturally represent multi-modal data (images, video, multi-sensor data). They should understand the tensor operations underlying convolutional layers in CNNs. Applications to attention mechanisms in transformers through tensor contractions should be explored. The use of tensor algebra in advanced neural network architectures should be emphasized.
+
+###### Topic 5: Advanced Vector Spaces and Linear Transformations
+
+Students will be assessed on their ability to:
+
+**6.5.1 Understand abstract vector spaces**
+- Define vector spaces axiomatically
+- Understand subspaces and their properties
+- Identify basis and dimension concepts
+- Apply abstract vector space theory to function spaces
+
+**Guidance:** Students should understand vector spaces through their axiomatic definition rather than just as collections of vectors. They should recognize subspaces as subsets that satisfy vector space axioms. The concepts of linear independence, basis, and dimension should be mastered in abstract settings. Applications to function spaces in machine learning should be referenced.
+
+**6.5.2 Understand linear transformations and operators**
+- Define linear transformations between vector spaces
+- Understand null space and range of linear transformations
+- Identify matrix representations of linear transformations
+- Apply linear transformation theory to feature mapping
+
+**Guidance:** Students should understand linear transformations as functions that preserve vector space operations. They should recognize null space (kernel) and range (image) as fundamental subspaces associated with linear transformations. The connection between linear transformations and their matrix representations should be mastered. Applications to feature mapping in kernel methods should be explored.
+
+**6.5.3 Understand inner product spaces**
+- Define inner products and their properties
+- Understand norms induced by inner products
+- Identify orthogonality and orthonormal bases
+- Apply inner product spaces to similarity measures
+
+**Guidance:** Students should understand inner products as generalizations of dot products that satisfy specific axioms. They should recognize how inner products induce norms and metrics. The concepts of orthogonality, orthonormal bases, and projections should be mastered. Applications to similarity measures and distance metrics in machine learning should be emphasized.
+
+**6.5.4 Understand advanced linear transformation concepts**
+- Define adjoint operators and their properties
+- Understand projection operators and orthogonal projections
+- Identify spectral properties of linear operators
+- Apply advanced transformation concepts to dimensionality reduction
+
+**Guidance:** Students should understand adjoint operators as generalizations of matrix transposes. They should recognize projection operators as transformations that map vectors to subspaces. The spectral theorem for self-adjoint operators should be understood. Applications to dimensionality reduction techniques beyond PCA should be explored.
+
+###### Topic 6: Numerical Linear Algebra and Computational Methods
+
+Students will be assessed on their ability to:
+
+**6.6.1 Understand numerical stability and conditioning**
+- Define condition numbers and their significance
+- Understand sources of numerical errors in linear algebra
+- Identify well-conditioned and ill-conditioned problems
+- Apply conditioning analysis to matrix computations
+
+**Guidance:** Students should understand condition numbers as measures of sensitivity of matrix computations to input changes. They should recognize sources of numerical errors including rounding errors and algorithmic instability. The distinction between well-conditioned and ill-conditioned problems should be mastered. Applications to assessing reliability of linear algebra computations should be explored.
+
+**6.6.2 Understand iterative methods for linear systems**
+- Define iterative methods for solving Ax = b
+- Understand convergence of iterative methods
+- Identify Jacobi, Gauss-Seidel, and SOR methods
+- Apply iterative methods to large-scale problems
+
+**Guidance:** Students should understand iterative methods as alternatives to direct methods for solving linear systems. They should recognize convergence criteria and conditions for convergence of iterative methods. The Jacobi, Gauss-Seidel, and Successive Over-Relaxation (SOR) methods should be understood. Applications to large-scale problems where direct methods are infeasible should be emphasized.
+
+**6.6.3 Understand eigenvalue computation algorithms**
+- Define power iteration and inverse iteration methods
+- Understand QR algorithm for eigenvalue computation
+- Identify Lanczos and Arnoldi algorithms for large matrices
+- Apply eigenvalue algorithms to machine learning problems
+
+**Guidance:** Students should understand power iteration as a method for finding dominant eigenvalues. They should recognize the QR algorithm as a standard method for computing all eigenvalues. The Lanczos and Arnoldi algorithms for large sparse matrices should be explored. Applications to principal component analysis and spectral clustering should be referenced.
+
+**6.6.4 Understand randomized linear algebra**
+- Define randomized matrix approximation methods
+- Understand randomized SVD and its applications
+- Identify sketching techniques for dimensionality reduction
+- Apply randomized methods to large-scale machine learning
+
+**Guidance:** Students should understand randomized methods as probabilistic approaches to linear algebra computations. They should recognize randomized SVD as an efficient approximation to full SVD for large matrices. Sketching techniques for reducing dimensionality while preserving structure should be explored. Applications to large-scale machine learning problems should be emphasized.
+
+###### Topic 7: Special Matrices and Their Properties
+
+Students will be assessed on their ability to:
+
+**6.7.1 Understand positive definite matrices**
+- Define positive definite and positive semi-definite matrices
+- Understand properties and characterizations of positive definite matrices
+- Identify Cholesky decomposition for positive definite matrices
+- Apply positive definite matrices to optimization and kernel methods
+
+**Guidance:** Students should understand positive definite matrices through various equivalent definitions (eigenvalues, quadratic forms, Cholesky decomposition). They should recognize key properties including invertibility and principal minors. Applications to convex optimization and kernel methods in machine learning should be emphasized.
+
+**6.7.2 Understand orthogonal and unitary matrices**
+- Define orthogonal and unitary matrices
+- Understand properties of orthogonal transformations
+- Identify QR decomposition and orthogonal projections
+- Apply orthogonal matrices to dimensionality reduction
+
+**Guidance:** Students should understand orthogonal matrices (real) and unitary matrices (complex) as matrices whose columns form orthonormal bases. They should recognize that orthogonal transformations preserve norms and angles. Applications to QR decomposition, orthogonal projections, and dimensionality reduction should be explored.
+
+**6.7.3 Understand sparse matrices and representations**
+- Define sparse matrices and their applications
+- Understand compressed storage formats for sparse matrices
+- Identify sparse matrix operations and algorithms
+- Apply sparse matrices to large-scale machine learning
+
+**Guidance:** Students should understand sparse matrices as matrices with mostly zero entries. They should recognize compressed storage formats (CSR, CSC, COO) and their efficiency advantages. Operations and algorithms specialized for sparse matrices should be explored. Applications to large-scale machine learning problems with sparse features should be emphasized.
+
+**6.7.4 Understand structured matrices**
+- Define Toeplitz, circulant, and Hankel matrices
+- Understand properties of structured matrices
+- Identify fast algorithms for structured matrices
+- Apply structured matrices to signal processing and ML
+
+**Guidance:** Students should understand common structured matrices including Toeplitz (constant diagonals), circulant (cyclic Toeplitz), and Hankel (constant anti-diagonals). They should recognize the computational advantages of structured matrices. Fast algorithms exploiting structure should be explored. Applications to signal processing and machine learning should be referenced.
+
+###### Topic 8: Applications of Advanced Linear Algebra in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.8.1 Understand linear algebra in neural networks**
+- Define weight matrices and their role in neural networks
+- Understand linear transformations in neural network layers
+- Identify matrix operations in forward and backward propagation
+- Apply linear algebra concepts to neural network optimization
+
+**Guidance:** Students should understand how weight matrices represent linear transformations in neural network layers. They should recognize the matrix operations underlying both forward propagation and backpropagation. Applications to optimization of neural networks through matrix calculus should be explored.
+
+**6.8.2 Understand linear algebra in dimensionality reduction**
+- Define principal component analysis (PCA) mathematically
+- Understand linear discriminant analysis (LDA)
+- Identify matrix factorization techniques for dimensionality reduction
+- Apply dimensionality reduction methods to feature extraction
+
+**Guidance:** Students should understand PCA as an eigenvalue problem on covariance matrices. They should recognize LDA as a generalized eigenvalue problem for supervised dimensionality reduction. Various matrix factorization techniques should be compared. Applications to feature extraction and data visualization should be emphasized.
+
+**6.8.3 Understand linear algebra in recommendation systems**
+- Define collaborative filtering through matrix factorization
+- Understand singular value decomposition in recommendations
+- Identify matrix completion techniques
+- Apply linear algebra methods to recommendation algorithms
+
+**Guidance:** Students should understand collaborative filtering as a matrix completion problem. They should recognize how SVD and related techniques enable recommendation systems. Matrix completion algorithms and their mathematical foundations should be explored. Applications to real-world recommendation systems should be referenced.
+
+**6.8.4 Understand linear algebra in graph neural networks**
+- Define graph adjacency matrices and their properties
+- Understand graph Laplacians and spectral graph theory
+- Identify matrix operations in graph neural network layers
+- Apply spectral graph methods to graph machine learning
+
+**Guidance:** Students should understand how graphs are represented through adjacency and Laplacian matrices. They should recognize the role of spectral graph theory in graph neural networks. Matrix operations specific to graph neural network layers should be explored. Applications to graph machine learning problems should be emphasized.
+
+###### Topic 9: Multivariate Calculus
+
+Students will be assessed on their ability to:
+
+**6.9.1 Understand partial derivatives**
+- Define partial derivatives of functions of multiple variables
+- Understand the geometric interpretation of partial derivatives
+- Identify notation for partial derivatives (∂f/∂x, ∂f/∂y, etc.)
+- Apply partial derivatives to calculate rates of change in specific directions
+
+**Guidance:** Students should understand partial derivatives as measuring how a function changes when only one variable changes while others remain constant. They should recognize the geometric interpretation as the slope of the function in the direction of a coordinate axis. Different notations including subscript notation and ∂ notation should be mastered. Applications to understanding how changes in individual parameters affect machine learning models should be referenced.
+
+**6.9.2 Understand gradient vectors**
+- Define the gradient of a scalar-valued function
+- Understand the geometric interpretation of gradient vectors
+- Identify properties of gradient vectors (direction and magnitude)
+- Apply gradient vectors to find directions of steepest ascent/descent
+
+**Guidance:** Students should understand the gradient as a vector containing all partial derivatives of a function. They should recognize that the gradient points in the direction of steepest ascent and its magnitude represents the rate of change in that direction. The relationship between gradient vectors and level curves/surfaces should be explored. Applications to optimization in machine learning should be emphasized.
+
+**6.9.3 Understand directional derivatives**
+- Define directional derivatives and their relationship to gradients
+- Understand how to calculate directional derivatives using gradients
+- Identify the maximum and minimum values of directional derivatives
+- Apply directional derivatives to analyze function behavior in specific directions
+
+**Guidance:** Students should understand directional derivatives as measuring the rate of change of a function in any specified direction. They should recognize the formula relating directional derivatives to gradients through the dot product with unit vectors. The concept that the maximum directional derivative occurs in the gradient direction should be mastered. Applications to analyzing how machine learning models respond to changes in input directions should be referenced.
+
+**6.9.4 Apply partial derivatives to machine learning**
+- Use partial derivatives in loss function optimization
+- Understand sensitivity analysis in neural networks
+- Identify applications in feature importance analysis
+- Implement gradient-based parameter updates
+
+**Guidance:** Students should see how partial derivatives enable optimization of loss functions in machine learning. They should understand sensitivity analysis through partial derivatives to determine which parameters most affect model performance. Applications to feature importance and interpretability should be explored. The connection to gradient-based learning algorithms should be emphasized.
+
+###### Topic 10: Chain Rule in Multiple Variables
+
+Students will be assessed on their ability to:
+
+**6.10.1 Understand multivariate chain rule**
+- Define the chain rule for functions of multiple variables
+- Understand different forms of the multivariate chain rule
+- Identify when and how to apply the chain rule in complex compositions
+- Apply the chain rule to compute derivatives of composite functions
+
+**Guidance:** Students should understand the chain rule as a method for differentiating composite functions of multiple variables. They should recognize different forms including tree diagrams and matrix formulations. The concept of dependency trees for tracking variable relationships should be mastered. Applications to complex function compositions in machine learning should be referenced.
+
+**6.10.2 Understand chain rule in matrix form**
+- Define the matrix formulation of the chain rule
+- Understand Jacobian matrices in chain rule applications
+- Identify efficient computation strategies for complex derivatives
+- Apply matrix chain rule to neural network computations
+
+**Guidance:** Students should understand how the chain rule can be expressed using matrix multiplication and Jacobian matrices. They should recognize the efficiency advantages of matrix formulations for computational purposes. The connection to automatic differentiation in deep learning frameworks should be explored. Applications to backpropagation algorithms should be emphasized.
+
+**6.10.3 Understand backpropagation as chain rule application**
+- Define backpropagation in terms of multivariate chain rule
+- Understand the flow of derivatives in neural networks
+- Identify computational graphs and their role in derivative calculation
+- Apply chain rule concepts to neural network training
+
+**Guidance:** Students should understand backpropagation as a systematic application of the multivariate chain rule. They should recognize how derivatives flow backward through neural network layers. The concept of computational graphs for visualizing function compositions should be mastered. Applications to training deep neural networks should be explored.
+
+**6.10.4 Apply chain rule to machine learning**
+- Implement chain rule for gradient computation in neural networks
+- Understand automatic differentiation frameworks
+- Identify applications in complex model architectures
+- Apply chain rule to custom loss functions and architectures
+
+**Guidance:** Students should see how the chain rule enables efficient gradient computation in neural networks. They should understand how automatic differentiation frameworks implement chain rule algorithms. Applications to complex architectures including residual networks and attention mechanisms should be explored. The use of chain rule in custom model development should be referenced.
+
+###### Topic 11: Jacobian and Hessian Matrices
+
+Students will be assessed on their ability to:
+
+**6.11.1 Understand Jacobian matrices**
+- Define Jacobian matrices for vector-valued functions
+- Understand the structure and properties of Jacobian matrices
+- Identify applications of Jacobian matrices in transformation analysis
+- Apply Jacobian matrices to compute derivatives of vector functions
+
+**Guidance:** Students should understand Jacobian matrices as containing all first-order partial derivatives of vector-valued functions. They should recognize the structure where each row represents the gradient of a component function. Applications to analyzing transformations and their local behavior should be explored. The use of Jacobians in change of variables should be referenced.
+
+**6.11.2 Understand Hessian matrices**
+- Define Hessian matrices for scalar-valued functions
+- Understand the relationship between Hessian and second derivatives
+- Identify properties of Hessian matrices (symmetry, definiteness)
+- Apply Hessian matrices to analyze function curvature
+
+**Guidance:** Students should understand Hessian matrices as containing all second-order partial derivatives of scalar functions. They should recognize the symmetry property for continuous functions and the concept of definiteness. Applications to analyzing local curvature and concavity/convexity should be explored. The connection to optimization algorithms should be emphasized.
+
+**6.11.3 Understand optimization using second derivatives**
+- Define Newton's method using Hessian matrices
+- Understand convergence properties of second-order methods
+- Identify computational considerations for Hessian-based optimization
+- Apply second-order optimization concepts to machine learning
+
+**Guidance:** Students should understand Newton's method as using both gradient and Hessian information for optimization. They should recognize the faster convergence properties compared to first-order methods. Computational challenges with large Hessians should be discussed. Applications to optimization in machine learning should be referenced.
+
+**6.11.4 Apply Jacobian and Hessian to machine learning**
+- Use Jacobian matrices in neural network analysis
+- Apply Hessian information to optimization algorithms
+- Understand curvature information in deep learning
+- Implement second-order optimization methods
+
+**Guidance:** Students should see how Jacobian matrices help analyze neural network transformations. They should understand how Hessian information improves optimization algorithms. Applications to analyzing loss landscapes and optimization challenges should be explored. The implementation considerations for second-order methods in large-scale machine learning should be referenced.
+
+###### Topic 12: Multivariate Optimization
+
+Students will be assessed on their ability to:
+
+**6.12.1 Understand critical points in multiple dimensions**
+- Define critical points for functions of multiple variables
+- Understand classification of critical points (maxima, minima, saddle points)
+- Identify methods for determining critical point nature
+- Apply critical point analysis to optimization problems
+
+**Guidance:** Students should understand critical points as locations where the gradient vector is zero. They should recognize the classification into local maxima, local minima, and saddle points. The use of second derivative tests (Hessian analysis) should be mastered. Applications to finding optimal parameters in machine learning should be explored.
+
+**6.12.2 Understand gradient descent algorithms**
+- Define gradient descent for multivariate functions
+- Understand convergence properties and step size selection
+- Identify variants of gradient descent (stochastic, mini-batch)
+- Apply gradient descent to machine learning optimization
+
+**Guidance:** Students should understand gradient descent as iteratively moving in the direction of steepest descent. They should recognize the importance of learning rate selection and convergence criteria. Different variants including stochastic and mini-batch gradient descent should be explored. Applications to training machine learning models should be emphasized.
+
+**6.12.3 Understand constrained optimization concepts**
+- Define constrained optimization problems
+- Understand equality and inequality constraints
+- Identify feasible regions and constraint boundaries
+- Apply constrained optimization to machine learning scenarios
+
+**Guidance:** Students should understand constrained optimization as finding optima subject to restrictions. They should recognize the difference between equality and inequality constraints. The concept of feasible regions defined by constraints should be mastered. Applications to constrained machine learning problems should be referenced.
+
+**6.12.4 Apply optimization techniques to machine learning**
+- Implement gradient descent for neural network training
+- Understand optimization challenges in deep learning
+- Identify applications in hyperparameter optimization
+- Apply optimization concepts to model training
+
+**Guidance:** Students should see how gradient descent enables neural network training. They should understand common optimization challenges including local minima and saddle points. Applications to hyperparameter optimization and model selection should be explored. The practical implementation considerations should be emphasized.
+
+###### Topic 13: Taylor Series in Multiple Variables
+
+Students will be assessed on their ability to:
+
+**6.13.1 Understand multivariate Taylor series**
+- Define Taylor series expansion for functions of multiple variables
+- Understand first and second-order Taylor approximations
+- Identify the role of partial derivatives in Taylor expansions
+- Apply Taylor series to approximate multivariate functions
+
+**Guidance:** Students should understand Taylor series as polynomial approximations of multivariate functions. They should recognize first-order (linear) and second-order (quadratic) approximations. The connection to partial derivatives and gradients should be mastered. Applications to function approximation should be explored.
+
+**6.13.2 Understand Taylor series in optimization**
+- Define Newton's method using Taylor approximations
+- Understand quadratic approximations for optimization
+- Identify convergence properties of Taylor-based methods
+- Apply Taylor series concepts to optimization algorithms
+
+**Guidance:** Students should understand how Taylor approximations lead to optimization algorithms. They should recognize Newton's method as using second-order Taylor approximations. The convergence properties and computational trade-offs should be explored. Applications to optimization in machine learning should be referenced.
+
+**6.13.3 Understand error analysis in approximations**
+- Define remainder terms in multivariate Taylor series
+- Understand bounds on approximation errors
+- Identify conditions for convergence of Taylor series
+- Apply error analysis to approximation quality assessment
+
+**Guidance:** Students should understand remainder terms as measuring approximation accuracy. They should recognize conditions under which Taylor series converge to the original function. The concept of radius of convergence in multiple dimensions should be mastered. Applications to assessing approximation quality should be explored.
+
+**6.13.4 Apply Taylor series to machine learning**
+- Use Taylor approximations in optimization algorithms
+- Understand function approximation in neural networks
+- Identify applications in sensitivity analysis
+- Apply Taylor series concepts to model analysis
+
+**Guidance:** Students should see how Taylor approximations underpin many optimization algorithms. They should understand the role of function approximation in neural network analysis. Applications to sensitivity analysis and model interpretability should be explored. The connection to theoretical analysis of machine learning algorithms should be referenced.
+
+###### Topic 14: Lagrange Multipliers and Constrained Optimization
+
+Students will be assessed on their ability to:
+
+**6.14.1 Understand Lagrange multiplier method**
+- Define Lagrange multipliers for equality constraints
+- Understand the geometric interpretation of Lagrange multipliers
+- Identify the Lagrangian function and its properties
+- Apply Lagrange multipliers to solve constrained optimization problems
+
+**Guidance:** Students should understand Lagrange multipliers as a method for finding extrema subject to equality constraints. They should recognize the geometric interpretation as finding points where level curves are tangent to constraint curves. The construction of the Lagrangian function should be mastered. Applications to constrained optimization problems should be explored.
+
+**6.14.2 Understand multiple constraints and KKT conditions**
+- Define Lagrange multipliers for multiple equality constraints
+- Understand inequality constraints and KKT conditions
+- Identify complementary slackness and feasibility conditions
+- Apply KKT conditions to constrained optimization problems
+
+**Guidance:** Students should understand the extension of Lagrange multipliers to multiple constraints. They should recognize KKT conditions as generalizing to inequality constraints. The concepts of complementary slackness and primal/dual feasibility should be mastered. Applications to more complex constrained optimization should be explored.
+
+**6.14.3 Understand duality in optimization**
+- Define primal and dual optimization problems
+- Understand the relationship between primal and dual solutions
+- Identify applications of duality in machine learning
+- Apply duality concepts to optimization algorithms
+
+**Guidance:** Students should understand duality as the relationship between constrained optimization problems and their dual formulations. They should recognize how dual problems can sometimes be easier to solve. Applications to support vector machines and other machine learning algorithms should be explored. The computational advantages should be referenced.
+
+**6.14.4 Apply constrained optimization to machine learning**
+- Implement constrained optimization algorithms
+- Understand applications in support vector machines
+- Identify constrained optimization in model training
+- Apply Lagrange multipliers to ML problems
+
+**Guidance:** Students should see how constrained optimization enables algorithms like support vector machines. They should understand the role of constraints in regularizing machine learning models. Applications to constrained neural network training should be explored. The practical implementation considerations should be emphasized.
+
+###### Topic 15: Multiple Integrals and Applications
+
+Students will be assessed on their ability to:
+
+**6.15.1 Understand double integrals**
+- Define double integrals over rectangular regions
+- Understand double integrals over general regions
+- Identify methods for evaluating double integrals
+- Apply double integrals to calculate areas and volumes
+
+**Guidance:** Students should understand double integrals as integrating functions of two variables over planar regions. They should recognize the difference between integrals over rectangular and general regions. Methods including iterated integrals and change of variables should be mastered. Applications to calculating areas, volumes, and averages should be explored.
+
+**6.15.2 Understand triple integrals**
+- Define triple integrals over three-dimensional regions
+- Understand methods for evaluating triple integrals
+- Identify applications of triple integrals in physics and engineering
+- Apply triple integrals to volume and mass calculations
+
+**Guidance:** Students should understand triple integrals as extending integration to three dimensions. They should recognize methods including iterated integration and coordinate transformations. Applications to calculating volumes, masses, and centers of mass should be explored. The connection to physical applications should be referenced.
+
+**6.15.3 Understand change of variables in multiple integrals**
+- Define Jacobian determinants for coordinate transformations
+- Understand common coordinate systems (polar, cylindrical, spherical)
+- Identify when to use specific coordinate systems
+- Apply change of variables to simplify integral calculations
+
+**Guidance:** Students should understand how Jacobian determinants account for scaling in coordinate transformations. They should recognize common coordinate systems and when they simplify integration. The geometric interpretation of different coordinate systems should be mastered. Applications to simplifying complex integrals should be explored.
+
+**6.15.4 Apply multiple integrals to probability**
+- Use multiple integrals to calculate probabilities
+- Understand joint probability distributions
+- Identify expectation values using multiple integrals
+- Apply integration concepts to statistical machine learning
+
+**Guidance:** Students should see how multiple integrals enable calculation of probabilities for continuous random variables. They should understand joint probability distributions and their properties. Applications to calculating expectation values and moments should be explored. The connection to statistical machine learning should be emphasized.
+
+###### Topic 16: Vector Calculus Fundamentals
+
+Students will be assessed on their ability to:
+
+**6.16.1 Understand vector fields**
+- Define vector fields and their representations
+- Understand conservative and non-conservative fields
+- Identify properties of vector fields (continuity, differentiability)
+- Apply vector field concepts to physical and ML applications
+
+**Guidance:** Students should understand vector fields as assigning vectors to points in space. They should recognize conservative fields as those with path-independent line integrals. Properties including continuity and differentiability should be mastered. Applications to gradient fields in machine learning should be explored.
+
+**6.16.2 Understand divergence and curl**
+- Define divergence of vector fields
+- Define curl of vector fields
+- Understand physical interpretations of divergence and curl
+- Apply divergence and curl to field analysis
+
+**Guidance:** Students should understand divergence as measuring the "outflow" of a vector field at a point. They should recognize curl as measuring the "rotation" or "circulation" of a vector field. Physical interpretations including sources/sinks and rotational flow should be mastered. Applications to field analysis should be explored.
+
+**6.16.3 Understand line integrals**
+- Define line integrals of scalar and vector fields
+- Understand applications of line integrals
+- Identify methods for evaluating line integrals
+- Apply line integrals to work and circulation calculations
+
+**Guidance:** Students should understand line integrals as integrating along curves in space. They should recognize the difference between scalar and vector line integrals. Applications to calculating work done by force fields should be explored. The connection to conservative fields should be referenced.
+
+**6.16.4 Apply vector calculus to machine learning**
+- Use vector calculus concepts in optimization
+- Understand applications in neural network analysis
+- Identify vector field methods in ML algorithms
+- Apply vector calculus to advanced ML topics
+
+**Guidance:** Students should see how vector calculus concepts apply to optimization landscapes. They should understand applications in analyzing neural network behavior. The use of vector field methods in advanced ML algorithms should be explored. The connection to theoretical machine learning should be emphasized.
+
+###### Topic 17: Applications of Multivariate Calculus in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.17.1 Understand calculus in neural network training**
+- Define the role of gradients in backpropagation
+- Understand optimization landscapes in parameter space
+- Identify challenges in high-dimensional optimization
+- Apply calculus concepts to neural network training
+
+**Guidance:** Students should understand how gradients enable parameter updates in neural networks. They should recognize the complex optimization landscapes in high-dimensional parameter spaces. Challenges including local minima and saddle points should be explored. Applications to practical neural network training should be emphasized.
+
+**6.17.2 Understand calculus in probabilistic models**
+- Define gradient-based learning in probabilistic models
+- Understand maximum likelihood estimation using calculus
+- Identify applications in Bayesian inference
+- Apply calculus concepts to statistical learning
+
+**Guidance:** Students should see how gradients enable learning in probabilistic models. They should understand maximum likelihood estimation through optimization. Applications to Bayesian inference and variational methods should be explored. The connection to statistical machine learning should be referenced.
+
+**6.17.3 Understand calculus in reinforcement learning**
+- Define policy gradient methods
+- Understand value function approximation
+- Identify applications in optimal control
+- Apply calculus concepts to reinforcement learning
+
+**Guidance:** Students should understand how policy gradients enable learning in reinforcement learning. They should recognize value function approximation as using calculus-based optimization. Applications to optimal control problems should be explored. The connection to advanced reinforcement learning should be emphasized.
+
+**6.17.4 Understand advanced applications**
+- Define calculus-based interpretability methods
+- Understand sensitivity analysis in ML models
+- Identify applications in generative models
+- Apply advanced calculus concepts to cutting-edge ML
+
+**Guidance:** Students should see how calculus enables model interpretability through sensitivity analysis. They should understand applications in generative modeling and adversarial training. The use of advanced calculus concepts in cutting-edge machine learning should be explored. Future research directions should be referenced.
+
+###### Topic 18: Convex Optimization Fundamentals
+
+Students will be assessed on their ability to:
+
+**6.18.1 Understand convex sets and functions**
+- Define convex sets and their geometric properties
+- Understand convex functions and their characteristics
+- Identify methods for testing convexity
+- Apply convexity concepts to optimization problems
+
+**Guidance:** Students should understand convex sets as sets where line segments between any two points remain within the set. They should recognize convex functions as functions where line segments between any two points on the graph lie above the graph. Methods for testing convexity including first and second derivative tests should be mastered. Applications to optimization problem formulation should be explored.
+
+**6.18.2 Understand convex optimization problems**
+- Define standard forms of convex optimization problems
+- Understand properties of convex optimization problems
+- Identify types of convex optimization problems (linear, quadratic)
+- Apply convex optimization formulations to real-world problems
+
+**Guidance:** Students should understand convex optimization problems as minimizing convex functions over convex sets. They should recognize the key property that local minima are global minima in convex problems. Different types including linear programming and quadratic programming should be explored. Applications to machine learning problem formulation should be referenced.
+
+**6.18.3 Understand optimality conditions**
+- Define first-order optimality conditions
+- Understand second-order optimality conditions
+- Identify Karush-Kuhn-Tucker (KKT) conditions
+- Apply optimality conditions to verify solutions
+
+**Guidance:** Students should understand first-order conditions as requiring the gradient to be zero at optimal points. They should recognize second-order conditions involving positive definiteness of the Hessian. KKT conditions for constrained optimization should be mastered. Applications to verifying optimality in machine learning should be explored.
+
+**6.18.4 Apply convex optimization to machine learning**
+- Use convex optimization in linear regression
+- Understand convex formulations in classification problems
+- Identify applications in support vector machines
+- Implement convex optimization algorithms for ML
+
+**Guidance:** Students should see how convex optimization enables efficient solutions for linear regression. They should understand convex formulations of classification problems including logistic regression. Applications to support vector machines and other ML algorithms should be explored. The implementation considerations should be emphasized.
+
+###### Topic 19: Optimization Algorithms and Methods
+
+Students will be assessed on their ability to:
+
+**6.19.1 Understand gradient-based optimization**
+- Define gradient descent and its variants
+- Understand convergence properties of gradient methods
+- Identify step size selection strategies
+- Apply gradient-based methods to optimization problems
+
+**Guidance:** Students should understand gradient descent as iteratively moving in the direction of steepest descent. They should recognize convergence properties and the importance of step size selection. Different step size strategies including fixed, adaptive, and line search should be explored. Applications to machine learning optimization should be referenced.
+
+**6.19.2 Understand Newton-type methods**
+- Define Newton's method for optimization
+- Understand quasi-Newton methods (BFGS, DFP)
+- Identify convergence properties of second-order methods
+- Apply Newton-type methods to machine learning problems
+
+**Guidance:** Students should understand Newton's method as using both gradient and Hessian information. They should recognize quasi-Newton methods as approximating the Hessian to reduce computational cost. Convergence properties and computational trade-offs should be explored. Applications to machine learning optimization should be emphasized.
+
+**6.19.3 Understand conjugate gradient methods**
+- Define conjugate gradient algorithms
+- Understand properties of conjugate directions
+- Identify applications to large-scale optimization
+- Apply conjugate gradient methods to ML problems
+
+**Guidance:** Students should understand conjugate gradient methods as generating conjugate search directions. They should recognize the property of conjugacy and its importance for convergence. Applications to large-scale optimization problems should be explored. The use in machine learning for large datasets should be referenced.
+
+**6.19.4 Apply optimization algorithms to neural networks**
+- Implement gradient descent for neural network training
+- Understand optimization challenges in deep learning
+- Identify performance characteristics of different algorithms
+- Apply optimization methods to practical neural network problems
+
+**Guidance:** Students should see how optimization algorithms enable neural network training. They should understand challenges including vanishing/exploding gradients and saddle points. Performance characteristics of different optimizers should be compared. Applications to practical deep learning problems should be emphasized.
+
+###### Topic 20: Constrained Optimization and Duality
+
+Students will be assessed on their ability to:
+
+**6.20.1 Understand constrained optimization formulations**
+- Define equality and inequality constrained problems
+- Understand feasible regions and constraint qualifications
+- Identify methods for handling constraints
+- Apply constrained optimization to ML problems
+
+**Guidance:** Students should understand constrained optimization as optimizing subject to restrictions. They should recognize feasible regions as sets satisfying all constraints. Methods including penalty functions and barrier methods should be explored. Applications to constrained machine learning problems should be referenced.
+
+**6.20.2 Understand Lagrangian methods**
+- Define Lagrangian functions for constrained optimization
+- Understand the role of Lagrange multipliers
+- Identify methods for solving Lagrangian formulations
+- Apply Lagrangian methods to optimization problems
+
+**Guidance:** Students should understand Lagrangian functions as incorporating constraints through multipliers. They should recognize Lagrange multipliers as measuring constraint sensitivity. Methods for solving Lagrangian formulations should be mastered. Applications to machine learning optimization should be explored.
+
+**6.20.3 Understand duality theory**
+- Define primal and dual optimization problems
+- Understand weak and strong duality
+- Identify duality gap and its significance
+- Apply duality concepts to optimization analysis
+
+**Guidance:** Students should understand duality as the relationship between primal and dual formulations. They should recognize weak duality as providing bounds and strong duality as equality. The concept of duality gap and its implications should be mastered. Applications to analyzing optimization problems should be explored.
+
+**6.20.4 Apply duality to machine learning**
+- Use dual formulations in support vector machines
+- Understand duality in regularized learning
+- Identify applications in optimization algorithms
+- Implement dual optimization methods for ML
+
+**Guidance:** Students should see how dual formulations enable efficient support vector machine solutions. They should understand duality in regularized learning methods. Applications to optimization algorithms including dual decomposition should be explored. Implementation considerations should be emphasized.
+
+###### Topic 21: Stochastic and Adaptive Optimization
+
+Students will be assessed on their ability to:
+
+**6.21.1 Understand stochastic optimization**
+- Define stochastic gradient descent (SGD)
+- Understand convergence properties of stochastic methods
+- Identify variance reduction techniques
+- Apply stochastic optimization to large-scale problems
+
+**Guidance:** Students should understand SGD as using random subsets of data for gradient estimation. They should recognize convergence properties and the trade-off between noise and computational efficiency. Variance reduction techniques including mini-batching should be explored. Applications to large-scale machine learning should be referenced.
+
+**6.21.2 Understand adaptive optimization algorithms**
+- Define AdaGrad and its adaptive learning rates
+- Understand RMSProp and adaptive momentum
+- Identify Adam and other adaptive methods
+- Apply adaptive algorithms to deep learning
+
+**Guidance:** Students should understand AdaGrad as adapting learning rates based on gradient history. They should recognize RMSProp as using moving averages of squared gradients. Adam and other adaptive methods combining momentum and adaptation should be explored. Applications to deep learning optimization should be emphasized.
+
+**6.21.3 Understand momentum-based optimization**
+- Define momentum methods in optimization
+- Understand Nesterov momentum
+- Identify benefits of momentum in optimization
+- Apply momentum methods to neural network training
+
+**Guidance:** Students should understand momentum as accumulating gradient information over iterations. They should recognize Nesterov momentum as looking ahead to improve convergence. Benefits including faster convergence and escape from saddle points should be explored. Applications to neural network training should be referenced.
+
+**6.21.4 Apply stochastic methods to machine learning**
+- Implement SGD for large-scale ML problems
+- Understand adaptive methods in deep learning frameworks
+- Identify applications to online learning
+- Apply stochastic optimization to practical ML scenarios
+
+**Guidance:** Students should see how SGD enables training on large datasets. They should understand implementation of adaptive methods in deep learning frameworks. Applications to online learning scenarios should be explored. Practical considerations for real-world machine learning should be emphasized.
+
+###### Topic 22: Non-Convex Optimization in Deep Learning
+
+Students will be assessed on their ability to:
+
+**6.22.1 Understand non-convex optimization challenges**
+- Define non-convex functions and their properties
+- Understand challenges in non-convex optimization
+- Identify types of non-convex problems in ML
+- Apply non-convex optimization concepts to neural networks
+
+**Guidance:** Students should understand non-convex functions as having multiple local minima. They should recognize challenges including finding global optima and convergence guarantees. Types of non-convex problems in neural networks should be explored. Applications to deep learning should be referenced.
+
+**6.22.2 Understand critical point analysis**
+- Define saddle points and local minima in high dimensions
+- Understand escape mechanisms from saddle points
+- Identify Hessian-based analysis methods
+- Apply critical point analysis to optimization landscapes
+
+**Guidance:** Students should understand saddle points as critical points that are not local extrema. They should recognize methods for escaping saddle points including noise and second-order information. Hessian-based analysis for characterizing critical points should be mastered. Applications to analyzing neural network loss landscapes should be explored.
+
+**6.22.3 Understand optimization landscapes**
+- Define loss surfaces in neural networks
+- Understand geometric properties of optimization landscapes
+- Identify visualization techniques for high-dimensional optimization
+- Apply landscape analysis to optimization algorithm design
+
+**Guidance:** Students should understand loss surfaces as high-dimensional landscapes. They should recognize geometric properties including flat regions and sharp minima. Visualization techniques for understanding high-dimensional landscapes should be explored. Applications to designing better optimization algorithms should be referenced.
+
+**6.22.4 Apply non-convex optimization to deep learning**
+- Implement optimization algorithms for neural networks
+- Understand practical challenges in training deep networks
+- Identify techniques for improving optimization performance
+- Apply non-convex optimization methods to real problems
+
+**Guidance:** Students should see how non-convex optimization algorithms enable deep learning. They should understand practical challenges including initialization and hyperparameter tuning. Techniques for improving optimization performance should be explored. Real-world applications should be emphasized.
+
+###### Topic 23: Global Optimization Methods
+
+Students will be assessed on their ability to:
+
+**6.23.1 Understand global optimization concepts**
+- Define global optimization and its challenges
+- Understand deterministic vs. stochastic global methods
+- Identify convergence properties of global optimizers
+- Apply global optimization to non-convex problems
+
+**Guidance:** Students should understand global optimization as finding global optima in non-convex problems. They should recognize the difference between deterministic and stochastic approaches. Convergence properties and computational complexity should be explored. Applications to challenging non-convex machine learning problems should be referenced.
+
+**6.23.2 Understand evolutionary algorithms**
+- Define genetic algorithms and evolutionary strategies
+- Understand selection, crossover, and mutation operations
+- Identify applications of evolutionary methods to ML
+- Apply evolutionary algorithms to optimization problems
+
+**Guidance:** Students should understand genetic algorithms as inspired by natural selection. They should recognize the core operations of selection, crossover, and mutation. Applications to machine learning optimization should be explored. Implementation considerations should be emphasized.
+
+**6.23.3 Understand Bayesian optimization**
+- Define Bayesian optimization and its components
+- Understand acquisition functions and surrogate models
+- Identify applications to hyperparameter tuning
+- Apply Bayesian optimization to ML model selection
+
+**Guidance:** Students should understand Bayesian optimization as using probabilistic models to guide search. They should recognize acquisition functions for balancing exploration and exploitation. Applications to hyperparameter tuning should be explored. Use in automated machine learning should be referenced.
+
+**6.23.4 Apply global optimization to machine learning**
+- Implement global optimization for hyperparameter tuning
+- Understand applications in neural architecture search
+- Identify global optimization in reinforcement learning
+- Apply global methods to challenging ML problems
+
+**Guidance:** Students should see how global optimization enables effective hyperparameter tuning. They should understand applications in neural architecture search. Use in reinforcement learning for policy optimization should be explored. Applications to challenging machine learning problems should be emphasized.
+
+###### Topic 24: Optimization Challenges in Machine Learning
+
+Students will be assessed on their ability to:
+
+**6.24.1 Understand high-dimensional optimization**
+- Define challenges of optimization in high dimensions
+- Understand curse of dimensionality effects
+- Identify dimensionality reduction techniques
+- Apply high-dimensional optimization to ML problems
+
+**Guidance:** Students should understand challenges including sparsity of data and increased complexity in high dimensions. They should recognize the curse of dimensionality and its effects on optimization. Dimensionality reduction techniques should be explored. Applications to high-dimensional machine learning should be referenced.
+
+**6.24.2 Understand ill-conditioning and numerical stability**
+- Define ill-conditioned optimization problems
+- Understand numerical stability issues
+- Identify preconditioning and regularization techniques
+- Apply stability concepts to optimization algorithms
+
+**Guidance:** Students should understand ill-conditioning as sensitivity to small parameter changes. They should recognize numerical stability issues in optimization algorithms. Preconditioning and regularization techniques should be explored. Applications to stable optimization in machine learning should be emphasized.
+
+**6.24.3 Understand distributed optimization**
+- Define distributed optimization frameworks
+- Understand parallel and distributed algorithms
+- Identify communication and synchronization challenges
+- Apply distributed optimization to large-scale ML
+
+**Guidance:** Students should understand distributed optimization as coordinating multiple computing resources. They should recognize parallel and distributed algorithmic approaches. Communication and synchronization challenges should be explored. Applications to large-scale machine learning should be referenced.
+
+**6.24.4 Apply optimization techniques to real challenges**
+- Implement optimization solutions for practical ML problems
+- Understand trade-offs between different optimization methods
+- Identify best practices for optimization in production
+- Apply optimization knowledge to real-world scenarios
+
+**Guidance:** Students should see how to implement optimization solutions for practical problems. They should understand trade-offs between different methods including speed, accuracy, and memory. Best practices for production optimization should be explored. Real-world applications should be emphasized.
+
+###### Topic 25: Applications of Optimization in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.25.1 Understand optimization in training algorithms**
+- Define optimization in supervised learning
+- Understand optimization in unsupervised learning
+- Identify optimization challenges in reinforcement learning
+- Apply optimization concepts across learning paradigms
+
+**Guidance:** Students should understand how optimization underpins supervised learning algorithms. They should recognize optimization in unsupervised learning including clustering and dimensionality reduction. Challenges in reinforcement learning optimization should be explored. Applications across different learning paradigms should be referenced.
+
+**6.25.2 Understand optimization in model architecture**
+- Define optimization in neural network design
+- Understand architecture search and optimization
+- Identify applications in automated ML
+- Apply optimization to model development
+
+**Guidance:** Students should see how optimization principles apply to neural network design. They should understand neural architecture search as optimization over network structures. Applications to automated machine learning should be explored. The role of optimization in model development should be emphasized.
+
+**6.25.3 Understand optimization in hyperparameter tuning**
+- Define hyperparameter optimization problems
+- Understand grid search, random search, and Bayesian methods
+- Identify automated hyperparameter optimization
+- Apply hyperparameter optimization to ML models
+
+**Guidance:** Students should understand hyperparameter optimization as searching for best model configurations. They should recognize different approaches including grid search, random search, and Bayesian optimization. Automated hyperparameter optimization should be explored. Applications to improving machine learning models should be referenced.
+
+**6.25.4 Apply optimization to advanced AI systems**
+- Use optimization in large-scale AI systems
+- Understand optimization in federated learning
+- Identify applications in multi-agent systems
+- Apply optimization concepts to cutting-edge AI
+
+**Guidance:** Students should see how optimization enables large-scale AI systems. They should understand applications in federated learning and distributed training. Use in multi-agent systems should be explored. Applications to cutting-edge artificial intelligence should be emphasized.
+
+###### Topic 26: Advanced Probability Foundations
+
+Students will be assessed on their ability to:
+
+**6.26.1 Understand measure-theoretic probability**
+- Define probability spaces using measure theory concepts
+- Understand sigma-algebras and probability measures
+- Identify the relationship between measure theory and probability
+- Apply measure-theoretic concepts to probability problems
+
+**Guidance:** Students should understand probability spaces as consisting of sample spaces, sigma-algebras (events), and probability measures. They should recognize sigma-algebras as collections of events satisfying specific properties. The connection between measure theory and modern probability should be explored. Applications to rigorous probability reasoning in machine learning should be referenced.
+
+**6.26.2 Understand advanced probability axioms**
+- Define Kolmogorov's probability axioms
+- Understand continuity of probability measures
+- Identify properties derived from probability axioms
+- Apply axiomatic probability to complex scenarios
+
+**Guidance:** Students should understand Kolmogorov's three axioms: non-negativity, normalization, and countable additivity. They should recognize continuity properties of probability measures. Properties including inclusion-exclusion and Boole's inequality should be mastered. Applications to complex probability scenarios in AI should be explored.
+
+**6.26.3 Understand conditional probability foundations**
+- Define conditional probability measure-theoretically
+- Understand independence in advanced contexts
+- Identify conditional independence concepts
+- Apply conditional probability to reasoning systems
+
+**Guidance:** Students should understand conditional probability as a probability measure itself. They should recognize independence as factorization of joint probabilities. Conditional independence and its role in probabilistic reasoning should be explored. Applications to Bayesian networks and AI reasoning systems should be referenced.
+
+**6.26.4 Apply advanced probability to AI systems**
+- Use probability foundations in uncertainty reasoning
+- Understand probabilistic modeling in AI
+- Identify applications in machine learning algorithms
+- Implement probability-based AI systems
+
+**Guidance:** Students should see how probability foundations enable uncertainty reasoning in AI. They should understand probabilistic modeling approaches in machine learning. Applications to algorithms including naive Bayes and probabilistic graphical models should be explored. Implementation considerations should be emphasized.
+
+###### Topic 27: Random Variables and Distributions
+
+Students will be assessed on their ability to:
+
+**6.27.1 Understand advanced random variable concepts**
+- Define random variables measure-theoretically
+- Understand Borel measurable functions
+- Identify types of random variables (discrete, continuous, mixed)
+- Apply random variable concepts to ML data modeling
+
+**Guidance:** Students should understand random variables as measurable functions from sample spaces to real numbers. They should recognize Borel sets and measurable functions. Different types of random variables and their properties should be mastered. Applications to data modeling in machine learning should be referenced.
+
+**6.27.2 Understand multivariate probability distributions**
+- Define joint, marginal, and conditional distributions
+- Understand covariance and correlation matrices
+- Identify properties of multivariate distributions
+- Apply multivariate distributions to feature modeling
+
+**Guidance:** Students should understand relationships between joint, marginal, and conditional distributions. They should recognize covariance and correlation as measures of dependence. Properties including positive definiteness of covariance matrices should be explored. Applications to feature modeling and dependence in ML should be emphasized.
+
+**6.27.3 Understand transformation of random variables**
+- Define methods for transforming random variables
+- Understand Jacobian transformations for continuous variables
+- Identify distribution functions of transformed variables
+- Apply transformations to data preprocessing
+
+**Guidance:** Students should understand methods including distribution function technique and transformation technique. They should recognize Jacobian determinants in multivariate transformations. Finding distributions of transformed variables should be mastered. Applications to data preprocessing and feature engineering should be explored.
+
+**6.27.4 Apply distribution theory to machine learning**
+- Use probability distributions in generative modeling
+- Understand distribution assumptions in ML algorithms
+- Identify applications in anomaly detection
+- Implement distribution-based ML methods
+
+**Guidance:** Students should see how probability distributions enable generative modeling. They should understand distributional assumptions in algorithms like Gaussian naive Bayes. Applications to anomaly detection and density estimation should be explored. Implementation considerations should be emphasized.
+
+###### Topic 28: Bayesian Probability and Inference
+
+Students will be assessed on their ability to:
+
+**6.28.1 Understand Bayesian foundations**
+- Define Bayes' theorem in measure-theoretic framework
+- Understand prior, likelihood, and posterior distributions
+- Identify Bayesian vs. frequentist approaches
+- Apply Bayesian reasoning to uncertainty quantification
+
+**Guidance:** Students should understand Bayes' theorem as updating beliefs given evidence. They should recognize the roles of prior knowledge, likelihood of data, and posterior beliefs. The philosophical and practical differences between Bayesian and frequentist approaches should be explored. Applications to uncertainty quantification in AI should be referenced.
+
+**6.28.2 Understand Bayesian inference methods**
+- Define maximum a posteriori (MAP) estimation
+- Understand Bayesian estimation and credible intervals
+- Identify conjugate priors and their properties
+- Apply Bayesian inference to parameter estimation
+
+**Guidance:** Students should understand MAP estimation as finding the most probable parameter values. They should recognize Bayesian estimation as using entire posterior distributions. Conjugate priors and their computational advantages should be explored. Applications to parameter estimation in machine learning should be emphasized.
+
+**6.28.3 Understand hierarchical Bayesian models**
+- Define hierarchical Bayesian structures
+- Understand hyperparameters and hyperpriors
+- Identify benefits of hierarchical modeling
+- Apply hierarchical models to complex problems
+
+**Guidance:** Students should understand hierarchical models as having multiple levels of parameters. They should recognize hyperparameters as parameters of prior distributions. Benefits including information sharing and regularization should be explored. Applications to complex modeling problems in ML should be referenced.
+
+**6.28.4 Apply Bayesian methods to machine learning**
+- Implement Bayesian neural networks
+- Understand Bayesian optimization for hyperparameter tuning
+- Identify applications in reinforcement learning
+- Apply Bayesian methods to real-world problems
+
+**Guidance:** Students should see how Bayesian principles apply to neural networks. They should understand Bayesian optimization for efficient hyperparameter search. Applications to reinforcement learning and decision making should be explored. Real-world implementation challenges should be emphasized.
+
+###### Topic 29: Stochastic Processes
+
+Students will be assessed on their ability to:
+
+**6.29.1 Understand stochastic process fundamentals**
+- Define stochastic processes and their classifications
+- Understand sample paths and realizations
+- Identify types of stochastic processes (discrete/continuous time)
+- Apply stochastic processes to time series analysis
+
+**Guidance:** Students should understand stochastic processes as collections of random variables indexed by time or space. They should recognize sample paths as realizations of stochastic processes. Different classifications including discrete vs. continuous time should be explored. Applications to time series analysis in ML should be referenced.
+
+**6.29.2 Understand Markov processes**
+- Define Markov property and Markov chains
+- Understand transition matrices and stationary distributions
+- Identify hidden Markov models
+- Apply Markov processes to sequential data
+
+**Guidance:** Students should understand the Markov property as memorylessness. They should recognize transition matrices and their role in state evolution. Stationary distributions and their significance should be explored. Applications to sequential data modeling including hidden Markov models should be emphasized.
+
+**6.29.3 Understand Poisson processes**
+- Define Poisson processes and their properties
+- Understand exponential inter-arrival times
+- Identify applications of Poisson processes
+- Apply Poisson processes to event modeling
+
+**Guidance:** Students should understand Poisson processes as models for random events in time. They should recognize exponential distribution of inter-arrival times. Properties including independence and stationarity should be explored. Applications to event modeling in AI systems should be referenced.
+
+**6.29.4 Apply stochastic processes to AI**
+- Use stochastic processes in reinforcement learning
+- Understand applications in natural language processing
+- Identify stochastic modeling in computer vision
+- Implement stochastic process-based AI systems
+
+**Guidance:** Students should see how stochastic processes enable reinforcement learning algorithms. They should understand applications in language modeling and sequential decision making. Uses in computer vision for temporal modeling should be explored. Implementation considerations should be emphasized.
+
+###### Topic 30: Information Theory
+
+Students will be assessed on their ability to:
+
+**6.30.1 Understand entropy and information**
+- Define Shannon entropy and its properties
+- Understand differential entropy for continuous variables
+- Identify mutual information and its properties
+- Apply information measures to data analysis
+
+**Guidance:** Students should understand entropy as a measure of uncertainty. They should recognize differential entropy for continuous random variables. Mutual information as a measure of dependence should be explored. Applications to data analysis and feature selection should be referenced.
+
+**6.30.2 Understand KL divergence and relatives**
+- Define Kullback-Leibler divergence
+- Understand Jensen-Shannon divergence
+- Identify cross-entropy and its applications
+- Apply divergence measures to model comparison
+
+**Guidance:** Students should understand KL divergence as a measure of difference between distributions. They should recognize Jensen-Shannon divergence as a symmetric alternative. Cross-entropy and its role in machine learning loss functions should be explored. Applications to model comparison and evaluation should be emphasized.
+
+**6.30.3 Understand information-theoretic bounds**
+- Define Fano's inequality and data processing inequality
+- Understand channel capacity and coding theorems
+- Identify information bottleneck theory
+- Apply information bounds to learning theory
+
+**Guidance:** Students should understand fundamental inequalities in information theory. They should recognize channel capacity and its significance. Information bottleneck theory and its applications should be explored. Applications to learning theory and generalization bounds should be referenced.
+
+**6.30.4 Apply information theory to machine learning**
+- Use information theory in feature selection
+- Understand applications in deep learning
+- Identify information-theoretic regularization
+- Implement information-based ML algorithms
+
+**Guidance:** Students should see how information theory enables feature selection methods. They should understand applications in deep learning including information bottleneck analysis. Information-theoretic regularization techniques should be explored. Implementation in machine learning algorithms should be emphasized.
+
+###### Topic 31: Monte Carlo Methods
+
+Students will be assessed on their ability to:
+
+**6.31.1 Understand Monte Carlo fundamentals**
+- Define Monte Carlo integration and estimation
+- Understand law of large numbers and central limit theorem
+- Identify variance reduction techniques
+- Apply Monte Carlo methods to integration problems
+
+**Guidance:** Students should understand Monte Carlo methods as using random sampling for estimation. They should recognize the role of limit theorems in convergence. Variance reduction techniques including importance sampling should be explored. Applications to numerical integration should be referenced.
+
+**6.31.2 Understand Markov Chain Monte Carlo (MCMC)**
+- Define Metropolis-Hastings algorithm
+- Understand Gibbs sampling
+- Identify convergence diagnostics
+- Apply MCMC to Bayesian inference
+
+**Guidance:** Students should understand Metropolis-Hastings as a general MCMC algorithm. They should recognize Gibbs sampling for conditional distributions. Convergence diagnostics and their importance should be explored. Applications to Bayesian inference should be emphasized.
+
+**6.31.3 Understand advanced sampling methods**
+- Define Hamiltonian Monte Carlo
+- Understand variational inference
+- Identify approximate inference techniques
+- Apply advanced methods to complex models
+
+**Guidance:** Students should understand Hamiltonian Monte Carlo as using physics-inspired proposals. They should recognize variational inference as optimization-based approximation. Different approximate inference techniques should be compared. Applications to complex probabilistic models should be referenced.
+
+**6.31.4 Apply Monte Carlo to machine learning**
+- Implement Monte Carlo in reinforcement learning
+- Understand applications in deep learning
+- Identify sampling-based optimization
+- Apply Monte Carlo methods to real problems
+
+**Guidance:** Students should see how Monte Carlo enables reinforcement learning algorithms. They should understand applications in deep learning including dropout as approximate inference. Sampling-based optimization methods should be explored. Real-world implementation challenges should be emphasized.
+
+###### Topic 32: Gaussian Processes
+
+Students will be assessed on their ability to:
+
+**6.32.1 Understand Gaussian process fundamentals**
+- Define Gaussian processes and their properties
+- Understand covariance functions and kernels
+- Identify Gaussian process regression
+- Apply Gaussian processes to function modeling
+
+**Guidance:** Students should understand Gaussian processes as distributions over functions. They should recognize covariance functions as defining function properties. Gaussian process regression and its Bayesian nature should be explored. Applications to function modeling should be referenced.
+
+**6.32.2 Understand kernel methods**
+- Define different types of kernel functions
+- Understand kernel properties and stationarity
+- Identify kernel design principles
+- Apply kernel methods to various problems
+
+**Guidance:** Students should understand different kernel families including RBF and Matérn. They should recognize properties including stationarity and isotropy. Principles for kernel design should be explored. Applications to various machine learning problems should be emphasized.
+
+**6.32.3 Understand Gaussian process classification**
+- Define probabilistic classification with GPs
+- Understand Laplace approximation and EP
+- Identify challenges in GP classification
+- Apply GP classification to real problems
+
+**Guidance:** Students should understand the challenges of non-Gaussian likelihoods in classification. They should recognize approximation methods including Laplace and expectation propagation. Computational challenges should be explored. Applications to real classification problems should be referenced.
+
+**6.32.4 Apply Gaussian processes to machine learning**
+- Use GPs in Bayesian optimization
+- Understand applications in spatial statistics
+- Identify GP approximations for large data
+- Implement Gaussian process models
+
+**Guidance:** Students should see how Gaussian processes enable Bayesian optimization. They should understand applications in spatial and temporal modeling. Approximation methods for large datasets should be explored. Implementation considerations should be emphasized.
+
+###### Topic 33: Advanced Topics in Probability Theory
+
+Students will be assessed on their ability to:
+
+**6.33.1 Understand copulas and dependence modeling**
+- Define copulas and their properties
+- Understand Sklar's theorem
+- Identify types of copulas (Gaussian, t, Archimedean)
+- Apply copulas to dependence modeling
+
+**Guidance:** Students should understand copulas as tools for modeling dependence separately from marginals. They should recognize Sklar's theorem connecting joint distributions to copulas. Different copula families and their properties should be explored. Applications to dependence modeling in finance and ML should be referenced.
+
+**6.33.2 Understand extreme value theory**
+- Define extreme value distributions
+- Understand max-stability and domains of attraction
+- Identify applications to risk assessment
+- Apply extreme value theory to outlier detection
+
+**Guidance:** Students should understand extreme value distributions for modeling rare events. They should recognize max-stability and domains of attraction. Applications to risk assessment and reliability should be explored. Uses in outlier detection should be emphasized.
+
+**6.33.3 Understand stochastic calculus basics**
+- Define stochastic integrals and differentials
+- Understand Itô's lemma and its applications
+- Identify stochastic differential equations
+- Apply stochastic calculus to modeling
+
+**Guidance:** Students should understand stochastic integrals as extensions to deterministic integration. They should recognize Itô's lemma as the chain rule for stochastic processes. Stochastic differential equations and their applications should be explored. Uses in modeling random phenomena should be referenced.
+
+**6.33.4 Apply advanced probability to AI/ML**
+- Use advanced probability in generative models
+- Understand applications in robust ML
+- Identify cutting-edge research areas
+- Implement advanced probabilistic methods
+
+**Guidance:** Students should see how advanced probability enables sophisticated generative models. They should understand applications in robust and reliable machine learning. Current research frontiers should be explored. Implementation of advanced methods should be emphasized.
+
+###### Topic 34: Applications of Probability in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.34.1 Understand probabilistic graphical models**
+- Define Bayesian networks and Markov random fields
+- Understand inference in graphical models
+- Identify learning algorithms for graphical models
+- Apply graphical models to structured prediction
+
+**Guidance:** Students should understand graphical models as representing probabilistic dependencies. They should recognize inference algorithms including belief propagation. Learning methods for model parameters should be explored. Applications to structured prediction should be referenced.
+
+**6.34.2 Understand probabilistic deep learning**
+- Define Bayesian neural networks
+- Understand variational autoencoders
+- Identify diffusion models
+- Apply probabilistic deep learning to generative tasks
+
+**Guidance:** Students should understand Bayesian neural networks as incorporating weight uncertainty. They should recognize VAEs as probabilistic generative models. Diffusion models and their probabilistic foundations should be explored. Applications to generative tasks should be emphasized.
+
+**6.34.3 Understand uncertainty quantification**
+- Define aleatoric and epistemic uncertainty
+- Understand uncertainty estimation methods
+- Identify applications in reliable AI
+- Apply uncertainty quantification to safety-critical systems
+
+**Guidance:** Students should understand different types of uncertainty in predictions. They should recognize methods for uncertainty estimation including ensemble methods. Applications to reliable and trustworthy AI should be explored. Uses in safety-critical systems should be referenced.
+
+**6.34.4 Apply probability to advanced AI systems**
+- Use probability in multi-agent systems
+- Understand applications in federated learning
+- Identify probabilistic reasoning in AI
+- Implement advanced probabilistic AI systems
+
+**Guidance:** Students should see how probability enables multi-agent coordination. They should understand applications in federated learning and privacy-preserving ML. Probabilistic reasoning in advanced AI systems should be explored. Implementation challenges and solutions should be emphasized.
+
+###### Topic 35: Entropy and Information Measures
+
+Students will be assessed on their ability to:
+
+**6.35.1 Understand entropy and its properties**
+- Define Shannon entropy for discrete random variables
+- Understand the intuition behind entropy as uncertainty
+- Identify key properties of entropy (non-negativity, concavity, maximum)
+- Apply entropy to measure information content
+
+**Guidance:** Students should understand entropy as the average uncertainty or information content of a random variable. They should recognize entropy as measuring the average number of bits needed to represent outcomes. Properties including non-negativity, concavity, and maximum value for uniform distributions should be explored. Applications to measuring information content in data should be referenced.
+
+**6.35.2 Understand joint and conditional entropy**
+- Define joint entropy for multiple random variables
+- Define conditional entropy and its interpretation
+- Understand the chain rule for entropy
+- Apply joint and conditional entropy to multi-variable systems
+
+**Guidance:** Students should understand joint entropy as the uncertainty of multiple random variables together. They should recognize conditional entropy as remaining uncertainty given knowledge of another variable. The chain rule relating joint and conditional entropy should be mastered. Applications to analyzing complex systems with multiple variables should be explored.
+
+**6.35.3 Understand differential entropy**
+- Define differential entropy for continuous random variables
+- Understand differences from discrete entropy
+- Identify properties of differential entropy
+- Apply differential entropy to continuous data analysis
+
+**Guidance:** Students should understand differential entropy as the continuous analog of discrete entropy. They should recognize key differences including that differential entropy can be negative. Properties and limitations compared to discrete entropy should be explored. Applications to continuous data analysis in machine learning should be referenced.
+
+**6.35.4 Apply entropy measures to machine learning**
+- Use entropy for feature selection and evaluation
+- Understand entropy-based splitting criteria
+- Identify applications in data compression
+- Implement entropy-based algorithms
+
+**Guidance:** Students should see how entropy enables feature selection by measuring information content. They should understand entropy-based splitting in decision trees. Applications to data compression algorithms should be explored. Implementation in machine learning pipelines should be emphasized.
+
+###### Topic 36: Mutual Information
+
+Students will be assessed on their ability to:
+
+**6.36.1 Understand mutual information fundamentals**
+- Define mutual information between random variables
+- Understand mutual information as reduction in uncertainty
+- Identify relationships between mutual information and entropy
+- Apply mutual information to measure dependence
+
+**Guidance:** Students should understand mutual information as measuring the dependence between random variables. They should recognize it as the reduction in uncertainty about one variable given knowledge of another. The relationship to entropy through the formula I(X;Y) = H(X) - H(X|Y) should be mastered. Applications to measuring statistical dependence should be explored.
+
+**6.36.2 Understand properties of mutual information**
+- Identify non-negativity and symmetry properties
+- Understand data processing inequality
+- Identify chain rules for mutual information
+- Apply properties to analyze information flow
+
+**Guidance:** Students should understand that mutual information is always non-negative and symmetric. They should recognize the data processing inequality as stating that processing cannot increase information. Chain rules for multiple variables should be explored. Applications to analyzing information flow in systems should be referenced.
+
+**6.36.3 Understand conditional mutual information**
+- Define conditional mutual information
+- Understand interaction information
+- Identify multivariate mutual information concepts
+- Apply conditional mutual information to complex systems
+
+**Guidance:** Students should understand conditional mutual information as measuring dependence between variables given knowledge of a third. They should recognize interaction information as capturing synergistic or redundant information. Multivariate extensions should be explored. Applications to analyzing complex systems with multiple variables should be emphasized.
+
+**6.36.4 Apply mutual information to machine learning**
+- Use mutual information for feature selection
+- Understand applications in representation learning
+- Identify mutual information in clustering and classification
+- Implement mutual information-based algorithms
+
+**Guidance:** Students should see how mutual information enables effective feature selection. They should understand applications in representation learning and independent component analysis. Uses in clustering and classification algorithms should be explored. Implementation in machine learning systems should be emphasized.
+
+###### Topic 37: KL Divergence and Cross-Entropy
+
+Students will be assessed on their ability to:
+
+**6.37.1 Understand Kullback-Leibler divergence**
+- Define KL divergence between probability distributions
+- Understand KL divergence as relative entropy
+- Identify properties of KL divergence (non-negativity, asymmetry)
+- Apply KL divergence to measure distribution differences
+
+**Guidance:** Students should understand KL divergence as measuring the difference between probability distributions. They should recognize it as the average number of extra bits needed to encode samples from one distribution using another. Properties including non-negativity and asymmetry should be explored. Applications to measuring distribution differences should be referenced.
+
+**6.37.2 Understand cross-entropy**
+- Define cross-entropy between distributions
+- Understand relationship to KL divergence
+- Identify cross-entropy as a loss function
+- Apply cross-entropy to classification problems
+
+**Guidance:** Students should understand cross-entropy as measuring the average number of bits needed to encode samples from one distribution using a code optimized for another. They should recognize the relationship to KL divergence through H(p,q) = H(p) + D_KL(p||q). Applications to classification loss functions should be emphasized.
+
+**6.37.3 Understand Jensen-Shannon divergence**
+- Define Jensen-Shannon divergence
+- Understand properties of JS divergence
+- Identify advantages over KL divergence
+- Apply JS divergence to distribution comparison
+
+**Guidance:** Students should understand Jensen-Shannon divergence as a symmetric, smoothed version of KL divergence. They should recognize its properties including symmetry and boundedness. Advantages over KL divergence including handling of zero probabilities should be explored. Applications to distribution comparison in machine learning should be referenced.
+
+**6.37.4 Apply divergence measures to machine learning**
+- Use KL divergence in variational inference
+- Understand cross-entropy in deep learning
+- Identify applications in generative modeling
+- Implement divergence-based optimization
+
+**Guidance:** Students should see how KL divergence enables variational inference in Bayesian methods. They should understand cross-entropy as the standard loss function in classification. Applications to generative modeling including VAEs should be explored. Implementation in optimization algorithms should be emphasized.
+
+###### Topic 38: Channel Capacity and Coding Theorems
+
+Students will be assessed on their ability to:
+
+**6.38.1 Understand channel capacity**
+- Define channel capacity for communication channels
+- Understand mutual information in channels
+- Identify capacity for different channel types
+- Apply channel capacity to communication systems
+
+**Guidance:** Students should understand channel capacity as the maximum rate of reliable communication. They should recognize it as the maximum mutual information between input and output. Capacity for different channel types including binary symmetric and Gaussian channels should be explored. Applications to communication system design should be referenced.
+
+**6.38.2 Understand Shannon's coding theorems**
+- Define source coding theorem
+- Define channel coding theorem
+- Understand implications for data compression and communication
+- Apply coding theorems to system analysis
+
+**Guidance:** Students should understand the source coding theorem as establishing limits for lossless compression. They should recognize the channel coding theorem as establishing reliable communication limits. Implications for practical compression and communication systems should be explored. Applications to analyzing system performance should be emphasized.
+
+**6.38.3 Understand rate-distortion theory**
+- Define rate-distortion function
+- Understand trade-off between rate and distortion
+- Identify applications in lossy compression
+- Apply rate-distortion concepts to compression systems
+
+**Guidance:** Students should understand rate-distortion theory as fundamental to lossy compression. They should recognize the trade-off between compression rate and reconstruction quality. Applications to image, video, and audio compression should be explored. Uses in modern compression standards should be referenced.
+
+**6.38.4 Apply coding theory to machine learning**
+- Use coding concepts in learning theory
+- Understand connections to generalization bounds
+- Identify applications in robust learning
+- Implement coding-inspired algorithms
+
+**Guidance:** Students should see how coding theory concepts apply to machine learning. They should understand connections to generalization bounds and sample complexity. Applications to robust and adversarial learning should be explored. Implementation of coding-inspired algorithms should be emphasized.
+
+###### Topic 39: Information Bottleneck Theory
+
+Students will be assessed on their ability to:
+
+**6.39.1 Understand information bottleneck principle**
+- Define information bottleneck objective
+- Understand trade-off between compression and prediction
+- Identify optimal representations in bottleneck framework
+- Apply bottleneck principle to representation learning
+
+**Guidance:** Students should understand the information bottleneck as finding optimal representations that compress input while preserving relevant information. They should recognize the trade-off between compression (minimizing I(X;T)) and prediction (maximizing I(T;Y)). Applications to representation learning should be explored.
+
+**6.39.2 Understand information bottleneck in deep learning**
+- Define information bottleneck analysis of neural networks
+- Understand phases of learning in bottleneck framework
+- Identify connections to generalization and optimization
+- Apply bottleneck analysis to neural network design
+
+**Guidance:** Students should understand how the information bottleneck principle applies to deep learning. They should recognize the two phases of learning: fitting and compression. Connections to generalization and optimization should be explored. Applications to neural network architecture design should be referenced.
+
+**6.39.3 Understand variational information bottleneck**
+- Define variational information bottleneck objective
+- Understand practical implementations
+- Identify advantages over original formulation
+- Apply variational bottleneck to deep learning
+
+**Guidance:** Students should understand variational information bottleneck as a practical, tractable formulation. They should recognize implementations using neural networks and variational bounds. Advantages including scalability and flexibility should be explored. Applications to modern deep learning should be emphasized.
+
+**6.39.4 Apply information bottleneck to AI systems**
+- Use bottleneck principles for model compression
+- Understand applications in interpretability
+- Identify uses in multi-task learning
+- Implement bottleneck-based methods
+
+**Guidance:** Students should see how information bottleneck enables model compression. They should understand applications to model interpretability and analysis. Uses in multi-task learning should be explored. Implementation in AI systems should be emphasized.
+
+###### Topic 40: Information Theory in Machine Learning
+
+Students will be assessed on their ability to:
+
+**6.40.1 Understand information-theoretic feature selection**
+- Define mutual information-based feature selection
+- Understand information gain and related criteria
+- Identify advantages of information-theoretic methods
+- Apply feature selection to real datasets
+
+**Guidance:** Students should understand mutual information as a criterion for feature selection. They should recognize information gain and related measures. Advantages including handling non-linear relationships should be explored. Applications to feature selection on real datasets should be referenced.
+
+**6.40.2 Understand information-theoretic regularization**
+- Define information bottleneck regularization
+- Understand maximum entropy regularization
+- Identify information-theoretic constraints
+- Apply regularization to improve model performance
+
+**Guidance:** Students should understand information-theoretic approaches to regularization. They should recognize how information bottleneck and maximum entropy principles can regularize models. Different constraint types and their effects should be explored. Applications to improving model performance should be emphasized.
+
+**6.40.3 Understand information-theoretic evaluation**
+- Define information-theoretic model evaluation metrics
+- Understand mutual information-based evaluation
+- Identify advantages over traditional metrics
+- Apply evaluation methods to model comparison
+
+**Guidance:** Students should understand information-theoretic approaches to model evaluation. They should recognize mutual information-based metrics for assessing model quality. Advantages over traditional accuracy-based metrics should be explored. Applications to model comparison and selection should be referenced.
+
+**6.40.4 Apply information theory to deep learning**
+- Use information theory to analyze neural networks
+- Understand applications in generative modeling
+- Identify information-theoretic bounds on learning
+- Implement information-theoretic deep learning methods
+
+**Guidance:** Students should see how information theory enables analysis of neural network behavior. They should understand applications in generative modeling including VAEs and GANs. Information-theoretic bounds on learning should be explored. Implementation of information-theoretic methods in deep learning should be emphasized.
+
+###### Topic 41: Advanced Information-Theoretic Concepts
+
+Students will be assessed on their ability to:
+
+**6.41.1 Understand minimum description length principle**
+- Define MDL principle for model selection
+- Understand connection to Kolmogorov complexity
+- Identify practical MDL implementations
+- Apply MDL to model comparison
+
+**Guidance:** Students should understand MDL as selecting models that minimize description length of data. They should recognize connections to Kolmogorov complexity and Occam's razor. Practical implementations including two-part codes should be explored. Applications to model selection should be referenced.
+
+**6.41.2 Understand maximum entropy principle**
+- Define maximum entropy principle for inference
+- Understand entropy maximization with constraints
+- Identify applications to probability estimation
+- Apply maximum entropy to modeling problems
+
+**Guidance:** Students should understand maximum entropy as choosing distributions with maximum entropy subject to constraints. They should recognize entropy maximization as a principle for unbiased inference. Applications to probability estimation and modeling should be explored. Uses in natural language processing should be referenced.
+
+**6.41.3 Understand information-theoretic inequalities**
+- Define Fano's inequality and its implications
+- Understand data processing inequality
+- Identify entropy power inequality
+- Apply inequalities to bound performance
+
+**Guidance:** Students should understand Fano's inequality as bounding estimation error. They should recognize the data processing inequality as fundamental to information flow. Entropy power inequality and its applications should be explored. Applications to bounding performance in learning systems should be referenced.
+
+**6.41.4 Apply advanced concepts to AI**
+- Use advanced information theory in AI safety
+- Understand applications in fairness and privacy
+- Identify cutting-edge research areas
+- Implement advanced information-theoretic methods
+
+**Guidance:** Students should see how advanced information theory applies to AI safety. They should understand applications in fairness and privacy-preserving machine learning. Current research frontiers should be explored. Implementation of advanced methods should be emphasized.
+
+###### Topic 42: Information Theory in Representation Learning
+
+Students will be assessed on their ability to:
+
+**6.42.1 Understand information-theoretic representation learning**
+- Define information-theoretic objectives for representations
+- Understand trade-offs in representation learning
+- Identify connection to disentangled representations
+- Apply information theory to representation design
+
+**Guidance:** Students should understand information-theoretic approaches to learning representations. They should recognize trade-offs between compression, prediction, and disentanglement. Connections to disentangled representation learning should be explored. Applications to representation design should be referenced.
+
+**6.42.2 Understand contrastive learning and information theory**
+- Define contrastive learning from information-theoretic perspective
+- Understand mutual information maximization
+- Identify connections to self-supervised learning
+- Apply contrastive learning to representation learning
+
+**Guidance:** Students should understand contrastive learning through the lens of mutual information maximization. They should recognize how contrastive methods maximize mutual information between different views of data. Connections to self-supervised learning should be explored. Applications to representation learning should be emphasized.
+
+**6.42.3 Understand disentanglement and information theory**
+- Define disentangled representations
+- Understand information-theoretic measures of disentanglement
+- Identify trade-offs in disentangled representation learning
+- Apply disentanglement to interpretable AI
+
+**Guidance:** Students should understand disentangled representations as capturing independent factors of variation. They should recognize information-theoretic measures for quantifying disentanglement. Trade-offs between disentanglement and other objectives should be explored. Applications to interpretable AI should be referenced.
+
+**6.42.4 Apply information theory to representation learning**
+- Use information-theoretic objectives in deep learning
+- Understand applications in transfer learning
+- Identify information-theoretic regularization techniques
+- Implement information-based representation learning
+
+**Guidance:** Students should see how information-theoretic objectives improve deep learning representations. They should understand applications in transfer learning and domain adaptation. Information-theoretic regularization techniques should be explored. Implementation in representation learning systems should be emphasized.
+
+###### Topic 43: Information Theory in Reinforcement Learning
+
+Students will be assessed on their ability to:
+
+**6.43.1 Understand information-theoretic RL foundations**
+- Define information-theoretic objectives in RL
+- Understand exploration through information gain
+- Identify connections to intrinsic motivation
+- Apply information theory to RL agent design
+
+**Guidance:** Students should understand information-theoretic approaches to reinforcement learning. They should recognize how information gain drives exploration. Connections to intrinsic motivation and curiosity should be explored. Applications to RL agent design should be referenced.
+
+**6.43.2 Understand information-theoretic exploration**
+- Define information-directed exploration
+- Understand Thompson sampling and information gain
+- Identify advantages over heuristic exploration
+- Apply exploration strategies to RL problems
+
+**Guidance:** Students should understand information-directed exploration as balancing information gain and reward. They should recognize Thompson sampling as a Bayesian approach incorporating information. Advantages over heuristic exploration methods should be explored. Applications to challenging RL problems should be emphasized.
+
+**6.43.3 Understand information-theoretic safety**
+- Define information-theoretic approaches to safe RL
+- Understand uncertainty quantification in RL
+- Identify applications to robust decision making
+- Apply safety methods to critical systems
+
+**Guidance:** Students should understand information-theoretic approaches to safe reinforcement learning. They should recognize how information theory enables uncertainty quantification. Applications to robust decision making in critical systems should be explored. Implementation in safety-critical RL should be referenced.
+
+**6.43.4 Apply information theory to advanced RL**
+- Use information theory in multi-agent RL
+- Understand applications in hierarchical RL
+- Identify information-theoretic bounds on learning
+- Implement information-based RL algorithms
+
+**Guidance:** Students should see how information theory applies to multi-agent reinforcement learning. They should understand applications in hierarchical and meta-learning. Information-theoretic bounds on learning efficiency should be explored. Implementation of advanced RL algorithms should be emphasized.
+
+###### Topic 44: Applications of Information Theory in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.44.1 Understand information theory in computer vision**
+- Define information-theoretic approaches to vision tasks
+- Understand applications in image compression
+- Identify uses in visual representation learning
+- Apply information theory to vision problems
+
+**Guidance:** Students should understand information-theoretic approaches to computer vision. They should recognize applications in image compression and quality assessment. Uses in visual representation learning should be explored. Applications to specific vision problems should be referenced.
+
+**6.44.2 Understand information theory in natural language processing**
+- Define information-theoretic language models
+- Understand applications in machine translation
+- Identify uses in text summarization
+- Apply information theory to NLP tasks
+
+**Guidance:** Students should understand information-theoretic approaches to language modeling. They should recognize applications in machine translation and cross-lingual transfer. Uses in text summarization and generation should be explored. Applications to NLP tasks should be emphasized.
+
+**6.44.3 Understand information theory in federated learning**
+- Define information-theoretic privacy in federated learning
+- Understand communication efficiency analysis
+- Identify applications to distributed learning
+- Apply information theory to federated systems
+
+**Guidance:** Students should understand information-theoretic approaches to privacy in federated learning. They should recognize analysis of communication efficiency and privacy-utility trade-offs. Applications to distributed learning systems should be explored. Implementation in federated learning should be referenced.
+
+**6.44.4 Apply information theory to cutting-edge AI**
+- Use information theory in generative AI
+- Understand applications in AI alignment
+- Identify future research directions
+- Implement information-theoretic AI systems
+
+**Guidance:** Students should see how information theory applies to modern generative AI. They should understand applications in AI alignment and safety. Future research directions at the intersection of information theory and AI should be explored. Implementation of cutting-edge systems should be emphasized.
+
+###### Topic 45: Graph Theory
+
+Students will be assessed on their ability to:
+
+**6.45.1 Understand basic graph concepts**
+- Define graphs, vertices, and edges
+- Understand different types of graphs (directed, undirected, weighted)
+- Identify graph properties (order, size, degree)
+- Apply graph terminology to simple problems
+
+**Guidance:** Students should understand graphs as mathematical structures consisting of vertices (nodes) connected by edges. They should recognize the difference between directed and undirected graphs, and how weighted graphs assign values to edges. Basic properties including graph order (number of vertices), size (number of edges), and vertex degree should be mastered. Applications to representing relationships in real-world problems should be referenced.
+
+**6.45.2 Understand graph representations**
+- Define adjacency matrices and adjacency lists
+- Understand incidence matrices and edge lists
+- Identify advantages and disadvantages of different representations
+- Apply appropriate representations to graph problems
+
+**Guidance:** Students should understand adjacency matrices as square matrices showing vertex connections. They should recognize adjacency lists as collections of neighbor lists for each vertex. Other representations including incidence matrices and edge lists should be explored. Trade-offs between different representations in terms of memory and computational efficiency should be discussed. Applications to implementing graph algorithms should be referenced.
+
+**6.45.3 Understand graph isomorphisms and properties**
+- Define graph isomorphism and graph invariants
+- Understand graph complement and graph operations
+- Identify special graph classes (complete, bipartite, regular)
+- Apply graph properties to classify and analyze graphs
+
+**Guidance:** Students should understand graph isomorphism as structural equivalence between graphs. They should recognize graph invariants (properties preserved under isomorphism) including degree sequence and connectivity. Graph operations including union, intersection, and complement should be explored. Special graph classes and their properties should be mastered. Applications to graph classification and analysis should be referenced.
+
+**6.45.4 Apply graph fundamentals to AI/ML**
+- Use graph representations for relational data
+- Understand graph properties in network analysis
+- Identify applications in data structures
+- Implement basic graph operations in ML contexts
+
+**Guidance:** Students should see how graphs represent relational data in machine learning. They should understand how graph properties help analyze network structures. Applications to data structures and algorithms in ML should be explored. Implementation considerations should be emphasized.
+
+###### Topic 46: Graph Algorithms and Traversal
+
+Students will be assessed on their ability to:
+
+**6.46.1 Understand graph traversal algorithms**
+- Define breadth-first search (BFS) and depth-first search (DFS)
+- Understand traversal strategies and their properties
+- Identify applications of traversal algorithms
+- Apply traversal methods to graph exploration
+
+**Guidance:** Students should understand BFS as level-by-level exploration and DFS as deep exploration along branches. They should recognize the properties of each traversal method including time complexity and memory usage. Applications to shortest path finding, connectivity checking, and cycle detection should be explored. Implementation on different graph representations should be referenced.
+
+**6.46.2 Understand shortest path algorithms**
+- Define Dijkstra's algorithm and Bellman-Ford algorithm
+- Understand shortest path properties and optimality
+- Identify applications in routing and navigation
+- Apply shortest path algorithms to weighted graphs
+
+**Guidance:** Students should understand Dijkstra's algorithm for finding shortest paths from a single source. They should recognize Bellman-Ford as handling negative edge weights. Properties including optimality conditions and time complexity should be explored. Applications to network routing, GPS navigation, and logistics should be referenced.
+
+**6.46.3 Understand connectivity and components**
+- Define connected components and strongly connected components
+- Understand algorithms for finding components
+- Identify graph connectivity measures
+- Apply connectivity analysis to network problems
+
+**Guidance:** Students should understand connected components as maximal connected subgraphs. They should recognize strongly connected components in directed graphs. Algorithms including Kosaraju's and Tarjan's should be explored. Connectivity measures and their significance should be mastered. Applications to network robustness and community detection should be referenced.
+
+**6.46.4 Apply graph algorithms to ML problems**
+- Use traversal algorithms in data processing
+- Understand shortest paths in recommendation systems
+- Identify connectivity in social network analysis
+- Implement graph algorithms for ML applications
+
+**Guidance:** Students should see how graph traversal enables data processing pipelines. They should understand shortest path applications in recommendation and routing. Uses in social network analysis and community detection should be explored. Implementation in machine learning systems should be emphasized.
+
+###### Topic 47: Trees and Special Graph Classes
+
+Students will be assessed on their ability to:
+
+**6.47.1 Understand tree properties and algorithms**
+- Define trees and their properties
+- Understand tree traversal methods
+- Identify spanning trees and minimum spanning trees
+- Apply tree algorithms to hierarchical data
+
+**Guidance:** Students should understand trees as connected acyclic graphs. They should recognize tree traversal methods including inorder, preorder, and postorder. Spanning trees and minimum spanning trees (Kruskal's, Prim's algorithms) should be explored. Applications to hierarchical data structures and decision trees should be referenced.
+
+**6.47.2 Understand bipartite graphs and matching**
+- Define bipartite graphs and their properties
+- Understand matching concepts and algorithms
+- Identify maximum matching and perfect matching
+- Apply bipartite matching to assignment problems
+
+**Guidance:** Students should understand bipartite graphs as graphs with two disjoint vertex sets. They should recognize matching as sets of edges without common vertices. Algorithms including Hungarian algorithm should be explored. Applications to assignment problems and resource allocation should be referenced.
+
+**6.47.3 Understand planar graphs and coloring**
+- Define planar graphs and Euler's formula
+- Understand graph coloring concepts
+- Identify chromatic number and coloring algorithms
+- Apply coloring to scheduling and resource allocation
+
+**Guidance:** Students should understand planar graphs as graphs drawable without edge crossings. They should recognize Euler's formula relating vertices, edges, and faces. Graph coloring concepts including chromatic number should be explored. Applications to scheduling, register allocation, and map coloring should be referenced.
+
+**6.47.4 Apply special graphs to AI/ML**
+- Use trees in decision trees and hierarchical clustering
+- Understand bipartite matching in recommendation systems
+- Identify graph coloring in resource optimization
+- Implement special graph algorithms in ML
+
+**Guidance:** Students should see how trees enable decision tree algorithms and hierarchical clustering. They should understand bipartite matching in recommendation and assignment problems. Applications of graph coloring to resource optimization should be explored. Implementation in machine learning systems should be emphasized.
+
+###### Topic 48: Spectral Graph Theory
+
+Students will be assessed on their ability to:
+
+**6.48.1 Understand graph matrices**
+- Define adjacency matrix and Laplacian matrix
+- Understand normalized Laplacian and signless Laplacian
+- Identify properties of graph matrices
+- Apply matrix representations to graph analysis
+
+**Guidance:** Students should understand adjacency matrix representation of graphs. They should recognize Laplacian matrix as degree matrix minus adjacency matrix. Normalized and signless Laplacians should be explored. Properties including symmetry, eigenvalues, and spectral radius should be mastered. Applications to graph analysis should be referenced.
+
+**6.48.2 Understand eigenvalues and eigenvectors of graphs**
+- Define graph spectrum and spectral properties
+- Understand relationship between eigenvalues and graph structure
+- Identify important eigenvalues (algebraic connectivity, spectral gap)
+- Apply spectral analysis to graph characterization
+
+**Guidance:** Students should understand graph spectrum as the set of eigenvalues of graph matrices. They should recognize how eigenvalues relate to graph properties like connectivity. Important eigenvalues including algebraic connectivity (Fiedler value) should be explored. Applications to graph characterization and comparison should be referenced.
+
+**6.48.3 Understand spectral clustering**
+- Define spectral clustering algorithms
+- Understand connection to graph partitioning
+- Identify applications in data clustering
+- Apply spectral clustering to real datasets
+
+**Guidance:** Students should understand spectral clustering as using eigenvalues for clustering. They should recognize the connection to graph partitioning and min-cut problems. Different spectral clustering algorithms should be explored. Applications to image segmentation, community detection, and data clustering should be referenced.
+
+**6.48.4 Apply spectral graph theory to ML**
+- Use spectral methods for dimensionality reduction
+- Understand spectral embeddings for graph data
+- Identify applications in graph neural networks
+- Implement spectral algorithms in ML systems
+
+**Guidance:** Students should see how spectral methods enable dimensionality reduction. They should understand spectral embeddings for representing graph data. Applications to graph neural networks and graph representation learning should be explored. Implementation in machine learning systems should be emphasized.
+
+###### Topic 49: Graph Neural Networks
+
+Students will be assessed on their ability to:
+
+**6.49.1 Understand GNN fundamentals**
+- Define graph neural networks and their architecture
+- Understand message passing in GNNs
+- Identify different types of GNNs (GCN, GAT, GraphSAGE)
+- Apply GNN concepts to graph learning tasks
+
+**Guidance:** Students should understand GNNs as neural networks operating on graph structures. They should recognize message passing as the core mechanism for information propagation. Different GNN variants including GCN, GAT, and GraphSAGE should be explored. Applications to node classification, link prediction, and graph classification should be referenced.
+
+**6.49.2 Understand graph convolutional networks**
+- Define graph convolution operations
+- Understand spectral vs. spatial approaches
+- Identify GCN architectures and variants
+- Apply GCNs to graph-structured data
+
+**Guidance:** Students should understand graph convolution as generalizing convolution to irregular graph structures. They should recognize spectral approaches (based on graph Fourier transform) and spatial approaches (based on neighborhood aggregation). GCN architectures and their variants should be explored. Applications to semi-supervised learning on graphs should be referenced.
+
+**6.49.3 Understand graph attention mechanisms**
+- Define attention mechanisms in GNNs
+- Understand self-attention for graph data
+- Identify GAT architecture and properties
+- Apply attention-based GNNs to complex graphs
+
+**Guidance:** Students should understand attention mechanisms as learning edge importance weights. They should recognize self-attention adapted for graph structures. Graph Attention Network (GAT) architecture and its properties should be explored. Applications to heterogeneous graphs and complex relational data should be referenced.
+
+**6.49.4 Apply GNNs to real-world problems**
+- Use GNNs for molecular property prediction
+- Understand applications in social network analysis
+- Identify uses in recommendation systems
+- Implement GNNs for practical ML tasks
+
+**Guidance:** Students should see how GNNs enable molecular property prediction and drug discovery. They should understand applications in social network analysis and influence prediction. Uses in recommendation systems and knowledge graphs should be explored. Implementation considerations for real-world problems should be emphasized.
+
+###### Topic 50: Graph Theory Applications in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.50.1 Understand graphs in knowledge representation**
+- Define knowledge graphs and semantic networks
+- Understand graph-based knowledge representation
+- Identify reasoning on knowledge graphs
+- Apply knowledge graphs to AI systems
+
+**Guidance:** Students should understand knowledge graphs as representing structured knowledge. They should recognize how graphs enable semantic representation and reasoning. Different types of knowledge graphs and their applications should be explored. Uses in AI systems for knowledge representation and reasoning should be referenced.
+
+**6.50.2 Understand graphs in network analysis**
+- Define social network analysis concepts
+- Understand community detection algorithms
+- Identify centrality measures and their applications
+- Apply network analysis to real-world networks
+
+**Guidance:** Students should understand social network analysis as studying relationships and structures. They should recognize community detection as finding groups of densely connected nodes. Centrality measures including degree, betweenness, and eigenvector centrality should be explored. Applications to social networks, biological networks, and infrastructure networks should be referenced.
+
+**6.50.3 Understand graphs in recommendation systems**
+- Define graph-based recommendation approaches
+- Understand collaborative filtering on graphs
+- Identify applications in personalized recommendations
+- Apply graph methods to recommendation algorithms
+
+**Guidance:** Students should understand how graphs represent user-item interactions in recommendations. They should recognize collaborative filtering as leveraging graph structures. Different graph-based recommendation approaches should be explored. Applications to personalized recommendations and e-commerce should be referenced.
+
+**6.50.4 Apply graph theory to cutting-edge AI**
+- Use graphs in explainable AI
+- Understand applications in federated learning
+- Identify graph theory in quantum computing
+- Implement advanced graph-based AI systems
+
+**Guidance:** Students should see how graphs enable explainable AI through interpretable structures. They should understand applications in federated learning and privacy-preserving ML. Connections to quantum computing and quantum graphs should be explored. Implementation of advanced graph-based AI systems should be emphasized.
+
+###### Topic 51: Advanced Graph Theory Concepts
+
+Students will be assessed on their ability to:
+
+**6.51.1 Understand graph embeddings**
+- Define graph embedding concepts and methods
+- Understand node embeddings and graph embeddings
+- Identify applications in machine learning
+- Apply embedding techniques to graph data
+
+**Guidance:** Students should understand graph embeddings as low-dimensional representations. They should recognize node embeddings (representing individual nodes) and graph embeddings (representing entire graphs). Different embedding techniques including random walk-based and matrix factorization methods should be explored. Applications to machine learning on graphs should be referenced.
+
+**6.51.2 Understand dynamic graphs**
+- Define temporal graphs and evolving networks
+- Understand algorithms for dynamic graph analysis
+- Identify applications in streaming data
+- Apply dynamic graph methods to time-varying data
+
+**Guidance:** Students should understand dynamic graphs as graphs that change over time. They should recognize temporal edges and evolving network structures. Algorithms for analyzing dynamic graphs should be explored. Applications to streaming data, social network evolution, and time-series analysis should be referenced.
+
+**6.51.3 Understand hypergraphs and multilayer networks**
+- Define hypergraphs and their properties
+- Understand multilayer and multiplex networks
+- Identify applications in complex systems
+- Apply advanced graph structures to real problems
+
+**Guidance:** Students should understand hypergraphs as generalizations where edges can connect multiple vertices. They should recognize multilayer networks as having multiple types of relationships. Properties and analysis methods should be explored. Applications to complex systems modeling should be referenced.
+
+**6.51.4 Apply advanced concepts to AI/ML**
+- Use graph embeddings in representation learning
+- Understand dynamic graphs in temporal ML
+- Identify hypergraphs in complex relationship modeling
+- Implement advanced graph methods in AI systems
+
+**Guidance:** Students should see how graph embeddings enhance representation learning. They should understand dynamic graphs in temporal and streaming ML applications. Uses of hypergraphs for modeling complex relationships should be explored. Implementation in advanced AI systems should be emphasized.
+
+###### Topic 52: Graph Theory in Optimization and Learning
+
+Students will be assessed on their ability to:
+
+**6.52.1 Understand graph-based optimization**
+- Define optimization problems on graphs
+- Understand graph cuts and partitioning
+- Identify applications in machine learning
+- Apply graph optimization to ML problems
+
+**Guidance:** Students should understand optimization problems defined on graph structures. They should recognize graph cuts as partitioning vertices into disjoint sets. Different optimization objectives and algorithms should be explored. Applications to machine learning including clustering and semi-supervised learning should be referenced.
+
+**6.52.2 Understand graph kernels**
+- Define graph kernels and similarity measures
+- Understand different types of graph kernels
+- Identify applications in graph classification
+- Apply kernel methods to graph data
+
+**Guidance:** Students should understand graph kernels as measuring similarity between graphs. They should recognize different kernel types including random walk kernels and subtree kernels. Properties and computational aspects should be explored. Applications to graph classification and regression should be referenced.
+
+**6.52.3 Understand graph generative models**
+- Define generative models for graph data
+- Understand graph generation approaches
+- Identify applications in drug discovery and design
+- Apply generative models to create synthetic graphs
+
+**Guidance:** Students should understand generative models for creating new graph structures. They should recognize different approaches including sequential generation and variational methods. Applications to drug discovery, molecular design, and network generation should be explored. Implementation considerations should be referenced.
+
+**6.52.4 Apply optimization and learning to AI**
+- Use graph optimization in neural architecture search
+- Understand graph kernels in bioinformatics
+- Identify generative models in creative AI
+- Implement graph-based learning systems
+
+**Guidance:** Students should see how graph optimization enables neural architecture search. They should understand graph kernels in bioinformatics and cheminformatics. Applications of generative models to creative AI should be explored. Implementation of complete graph-based learning systems should be emphasized.
+
+###### Topic 53: Numerical Methods
+
+Students will be assessed on their ability to:
+
+**6.53.1 Understand matrix computations and factorizations**
+- Define numerical matrix operations and their properties
+- Understand LU decomposition and its applications
+- Identify Cholesky decomposition for positive definite matrices
+- Apply matrix factorizations to solve linear systems
+
+**Guidance:** Students should understand numerical aspects of matrix operations including computational complexity and stability. They should recognize LU decomposition as factorizing matrices into lower and upper triangular forms. Cholesky decomposition for symmetric positive definite matrices should be explored. Applications to solving linear systems in machine learning should be referenced.
+
+**6.53.2 Understand singular value decomposition (SVD)**
+- Define numerical SVD computation methods
+- Understand truncated SVD and its applications
+- Identify computational aspects of SVD algorithms
+- Apply SVD to dimensionality reduction and compression
+
+**Guidance:** Students should understand numerical algorithms for computing SVD including power iteration and QR algorithm. They should recognize truncated SVD as an approximation technique. Computational considerations including efficiency and stability should be explored. Applications to dimensionality reduction, image compression, and recommender systems should be referenced.
+
+**6.53.3 Understand QR decomposition and orthogonalization**
+- Define QR decomposition and numerical methods
+- Understand Gram-Schmidt and Householder transformations
+- Identify applications in least squares problems
+- Apply QR decomposition to orthogonalization tasks
+
+**Guidance:** Students should understand QR decomposition as factorizing matrices into orthogonal and triangular components. They should recognize different methods including Gram-Schmidt orthogonalization and Householder reflections. Applications to solving least squares problems and eigenvalue computations should be explored. Implementation considerations should be emphasized.
+
+**6.53.4 Apply numerical linear algebra to machine learning**
+- Use matrix factorizations in neural network training
+- Understand numerical linear algebra in optimization
+- Identify applications in large-scale ML systems
+- Implement efficient matrix computations
+
+**Guidance:** Students should see how numerical linear algebra enables neural network training. They should understand applications in optimization algorithms including gradient descent variants. Uses in large-scale machine learning systems should be explored. Implementation efficiency and stability considerations should be referenced.
+
+###### Topic 54: Numerical Optimization Methods
+
+Students will be assessed on their ability to:
+
+**6.54.1 Understand gradient-based optimization algorithms**
+- Define numerical gradient computation methods
+- Understand line search and trust region methods
+- Identify convergence properties of optimization algorithms
+- Apply gradient methods to unconstrained optimization
+
+**Guidance:** Students should understand numerical methods for computing gradients including finite differences. They should recognize line search and trust region methods for step size selection. Convergence properties including local and global convergence should be explored. Applications to unconstrained optimization in machine learning should be referenced.
+
+**6.54.2 Understand iterative methods for linear systems**
+- Define Jacobi, Gauss-Seidel, and SOR methods
+- Understand conjugate gradient method
+- Identify convergence criteria and stopping conditions
+- Apply iterative methods to large linear systems
+
+**Guidance:** Students should understand classical iterative methods including Jacobi and Gauss-Seidel. They should recognize conjugate gradient method for symmetric positive definite systems. Convergence criteria and practical stopping conditions should be explored. Applications to solving large linear systems in machine learning should be emphasized.
+
+**6.54.3 Understand quasi-Newton methods**
+- Define BFGS and L-BFGS algorithms
+- Understand secant method and its variants
+- Identify computational trade-offs in quasi-Newton methods
+- Apply quasi-Newton methods to ML optimization
+
+**Guidance:** Students should understand BFGS as approximating the Hessian matrix. They should recognize L-BFGS as a limited-memory variant for large problems. Computational trade-offs between accuracy and memory usage should be explored. Applications to machine learning optimization should be referenced.
+
+**6.54.4 Apply numerical optimization to deep learning**
+- Use optimization algorithms in neural network training
+- Understand challenges in high-dimensional optimization
+- Identify numerical issues in deep learning
+- Implement efficient optimization methods
+
+**Guidance:** Students should see how numerical optimization enables deep learning training. They should understand challenges including vanishing/exploding gradients and saddle points. Numerical issues specific to deep learning should be explored. Implementation considerations for large-scale optimization should be emphasized.
+
+###### Topic 55: Numerical Integration and Differentiation
+
+Students will be assessed on their ability to:
+
+**6.55.1 Understand numerical differentiation**
+- Define finite difference methods
+- Understand forward, backward, and central differences
+- Identify error analysis in numerical differentiation
+- Apply numerical differentiation to gradient computation
+
+**Guidance:** Students should understand finite difference methods for approximating derivatives. They should recognize different difference schemes and their accuracy properties. Error analysis including truncation and rounding errors should be explored. Applications to gradient computation in machine learning should be referenced.
+
+**6.55.2 Understand numerical integration**
+- Define quadrature rules and integration methods
+- Understand trapezoidal rule and Simpson's rule
+- Identify adaptive integration techniques
+- Apply numerical integration to probability computations
+
+**Guidance:** Students should understand numerical integration as approximating definite integrals. They should recognize basic quadrature rules including trapezoidal and Simpson's rules. Adaptive integration methods for improved accuracy should be explored. Applications to probability computations and expected values should be referenced.
+
+**6.55.3 Understand Monte Carlo integration**
+- Define Monte Carlo integration principles
+- Understand importance sampling and variance reduction
+- Identify convergence properties of Monte Carlo methods
+- Apply Monte Carlo integration to high-dimensional problems
+
+**Guidance:** Students should understand Monte Carlo integration as using random sampling. They should recognize importance sampling as a variance reduction technique. Convergence properties including error rates should be explored. Applications to high-dimensional integration problems in machine learning should be emphasized.
+
+**6.55.4 Apply integration methods to machine learning**
+- Use numerical integration in Bayesian inference
+- Understand Monte Carlo methods in reinforcement learning
+- Identify applications in generative modeling
+- Implement integration algorithms for ML
+
+**Guidance:** Students should see how numerical integration enables Bayesian inference methods. They should understand Monte Carlo applications in reinforcement learning and policy evaluation. Uses in generative modeling and variational inference should be explored. Implementation considerations should be emphasized.
+
+###### Topic 56: Numerical Solution of Differential Equations
+
+Students will be assessed on their ability to:
+
+**6.56.1 Understand ordinary differential equation (ODE) methods**
+- Define Euler's method and Runge-Kutta methods
+- Understand multistep methods and stability
+- Identify stiff equations and specialized solvers
+- Apply ODE methods to continuous-time systems
+
+**Guidance:** Students should understand basic ODE solvers including Euler's method. They should recognize Runge-Kutta methods as higher-order alternatives. Stability analysis and stiff equation solvers should be explored. Applications to continuous-time systems in machine learning should be referenced.
+
+**6.56.2 Understand partial differential equation (PDE) methods**
+- Define finite difference methods for PDEs
+- Understand boundary conditions and discretization
+- Identify stability conditions for PDE solvers
+- Apply PDE methods to machine learning problems
+
+**Guidance:** Students should understand finite difference methods for solving PDEs. They should recognize the importance of boundary conditions and spatial discretization. Stability conditions including CFL condition should be explored. Applications to PDE-based machine learning should be referenced.
+
+**6.56.3 Understand neural differential equations**
+- Define neural ODEs and their numerical solution
+- Understand adjoint methods for gradient computation
+- Identify applications in deep learning
+- Apply neural differential equations to ML problems
+
+**Guidance:** Students should understand neural ODEs as continuous-depth neural networks. They should recognize adjoint methods for efficient gradient computation. Applications to deep learning and continuous-time models should be explored. Implementation considerations should be emphasized.
+
+**6.56.4 Apply differential equation methods to AI**
+- Use ODE solvers in time series modeling
+- Understand PDE-based approaches in computer vision
+- Identify applications in scientific machine learning
+- Implement differential equation-based AI systems
+
+**Guidance:** Students should see how ODE solvers enable time series modeling. They should understand PDE-based approaches in image processing and computer vision. Applications to scientific machine learning should be explored. Implementation of differential equation-based AI systems should be emphasized.
+
+###### Topic 57: Random Number Generation and Sampling
+
+Students will be assessed on their ability to:
+
+**6.57.1 Understand pseudorandom number generation**
+- Define pseudorandom number generators (PRNGs)
+- Understand linear congruential generators and Mersenne Twister
+- Identify statistical properties of random number generators
+- Apply PRNGs to machine learning algorithms
+
+**Guidance:** Students should understand PRNGs as algorithms generating seemingly random numbers. They should recognize common generators including linear congruential generators and Mersenne Twister. Statistical properties including uniformity and independence should be explored. Applications to machine learning algorithms requiring randomness should be referenced.
+
+**6.57.2 Understand sampling methods**
+- Define rejection sampling and importance sampling
+- Understand Markov Chain Monte Carlo (MCMC) methods
+- Identify Metropolis-Hastings and Gibbs sampling
+- Apply sampling methods to probabilistic modeling
+
+**Guidance:** Students should understand basic sampling techniques including rejection sampling. They should recognize MCMC methods for sampling from complex distributions. Metropolis-Hastings and Gibbs sampling algorithms should be explored. Applications to probabilistic modeling and Bayesian inference should be referenced.
+
+**6.57.3 Understand quasi-Monte Carlo methods**
+- Define low-discrepancy sequences
+- Understand Halton and Sobol sequences
+- Identify advantages over Monte Carlo methods
+- Apply quasi-Monte Carlo to integration problems
+
+**Guidance:** Students should understand quasi-Monte Carlo methods as using deterministic sequences. They should recognize low-discrepancy sequences including Halton and Sobol sequences. Advantages over random Monte Carlo in terms of convergence rate should be explored. Applications to high-dimensional integration should be referenced.
+
+**6.57.4 Apply sampling methods to machine learning**
+- Use sampling in stochastic optimization
+- Understand MCMC in Bayesian machine learning
+- Identify applications in generative modeling
+- Implement sampling algorithms for ML
+
+**Guidance:** Students should see how sampling enables stochastic optimization algorithms. They should understand MCMC applications in Bayesian machine learning. Uses in generative modeling including variational autoencoders should be explored. Implementation considerations should be emphasized.
+
+###### Topic 58: Numerical Stability and Error Analysis
+
+Students will be assessed on their ability to:
+
+**6.58.1 Understand floating-point arithmetic**
+- Define IEEE floating-point representation
+- Understand rounding errors and machine epsilon
+- Identify sources of numerical errors
+- Apply floating-point considerations to computations
+
+**Guidance:** Students should understand IEEE floating-point number representation. They should recognize rounding errors and the concept of machine epsilon. Different sources of numerical errors including representation and arithmetic errors should be explored. Applications to practical numerical computations should be referenced.
+
+**6.58.2 Understand conditioning and stability**
+- Define condition numbers and problem conditioning
+- Understand algorithm stability concepts
+- Identify well-conditioned and ill-conditioned problems
+- Apply conditioning analysis to numerical algorithms
+
+**Guidance:** Students should understand condition numbers as measuring problem sensitivity. They should recognize algorithm stability as property of error growth. Well-conditioned vs. ill-conditioned problems should be distinguished. Applications to analyzing numerical algorithms should be explored.
+
+**6.58.3 Understand error analysis techniques**
+- Define forward and backward error analysis
+- Understand error propagation in computations
+- Identify methods for error estimation
+- Apply error analysis to algorithm design
+
+**Guidance:** Students should understand forward and backward error analysis approaches. They should recognize how errors propagate through numerical computations. Methods for estimating and bounding errors should be explored. Applications to designing robust numerical algorithms should be referenced.
+
+**6.58.4 Apply stability analysis to machine learning**
+- Use stability concepts in neural network training
+- Understand numerical issues in deep learning
+- Identify stabilization techniques for ML algorithms
+- Implement numerically stable ML systems
+
+**Guidance:** Students should see how stability analysis applies to neural network training. They should understand common numerical issues in deep learning including overflow and underflow. Stabilization techniques including batch normalization should be explored. Implementation of numerically stable machine learning systems should be emphasized.
+
+###### Topic 59: Numerical Methods in Scientific Machine Learning
+
+Students will be assessed on their ability to:
+
+**6.59.1 Understand scientific computing foundations**
+- Define numerical methods for scientific applications
+- Understand high-performance computing concepts
+- Identify parallel numerical algorithms
+- Apply scientific computing to ML problems
+
+**Guidance:** Students should understand numerical methods as foundations for scientific computing. They should recognize high-performance computing concepts including parallelization. Parallel numerical algorithms should be explored. Applications to large-scale machine learning problems should be referenced.
+
+**6.59.2 Understand numerical linear algebra libraries**
+- Define BLAS, LAPACK, and their applications
+- Understand GPU-accelerated linear algebra
+- Identify optimized numerical libraries
+- Apply library routines to ML implementations
+
+**Guidance:** Students should understand standard numerical linear algebra libraries. They should recognize GPU-accelerated implementations for performance. Different optimized libraries and their characteristics should be explored. Applications to efficient machine learning implementations should be referenced.
+
+**6.59.3 Understand automatic differentiation**
+- Define forward and reverse mode automatic differentiation
+- Understand computational graphs and derivative propagation
+- Identify applications in deep learning frameworks
+- Apply automatic differentiation to gradient computation
+
+**Guidance:** Students should understand automatic differentiation as algorithmic differentiation. They should recognize forward and reverse modes and their computational trade-offs. Computational graphs and derivative propagation should be explored. Applications to deep learning frameworks should be emphasized.
+
+**6.59.4 Apply scientific computing to AI**
+- Use high-performance computing in large-scale ML
+- Understand numerical methods in AI research
+- Identify applications in computational science
+- Implement efficient numerical AI systems
+
+**Guidance:** Students should see how high-performance computing enables large-scale machine learning. They should understand numerical methods in cutting-edge AI research. Applications to computational science and engineering should be explored. Implementation of efficient numerical AI systems should be emphasized.
+
+###### Topic 60: Applications of Numerical Methods in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.60.1 Understand numerical methods in deep learning**
+- Define numerical aspects of neural network training
+- Understand optimization challenges in deep learning
+- Identify numerical stability issues in neural networks
+- Apply numerical methods to deep learning systems
+
+**Guidance:** Students should understand numerical aspects of neural network training algorithms. They should recognize optimization challenges specific to deep learning. Numerical stability issues including gradient problems should be explored. Applications to practical deep learning systems should be referenced.
+
+**6.60.2 Understand numerical methods in reinforcement learning**
+- Define numerical methods for value function approximation
+- Understand temporal difference learning algorithms
+- Identify numerical stability in RL algorithms
+- Apply numerical methods to RL implementations
+
+**Guidance:** Students should understand numerical methods for approximating value functions. They should recognize temporal difference learning and its numerical properties. Stability considerations in reinforcement learning algorithms should be explored. Applications to practical RL implementations should be emphasized.
+
+**6.60.3 Understand numerical methods in probabilistic ML**
+- Define numerical integration in Bayesian inference
+- Understand sampling methods in probabilistic models
+- Identify numerical approximations in variational inference
+- Apply numerical methods to probabilistic ML
+
+**Guidance:** Students should understand numerical integration techniques in Bayesian inference. They should recognize sampling methods for probabilistic modeling. Numerical approximations in variational inference should be explored. Applications to probabilistic machine learning should be referenced.
+
+**6.60.4 Apply numerical methods to cutting-edge AI**
+- Use numerical methods in generative AI
+- Understand applications in AI safety and robustness
+- Identify numerical challenges in large-scale AI
+- Implement advanced numerical AI systems
+
+**Guidance:** Students should see how numerical methods enable generative AI systems. They should understand applications in AI safety and robustness. Numerical challenges in large-scale AI systems should be explored. Implementation of advanced numerical methods in cutting-edge AI should be emphasized.
+
+
+
+###### Topic 61: Statistics for Machine Learning
+
+Students will be assessed on their ability to:
+
+**6.61.1 Understand parameter estimation**
+- Define point estimation and interval estimation
+- Understand properties of estimators (bias, variance, consistency)
+- Identify maximum likelihood estimation
+- Apply estimation methods to machine learning problems
+
+**Guidance:** Students should understand parameter estimation as inferring population parameters from sample data. They should recognize point estimation as single values and interval estimation as ranges. Properties of good estimators including unbiasedness, efficiency, and consistency should be explored. Maximum likelihood estimation and its applications should be referenced.
+
+**6.61.2 Understand confidence intervals**
+- Define confidence intervals and their interpretation
+- Understand methods for constructing confidence intervals
+- Identify confidence intervals for different parameters
+- Apply confidence intervals to model evaluation
+
+**Guidance:** Students should understand confidence intervals as ranges likely containing true parameter values. They should recognize different construction methods including normal approximation and bootstrap. Confidence intervals for means, proportions, and differences should be explored. Applications to model evaluation and uncertainty quantification should be referenced.
+
+**6.61.3 Understand hypothesis testing principles**
+- Define null and alternative hypotheses
+- Understand Type I and Type II errors
+- Identify p-values and significance levels
+- Apply hypothesis testing to machine learning scenarios
+
+**Guidance:** Students should understand hypothesis testing as making decisions about population parameters. They should recognize Type I errors (false positives) and Type II errors (false negatives). P-values, significance levels, and their interpretation should be explored. Applications to A/B testing and model comparison should be referenced.
+
+**6.61.4 Apply statistical inference to ML**
+- Use inference in model selection and evaluation
+- Understand statistical significance in ML experiments
+- Identify applications in feature selection
+- Implement inference-based ML methods
+
+**Guidance:** Students should see how statistical inference enables model selection and evaluation. They should understand statistical significance in machine learning experiments. Applications to feature selection and model validation should be explored. Implementation considerations should be emphasized.
+
+###### Topic 62: Regression Analysis
+
+Students will be assessed on their ability to:
+
+**6.62.1 Understand linear regression**
+- Define simple and multiple linear regression
+- Understand least squares estimation
+- Identify assumptions of linear regression
+- Apply linear regression to prediction problems
+
+**Guidance:** Students should understand linear regression as modeling relationships between variables. They should recognize least squares as the standard estimation method. Assumptions including linearity, independence, and homoscedasticity should be explored. Applications to prediction and inference should be referenced.
+
+**6.62.2 Understand regression diagnostics**
+- Define residual analysis and model checking
+- Understand measures of model fit (R², adjusted R²)
+- Identify detection of outliers and influential points
+- Apply diagnostics to regression model validation
+
+**Guidance:** Students should understand residual analysis for checking model assumptions. They should recognize goodness-of-fit measures and their interpretation. Methods for detecting outliers and influential observations should be explored. Applications to model validation and improvement should be referenced.
+
+**6.62.3 Understand generalized linear models**
+- Define GLM framework and components
+- Understand logistic regression and other GLMs
+- Identify link functions and their applications
+- Apply GLMs to classification problems
+
+**Guidance:** Students should understand GLMs as extending linear regression to non-normal responses. They should recognize logistic regression for binary outcomes. Different link functions and their applications should be explored. Applications to classification and count data should be referenced.
+
+**6.62.4 Apply regression to machine learning**
+- Use regression in supervised learning algorithms
+- Understand regularization in regression models
+- Identify applications in feature engineering
+- Implement regression-based ML systems
+
+**Guidance:** Students should see how regression forms the basis for supervised learning. They should understand regularization techniques including Lasso and Ridge regression. Applications to feature engineering and selection should be explored. Implementation in machine learning pipelines should be emphasized.
+
+###### Topic 63: Experimental Design
+
+Students will be assessed on their ability to:
+
+**6.63.1 Understand experimental design principles**
+- Define controlled experiments and randomization
+- Understand treatment and control groups
+- Identify experimental designs (completely randomized, block)
+- Apply design principles to ML experiments
+
+**Guidance:** Students should understand experimental design as structured data collection. They should recognize randomization as controlling for confounding variables. Different experimental designs and their applications should be explored. Applications to machine learning experiments should be referenced.
+
+**6.63.2 Understand A/B testing and variants**
+- Define A/B testing methodology
+- Understand sample size determination
+- Identify multivariate testing approaches
+- Apply A/B testing to ML system evaluation
+
+**Guidance:** Students should understand A/B testing as comparing two versions. They should recognize sample size calculation for statistical power. Multivariate testing and factorial designs should be explored. Applications to evaluating machine learning systems should be referenced.
+
+**6.63.3 Understand cross-validation and resampling**
+- Define cross-validation techniques (k-fold, leave-one-out)
+- Understand bootstrap resampling methods
+- Identify bias-variance trade-off in validation
+- Apply resampling to model assessment
+
+**Guidance:** Students should understand cross-validation as robust model evaluation. They should recognize bootstrap methods for uncertainty estimation. The bias-variance trade-off in different validation strategies should be explored. Applications to model assessment and selection should be referenced.
+
+**6.63.4 Apply experimental design to ML**
+- Use designed experiments for hyperparameter tuning
+- Understand statistical comparison of ML models
+- Identify applications in ML system development
+- Implement rigorous ML experimentation
+
+**Guidance:** Students should see how experimental design enables systematic hyperparameter tuning. They should understand statistical methods for comparing machine learning models. Applications to ML system development and validation should be explored. Implementation of rigorous experimental practices should be emphasized.
+
+###### Topic 64: Bayesian Statistics
+
+Students will be assessed on their ability to:
+
+**6.64.1 Understand Bayesian inference**
+- Define Bayesian approach to statistical inference
+- Understand prior, likelihood, and posterior distributions
+- Identify Bayesian vs. frequentist approaches
+- Apply Bayesian inference to parameter estimation
+
+**Guidance:** Students should understand Bayesian inference as updating beliefs with data. They should recognize the roles of prior distributions, likelihood functions, and posterior distributions. Comparisons with frequentist approaches should be explored. Applications to parameter estimation should be referenced.
+
+**6.64.2 Understand Bayesian computation**
+- Define Markov Chain Monte Carlo (MCMC) methods
+- Understand Gibbs sampling and Metropolis-Hastings
+- Identify variational inference techniques
+- Apply Bayesian computation to complex models
+
+**Guidance:** Students should understand MCMC as sampling from posterior distributions. They should recognize Gibbs sampling and Metropolis-Hastings algorithms. Variational inference as deterministic approximation should be explored. Applications to complex Bayesian models should be referenced.
+
+**6.64.3 Understand Bayesian model selection**
+- Define Bayes factors and model evidence
+- Understand Bayesian information criteria
+- Identify hierarchical Bayesian models
+- Apply Bayesian model selection to ML problems
+
+**Guidance:** Students should understand Bayes factors for comparing models. They should recognize information criteria for model selection. Hierarchical Bayesian modeling and its applications should be explored. Applications to machine learning model selection should be referenced.
+
+**6.64.4 Apply Bayesian methods to ML**
+- Use Bayesian neural networks
+- Understand Bayesian optimization for hyperparameter tuning
+- Identify applications in probabilistic ML
+- Implement Bayesian ML algorithms
+
+**Guidance:** Students should see how Bayesian principles apply to neural networks. They should understand Bayesian optimization for efficient hyperparameter search. Applications to probabilistic machine learning should be explored. Implementation of Bayesian machine learning algorithms should be emphasized.
+
+###### Topic 65: Statistical Learning Theory
+
+Students will be assessed on their ability to:
+
+**6.65.1 Understand learning theory foundations**
+- Define probably approximately correct (PAC) learning
+- Understand VC dimension and model complexity
+- Identify bias-variance decomposition
+- Apply learning theory to model analysis
+
+**Guidance:** Students should understand PAC learning as formal framework for learning. They should recognize VC dimension as measuring model capacity. Bias-variance decomposition and its implications should be explored. Applications to analyzing machine learning models should be referenced.
+
+**6.65.2 Understand generalization bounds**
+- Define generalization error bounds
+- Understand concentration inequalities
+- Identify Rademacher complexity
+- Apply bounds to model complexity analysis
+
+**Guidance:** Students should understand generalization bounds as limits on model performance. They should recognize concentration inequalities including Hoeffding's inequality. Rademacher complexity and its applications should be explored. Applications to analyzing model complexity should be referenced.
+
+**6.65.3 Understand uniform convergence**
+- Define uniform convergence concept
+- Understand Glivenko-Cantelli theorem
+- Identify applications to empirical risk minimization
+- Apply uniform convergence to learning guarantees
+
+**Guidance:** Students should understand uniform convergence as convergence across all functions. They should recognize the Glivenko-Cantelli theorem and its significance. Applications to empirical risk minimization should be explored. Learning guarantees based on uniform convergence should be referenced.
+
+**6.65.4 Apply learning theory to ML**
+- Use theory to guide model selection
+- Understand theoretical foundations of deep learning
+- Identify applications in robust ML
+- Implement theory-informed ML systems
+
+**Guidance:** Students should see how learning theory guides model selection. They should understand theoretical foundations of deep learning generalization. Applications to robust and reliable machine learning should be explored. Implementation of theory-informed systems should be emphasized.
+
+###### Topic 66: High-Dimensional Statistics
+
+Students will be assessed on their ability to:
+
+**6.66.1 Understand curse of dimensionality**
+- Define curse of dimensionality and its effects
+- Understand challenges in high-dimensional spaces
+- Identify dimensionality reduction techniques
+- Apply concepts to high-dimensional ML problems
+
+**Guidance:** Students should understand curse of dimensionality as challenges in high-dimensional spaces. They should recognize effects including data sparsity and distance concentration. Dimensionality reduction techniques should be explored. Applications to high-dimensional machine learning should be referenced.
+
+**6.66.2 Understand sparsity and regularization**
+- Define sparse models and L1 regularization
+- Understand compressed sensing principles
+- Identify regularization techniques for high dimensions
+- Apply sparsity to feature selection
+
+**Guidance:** Students should understand sparsity as models with few non-zero parameters. They should recognize L1 regularization and compressed sensing. Different regularization techniques should be explored. Applications to feature selection and model simplification should be referenced.
+
+**6.66.3 Understand multiple testing**
+- Define multiple comparison problem
+- Understand false discovery rate
+- Identify correction methods (Bonferroni, FDR)
+- Apply multiple testing to feature selection
+
+**Guidance:** Students should understand multiple testing as increased false positives. They should recognize false discovery rate and its control. Correction methods including Bonferroni and FDR should be explored. Applications to feature selection and genomic data should be referenced.
+
+**6.66.4 Apply high-dimensional methods to ML**
+- Use high-dimensional statistics in genomics
+- Understand applications in computer vision
+- Identify uses in natural language processing
+- Implement high-dimensional ML algorithms
+
+**Guidance:** Students should see how high-dimensional statistics applies to genomic data. They should understand applications in computer vision and image analysis. Uses in natural language processing should be explored. Implementation of high-dimensional machine learning algorithms should be emphasized.
+
+###### Topic 67: Causal Inference
+
+Students will be assessed on their ability to:
+
+**6.67.1 Understand causal concepts**
+- Define causal effects and counterfactuals
+- Understand causal graphs and directed acyclic graphs
+- Identify confounding and selection bias
+- Apply causal concepts to ML problems
+
+**Guidance:** Students should understand causal effects as interventions vs. observations. They should recognize causal graphs for representing relationships. Confounding and selection bias issues should be explored. Applications to machine learning problems should be referenced.
+
+**6.67.2 Understand causal inference methods**
+- Define randomized experiments and observational studies
+- Understand propensity score methods
+- Identify instrumental variables and regression discontinuity
+- Apply causal inference to real-world data
+
+**Guidance:** Students should understand randomized experiments as gold standard. They should recognize propensity score methods for observational data. Instrumental variables and regression discontinuity should be explored. Applications to real-world causal inference should be referenced.
+
+**6.67.3 Understand causal ML**
+- Define causal machine learning approaches
+- Understand causal discovery algorithms
+- Identify applications in explainable AI
+- Apply causal ML to decision making
+
+**Guidance:** Students should understand causal machine learning as combining causality with ML. They should recognize causal discovery algorithms for learning causal structure. Applications to explainable AI should be explored. Uses in decision making systems should be referenced.
+
+**6.67.4 Apply causal inference to AI**
+- Use causal methods in reinforcement learning
+- Understand applications in fairness and bias
+- Identify uses in recommendation systems
+- Implement causal AI systems
+
+**Guidance:** Students should see how causal methods improve reinforcement learning. They should understand applications in fairness and bias mitigation. Uses in recommendation systems should be explored. Implementation of causal AI systems should be emphasized.
+
+###### Topic 68: Applied Statistics in Machine Learning
+
+Students will be assessed on their ability to:
+
+**6.68.1 Understand statistical model evaluation**
+- Define performance metrics for different ML tasks
+- Understand statistical comparison of models
+- Identify uncertainty in model performance
+- Apply evaluation methods to ML systems
+
+**Guidance:** Students should understand different performance metrics for classification, regression, and clustering. They should recognize statistical methods for comparing models. Uncertainty quantification in performance estimates should be explored. Applications to ML system evaluation should be referenced.
+
+**6.68.2 Understand feature selection and engineering**
+- Define statistical feature selection methods
+- Understand feature transformation techniques
+- Identify dimensionality reduction approaches
+- Apply feature methods to ML pipelines
+
+**Guidance:** Students should understand statistical methods for feature selection. They should recognize feature transformation and engineering techniques. Dimensionality reduction methods should be explored. Applications to machine learning pipelines should be referenced.
+
+**6.68.3 Understand ensemble methods**
+- Define bagging and boosting algorithms
+- Understand random forests and gradient boosting
+- Identify statistical foundations of ensembles
+- Apply ensemble methods to improve performance
+
+**Guidance:** Students should understand bagging and boosting as ensemble techniques. They should recognize random forests and gradient boosting algorithms. Statistical foundations including variance reduction should be explored. Applications to improving model performance should be referenced.
+
+**6.68.4 Apply statistics to real-world ML**
+- Use statistical methods in industry applications
+- Understand reproducibility in ML research
+- Identify applications in scientific ML
+- Implement statistically sound ML systems
+
+**Guidance:** Students should see how statistical methods apply to industry ML problems. They should understand reproducibility and statistical rigor in research. Applications to scientific machine learning should be explored. Implementation of statistically sound machine learning systems should be emphasized.
+
+###### Topic 69: Differential Geometry
+
+Students will be assessed on their ability to:
+
+**6.69.1 Understand manifold fundamentals**
+- Define manifolds and their local coordinate systems
+- Understand differentiable manifolds and smooth structures
+- Identify examples of manifolds (spheres, tori, matrix groups)
+- Apply manifold concepts to data representation
+
+**Guidance:** Students should understand manifolds as spaces that locally resemble Euclidean space. They should recognize coordinate charts and atlases for describing manifolds. Differentiable structures and smoothness conditions should be explored. Applications to representing complex data in machine learning should be referenced.
+
+**6.69.2 Understand tangent spaces and vectors**
+- Define tangent spaces at points on manifolds
+- Understand tangent vectors and their properties
+- Identify tangent bundles and vector fields
+- Apply tangent space concepts to optimization
+
+**Guidance:** Students should understand tangent spaces as linear approximations to manifolds at points. They should recognize tangent vectors as directional derivatives and velocity vectors. Tangent bundles as collections of all tangent spaces should be explored. Applications to optimization on manifolds should be referenced.
+
+**6.69.3 Understand manifold learning**
+- Define manifold learning and dimensionality reduction
+- Understand isometric embedding and manifold unfolding
+- Identify popular manifold learning algorithms (Isomap, LLE)
+- Apply manifold learning to high-dimensional data
+
+**Guidance:** Students should understand manifold learning as discovering low-dimensional structure. They should recognize isometric embedding as preserving geometric properties. Algorithms including Isomap and Locally Linear Embedding should be explored. Applications to dimensionality reduction should be referenced.
+
+**6.69.4 Apply manifold theory to machine learning**
+- Use manifold assumptions in data modeling
+- Understand manifold regularization in ML
+- Identify applications in computer vision
+- Implement manifold-based ML algorithms
+
+**Guidance:** Students should see how manifold assumptions improve data modeling. They should understand manifold regularization for semi-supervised learning. Applications to computer vision and image processing should be explored. Implementation considerations should be emphasized.
+
+###### Topic 70: Riemannian Geometry
+
+Students will be assessed on their ability to:
+
+**6.70.1 Understand Riemannian metrics**
+- Define Riemannian metrics and metric tensors
+- Understand distance and angle measurements on manifolds
+- Identify induced metrics and submanifold geometry
+- Apply Riemannian metrics to geometric ML
+
+**Guidance:** Students should understand Riemannian metrics as defining inner products on tangent spaces. They should recognize how metrics enable distance and angle measurements. Induced metrics on submanifolds should be explored. Applications to geometric machine learning should be referenced.
+
+**6.70.2 Understand geodesics and curvature**
+- Define geodesics as shortest paths on manifolds
+- Understand Christoffel symbols and covariant derivatives
+- Identify curvature tensors and their interpretations
+- Apply geodesic concepts to optimization
+
+**Guidance:** Students should understand geodesics as generalizations of straight lines. They should recognize Christoffel symbols as connection coefficients. Curvature tensors including Riemann, Ricci, and scalar curvature should be explored. Applications to optimization on curved spaces should be referenced.
+
+**6.70.3 Understand Riemannian optimization**
+- Define gradient descent on Riemannian manifolds
+- Understand retractions and vector transport
+- Identify optimization algorithms for manifolds
+- Apply Riemannian optimization to ML problems
+
+**Guidance:** Students should understand gradient descent adapted to manifold geometry. They should recognize retractions as mapping tangent vectors to manifolds. Different optimization algorithms for Riemannian manifolds should be explored. Applications to machine learning problems should be referenced.
+
+**6.70.4 Apply Riemannian geometry to neural networks**
+- Use Riemannian geometry in neural network analysis
+- Understand curvature effects on optimization
+- Identify applications in deep learning theory
+- Implement Riemannian neural network methods
+
+**Guidance:** Students should see how Riemannian geometry analyzes neural network landscapes. They should understand how curvature affects optimization dynamics. Applications to deep learning theory should be explored. Implementation of Riemannian-based methods should be emphasized.
+
+###### Topic 71: Lie Groups and Symmetries
+
+Students will be assessed on their ability to:
+
+**6.71.1 Understand group theory fundamentals**
+- Define groups and group operations
+- Understand Lie groups and their properties
+- Identify matrix Lie groups and their applications
+- Apply group theory to symmetry analysis
+
+**Guidance:** Students should understand groups as algebraic structures with symmetry properties. They should recognize Lie groups as smooth manifolds with group structure. Matrix Lie groups including rotation and orthogonal groups should be explored. Applications to symmetry analysis in data should be referenced.
+
+**6.71.2 Understand Lie algebras and representations**
+- Define Lie algebras and their relationship to Lie groups
+- Understand Lie algebra representations
+- Identify exponential maps and logarithmic maps
+- Apply Lie algebra concepts to ML
+
+**Guidance:** Students should understand Lie algebras as tangent spaces to Lie groups. They should recognize representations as linear actions of groups. Exponential and logarithmic maps connecting algebras and groups should be explored. Applications to machine learning should be referenced.
+
+**6.71.3 Understand invariant theory**
+- Define invariant functions and equivariant maps
+- Understand invariant feature extraction
+- Identify applications in geometric deep learning
+- Apply invariant theory to data analysis
+
+**Guidance:** Students should understand invariant functions as unchanged under group actions. They should recognize equivariant maps as commuting with group actions. Invariant feature extraction methods should be explored. Applications to geometric deep learning should be referenced.
+
+**6.71.4 Apply Lie theory to machine learning**
+- Use Lie groups in geometric deep learning
+- Understand equivariant neural networks
+- Identify applications in physics-informed ML
+- Implement symmetry-aware ML systems
+
+**Guidance:** Students should see how Lie groups enable geometric deep learning. They should understand equivariant neural networks and their advantages. Applications to physics-informed machine learning should be explored. Implementation of symmetry-aware systems should be emphasized.
+
+###### Topic 72: Differential Forms and Integration
+
+Students will be assessed on their ability to:
+
+**6.72.1 Understand differential forms**
+- Define differential forms and their properties
+- Understand exterior algebra and wedge products
+- Identify forms of different degrees
+- Apply differential forms to field theory
+
+**Guidance:** Students should understand differential forms as antisymmetric tensor fields. They should recognize exterior algebra and wedge product operations. Different degree forms and their interpretations should be explored. Applications to field theory should be referenced.
+
+**6.72.2 Understand exterior derivatives**
+- Define exterior derivative and its properties
+- Understand closed and exact forms
+- Identify Poincaré lemma and its implications
+- Apply exterior derivatives to topology
+
+**Guidance:** Students should understand exterior derivative as generalizing differential operators. They should recognize closed forms (zero exterior derivative) and exact forms (exterior derivative of another form). Poincaré lemma and its topological implications should be explored. Applications to topological analysis should be referenced.
+
+**6.72.3 Understand integration on manifolds**
+- Define integration of differential forms
+- Understand Stokes' theorem and its variants
+- Identify volume forms and orientation
+- Apply integration to geometric ML
+
+**Guidance:** Students should understand integration of forms on manifolds. They should recognize Stokes' theorem and its variants (Green's, Gauss's theorems). Volume forms and manifold orientation should be explored. Applications to geometric machine learning should be referenced.
+
+**6.72.4 Apply differential forms to AI**
+- Use differential forms in topological data analysis
+- Understand applications in computer graphics
+- Identify uses in geometric deep learning
+- Implement form-based ML algorithms
+
+**Guidance:** Students should see how differential forms enable topological data analysis. They should understand applications in computer graphics and geometric modeling. Uses in geometric deep learning should be explored. Implementation of form-based algorithms should be emphasized.
+
+###### Topic 73: Information Geometry
+
+Students will be assessed on their ability to:
+
+**6.73.1 Understand statistical manifolds**
+- Define statistical manifolds and their properties
+- Understand Fisher information metric
+- Identify divergence functions on statistical manifolds
+- Apply information geometry to statistics
+
+**Guidance:** Students should understand statistical manifolds as families of probability distributions. They should recognize Fisher information metric as defining geometry on parameter spaces. Divergence functions including KL divergence should be explored. Applications to statistics should be referenced.
+
+**6.73.2 Understand dual connections**
+- Define dual affine connections
+- Understand alpha-connections and their properties
+- Identify dually flat spaces
+- Apply dual connections to information theory
+
+**Guidance:** Students should understand dual affine connections in information geometry. They should recognize alpha-connections and their relationship to exponential and mixture families. Dually flat spaces and their properties should be explored. Applications to information theory should be referenced.
+
+**6.73.3 Understand information projection**
+- Define information projection and Pythagorean theorem
+- Understand e-projection and m-projection
+- Identify applications in optimization
+- Apply projection methods to ML
+
+**Guidance:** Students should understand information projection in statistical manifolds. They should recognize e-projection (exponential) and m-projection (mixture) and their differences. Information geometry version of Pythagorean theorem should be explored. Applications to optimization should be referenced.
+
+**6.73.4 Apply information geometry to ML**
+- Use information geometry in natural gradient descent
+- Understand applications in neural networks
+- Identify uses in variational inference
+- Implement information-geometric ML methods
+
+**Guidance:** Students should see how information geometry enables natural gradient descent. They should understand applications to neural network optimization. Uses in variational inference and Bayesian learning should be explored. Implementation of information-geometric methods should be emphasized.
+
+###### Topic 74: Geometric Deep Learning
+
+Students will be assessed on their ability to:
+
+**6.74.1 Understand geometric deep learning principles**
+- Define geometric deep learning and its foundations
+- Understand invariance and equivariance principles
+- Identify geometric priors in neural networks
+- Apply geometric principles to deep learning
+
+**Guidance:** Students should understand geometric deep learning as incorporating geometric priors. They should recognize invariance (unchanged under transformations) and equivariance (transforms predictably). Geometric priors in neural network design should be explored. Applications to deep learning should be referenced.
+
+**6.74.2 Understand graph neural networks**
+- Define graph neural networks and message passing
+- Understand geometric operations on graphs
+- Identify spectral and spatial GNN approaches
+- Apply GNNs to graph-structured data
+
+**Guidance:** Students should understand graph neural networks as operating on graph-structured data. They should recognize message passing as the core mechanism for information propagation. Spectral approaches (using graph spectra) and spatial approaches (using neighborhood aggregation) should be explored. Applications to social networks, molecular data, and recommendation systems should be referenced.
+
+**6.74.3 Understand manifold neural networks**
+- Define neural networks on manifolds
+- Understand geometric operations on manifolds
+- Identify manifold convolution and pooling
+- Apply manifold networks to non-Euclidean data
+
+**Guidance:** Students should understand neural networks adapted to manifold structures. They should recognize geometric operations including manifold convolution and pooling. Different approaches to defining neural networks on manifolds should be explored. Applications to non-Euclidean data including 3D shapes and sensor networks should be referenced.
+
+**6.74.4 Apply geometric deep learning to real problems**
+- Use geometric deep learning for molecular modeling
+- Understand applications in computer vision
+- Identify uses in scientific computing
+- Implement geometric deep learning systems
+
+**Guidance:** Students should see how geometric deep learning enables molecular modeling and drug discovery. They should understand applications to computer vision including 3D shape analysis. Uses in scientific computing and physics should be explored. Implementation considerations should be emphasized.
+
+###### Topic 75: Applications of Differential Geometry in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.75.1 Understand optimization on manifolds**
+- Define manifold optimization problems
+- Understand constrained optimization as manifold optimization
+- Identify Riemannian optimization algorithms
+- Apply manifold optimization to ML training
+
+**Guidance:** Students should understand how constrained optimization can be viewed as optimization on manifolds. They should recognize Riemannian optimization algorithms including natural gradient descent. Different approaches to optimization on specific manifolds should be explored. Applications to machine learning training should be referenced.
+
+**6.75.2 Understand geometric regularization**
+- Define geometric regularization techniques
+- Understand curvature-based regularization
+- Identify manifold regularization methods
+- Apply geometric regularization to improve generalization
+
+**Guidance:** Students should understand geometric regularization as incorporating manifold structure. They should recognize curvature-based regularization methods. Manifold regularization for semi-supervised learning should be explored. Applications to improving model generalization should be referenced.
+
+**6.75.3 Understand topological data analysis**
+- Define persistent homology and topological features
+- Understand computational topology methods
+- Identify topological invariants for data analysis
+- Apply topological methods to complex data
+
+**Guidance:** Students should understand persistent homology as capturing topological features. They should recognize computational topology methods for data analysis. Topological invariants and their stability should be explored. Applications to analyzing complex high-dimensional data should be referenced.
+
+**6.75.4 Apply differential geometry to cutting-edge AI**
+- Use differential geometry in generative models
+- Understand applications in physics-informed neural networks
+- Identify geometric approaches to AI safety
+- Implement advanced geometric AI systems
+
+**Guidance:** Students should see how differential geometry enables advanced generative models. They should understand applications in physics-informed neural networks. Geometric approaches to AI safety and robustness should be explored. Implementation of cutting-edge geometric AI systems should be emphasized.
+
+###### Topic 76: Advanced Topics in Differential Geometry
+
+Students will be assessed on their ability to:
+
+**6.76.1 Understand fiber bundles and connections**
+- Define fiber bundles and their structure
+- Understand principal bundles and associated bundles
+- Identify connections and parallel transport
+- Apply bundle theory to gauge theories
+
+**Guidance:** Students should understand fiber bundles as spaces parameterizing families of geometric objects. They should recognize principal bundles and their associated vector bundles. Connections and parallel transport should be explored. Applications to gauge theories in physics should be referenced.
+
+**6.76.2 Understand symplectic geometry**
+- Define symplectic manifolds and forms
+- Understand Hamiltonian mechanics on manifolds
+- Identify symplectic integrators
+- Apply symplectic geometry to dynamical systems
+
+**Guidance:** Students should understand symplectic geometry as studying even-dimensional manifolds with special forms. They should recognize Hamiltonian mechanics in geometric terms. Symplectic integrators for numerical simulation should be explored. Applications to dynamical systems should be referenced.
+
+**6.76.3 Understand complex geometry**
+- Define complex manifolds and holomorphic functions
+- Understand Kähler manifolds and their properties
+- Identify complex differential forms
+- Apply complex geometry to signal processing
+
+**Guidance:** Students should understand complex manifolds as manifolds with complex structure. They should recognize Kähler manifolds as having compatible Riemannian, symplectic, and complex structures. Complex differential forms should be explored. Applications to signal processing should be referenced.
+
+**6.76.4 Apply advanced geometry to AI**
+- Use advanced geometry in quantum machine learning
+- Understand applications in relativistic ML
+- Identify geometric approaches to consciousness research
+- Implement cutting-edge geometric AI
+
+**Guidance:** Students should see how advanced geometry enables quantum machine learning. They should understand applications in relativistic machine learning scenarios. Geometric approaches to modeling consciousness should be explored. Implementation of cutting-edge geometric AI systems should be emphasized.
+
+###### Topic 77: Functional Analysis
+
+Students will be assessed on their ability to:
+
+**6.77.1 Understand normed spaces and Banach spaces**
+- Define normed vector spaces and their properties
+- Understand different types of norms (L¹, L², L∞)
+- Identify norm equivalence and convergence
+- Apply normed space concepts to machine learning
+
+**Guidance:** Students should understand normed vector spaces as vector spaces with length measurements. They should recognize different norm types and their properties. Norm equivalence and different types of convergence should be explored. Applications to machine learning loss functions and regularization should be referenced.
+
+**6.77.2 Understand Banach spaces**
+- Define Banach spaces and completeness
+- Understand examples of Banach spaces (function spaces)
+- Identify properties of complete normed spaces
+- Apply Banach space theory to optimization
+
+**Guidance:** Students should understand Banach spaces as complete normed vector spaces. They should recognize common examples including spaces of continuous functions. The importance of completeness for analysis should be explored. Applications to optimization problems in machine learning should be referenced.
+
+**6.77.3 Understand linear operators**
+- Define bounded linear operators between normed spaces
+- Understand operator norms and their properties
+- Identify different types of operators (compact, projection)
+- Apply operator theory to neural networks
+
+**Guidance:** Students should understand linear operators as linear mappings between normed spaces. They should recognize operator norms and boundedness. Different operator types including compact and projection operators should be explored. Applications to neural network analysis should be referenced.
+
+**6.77.4 Apply Banach space theory to ML**
+- Use Banach space concepts in regularization
+- Understand optimization in infinite-dimensional spaces
+- Identify applications in kernel methods
+- Implement Banach space-based ML algorithms
+
+**Guidance:** Students should see how Banach space theory informs regularization techniques. They should understand optimization in infinite-dimensional parameter spaces. Applications to kernel methods and support vector machines should be explored. Implementation considerations should be emphasized.
+
+###### Topic 78: Hilbert Spaces
+
+Students will be assessed on their ability to:
+
+**6.78.1 Understand inner product spaces**
+- Define inner product spaces and their properties
+- Understand Cauchy-Schwarz inequality and orthogonality
+- Identify examples of inner product spaces
+- Apply inner product concepts to ML
+
+**Guidance:** Students should understand inner product spaces as vector spaces with geometric structure. They should recognize the Cauchy-Schwarz inequality and orthogonality concepts. Common examples including Euclidean spaces should be explored. Applications to machine learning similarity measures should be referenced.
+
+**6.78.2 Understand Hilbert space fundamentals**
+- Define Hilbert spaces as complete inner product spaces
+- Understand orthonormal bases and Fourier series
+- Identify projection theorem and its applications
+- Apply Hilbert space theory to feature spaces
+
+**Guidance:** Students should understand Hilbert spaces as complete inner product spaces. They should recognize orthonormal bases and Fourier series representations. The projection theorem and its importance should be explored. Applications to feature spaces in machine learning should be referenced.
+
+**6.78.3 Understand reproducing kernel Hilbert spaces**
+- Define RKHS and reproducing kernels
+- Understand kernel functions and their properties
+- Identify connection to kernel methods in ML
+- Apply RKHS theory to support vector machines
+
+**Guidance:** Students should understand RKHS as Hilbert spaces with evaluation functionals. They should recognize kernel functions and their role in defining RKHS. The connection to kernel methods in machine learning should be explored. Applications to support vector machines should be referenced.
+
+**6.78.4 Apply Hilbert space theory to deep learning**
+- Use Hilbert spaces in neural network analysis
+- Understand spectral methods in deep learning
+- Identify applications in quantum machine learning
+- Implement Hilbert space-based neural networks
+
+**Guidance:** Students should see how Hilbert space theory enables neural network analysis. They should understand spectral methods for analyzing deep learning models. Applications to quantum machine learning should be explored. Implementation of Hilbert space-based approaches should be emphasized.
+
+###### Topic 79: Spectral Theory
+
+Students will be assessed on their ability to:
+
+**6.79.1 Understand spectrum of operators**
+- Define spectrum and eigenvalues of operators
+- Understand different parts of the spectrum
+- Identify spectral properties of compact operators
+- Apply spectral theory to matrix analysis
+
+**Guidance:** Students should understand the spectrum as generalization of eigenvalues. They should recognize different parts of the spectrum including point, continuous, and residual spectrum. Spectral properties of compact operators should be explored. Applications to matrix analysis in machine learning should be referenced.
+
+**6.79.2 Understand spectral decomposition**
+- Define spectral theorem for self-adjoint operators
+- Understand diagonalization and functional calculus
+- Identify spectral measures and their applications
+- Apply spectral decomposition to data analysis
+
+**Guidance:** Students should understand the spectral theorem for self-adjoint operators. They should recognize diagonalization and functional calculus concepts. Spectral measures and their role should be explored. Applications to data analysis and dimensionality reduction should be referenced.
+
+**6.79.3 Understand spectral methods in ML**
+- Define spectral clustering and graph Laplacians
+- Understand spectral embedding techniques
+- Identify applications in manifold learning
+- Apply spectral methods to unsupervised learning
+
+**Guidance:** Students should understand spectral clustering using graph Laplacians. They should recognize spectral embedding for dimensionality reduction. Applications to manifold learning and unsupervised learning should be explored. Implementation considerations should be referenced.
+
+**6.79.4 Apply spectral theory to neural networks**
+- Use spectral analysis of weight matrices
+- Understand spectral normalization techniques
+- Identify applications in training stability
+- Implement spectral methods for deep learning
+
+**Guidance:** Students should see how spectral analysis applies to neural network weight matrices. They should understand spectral normalization for training stability. Applications to improving deep learning training should be explored. Implementation of spectral-based methods should be emphasized.
+
+###### Topic 80: Distribution Theory
+
+Students will be assessed on their ability to:
+
+**6.80.1 Understand generalized functions**
+- Define distributions and test functions
+- Understand operations on distributions
+- Identify common distributions (Dirac delta, derivatives)
+- Apply distribution theory to signal processing
+
+**Guidance:** Students should understand distributions as generalized functions. They should recognize test functions and distribution operations. Common distributions including Dirac delta and its derivatives should be explored. Applications to signal processing should be referenced.
+
+**6.80.2 Understand Sobolev spaces**
+- Define Sobolev spaces and their norms
+- Understand embedding theorems and regularity
+- Identify applications to partial differential equations
+- Apply Sobolev spaces to function approximation
+
+**Guidance:** Students should understand Sobolev spaces as function spaces with derivative constraints. They should recognize embedding theorems and regularity properties. Applications to partial differential equations should be explored. Uses in function approximation should be referenced.
+
+**6.80.3 Understand weak derivatives**
+- Define weak derivatives and their properties
+- Understand distributional derivatives
+- Identify applications in numerical analysis
+- Apply weak derivative concepts to ML
+
+**Guidance:** Students should understand weak derivatives as generalizations of classical derivatives. They should recognize distributional derivatives and their properties. Applications to numerical analysis should be explored. Uses in machine learning for non-smooth optimization should be referenced.
+
+**6.80.4 Apply distribution theory to AI**
+- Use distribution theory in generative models
+- Understand applications in physics-informed neural networks
+- Identify uses in signal processing for AI
+- Implement distribution-based AI methods
+
+**Guidance:** Students should see how distribution theory enables advanced generative models. They should understand applications in physics-informed neural networks. Uses in signal processing for AI systems should be explored. Implementation of distribution-based methods should be emphasized.
+
+###### Topic 81: Variational Methods
+
+Students will be assessed on their ability to:
+
+**6.81.1 Understand calculus of variations**
+- Define functionals and their variations
+- Understand Euler-Lagrange equations
+- Identify boundary conditions and constraints
+- Apply variational principles to optimization
+
+**Guidance:** Students should understand functionals as mappings from functions to real numbers. They should recognize variations and Euler-Lagrange equations. Boundary conditions and constraints in variational problems should be explored. Applications to optimization should be referenced.
+
+**6.81.2 Understand variational inequalities**
+- Define variational inequalities and their properties
+- Understand existence and uniqueness results
+- Identify applications to obstacle problems
+- Apply variational inequalities to constrained optimization
+
+**Guidance:** Students should understand variational inequalities as generalizations of variational principles. They should recognize existence and uniqueness theorems. Applications to obstacle problems and constrained optimization should be explored. Uses in machine learning constraints should be referenced.
+
+**6.81.3 Understand variational inference**
+- Define variational inference in Bayesian learning
+- Understand evidence lower bound (ELBO)
+- Identify mean-field approximation
+- Apply variational methods to probabilistic ML
+
+**Guidance:** Students should understand variational inference as approximate Bayesian inference. They should recognize the evidence lower bound and its maximization. Mean-field approximation and its assumptions should be explored. Applications to probabilistic machine learning should be referenced.
+
+**6.81.4 Apply variational methods to deep learning**
+- Use variational autoencoders
+- Understand variational regularization
+- Identify applications in generative modeling
+- Implement variational deep learning methods
+
+**Guidance:** Students should see how variational methods enable variational autoencoders. They should understand variational regularization techniques. Applications to generative modeling should be explored. Implementation of variational deep learning methods should be emphasized.
+
+###### Topic 82: Fourier Analysis
+
+Students will be assessed on their ability to:
+
+**6.82.1 Understand Fourier series**
+- Define Fourier series and their convergence
+- Understand orthogonality of trigonometric functions
+- Identify Parseval's theorem and applications
+- Apply Fourier series to signal analysis
+
+**Guidance:** Students should understand Fourier series as representations of periodic functions. They should recognize orthogonality of trigonometric basis functions. Parseval's theorem and energy conservation should be explored. Applications to signal analysis should be referenced.
+
+**6.82.2 Understand Fourier transform**
+- Define Fourier transform and its properties
+- Understand convolution theorem and applications
+- Identify discrete and continuous transforms
+- Apply Fourier analysis to data processing
+
+**Guidance:** Students should understand Fourier transform for frequency domain analysis. They should recognize the convolution theorem and its importance. Discrete and continuous Fourier transforms should be explored. Applications to data processing should be referenced.
+
+**6.82.3 Understand spectral analysis**
+- Define power spectral density
+- Understand filtering and windowing
+- Identify applications in time series analysis
+- Apply spectral methods to ML preprocessing
+
+**Guidance:** Students should understand power spectral density for frequency analysis. They should recognize filtering techniques and windowing functions. Applications to time series analysis should be explored. Uses in machine learning preprocessing should be referenced.
+
+**6.82.4 Apply Fourier analysis to AI**
+- Use Fourier methods in computer vision
+- Understand applications in neural networks
+- Identify uses in audio processing for AI
+- Implement Fourier-based AI systems
+
+**Guidance:** Students should see how Fourier methods apply to computer vision tasks. They should understand applications in neural network architectures. Uses in audio processing for AI systems should be explored. Implementation of Fourier-based approaches should be emphasized.
+
+###### Topic 83: Operator Theory
+
+Students will be assessed on their ability to:
+
+**6.83.1 Understand linear operators**
+- Define bounded and unbounded operators
+- Understand operator domains and ranges
+- Identify closed operators and closures
+- Apply operator theory to functional analysis
+
+**Guidance:** Students should understand the distinction between bounded and unbounded operators. They should recognize operator domains and ranges as important considerations. Closed operators and their closures should be explored. Applications to functional analysis should be referenced.
+
+**6.83.2 Understand operator algebras**
+- Define C*-algebras and their properties
+- Understand spectral theory in algebras
+- Identify applications in quantum mechanics
+- Apply operator algebras to quantum ML
+
+**Guidance:** Students should understand C*-algebras as Banach algebras with involution. They should recognize spectral theory in the context of operator algebras. Applications to quantum mechanics should be explored. Uses in quantum machine learning should be referenced.
+
+**6.83.3 Understand neural operators**
+- Define neural operators and their architecture
+- Understand learning operators from data
+- Identify applications to PDE solving
+- Apply neural operators to scientific ML
+
+**Guidance:** Students should understand neural operators as learning mappings between function spaces. They should recognize how neural operators learn from data rather than point mappings. Applications to solving partial differential equations should be explored. Uses in scientific machine learning should be referenced.
+
+**6.83.4 Apply operator theory to AI**
+- Use operator learning in generative models
+- Understand applications in control theory
+- Identify uses in multi-agent systems
+- Implement operator-based AI systems
+
+**Guidance:** Students should see how operator learning enables advanced generative models. They should understand applications to control theory and dynamical systems. Uses in multi-agent systems should be explored. Implementation of operator-based AI systems should be emphasized.
+
+###### Topic 84: Applications of Functional Analysis in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.84.1 Understand functional data analysis**
+- Define functional data and its representation
+- Understand functional principal component analysis
+- Identify applications in time series analysis
+- Apply functional methods to sequential data
+
+**Guidance:** Students should understand functional data as functions rather than vectors. They should recognize functional PCA for dimensionality reduction. Applications to time series analysis should be explored. Uses in sequential data processing should be referenced.
+
+**6.84.2 Understand kernel methods**
+- Define kernel functions and their properties
+- Understand kernel trick and feature mapping
+- Identify different kernel types (RBF, polynomial)
+- Apply kernel methods to SVM and other algorithms
+
+**Guidance:** Students should understand kernel functions as measuring similarity. They should recognize the kernel trick for implicit feature mapping. Different kernel types and their properties should be explored. Applications to support vector machines should be referenced.
+
+**6.84.3 Understand functional deep learning**
+- Define neural networks as function approximators
+- Understand universal approximation theorems
+- Identify functional perspectives on deep learning
+- Apply functional analysis to network design
+
+**Guidance:** Students should understand neural networks as universal function approximators. They should recognize universal approximation theorems and their implications. Functional perspectives on deep learning should be explored. Applications to network architecture design should be referenced.
+
+**6.84.4 Apply functional analysis to cutting-edge AI**
+- Use functional methods in quantum machine learning
+- Understand applications in scientific computing
+- Identify uses in explainable AI
+- Implement advanced functional AI systems
+
+**Guidance:** Students should see how functional methods enable quantum machine learning. They should understand applications to scientific computing and numerical analysis. Uses in explainable and interpretable AI should be explored. Implementation of cutting-edge functional AI systems should be emphasized.
+
+
+###### Topic 85: Approximation Theory
+
+Students will be assessed on their ability to:
+
+**6.85.1 Understand approximation theory concepts**
+- Define approximation theory and its objectives
+- Understand best approximation and optimality criteria
+- Identify different types of approximation problems
+- Apply approximation concepts to function modeling
+
+**Guidance:** Students should understand approximation theory as finding simpler functions to approximate complex ones. They should recognize best approximation as minimizing error in some norm. Different types of approximation including uniform and least squares should be explored. Applications to function modeling in machine learning should be referenced.
+
+**6.85.2 Understand approximation error measures**
+- Define different error norms (L¹, L², L∞)
+- Understand convergence concepts in approximation
+- Identify error bounds and their significance
+- Apply error analysis to approximation methods
+
+**Guidance:** Students should understand different ways to measure approximation error. They should recognize various norms and their properties. Convergence concepts including uniform and pointwise convergence should be explored. Error bounds and their importance for theoretical guarantees should be referenced.
+
+**6.85.3 Understand existence and uniqueness**
+- Define existence of best approximations
+- Understand uniqueness conditions
+- Identify convexity and strict convexity in approximation
+- Apply existence theorems to practical problems
+
+**Guidance:** Students should understand conditions under which best approximations exist. They should recognize when best approximations are unique. The role of convexity in approximation theory should be explored. Applications to practical approximation problems should be referenced.
+
+**6.85.4 Apply approximation foundations to ML**
+- Use approximation theory in neural network analysis
+- Understand error analysis in machine learning
+- Identify applications in model complexity
+- Implement approximation-based ML methods
+
+**Guidance:** Students should see how approximation theory foundations enable neural network analysis. They should understand error analysis in machine learning models. Applications to model complexity and generalization should be explored. Implementation considerations should be emphasized.
+
+###### Topic 86: Classical Approximation Methods
+
+Students will be assessed on their ability to:
+
+**6.86.1 Understand polynomial approximation**
+- Define polynomial interpolation and approximation
+- Understand Weierstrass approximation theorem
+- Identify different polynomial bases (monomial, Chebyshev)
+- Apply polynomial approximation to data fitting
+
+**Guidance:** Students should understand polynomials as fundamental approximation tools. They should recognize the Weierstrass theorem guaranteeing polynomial approximation of continuous functions. Different polynomial bases and their properties should be explored. Applications to data fitting and interpolation should be referenced.
+
+**6.86.2 Understand Fourier approximation**
+- Define Fourier series and transforms
+- Understand convergence of Fourier approximations
+- Identify Gibbs phenomenon and its implications
+- Apply Fourier methods to signal processing
+
+**Guidance:** Students should understand Fourier series as approximating functions with trigonometric polynomials. They should recognize convergence properties and the Gibbs phenomenon. Fourier transforms for frequency domain analysis should be explored. Applications to signal processing should be referenced.
+
+**6.86.3 Understand spline approximation**
+- Define splines and their properties
+- Understand B-splines and knot vectors
+- Identify different spline types (linear, cubic)
+- Apply spline approximation to smooth modeling
+
+**Guidance:** Students should understand splines as piecewise polynomial approximations. They should recognize B-splines as basis functions for spline spaces. Different spline types and their smoothness properties should be explored. Applications to smooth modeling and computer graphics should be referenced.
+
+**6.86.4 Apply classical methods to ML**
+- Use polynomial features in machine learning
+- Understand Fourier features in neural networks
+- Identify spline-based regularization
+- Implement classical approximation in ML systems
+
+**Guidance:** Students should see how polynomial features extend linear models. They should understand Fourier features in neural network architectures. Spline-based regularization techniques should be explored. Implementation of classical approximation methods in machine learning should be emphasized.
+
+###### Topic 87: Neural Network Approximation
+
+Students will be assessed on their ability to:
+
+**6.87.1 Understand universal approximation theorems**
+- Define universal approximation property of neural networks
+- Understand different universal approximation results
+- Identify limitations of universal approximation
+- Apply universal approximation to network design
+
+**Guidance:** Students should understand universal approximation theorems as showing neural networks can approximate continuous functions. They should recognize different versions for various network architectures. Limitations including practical considerations should be explored. Applications to network architecture design should be referenced.
+
+**6.87.2 Understand approximation capabilities**
+- Define expressive power of different network architectures
+- Understand depth vs. width trade-offs
+- Identify approximation bounds for neural networks
+- Apply capability analysis to model selection
+
+**Guidance:** Students should understand how network architecture affects approximation capabilities. They should recognize trade-offs between network depth and width. Approximation bounds and their implications should be explored. Applications to model selection and architecture design should be referenced.
+
+**6.87.3 Understand approximation error analysis**
+- Define approximation error in neural networks
+- Understand factors affecting approximation quality
+- Identify error bounds for different activation functions
+- Apply error analysis to network evaluation
+
+**Guidance:** Students should understand approximation error as distance between target and network functions. They should recognize factors affecting approximation quality including network size and activation functions. Error bounds for different activation functions should be explored. Applications to network evaluation should be referenced.
+
+**6.87.4 Apply neural network approximation to ML**
+- Use approximation theory to guide network design
+- Understand theoretical foundations of deep learning
+- Identify applications in transfer learning
+- Implement theory-informed neural networks
+
+**Guidance:** Students should see how approximation theory guides neural network design. They should understand theoretical foundations of deep learning success. Applications to transfer learning and model adaptation should be explored. Implementation of theory-informed approaches should be emphasized.
+
+###### Topic 88: Sparse Approximation
+
+Students will be assessed on their ability to:
+
+**6.88.1 Understand sparse representation**
+- Define sparse approximation and compressive sensing
+- Understand sparsity-inducing norms
+- Identify sparse recovery conditions
+- Apply sparse methods to feature selection
+
+**Guidance:** Students should understand sparse approximation as representing functions with few terms. They should recognize norms that promote sparsity including L¹ norm. Conditions for successful sparse recovery should be explored. Applications to feature selection should be referenced.
+
+**6.88.2 Understand dictionary learning**
+- Define dictionary learning and overcomplete bases
+- Understand K-SVD and other dictionary learning algorithms
+- Identify applications to signal processing
+- Apply dictionary learning to representation learning
+
+**Guidance:** Students should understand dictionary learning as finding optimal bases for sparse representation. They should recognize algorithms like K-SVD for dictionary optimization. Applications to signal processing and representation learning should be explored. Implementation considerations should be referenced.
+
+**6.88.3 Understand compressed sensing**
+- Define compressed sensing framework
+- Understand measurement matrices and recovery guarantees
+- Identify applications to data acquisition
+- Apply compressed sensing to efficient sampling
+
+**Guidance:** Students should understand compressed sensing as recovering signals from few measurements. They should recognize requirements for measurement matrices and recovery guarantees. Applications to efficient data acquisition should be explored. Uses in machine learning data preprocessing should be referenced.
+
+**6.88.4 Apply sparse approximation to ML**
+- Use sparse methods in deep learning
+- Understand sparse neural networks
+- Identify applications to model compression
+- Implement sparse ML algorithms
+
+**Guidance:** Students should see how sparse methods enable efficient deep learning. They should understand sparse neural networks and their advantages. Applications to model compression and efficiency should be explored. Implementation of sparse machine learning algorithms should be emphasized.
+
+###### Topic 89: Approximation in High Dimensions
+
+Students will be assessed on their ability to:
+
+**6.89.1 Understand curse of dimensionality**
+- Define curse of dimensionality in approximation
+- Understand challenges in high-dimensional spaces
+- Identify dimensionality reduction techniques
+- Apply dimensionality concepts to ML
+
+**Guidance:** Students should understand curse of dimensionality as exponential growth of complexity. They should recognize challenges in high-dimensional approximation including data sparsity. Dimensionality reduction techniques should be explored. Applications to machine learning in high dimensions should be referenced.
+
+**6.89.2 Understand manifold approximation**
+- Define approximation on manifolds
+- Understand manifold learning and dimensionality reduction
+- Identify geometric approaches to high-dimensional problems
+- Apply manifold methods to nonlinear approximation
+
+**Guidance:** Students should understand approximation on low-dimensional manifolds embedded in high dimensions. They should recognize manifold learning techniques for dimensionality reduction. Geometric approaches to handling high-dimensional data should be explored. Applications to nonlinear approximation should be referenced.
+
+**6.89.3 Understand tensor approximations**
+- Define tensor decomposition and approximation
+- Understand tensor train and other formats
+- Identify applications to high-dimensional data
+- Apply tensor methods to ML
+
+**Guidance:** Students should understand tensor decompositions for high-dimensional approximation. They should recognize tensor train and other tensor formats. Applications to high-dimensional data representation should be explored. Uses in machine learning for tensor data should be referenced.
+
+**6.89.4 Apply high-dimensional approximation to ML**
+- Use high-dimensional methods in deep learning
+- Understand approximation in feature spaces
+- Identify applications to big data
+- Implement efficient high-dimensional ML
+
+**Guidance:** Students should see how high-dimensional approximation methods apply to deep learning. They should understand approximation in high-dimensional feature spaces. Applications to big data and large-scale machine learning should be explored. Implementation of efficient methods should be emphasized.
+
+###### Topic 90: Optimization-Based Approximation
+
+Students will be assessed on their ability to:
+
+**6.90.1 Understand variational approximation**
+- Define variational principles in approximation
+- Understand Euler-Lagrange equations
+- Identify applications to optimal approximation
+- Apply variational methods to approximation problems
+
+**Guidance:** Students should understand variational principles as optimization-based approximation. They should recognize Euler-Lagrange equations for finding optimal approximations. Applications to optimal function approximation should be explored. Uses in machine learning optimization should be referenced.
+
+**6.90.2 Understand greedy approximation**
+- Define greedy algorithms for approximation
+- Understand orthogonal matching pursuit
+- Identify applications to sparse approximation
+- Apply greedy methods to large-scale problems
+
+**Guidance:** Students should understand greedy algorithms as iterative approximation methods. They should recognize orthogonal matching pursuit for sparse approximation. Applications to large-scale approximation problems should be explored. Implementation considerations should be referenced.
+
+**6.90.3 Understand adaptive approximation**
+- Define adaptive approximation strategies
+- Understand error-driven refinement
+- Identify multilevel approximation methods
+- Apply adaptive techniques to complex problems
+
+**Guidance:** Students should understand adaptive approximation as refining based on error estimates. They should recognize error-driven refinement strategies. Multilevel approximation methods should be explored. Applications to complex approximation problems should be referenced.
+
+**6.90.4 Apply optimization-based approximation to ML**
+- Use optimization in neural network training
+- Understand variational inference in ML
+- Identify applications in hyperparameter optimization
+- Implement optimization-based ML methods
+
+**Guidance:** Students should see how optimization enables neural network training. They should understand variational inference as optimization-based approximation. Applications to hyperparameter optimization should be explored. Implementation of optimization-based methods should be emphasized.
+
+###### Topic 91: Approximation Theory in Deep Learning
+
+Students will be assessed on their ability to:
+
+**6.91.1 Understand deep approximation theory**
+- Define approximation properties of deep networks
+- Understand advantages of depth over width
+- Identify theoretical foundations of deep learning
+- Apply deep approximation theory to architecture design
+
+**Guidance:** Students should understand why deep networks have better approximation properties. They should recognize theoretical advantages of depth over width. Foundations of deep learning theory should be explored. Applications to neural architecture design should be referenced.
+
+**6.91.2 Understand Kolmogorov-Arnold networks**
+- Define Kolmogorov-Arnold representation theorem
+- Understand Kolmogorov-Arnold networks
+- Identify connections to neural networks
+- Apply Kolmogorov-Arnold theory to ML
+
+**Guidance:** Students should understand Kolmogorov-Arnold theorem as representing functions with compositions. They should recognize Kolmogorov-Arnold networks and their relation to neural networks. Connections to modern neural network architectures should be explored. Applications to machine learning should be referenced.
+
+**6.91.3 Understand approximation by residual networks**
+- Define residual networks and their approximation properties
+- Understand advantages of residual connections
+- Identify theoretical analysis of ResNets
+- Apply residual network theory to design
+
+**Guidance:** Students should understand residual networks and their approximation capabilities. They should recognize advantages of residual connections for deep networks. Theoretical analysis of ResNet approximation should be explored. Applications to network architecture design should be referenced.
+
+**6.91.4 Apply deep approximation to AI**
+- Use deep approximation theory for model analysis
+- Understand applications in scientific computing
+- Identify uses in generative modeling
+- Implement theory-informed deep networks
+
+**Guidance:** Students should see how deep approximation theory enables model analysis. They should understand applications in scientific computing and PDE solving. Uses in generative modeling should be explored. Implementation of theory-informed deep networks should be emphasized.
+
+###### Topic 92: Applications of Approximation Theory in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.92.1 Understand function learning in ML**
+- Define function learning as approximation problem
+- Understand learning theory connections
+- Identify generalization bounds from approximation
+- Apply learning theory to ML practice
+
+**Guidance:** Students should understand machine learning as function approximation from data. They should recognize connections between approximation theory and learning theory. Generalization bounds derived from approximation should be explored. Applications to machine learning practice should be referenced.
+
+**6.92.2 Understand model compression**
+- Define model compression as approximation
+- Understand compression techniques and error bounds
+- Identify applications to efficient AI
+- Apply compression methods to neural networks
+
+**Guidance:** Students should understand model compression as approximating complex models with simpler ones. They should recognize compression techniques and their error bounds. Applications to efficient AI and edge computing should be explored. Implementation considerations should be referenced.
+
+**6.92.3 Understand numerical methods for AI**
+- Define numerical approximation in AI algorithms
+- Understand stability and accuracy considerations
+- Identify applications to training algorithms
+- Apply numerical methods to ML optimization
+
+**Guidance:** Students should understand numerical approximation as fundamental to AI algorithms. They should recognize stability and accuracy in numerical computations. Applications to training algorithms and optimization should be explored. Uses in machine learning software should be referenced.
+
+**6.92.4 Apply approximation theory to cutting-edge AI**
+- Use approximation in quantum machine learning
+- Understand applications in neuromorphic computing
+- Identify uses in explainable AI
+- Implement advanced approximation-based AI
+
+**Guidance:** Students should see how approximation theory enables quantum machine learning. They should understand applications in neuromorphic computing. Uses in explainable and interpretable AI should be explored. Implementation of cutting-edge approximation-based AI systems should be emphasized.
+
+###### Topic 93: Game Theory
+
+Students will be assessed on their ability to:
+
+**6.93.1 Understand game theory concepts**
+- Define games, players, strategies, and payoffs
+- Understand different types of games (simultaneous, sequential)
+- Identify solution concepts and equilibrium ideas
+- Apply game theory to strategic decision making
+
+**Guidance:** Students should understand games as models of strategic interaction between rational decision-makers. They should recognize different game classifications based on timing and information structure. Solution concepts including equilibrium should be introduced. Applications to strategic decision making in AI should be referenced.
+
+**6.93.2 Understand Nash equilibrium**
+- Define Nash equilibrium and its properties
+- Understand pure and mixed strategies
+- Identify existence and uniqueness of equilibria
+- Apply Nash equilibrium to analyze games
+
+**Guidance:** Students should understand Nash equilibrium as a state where no player can benefit by changing strategy. They should recognize pure strategies (deterministic choices) and mixed strategies (probabilistic choices). Existence theorems and uniqueness conditions should be explored. Applications to game analysis should be referenced.
+
+**6.93.3 Understand game representations**
+- Define normal form and extensive form games
+- Understand payoff matrices and game trees
+- Identify information sets and perfect information
+- Apply different representations to game modeling
+
+**Guidance:** Students should understand normal form (matrix) and extensive form (tree) representations. They should recognize payoff matrices for simultaneous games and game trees for sequential games. Information sets and perfect vs. imperfect information should be explored. Applications to modeling different scenarios should be referenced.
+
+**6.93.4 Apply game theory to AI**
+- Use game theory in multi-agent systems
+- Understand strategic reasoning in AI
+- Identify applications in autonomous systems
+- Implement game-theoretic AI agents
+
+**Guidance:** Students should see how game theory enables multi-agent system design. They should understand strategic reasoning capabilities in AI. Applications to autonomous systems and robotics should be explored. Implementation considerations should be emphasized.
+
+###### Topic 94: Cooperative Game Theory
+
+Students will be assessed on their ability to:
+
+**6.94.1 Understand cooperative games**
+- Define cooperative games and coalition formation
+- Understand characteristic functions and transferable utility
+- Identify core and stable sets
+- Apply cooperative concepts to team problems
+
+**Guidance:** Students should understand cooperative games as games where players can form coalitions. They should recognize characteristic functions that assign values to coalitions. The core as a set of stable outcomes should be explored. Applications to team coordination problems should be referenced.
+
+**6.94.2 Understand Shapley value**
+- Define Shapley value and its axiomatic foundation
+- Understand computation methods for Shapley value
+- Identify properties and interpretations
+- Apply Shapley value to fair division
+
+**Guidance:** Students should understand Shapley value as a fair division of coalition value. They should recognize the axiomatic foundation and computation methods. Properties including efficiency and symmetry should be explored. Applications to fair division problems should be referenced.
+
+**6.94.3 Understand bargaining solutions**
+- Define Nash bargaining solution
+- Understand Kalai-Smorodinsky solution
+- Identify different bargaining axioms
+- Apply bargaining to negotiation problems
+
+**Guidance:** Students should understand bargaining solutions for cooperative surplus division. They should recognize Nash bargaining and Kalai-Smorodinsky solutions. Different axiomatic systems should be compared. Applications to negotiation problems should be referenced.
+
+**6.94.4 Apply cooperative game theory to ML**
+- Use cooperative concepts in federated learning
+- Understand Shapley values in explainable AI
+- Identify applications in team coordination
+- Implement cooperative game-theoretic ML
+
+**Guidance:** Students should see how cooperative game theory enables federated learning. They should understand Shapley values for model interpretability. Applications to team coordination and collaboration should be explored. Implementation in machine learning systems should be emphasized.
+
+###### Topic 95: Non-Cooperative Game Theory
+
+Students will be assessed on their ability to:
+
+**6.95.1 Understand strategic form games**
+- Define dominant strategies and dominated strategies
+- Understand iterated elimination of dominated strategies
+- Identify rationalizability and correlated equilibrium
+- Apply strategic analysis to competitive scenarios
+
+**Guidance:** Students should understand dominant strategies as best regardless of others' actions. They should recognize iterated elimination as a solution concept. Rationalizability and correlated equilibrium should be explored. Applications to competitive scenarios should be referenced.
+
+**6.95.2 Understand Bayesian games**
+- Define incomplete information and types
+- Understand Bayesian Nash equilibrium
+- Identify signaling and screening
+- Apply Bayesian analysis to information problems
+
+**Guidance:** Students should understand Bayesian games as games with incomplete information. They should recognize player types and beliefs. Bayesian Nash equilibrium as solution concept should be explored. Signaling and screening applications should be referenced.
+
+**6.95.3 Understand repeated games**
+- Define finitely and infinitely repeated games
+- Understand folk theorems and trigger strategies
+- Identify punishment and reward strategies
+- Apply repeated games to long-term interactions
+
+**Guidance:** Students should understand repeated games as stage games played multiple times. They should recognize folk theorems about cooperation possibilities. Trigger strategies for enforcing cooperation should be explored. Applications to long-term interactions should be referenced.
+
+**6.95.4 Apply non-cooperative games to AI**
+- Use strategic reasoning in adversarial AI
+- Understand Bayesian games in partial information
+- Identify applications in multi-agent learning
+- Implement non-cooperative game AI
+
+**Guidance:** Students should see how non-cooperative game theory enables adversarial AI. They should understand Bayesian games in partial information settings. Applications to multi-agent learning should be explored. Implementation considerations should be emphasized.
+
+###### Topic 96: Evolutionary Game Theory
+
+Students will be assessed on their ability to:
+
+**6.96.1 Understand evolutionary games**
+- Define evolutionary stable strategies
+- Understand replicator dynamics
+- Identify population games and fitness
+- Apply evolutionary concepts to learning
+
+**Guidance:** Students should understand evolutionary games as models of population dynamics. They should recognize evolutionary stable strategies and replicator dynamics. Population games and fitness concepts should be explored. Applications to learning and adaptation should be referenced.
+
+**6.96.2 Understand learning in games**
+- Define fictitious play and best response dynamics
+- Understand reinforcement learning in games
+- Identify convergence to equilibrium
+- Apply learning dynamics to AI
+
+**Guidance:** Students should understand learning processes in game contexts. They should recognize fictitious play and reinforcement learning approaches. Convergence properties to equilibrium should be explored. Applications to AI learning should be referenced.
+
+**6.96.3 Understand evolutionary algorithms**
+- Define genetic algorithms and evolution strategies
+- Understand selection and mutation operators
+- Identify applications to optimization
+- Apply evolutionary methods to ML
+
+**Guidance:** Students should understand evolutionary algorithms as optimization techniques. They should recognize selection, crossover, and mutation operators. Applications to optimization problems should be explored. Uses in machine learning hyperparameter tuning should be referenced.
+
+**6.96.4 Apply evolutionary game theory to ML**
+- Use evolutionary concepts in neural network training
+- Understand population-based learning
+- Identify applications in adaptive systems
+- Implement evolutionary ML methods
+
+**Guidance:** Students should see how evolutionary concepts apply to neural network training. They should understand population-based learning approaches. Applications to adaptive and self-improving systems should be explored. Implementation considerations should be emphasized.
+
+###### Topic 97: Mechanism Design
+
+Students will be assessed on their ability to:
+
+**6.97.1 Understand mechanism design basics**
+- Define mechanism design and incentive compatibility
+- Understand revelation principle and implementation
+- Identify auction design principles
+- Apply mechanism design to resource allocation
+
+**Guidance:** Students should understand mechanism design as designing rules for strategic interactions. They should recognize incentive compatibility as aligning individual and social goals. The revelation principle should be explored. Applications to resource allocation should be referenced.
+
+**6.97.2 Understand auction theory**
+- Define different auction types (English, Dutch, Vickrey)
+- Understand revenue equivalence theorem
+- Identify optimal auction design
+- Apply auction theory to marketplace design
+
+**Guidance:** Students should understand different auction formats and their properties. They should recognize revenue equivalence and optimal auction design. Various auction types and their applications should be explored. Uses in marketplace design should be referenced.
+
+**6.97.3 Understand matching markets**
+- Define two-sided matching problems
+- Understand stable matching and Gale-Shapley algorithm
+- Identify applications to assignment problems
+- Apply matching theory to market design
+
+**Guidance:** Students should understand two-sided matching as pairing agents from different groups. They should recognize stable matching concepts and the Gale-Shapley algorithm. Applications to assignment and market design should be explored. Implementation considerations should be referenced.
+
+**6.97.4 Apply mechanism design to AI**
+- Use mechanism design in AI systems
+- Understand automated mechanism design
+- Identify applications in digital platforms
+- Implement AI-based mechanisms
+
+**Guidance:** Students should see how mechanism design principles apply to AI systems. They should understand automated mechanism design using AI. Applications to digital platforms and marketplaces should be explored. Implementation of AI-based mechanisms should be emphasized.
+
+###### Topic 98: Adversarial Game Theory
+
+Students will be assessed on their ability to:
+
+**6.98.1 Understand zero-sum games**
+- Define zero-sum and constant-sum games
+- Understand minimax theorem and optimal strategies
+- Identify security strategies and value of games
+- Apply zero-sum concepts to competitive scenarios
+
+**Guidance:** Students should understand zero-sum games as pure conflict situations. They should recognize the minimax theorem and optimal strategies. Security strategies and game value concepts should be explored. Applications to competitive scenarios should be referenced.
+
+**6.98.2 Understand security games**
+- Define security games and defender-attacker models
+- Understand Stackelberg equilibrium and leadership
+- Identify applications to physical security
+- Apply security games to protection problems
+
+**Guidance:** Students should understand security games as defender-attacker interactions. They should recognize Stackelberg equilibrium with leader-follower structure. Applications to physical security and resource protection should be explored. Uses in security optimization should be referenced.
+
+**6.98.3 Understand adversarial machine learning**
+- Define adversarial attacks and defenses
+- Understand robust optimization concepts
+- Identify evasion and poisoning attacks
+- Apply adversarial concepts to ML security
+
+**Guidance:** Students should understand adversarial attacks on machine learning systems. They should recognize robust optimization for defense. Different attack types including evasion and poisoning should be explored. Applications to ML security should be referenced.
+
+**6.98.4 Apply adversarial games to AI**
+- Use adversarial training in neural networks
+- Understand robust AI systems design
+- Identify applications in cybersecurity
+- Implement adversarial game-based AI
+
+**Guidance:** Students should see how adversarial training improves neural network robustness. They should understand robust AI system design principles. Applications to cybersecurity and defense should be explored. Implementation of adversarial game-based approaches should be emphasized.
+
+###### Topic 99: Game Theory in Machine Learning
+
+Students will be assessed on their ability to:
+
+**6.99.1 Understand multi-agent reinforcement learning**
+- Define MARL and game-theoretic foundations
+- Understand independent and centralized learning
+- Identify coordination and competition in MARL
+- Apply MARL to multi-agent systems
+
+**Guidance:** Students should understand multi-agent reinforcement learning as multiple learning agents. They should recognize independent vs. centralized learning approaches. Coordination and competition scenarios should be explored. Applications to multi-agent systems should be referenced.
+
+**6.99.2 Understand generative adversarial networks**
+- Define GANs and their game-theoretic foundation
+- Understand generator-discriminator dynamics
+- Identify convergence and training challenges
+- Apply GAN concepts to generative modeling
+
+**Guidance:** Students should understand GANs as generator-discriminator games. They should recognize the adversarial training dynamics. Convergence issues and training challenges should be explored. Applications to generative modeling should be referenced.
+
+**6.99.3 Understand mean field games**
+- Define mean field games and approximations
+- Understand large population limits
+- Identify applications to multi-agent systems
+- Apply mean field concepts to large-scale problems
+
+**Guidance:** Students should understand mean field games as approximations for large populations. They should recognize the continuum limit and mean field equilibria. Applications to large-scale multi-agent systems should be explored. Uses in swarm intelligence should be referenced.
+
+**6.99.4 Apply game theory to deep learning**
+- Use game-theoretic neural networks
+- Understand strategic deep learning
+- Identify applications in neural architecture search
+- Implement game-theoretic deep learning
+
+**Guidance:** Students should see how game theory informs neural network design. They should understand strategic deep learning approaches. Applications to neural architecture search should be explored. Implementation of game-theoretic deep learning should be emphasized.
+
+###### Topic 100: Applications of Game Theory in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.100.1 Understand game theory in explainable AI**
+- Define Shapley values for feature importance
+- Understand cooperative game theory for interpretability
+- Identify attribution methods and fairness
+- Apply game theory to model explanation
+
+**Guidance:** Students should understand how Shapley values provide feature importance. They should recognize cooperative game theory for model interpretability. Attribution methods and fairness considerations should be explored. Applications to model explanation should be referenced.
+
+**6.100.2 Understand game theory in federated learning**
+- Define federated learning as a cooperative game
+- Understand incentive design for participation
+- Identify fairness and efficiency considerations
+- Apply game theory to federated systems
+
+**Guidance:** Students should understand federated learning as a cooperative game among participants. They should recognize incentive design for encouraging participation. Fairness and efficiency trade-offs should be explored. Applications to federated learning systems should be referenced.
+
+**6.100.3 Understand game theory in recommendation systems**
+- Define strategic interactions in recommendations
+- Understand incentive alignment problems
+- Identify applications to platform design
+- Apply game theory to recommendation algorithms
+
+**Guidance:** Students should understand strategic interactions in recommendation ecosystems. They should recognize incentive alignment between users, platforms, and content providers. Applications to platform and algorithm design should be explored. Implementation considerations should be referenced.
+
+**6.100.4 Apply game theory to cutting-edge AI**
+- Use game theory in AI alignment
+- Understand applications in autonomous systems
+- Identify uses in human-AI interaction
+- Implement game-theoretic AI systems
+
+**Guidance:** Students should see how game theory enables AI alignment research. They should understand applications in autonomous and intelligent systems. Uses in human-AI interaction and collaboration should be explored. Implementation of cutting-edge game-theoretic AI systems should be emphasized.
+
+###### Topic 101: Fourier Series and Transforms Fundamentals
+
+Students will be assessed on their ability to:
+
+**6.61.1 Understand introduction to Fourier series**
+- Define periodic functions and their fundamental properties
+- Understand the concept of representing periodic functions as infinite sums of sines and cosines
+- Identify the basic form of trigonometric Fourier series
+- Apply Fourier series to represent simple periodic waveforms
+
+**Guidance:** Students should understand periodic functions as functions that repeat their values at regular intervals. They should recognize how complex periodic waveforms can be decomposed into simpler sinusoidal components. The basic trigonometric Fourier series form should be introduced conceptually before mathematical formalism. Applications to representing common waveforms (square, triangle, sawtooth) should be explored visually and intuitively.
+
+**6.61.2 Understand properties and convergence of Fourier series**
+- Define Fourier coefficients and their calculation methods
+- Understand conditions for Fourier series convergence (Dirichlet conditions)
+- Identify Gibbs phenomenon and its implications
+- Apply convergence analysis to practical signal representation
+
+**Guidance:** Students should understand Fourier coefficients as weights determining the contribution of each frequency component. They should recognize Dirichlet conditions ensuring convergence of Fourier series. The Gibbs phenomenon at discontinuities should be demonstrated with examples. Practical implications for signal representation accuracy should be discussed in the context of real-world signals.
+
+**6.61.3 Understand Fourier transform and its properties**
+- Define the continuous Fourier transform and its inverse
+- Understand key properties (linearity, time shifting, frequency shifting, scaling)
+- Identify the relationship between Fourier series and Fourier transform
+- Apply Fourier transform properties to analyze signal transformations
+
+**Guidance:** Students should understand the Fourier transform as extending Fourier analysis to aperiodic signals. Each property should be explained with intuitive examples and visual demonstrations. The conceptual relationship between Fourier series (for periodic signals) and Fourier transform (for aperiodic signals) should be emphasized. Applications to signal analysis and transformation should be explored.
+
+**6.61.4 Understand discrete Fourier transform (DFT)**
+- Define the mathematical formulation of DFT
+- Understand sampling considerations and aliasing effects
+- Identify the relationship between continuous and discrete transforms
+- Apply DFT to analyze sampled signals and systems
+
+**Guidance:** Students should understand DFT as the practical tool for analyzing discrete-time signals. The effects of sampling including aliasing should be explained with visual examples. The connection between continuous Fourier transform and DFT through sampling should be clearly established. Applications to analyzing real-world discrete signals including digital audio and sensor data should be explored.
+
+**6.61.5 Understand fast Fourier transform (FFT) algorithms**
+- Define FFT as efficient computation of DFT
+- Understand Cooley-Tukey algorithm and divide-and-conquer approach
+- Identify computational complexity advantages (O(N log N) vs O(N²))
+- Apply FFT algorithms to solve large-scale signal processing problems
+
+**Guidance:** Students should understand FFT as revolutionary algorithms that made practical signal processing possible. The divide-and-conquer strategy should be explained conceptually. Computational advantages should be demonstrated with complexity comparisons. Applications to real-time signal processing, spectral analysis, and solving large-scale problems should be emphasized.
+
+###### Topic 102: Signal Processing Applications
+
+Students will be assessed on their ability to:
+
+**6.62.1 Understand frequency domain analysis**
+- Define frequency spectrum, magnitude spectrum, and phase spectrum
+- Understand power spectral density and energy spectral density
+- Identify frequency response characteristics of linear systems
+- Apply frequency domain analysis to characterize signals and systems
+
+**Guidance:** Students should understand frequency spectrum as a complete description of signal frequency content. The distinction between magnitude and phase information should be emphasized. Power and energy spectral density concepts should be introduced with practical examples. Applications to system analysis including filter characteristics and resonance should be explored with real-world examples.
+
+**6.62.2 Understand filtering and convolution theorem**
+- Define convolution operation in time and frequency domains
+- Understand the convolution theorem and its computational implications
+- Identify ideal and practical filter characteristics (low-pass, high-pass, band-pass, band-stop)
+- Apply filtering concepts to signal enhancement and noise reduction
+
+**Guidance:** Students should understand convolution as fundamental to linear system analysis. The convolution theorem's power in converting time-domain convolution to frequency-domain multiplication should be highlighted. Different filter types should be demonstrated with frequency response plots and practical applications. Real-world filtering applications including audio equalization and image processing should be explored.
+
+**6.62.3 Understand windowing and spectral leakage**
+- Define spectral leakage and its causes in finite-length signals
+- Understand window functions as tools to reduce spectral leakage
+- Identify common window types (rectangular, Hamming, Hanning, Blackman)
+- Apply appropriate windowing techniques for accurate spectral analysis
+
+**Guidance:** Students should understand spectral leakage as an unavoidable artifact of analyzing finite signal segments. The concept of windowing to mitigate leakage should be explained with visual examples. Different window functions and their trade-offs between main lobe width and side lobe levels should be compared. Applications to accurate spectral analysis in practical scenarios should be demonstrated.
+
+**6.62.4 Understand time-frequency analysis**
+- Define limitations of traditional Fourier analysis for non-stationary signals
+- Understand short-time Fourier transform (STFT) and spectrograms
+- Identify time-frequency resolution trade-offs (Heisenberg uncertainty principle)
+- Apply time-frequency analysis to analyze time-varying signals
+
+**Guidance:** Students should understand the limitations of standard Fourier analysis for signals with changing frequency content. The STFT approach of analyzing short signal segments should be explained with spectrogram visualizations. The fundamental trade-off between time and frequency resolution should be demonstrated. Applications to speech analysis, music processing, and biomedical signal analysis should be explored.
+
+###### Topic 103: Advanced Fourier Techniques
+
+Students will be assessed on their ability to:
+
+**6.63.1 Understand multidimensional Fourier analysis**
+- Define 2D and 3D Fourier transforms for spatial data
+- Understand separability and computational efficiency in multidimensional transforms
+- Identify applications in image processing, video analysis, and seismic data
+- Apply multidimensional Fourier analysis to spatial signal processing problems
+
+**Guidance:** Students should understand how Fourier analysis extends to multiple dimensions for spatial data. The concept of separability allowing efficient computation should be explained. Applications to image processing (filtering, compression), video analysis, and geophysical data processing should be demonstrated with visual examples. Practical implementation considerations should be discussed.
+
+**6.63.2 Understand discrete cosine transform (DCT)**
+- Define DCT and its relationship to DFT
+- Understand energy compaction property and its significance
+- Identify DCT variants (DCT-I, DCT-II, DCT-III, DCT-IV) and their applications
+- Apply DCT to image and audio compression problems
+
+**Guidance:** Students should understand DCT as a real-valued transform closely related to DFT. The energy compaction property that makes DCT ideal for compression should be explained with examples. Different DCT variants and their specific applications should be covered. Real-world applications in JPEG image compression and MP3 audio compression should be explored in detail.
+
+**6.63.3 Understand wavelet transforms**
+- Define wavelet functions and multiresolution analysis
+- Understand continuous wavelet transform (CWT) and discrete wavelet transform (DWT)
+- Identify advantages of wavelets over traditional Fourier analysis
+- Apply wavelet analysis to signals with discontinuities and transients
+
+**Guidance:** Students should understand wavelets as functions with localized time-frequency properties. The concept of multiresolution analysis should be explained with visual examples of wavelet decomposition. Advantages over Fourier analysis for non-stationary signals should be demonstrated. Applications to signal compression, denoising, and analysis of transient events should be explored.
+
+**6.63.4 Understand fractional Fourier transform**
+- Define fractional Fourier transform as a rotation in time-frequency plane
+- Understand the concept of fractional domains and their interpretation
+- Identify applications in optics, signal processing, and communications
+- Apply fractional Fourier analysis to chirp signals and time-varying systems
+
+**Guidance:** Students should understand fractional Fourier transform as a generalization that provides a continuum between time and frequency domains. The concept of rotation in the time-frequency plane should be visualized. Applications to analyzing chirp signals, optical systems, and communications should be explored. The relationship to other time-frequency representations should be discussed.
+
+###### Topic 104: Applications in AI/ML
+
+Students will be assessed on their ability to:
+
+**6.64.1 Understand Fourier features in machine learning**
+- Define Fourier features for approximating kernel functions
+- Understand random Fourier features for scalable kernel methods
+- Identify applications to large-scale SVM and Gaussian processes
+- Apply Fourier feature techniques to approximate kernel machines
+
+**Guidance:** Students should understand how Fourier analysis enables efficient approximation of kernel functions. The concept of random Fourier features as a scalable alternative to kernel methods should be explained. Theoretical foundations including Bochner's theorem should be introduced conceptually. Applications to scaling kernel machines for large datasets should be demonstrated with practical examples.
+
+**6.64.2 Understand Fourier analysis in deep learning**
+- Define spectral analysis of neural network weight matrices
+- Understand Fourier domain insights into network training and generalization
+- Identify applications to network initialization and regularization
+- Apply spectral methods to analyze and improve deep learning models
+
+**Guidance:** Students should understand how Fourier analysis provides insights into neural network behavior. The spectral properties of weight matrices and their relationship to training dynamics should be explored. Applications to improved network initialization, spectral normalization, and understanding generalization should be covered. Practical techniques for analyzing networks in the frequency domain should be demonstrated.
+
+**6.64.3 Understand Fourier neural operators**
+- Define Fourier neural operators for learning mappings between function spaces
+- Understand spectral convolutions and their computational advantages
+- Identify applications to solving partial differential equations and scientific ML
+- Apply Fourier neural operators to continuous learning problems
+
+**Guidance:** Students should understand Fourier neural operators as a framework for learning function-to-function mappings. The concept of spectral convolutions operating in frequency domain should be explained. Applications to solving PDEs, weather prediction, and other scientific machine learning problems should be explored. Advantages over traditional discretization methods should be highlighted.
+
+**6.64.4 Apply Fourier analysis to cutting-edge AI**
+- Use Fourier methods in generative models and style transfer
+- Understand applications in 3D vision, graphics, and computational photography
+- Identify uses in quantum machine learning and quantum signal processing
+- Implement Fourier-based techniques for advanced AI applications
+
+**Guidance:** Students should see how Fourier methods enable state-of-the-art generative models including style transfer and image synthesis. Applications to 3D vision, computer graphics, and computational photography should be explored. Emerging uses in quantum machine learning and quantum signal processing should be introduced. Implementation considerations for cutting-edge applications should be discussed with practical examples.
+
+
+
+###### Topic 105: Topology
+
+Students will be assessed on their ability to:
+
+**6.101.1 Understand topological spaces**
+- Define topological spaces and their axioms
+- Understand open and closed sets
+- Identify basis and subbasis for topologies
+- Apply topological concepts to data analysis
+
+**Guidance:** Students should understand topological spaces as sets with a structure of open sets satisfying specific axioms. They should recognize the relationships between open and closed sets, and how they define continuity. The concepts of basis and subbasis for generating topologies should be explored. Applications to data analysis, particularly in understanding the "shape" of data, should be referenced.
+
+**6.101.2 Understand continuity and homeomorphisms**
+- Define continuous functions between topological spaces
+- Understand homeomorphisms and topological equivalence
+- Identify topological invariants
+- Apply continuity concepts to machine learning
+
+**Guidance:** Students should understand continuity in topological terms as functions that preserve open sets. They should recognize homeomorphisms as bijective continuous functions with continuous inverses, establishing topological equivalence. Topological invariants as properties preserved under homeomorphisms should be explored. Applications to machine learning, particularly in understanding data transformations, should be referenced.
+
+**6.101.3 Understand connectedness and compactness**
+- Define connected and path-connected spaces
+- Understand compactness and its characterizations
+- Identify applications in analysis and geometry
+- Apply connectedness and compactness to ML problems
+
+**Guidance:** Students should understand connectedness as a space that cannot be partitioned into disjoint open sets, and path-connectedness as a stronger notion where any two points can be connected by a path. They should recognize compactness as a generalization of closed and bounded sets in Euclidean space, with various equivalent characterizations. Applications to analysis, geometry, and machine learning problems should be explored.
+
+**6.101.4 Understand separation axioms**
+- Define separation axioms (T0, T1, T2/Hausdorff, etc.)
+- Understand metric spaces and their topological properties
+- Identify applications in function spaces
+- Apply separation concepts to theoretical ML
+
+**Guidance:** Students should understand the hierarchy of separation axioms that distinguish points and closed sets. They should recognize metric spaces as topological spaces with additional structure, and how metric properties induce topological properties. Applications to function spaces and theoretical machine learning should be explored.
+
+###### Topic 106: Algebraic Topology
+
+Students will be assessed on their ability to:
+
+**6.102.1 Understand fundamental groups**
+- Define fundamental groups and homotopy classes
+- Understand computation methods for fundamental groups
+- Identify applications to classification of spaces
+- Apply fundamental groups to data analysis
+
+**Guidance:** Students should understand fundamental groups as algebraic structures capturing information about loops in a space. They should recognize homotopy classes of loops as elements of the fundamental group. Computation methods for simple spaces should be explored. Applications to data analysis, particularly in understanding the "holes" in data, should be referenced.
+
+**6.102.2 Understand homology theory**
+- Define simplicial homology and chain complexes
+- Understand Betti numbers and Euler characteristic
+- Identify applications to shape analysis
+- Apply homology to topological data analysis
+
+**Guidance:** Students should understand simplicial homology as a method for assigning algebraic objects (groups) to topological spaces. They should recognize Betti numbers as counts of holes of different dimensions, and Euler characteristic as a topological invariant. Applications to shape analysis and topological data analysis should be explored.
+
+**6.102.3 Understand cohomology theory**
+- Define cohomology groups and their properties
+- Understand cup products and ring structures
+- Identify applications to obstruction theory
+- Apply cohomology to advanced ML problems
+
+**Guidance:** Students should understand cohomology as a dual theory to homology, with additional algebraic structure. They should recognize cup products as operations that give cohomology a ring structure. Applications to obstruction theory and advanced machine learning problems should be explored.
+
+**6.102.4 Apply algebraic topology to ML**
+- Use persistent homology for feature extraction
+- Understand topological data analysis pipelines
+- Identify applications in computer vision and NLP
+- Implement topological methods in ML systems
+
+**Guidance:** Students should see how persistent homology enables feature extraction from complex data. They should understand complete pipelines for topological data analysis. Applications in computer vision, natural language processing, and other ML domains should be explored. Implementation considerations should be emphasized.
+
+###### Topic 107: Category Theory
+
+Students will be assessed on their ability to:
+
+**6.103.1 Understand categories and functors**
+- Define categories, objects, and morphisms
+- Understand functors and natural transformations
+- Identify examples of categories (Set, Grp, Top)
+- Apply categorical concepts to mathematical structures
+
+**Guidance:** Students should understand categories as collections of objects with morphisms between them, satisfying composition and identity laws. They should recognize functors as structure-preserving mappings between categories, and natural transformations as mappings between functors. Examples of common categories should be explored. Applications to organizing mathematical structures should be referenced.
+
+**6.103.2 Understand universal properties**
+- Define universal properties and limits/colimits
+- Understand products, coproducts, and pullbacks/pushouts
+- Identify applications in constructions across mathematics
+- Apply universal properties to ML constructions
+
+**Guidance:** Students should understand universal properties as characterizing objects up to unique isomorphism. They should recognize limits and colimits as universal constructions, including specific examples like products, coproducts, pullbacks, and pushouts. Applications to constructions across mathematics and in machine learning should be explored.
+
+**6.103.3 Understand adjunctions**
+- Define adjoint functors and their properties
+- Understand free-forgetful adjunctions
+- Identify applications in various mathematical fields
+- Apply adjunctions to theoretical ML
+
+**Guidance:** Students should understand adjoint functors as pairs of functors with a special relationship generalizing inverse functions. They should recognize common examples like free-forgetful adjunctions. Applications in various mathematical fields and theoretical machine learning should be explored.
+
+**6.103.4 Apply category theory to ML**
+- Use categorical frameworks for neural networks
+- Understand compositional models in ML
+- Identify applications in program synthesis
+- Implement categorical ML systems
+
+**Guidance:** Students should see how category theory provides frameworks for understanding neural networks. They should understand compositional models and their categorical foundations. Applications to program synthesis and other ML areas should be explored. Implementation of categorical approaches should be emphasized.
+
+###### Topic 108: Complex Analysis
+
+Students will be assessed on their ability to:
+
+**6.104.1 Understand complex functions**
+- Define complex-valued functions and their properties
+- Understand complex differentiation and Cauchy-Riemann equations
+- Identify analytic and holomorphic functions
+- Apply complex functions to signal processing
+
+**Guidance:** Students should understand complex-valued functions as mappings from complex numbers to complex numbers. They should recognize complex differentiation and the Cauchy-Riemann equations as characterizing analytic functions. The concepts of analytic and holomorphic functions should be explored. Applications to signal processing should be referenced.
+
+**6.104.2 Understand complex integration**
+- Define contour integration and Cauchy's theorem
+- Understand Cauchy's integral formula and consequences
+- Identify residue theorem and applications
+- Apply complex integration to evaluation problems
+
+**Guidance:** Students should understand contour integration as integration along paths in the complex plane. They should recognize Cauchy's theorem and integral formula as fundamental results. The residue theorem and its applications to evaluating real integrals should be explored. Applications to various evaluation problems should be referenced.
+
+**6.104.3 Understand series expansions**
+- Define Taylor and Laurent series
+- Understand convergence properties in complex plane
+- Identify singularities and their classification
+- Apply series expansions to approximation problems
+
+**Guidance:** Students should understand Taylor and Laurent series as representations of complex functions. They should recognize convergence properties in the complex plane and the classification of singularities. Applications to approximation problems should be explored.
+
+**6.104.4 Apply complex analysis to ML**
+- Use complex-valued neural networks
+- Understand applications in signal processing
+- Identify uses in quantum machine learning
+- Implement complex-based ML systems
+
+**Guidance:** Students should see how complex numbers extend neural network capabilities. They should understand applications in signal processing and communications. Uses in quantum machine learning should be explored. Implementation of complex-valued machine learning systems should be emphasized.
+
+###### Topic 109: Harmonic Analysis
+
+Students will be assessed on their ability to:
+
+**6.105.1 Understand Fourier analysis on groups**
+- Define Fourier transforms on locally compact groups
+- Understand Pontryagin duality
+- Identify applications in representation theory
+- Apply harmonic analysis to signal processing
+
+**Guidance:** Students should understand Fourier analysis generalized to locally compact groups. They should recognize Pontryagin duality as relating groups to their dual groups of characters. Applications to representation theory and signal processing should be explored.
+
+**6.105.2 Understand wavelet theory**
+- Define wavelets and multiresolution analysis
+- Understand discrete wavelet transforms
+- Identify applications in data compression
+- Apply wavelet methods to ML preprocessing
+
+**Guidance:** Students should understand wavelets as functions with localized oscillations. They should recognize multiresolution analysis and discrete wavelet transforms. Applications to data compression and signal processing should be explored. Uses in machine learning preprocessing should be referenced.
+
+**6.105.3 Understand time-frequency analysis**
+- Define short-time Fourier transform and spectrograms
+- Understand Wigner-Ville distribution and ambiguity functions
+- Identify applications in non-stationary signal analysis
+- Apply time-frequency methods to temporal data
+
+**Guidance:** Students should understand time-frequency analysis as studying signals in both time and frequency domains. They should recognize methods like short-time Fourier transform, spectrograms, and Wigner-Ville distribution. Applications to non-stationary signal analysis and temporal data should be explored.
+
+**6.105.4 Apply harmonic analysis to AI**
+- Use harmonic methods in computer vision
+- Understand applications in audio processing for AI
+- Identify uses in geometric deep learning
+- Implement harmonic analysis-based AI systems
+
+**Guidance:** Students should see how harmonic analysis applies to computer vision tasks. They should understand applications in audio processing for AI systems. Uses in geometric deep learning should be explored. Implementation of harmonic analysis-based approaches should be emphasized.
+
+###### Topic 110: Partial Differential Equations
+
+Students will be assessed on their ability to:
+
+**6.106.1 Understand PDE classifications**
+- Define elliptic, parabolic, and hyperbolic PDEs
+- Understand characteristics and well-posedness
+- Identify boundary and initial conditions
+- Apply PDE classifications to physical problems
+
+**Guidance:** Students should understand the classification of PDEs into elliptic, parabolic, and hyperbolic types. They should recognize characteristics and concepts of well-posedness. Boundary and initial conditions for different PDE types should be explored. Applications to physical problems should be referenced.
+
+**6.106.2 Understand solution methods**
+- Define separation of variables and eigenfunction expansions
+- Understand Green's functions and fundamental solutions
+- Identify numerical methods for PDEs
+- Apply solution methods to practical problems
+
+**Guidance:** Students should understand analytical solution methods including separation of variables and eigenfunction expansions. They should recognize Green's functions and fundamental solutions. Numerical methods for PDEs should be explored. Applications to practical problems should be referenced.
+
+**6.106.3 Understand PDEs in machine learning**
+- Define PDE-based approaches to learning
+- Understand neural PDE solvers
+- Identify applications to scientific ML
+- Apply PDE methods to data-driven modeling
+
+**Guidance:** Students should understand how PDEs inform machine learning approaches. They should recognize neural PDE solvers and their advantages. Applications to scientific machine learning and data-driven modeling should be explored.
+
+**6.106.4 Apply PDEs to AI**
+- Use PDE-based models in computer vision
+- Understand applications in physics-informed neural networks
+- Identify uses in generative modeling
+- Implement PDE-based AI systems
+
+**Guidance:** Students should see how PDEs apply to computer vision tasks like image segmentation. They should understand physics-informed neural networks that incorporate physical laws. Applications to generative modeling should be explored. Implementation of PDE-based AI systems should be emphasized.
+
+###### Topic 111: Calculus of Variations
+
+Students will be assessed on their ability to:
+
+**6.107.1 Understand variational principles**
+- Define functionals and their variations
+- Understand Euler-Lagrange equations
+- Identify natural boundary conditions
+- Apply variational principles to optimization
+
+**Guidance:** Students should understand functionals as mappings from functions to real numbers. They should recognize variations and the Euler-Lagrange equations as necessary conditions for extrema. Natural boundary conditions should be explored. Applications to optimization problems should be referenced.
+
+**6.107.2 Understand constrained variational problems**
+- Define isoperimetric problems
+- Understand Lagrange multipliers in calculus of variations
+- Identify applications to optimal control
+- Apply constrained methods to practical problems
+
+**Guidance:** Students should understand isoperimetric problems as variational problems with constraints. They should recognize Lagrange multipliers in the context of calculus of variations. Applications to optimal control theory should be explored. Uses in practical optimization problems should be referenced.
+
+**6.107.3 Understand direct methods**
+- Define Ritz and Galerkin methods
+- Understand finite element methods
+- Identify applications to numerical solutions
+- Apply direct methods to computational problems
+
+**Guidance:** Students should understand direct methods for solving variational problems numerically. They should recognize Ritz and Galerkin methods and finite element methods. Applications to numerical solutions of PDEs and other computational problems should be explored.
+
+**6.107.4 Apply calculus of variations to ML**
+- Use variational inference in Bayesian learning
+- Understand variational autoencoders
+- Identify applications in optimal control for RL
+- Implement variational methods in ML systems
+
+**Guidance:** Students should see how calculus of variations enables variational inference in Bayesian learning. They should understand variational autoencoders and their variational foundations. Applications to optimal control in reinforcement learning should be explored. Implementation of variational methods in machine learning should be emphasized.
+
+###### Topic 112: Optimal Transport Theory
+
+Students will be assessed on their ability to:
+
+**6.108.1 Understand Monge and Kantorovich problems**
+- Define optimal transport problem and formulations
+- Understand Monge and Kantorovich approaches
+- Identify applications in economics and logistics
+- Apply transport theory to resource allocation
+
+**Guidance:** Students should understand the optimal transport problem as finding optimal ways to move mass from source to target. They should recognize Monge's original formulation and Kantorovich's relaxation. Applications to economics, logistics, and resource allocation should be explored.
+
+**6.108.2 Understand Wasserstein distances**
+- Define Wasserstein metrics and their properties
+- Understand computational aspects
+- Identify applications in probability theory
+- Apply Wasserstein distances to ML problems
+
+**Guidance:** Students should understand Wasserstein distances as metrics on probability distributions. They should recognize computational aspects and properties of these distances. Applications to probability theory and machine learning problems should be explored.
+
+**6.108.3 Understand optimal transport in ML**
+- Define optimal transport for domain adaptation
+- Understand Wasserstein GANs
+- Identify applications in generative modeling
+- Apply transport theory to ML algorithms
+
+**Guidance:** Students should understand how optimal transport enables domain adaptation. They should recognize Wasserstein GANs and their advantages over standard GANs. Applications to generative modeling should be explored. Uses in machine learning algorithms should be referenced.
+
+**6.108.4 Apply optimal transport to AI**
+- Use transport theory in computer vision
+- Understand applications in NLP
+- Identify uses in fairness and bias mitigation
+- Implement transport-based AI systems
+
+**Guidance:** Students should see how optimal transport applies to computer vision tasks. They should understand applications in natural language processing. Uses in fairness and bias mitigation should be explored. Implementation of transport-based AI systems should be emphasized.
+
+###### Topic 113: Algebraic Geometry
+
+Students will be assessed on their ability to:
+
+**6.109.1 Understand algebraic varieties**
+- Define affine and projective varieties
+- Understand coordinate rings and regular functions
+- Identify singular and smooth points
+- Apply algebraic geometry to geometric problems
+
+**Guidance:** Students should understand algebraic varieties as solution sets of polynomial equations. They should recognize affine and projective varieties, and the algebraic structures associated with them (coordinate rings, regular functions). Singular and smooth points on varieties should be explored. Applications to geometric problems should be referenced.
+
+**6.109.2 Understand schemes and sheaves**
+- Define schemes and their structure sheaves
+- Understand morphisms of schemes
+- Identify applications in modern geometry
+- Apply scheme theory to advanced problems
+
+**Guidance:** Students should understand schemes as generalizations of algebraic varieties. They should recognize structure sheaves and their role in defining schemes. Morphisms of schemes and their properties should be explored. Applications to modern geometry and advanced mathematical problems should be referenced.
+
+**6.109.3 Understand computational algebraic geometry**
+- Define Gröbner bases and Buchberger's algorithm
+- Understand polynomial system solving
+- Identify applications in robotics and kinematics
+- Apply computational methods to practical problems
+
+**Guidance:** Students should understand Gröbner bases as computational tools for polynomial ideals. They should recognize Buchberger's algorithm for computing Gröbner bases. Applications to solving polynomial systems in robotics, kinematics, and other practical problems should be explored.
+
+**6.109.4 Apply algebraic geometry to ML**
+- Use algebraic geometry in neural network theory
+- Understand applications in optimization
+- Identify uses in statistical learning
+- Implement algebraic methods in ML systems
+
+**Guidance:** Students should see how algebraic geometry applies to neural network theory. They should understand applications to optimization problems, particularly those involving polynomial constraints. Uses in statistical learning theory should be explored. Implementation of algebraic methods in machine learning should be emphasized.
+
+###### Topic 114: Representation Theory
+
+Students will be assessed on their ability to:
+
+**6.110.1 Understand group representations**
+- Define linear representations and characters
+- Understand irreducible representations and decomposition
+- Identify applications in quantum mechanics
+- Apply representation theory to symmetry analysis
+
+**Guidance:** Students should understand linear representations as homomorphisms from groups to matrix groups. They should recognize characters as traces of representations, and the decomposition of representations into irreducible components. Applications to quantum mechanics and symmetry analysis should be explored.
+
+**6.110.2 Understand Lie algebra representations**
+- Define representations of Lie algebras
+- Understand universal enveloping algebras
+- Identify applications in particle physics
+- Apply Lie algebra methods to differential equations
+
+**Guidance:** Students should understand representations of Lie algebras and their relationship to Lie group representations. They should recognize universal enveloping algebras and their role. Applications to particle physics and solving differential equations should be explored.
+
+**6.110.3 Understand harmonic analysis on groups**
+- Define Fourier analysis on compact groups
+- Understand Peter-Weyl theorem
+- Identify applications in signal processing
+- Apply harmonic analysis to symmetric data
+
+**Guidance:** Students should understand Fourier analysis generalized to compact groups. They should recognize the Peter-Weyl theorem as a foundation for harmonic analysis on groups. Applications to signal processing and analysis of symmetric data should be explored.
+
+**6.110.4 Apply representation theory to ML**
+- Use representation theory in geometric deep learning
+- Understand applications in quantum machine learning
+- Identify uses in invariant learning
+- Implement representation-based ML systems
+
+**Guidance:** Students should see how representation theory enables geometric deep learning. They should understand applications to quantum machine learning and invariant learning. Uses in developing models that respect symmetries should be explored. Implementation of representation-based machine learning systems should be emphasized.
+
+###### Topic 115: Number Theory
+
+Students will be assessed on their ability to:
+
+**6.111.1 Understand elementary number theory**
+- Define divisibility, primes, and modular arithmetic
+- Understand fundamental theorem of arithmetic
+- Identify applications in cryptography
+- Apply number theory to algorithmic problems
+
+**Guidance:** Students should understand basic concepts of divisibility, prime numbers, and modular arithmetic. They should recognize the fundamental theorem of arithmetic on unique prime factorization. Applications to cryptography and algorithmic problems should be explored.
+
+**6.111.2 Understand analytic number theory**
+- Define Riemann zeta function and its properties
+- Understand prime number theorem
+- Identify applications in distribution problems
+- Apply analytic methods to number theoretic problems
+
+**Guidance:** Students should understand the Riemann zeta function and its analytic continuation. They should recognize the prime number theorem describing the distribution of primes. Applications to distribution problems and other number theoretic questions should be explored.
+
+**6.111.3 Understand algebraic number theory**
+- Define algebraic integers and number fields
+- Understand ideal class groups and unique factorization
+- Identify applications in Diophantine equations
+- Apply algebraic methods to advanced problems
+
+**Guidance:** Students should understand algebraic integers as generalizations of integers in number fields. They should recognize ideal class groups and how they measure the failure of unique factorization. Applications to solving Diophantine equations should be explored.
+
+**6.111.4 Apply number theory to ML**
+- Use number theory in federated learning
+- Understand applications in homomorphic encryption
+- Identify uses in algorithm design
+- Implement number-theoretic ML systems
+
+**Guidance:** Students should see how number theory applies to federated learning and privacy. They should understand applications in homomorphic encryption for secure computation. Uses in algorithm design and complexity should be explored. Implementation of number-theoretic methods in machine learning should be emphasized.
+
+###### Topic 116: Combinatorics
+
+Students will be assessed on their ability to:
+
+**6.112.1 Understand enumerative combinatorics**
+- Define counting principles and generating functions
+- Understand inclusion-exclusion principle
+- Identify applications to probability
+- Apply combinatorial methods to counting problems
+
+**Guidance:** Students should understand fundamental counting principles and generating functions as tools for enumeration. They should recognize the inclusion-exclusion principle for counting complex sets. Applications to probability theory and counting problems should be explored.
+
+**6.112.2 Understand graph theory connections**
+- Define combinatorial aspects of graphs
+- Understand extremal graph theory
+- Identify applications to network analysis
+- Apply combinatorial graph theory to ML
+
+**Guidance:** Students should understand the combinatorial aspects of graphs, including enumeration of graph types. They should recognize extremal graph theory and its results. Applications to network analysis and machine learning should be explored.
+
+**6.112.3 Understand probabilistic combinatorics**
+- Define probabilistic methods in combinatorics
+- Understand random graphs and their properties
+- Identify applications to algorithm analysis
+- Apply probabilistic methods to theoretical problems
+
+**Guidance:** Students should understand probabilistic methods as tools for proving existence results in combinatorics. They should recognize random graphs and their phase transitions. Applications to algorithm analysis and theoretical computer science should be explored.
+
+**6.112.4 Apply combinatorics to ML**
+- Use combinatorial optimization in feature selection
+- Understand applications in graph neural networks
+- Identify uses in combinatorial bandits
+- Implement combinatorial ML systems
+
+**Guidance:** Students should see how combinatorial optimization enables feature selection. They should understand applications to graph neural networks and combinatorial bandits. Uses in sequential decision making should be explored. Implementation of combinatorial methods in machine learning should be emphasized.
+
+###### Topic 117: Cryptography
+
+Students will be assessed on their ability to:
+
+**6.113.1 Understand symmetric cryptography**
+- Define block ciphers and stream ciphers
+- Understand cryptographic hash functions
+- Identify applications to data security
+- Apply symmetric methods to encryption problems
+
+**Guidance:** Students should understand symmetric cryptography as using shared secret keys. They should recognize block ciphers, stream ciphers, and cryptographic hash functions. Applications to data security and encryption should be explored.
+
+**6.113.2 Understand asymmetric cryptography**
+- Define public-key cryptosystems
+- Understand RSA and elliptic curve cryptography
+- Identify applications to digital signatures
+- Apply asymmetric methods to secure communication
+
+**Guidance:** Students should understand asymmetric cryptography as using public-private key pairs. They should recognize RSA and elliptic curve cryptography as fundamental systems. Applications to digital signatures and secure communication should be explored.
+
+**6.113.3 Understand cryptographic protocols**
+- Define key exchange protocols
+- Understand zero-knowledge proofs
+- Identify applications to secure computation
+- Apply protocols to practical security problems
+
+**Guidance:** Students should understand cryptographic protocols for secure communication. They should recognize key exchange protocols like Diffie-Hellman and zero-knowledge proofs. Applications to secure multi-party computation should be explored.
+
+**6.113.4 Apply cryptography to ML**
+- Use homomorphic encryption in private ML
+- Understand secure multi-party computation for federated learning
+- Identify applications in differential privacy
+- Implement cryptographic ML systems
+
+**Guidance:** Students should see how homomorphic encryption enables private machine learning. They should understand secure multi-party computation for federated learning. Applications to differential privacy and privacy-preserving ML should be explored. Implementation of cryptographic methods in machine learning should be emphasized.
+
 #### **Unit 7: Advanced Machine Learning**  
 #### **Unit 8: Advanced Deep Learning Architectures**  
 #### **Unit 9: Reinforcement Learning**  
