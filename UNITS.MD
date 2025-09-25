@@ -731,41 +731,9 @@ Students will be assessed on their ability to:
 
 **Guidance:** Students should learn to apply machine learning to real-world problems. They should practice selecting appropriate algorithms, preprocessing messy data, and communicating results effectively. They should understand the practical challenges of applying ML in real scenarios. Examples include business analytics, scientific research, or social good applications.
 
-###### Topic 14: AMD GPU Computing with Python
+###### Topic 14: GPU Computing with Python for RPCm, OpenCl and Cuda
 
-Students will be assessed on their ability to:
-
-**2.14.1 Understand AMD GPU computing architecture**
-- Explain AMD GPU architecture and computing model
-- Understand the difference between CPU and GPU computing
-- Compare AMD ROCm with NVIDIA CUDA
-- Identify suitable applications for GPU acceleration
-
-**Guidance:** Students should learn about AMD GPU architecture and how it differs from traditional CPU computing. They should understand the AMD ROCm platform and how it compares to NVIDIA's CUDA. They should learn to identify problems that benefit from GPU acceleration. Examples include parallel computing tasks, scientific simulations, or large-scale data processing.
-
-**2.14.2 Set up AMD ROCm environment**
-- Install and configure ROCm drivers
-- Set up Python with ROCm support
-- Verify GPU computing functionality
-- Troubleshoot common ROCm installation issues
-
-**Guidance:** Students should learn to install and configure the AMD ROCm platform for GPU computing. They should practice setting up the ROCm drivers, installing Python packages with ROCm support, and verifying that GPU computing is working correctly. They should learn to troubleshoot common installation and configuration issues. Examples include setting up a development environment, verifying GPU acceleration, or optimizing system configuration.
-
-**2.14.3 Use PyTorch with AMD GPUs**
-- Install PyTorch with ROCm support
-- Run PyTorch models on AMD GPUs
-- Optimize PyTorch code for AMD GPUs
-- Debug common GPU computing issues
-
-**Guidance:** Students should learn to use PyTorch with AMD GPUs through ROCm. They should practice installing PyTorch with ROCm support, moving tensors between CPU and GPU, and running neural networks on AMD GPUs. They should learn optimization techniques for AMD GPU computing. Examples include training neural networks, running inference, or benchmarking performance.
-
-**2.14.4 Use TensorFlow with AMD GPUs**
-- Install TensorFlow with ROCm support
-- Run TensorFlow models on AMD GPUs
-- Optimize TensorFlow code for AMD GPUs
-- Compare performance with CPU-only implementations
-
-**Guidance:** Students should learn to use TensorFlow with AMD GPUs through ROCm. They should practice installing TensorFlow with ROCm support, configuring TensorFlow to use AMD GPUs, and running machine learning models on GPU hardware. They should learn to measure and compare performance improvements. Examples include deep learning training, model inference, or performance benchmarking.
+EMPTY
 
 ###### Topic 15: Performance Optimization and Advanced Topics
 

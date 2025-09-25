@@ -1,6 +1,7 @@
 ## **COMPRESSED AI/ML MASTERY SPECIFICATION**
 
 ### **TIER 1: FOUNDATION (Beginner)**
+
 #### **Unit 1: Mathematical Foundations**
 - **Topic 1: Basic Algebra**: Variables, expressions, equations, functions, graphs, proportion
 - **Topic 2: Linear Algebra**: Vectors, matrices, operations, transformations, systems of equations
@@ -108,8 +109,6 @@
 - **Topic 39: Sequential Decision Making: Partial observability, hierarchical RL, offline RL, RLHF
 - **Topic 40: Knowledge Representation/Reasoning: Knowledge graphs, neuro-symbolic, logical reasoning, commonsense
 
-
-
 #### **Unit 8: Advanced Deep Learning Architectures**
 - **Topic 1: Advanced CNN Architectures**: AlexNet, VGG, NiN, GoogLeNet, ResNet, DenseNet, design principles
 - **Topic 2: CNN Techniques**: Batch normalization, regularization, compression, transfer learning, multi-scale, efficient design
@@ -121,8 +120,6 @@
 - **Topic 8: Training Techniques**: Optimization, learning rate, gradient methods, mixed precision, distributed training, hyperparameter tuning
 - **Topic 9: Model Compression**: Pruning, quantization, knowledge distillation, NAS, inference optimization, edge deployment
 - **Topic 10: Multi-Modal Architectures**: Vision transformers, multi-modal learning, GNNs, 3D/video processing, audio networks, cross-modal attention
-
-
 
 #### **Unit 9: Reinforcement Learning**
 - **Topic 1: Introduction to RL Framework**: Agent-environment interaction, states, observations, actions, rewards, policies, value functions, returns, applications
