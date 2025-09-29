@@ -1179,7 +1179,7 @@ Students will be assessed on their ability to:
 
 **Guidance:** Students should understand overfitting as when a neural network learns the training data too well, including noise and random variations, but fails to perform well on new, unseen data. The concept should be illustrated with analogies like a student who memorizes practice test answers instead of learning the concepts, then fails when given different questions. Signs of overfitting should include: perfect performance on training data but poor performance on test data. Techniques to prevent overfitting should include: regularization (adding penalties for complex models), dropout (randomly turning off neurons during training), and early stopping (stopping training when performance on validation data starts to degrade). Students should understand the balance between fitting the training data well and generalizing to new data.
 
-###### Topic 5: Deep Learning Applications and Tools
+##### Topic 5: Deep Learning Applications and Tools
 
 Students will be assessed on their ability to:
 
@@ -1251,8 +1251,7 @@ Students will be assessed on their ability to:
 
 **Guidance:** Students should learn that building a deep learning model is only the first step - models need to be deployed to be useful in real-world applications. Deployment scenarios should include: web applications (models that run on servers and provide predictions through APIs), mobile applications (models that run directly on phones and tablets), and edge devices (models that run on IoT devices and sensors). The importance of monitoring should be emphasized as models can degrade over time as data patterns change (concept drift). Challenges should include: computational requirements, latency requirements (how quickly predictions are needed), privacy concerns, and the need for regular updates and retraining. Students should understand the complete lifecycle of deep learning models from development to deployment to maintenance.
 
-#### **Unit 5: Computer Systems & Hardware Basics**  
-
+c
 ##### 5.1 Unit description
 
 This unit introduces students to the fundamental concepts of computer systems and hardware, providing comprehensive knowledge of how computers work at the physical level. As the only hardware-focused unit in the curriculum, it covers everything from basic computer architecture to specific hardware components, with special emphasis on AMD hardware for AI applications. Students will explore the internal workings of computers, understand how different components interact, and learn about hardware considerations for artificial intelligence and machine learning. The unit progresses from basic concepts to more complex topics, ensuring students develop complete mastery of computer hardware fundamentals while maintaining accessibility for beginners.
